@@ -1,0 +1,94 @@
+\documentclass[14pt]{beamer}
+\usetheme{CambridgeUS}
+\usepackage[english]{babel}
+%\definecolor{lred}{rgb}{1,0.5,0}
+%\definecolor{lgray}{gray}{0.95}
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+%\usepackage[lmargin=3cm, rmargin=2cm]{geometry}    % See geometry.pdf to learn the layout options. There are lots.
+%\geometry{letterpaper}                   % ... or a4paper or a5paper or ...
+%\geometry{landscape}                % Activate for for rotated page geometry
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+%\usepackage{epstopdf}
+%\usepackage{exsol, fancyvrb}   % Provides exercises and solutions.  See https://ctan.org/pkg/exsol.
+%\usepackage{color}
+\usepackage{verbatim}
+%\usepackage{url}
+%\usepackage{natbib}
+%\usepackage{makeidx}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Stat 1600}
+% \subtitle{Overview and Descriptive Statistics}
+\author{Loren Heun}
+\institute{WMU}
+\date{\today}
+
+% \makeindex
+
+\begin{document}
+
+\frame{\titlepage}
+
+<<label=setup, echo=FALSE>>=
+#
+# Put all R "require" statements here (for the whole book)
+#
+library(boot)
+library(knitr)
+library(xtable)
+## library(pwr)
+library(pastecs)
+# These options apply to all R chunks in the entire book.
+
+opts_chunk$set(
+  # ***************************************
+  eval=TRUE, echo=FALSE, fig.show='hold', fig.path='figure/', size='footnotesize', fig.width=4, fig.height=4, out.width="6cm", par=TRUE
+  # ***************************************
+)
+@
+
+%\maketitle
+
+%\newpage
+
+% % Copyright \copyright 2015 by Loren L. Heun at Western Michigan University \\ \newline
+% All rights reserved \\[5mm]
+% Reproduction or translation of any part of this work beyond that permitted by Sections 107 and 108 of the 1976 United States Copyright Act without permission of the copyright owner is unlawful.\\[5mm]
+% A general introduction to statistics with an emphasis on data analysis and graphical presentation. Extensive use will be made of the computer to prepare results. Topics may include: data collection, sampling and experimentation, measurement issues, descriptive statistics, statistical graphics, normal distribution, cross-classified data, correlation and association, formal statistical inferences, and resampling methods.
+
+
+
+%\tableofcontents
+
+<<Ch1, child="chapters/chapter1/chapter1.Rnw",eval=TRUE>>=
+@
+
+% <<Sec1, child="sections/section1/section1.Rnw",eval=TRUE>>=
+% @
+% 
+% 
+% <<Sec2, child="sections/section2/section2.Rnw",eval=TRUE>>=  
+% @
+% 
+% <<Sec3, child="sections/section3/section3.Rnw",eval=TRUE>>=   
+% @
+% 
+% <<Sec4, child="sections/section4/section4.Rnw",eval=TRUE>>=  
+% @
+% 
+% <<label=LBLrn, results="asis", echo=FALSE>>=
+%   system('mv Master.pdf ch1.pdf')
+% @
+
+% \printbibliography
+%\bibliographystyle{plain}
+%\bibliography{chapters/mybibliography}   % name your BibTeX data base
+
+% \section{Index}
+
+% \printindex
+
+\end{document}

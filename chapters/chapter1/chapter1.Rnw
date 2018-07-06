@@ -1,0 +1,352 @@
+%!Rnw root = ../../Master.Rnw
+
+\section{STAT 1600 Statistics and Data Analysis Slides}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+Lecture 2 Knowledge and data
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Data Presentation \# 1
+
+\begin{itemize}
+\item Statistics and Data
+\item Variable Types
+\item Summarizing Categorical Data
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Knowledge and data}
+
+\begin{itemize}
+\item Step-by-step knowledge building
+\item Some fallacies in interpreting evidence
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Building knowledge step by step}
+
+1. Conceptualize the problem
+
+\begin{itemize}
+\item This is the problem of interest.  State it broadly.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Building knowledge step by step}
+
+2. Operationalize the problem
+
+\begin{itemize}
+\item The investigator formulates specific questions to answer
+\item What do you want to measure?  These will become your dependent variables.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Building knowledge step by step}
+
+3. Design the Study
+
+\begin{itemize}
+\item How will you select your sample?
+\item How many groups will you compare?
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Building knowledge step by step}
+
+4. Collect the Data
+
+\begin{itemize}
+\item What instrument or technique will you use to collect data?
+\item Will you use a survey, questionnaire, interview, observation?
+\item Are you measuring a variable that will require special equipment/technology?
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Building knowledge step by step}
+
+5. Analyze the Data
+
+\begin{itemize}
+\item Are you comparing means? Percentages?
+\item Are differences statistically significant?
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Building knowledge step by step}
+
+6. Conclusions
+
+\begin{itemize}
+\item Do the results generalize to a larger population?
+\item Did you show cause-and-effect or just associations?
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Building knowledge step-by-step}
+
+7. Disseminate results
+
+\begin{itemize}
+\item How are you sharing your results?  
+\item News reports? 
+\item Scientific journals? 
+\item Etc…
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Step-by-step Knowledge Building }
+
+\begin{itemize}
+\item Conceptualize the problem -- broad wording
+\item Operationalize the problem -- specific questions
+\item Design the Study -- how to select samples
+\item Collect the Data -- measurement instrument
+\item Analyze the Data -- comparing what
+\item Conclusions -- repeatability and generalization
+\item Disseminate results -- presenation of results
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Example -- comparing wt loss program}
+
+\begin{itemize}
+\item Zone
+  \begin{itemize}
+  \item Balances carbohydrates, protein, fat
+  \end{itemize}
+\item Atkins
+  \begin{itemize}
+  \item Low carbohydrate, high fat, unrestricted calories
+  \end{itemize}
+\item LEARN
+  \begin{itemize}
+  \item Low fat, and based on national guidelines
+  \end{itemize}
+\item Ornish
+  \begin{itemize}
+  \item Low fat, high carbohydrate, unrestricted calories
+  \end{itemize}
+\end{itemize}
+
+How are we going to design a study to compare these?
+\end{frame}
+
+\begin{frame}[fragile]{Building knowledge step-by-step}
+
+1. Conceptualize the problem
+
+\begin{itemize}
+\item Which weight loss program is most effective?
+\item Which one is most healthy?
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Building knowledge step-by-step}
+
+2. Operationalize the problem
+
+\begin{itemize}
+\item How do we measure `effective' and `healthy?'
+\item At what time point are we interested in measuring? In 2 weeks, 2 months, 2 years?
+\item Are we comparing average weight loss or perhaps the percentage of people who lost 15 pounds or more?
+\item How do we measure healthy?  LDL cholesterol reduction, BP reduction, Glucose levels?
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Building knowledge step-by-step}
+
+3. Design the Study
+
+\begin{itemize}
+\item Where are we recruiting our subjects?
+\item How long will the study last?
+\item Do they choose the diet or do we randomly assign them to it?
+\item How do we ensure they stay on the diet?
+\item What do we do with participants who go off the diet, do we eliminate them from the study?
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Building knowledge step-by-step}
+
+4. Collect the Data
+
+\begin{itemize}
+\item How many times will we measure their weights?
+\item Are we taking blood samples? Urine samples? Are we sending samples to lab?
+\end{itemize}
+\end{frame}
+
+
+
+
+
+% \begin{frame}[fragile]{Clicker Question}
+% 
+% When do you take the final exam?
+% 
+% \begin{enumerate}
+% \item Monday, December 11, 2017, 2:45 - 4:45 p.m.
+% \item Tuesday, December 12, 2017, 2:45 - 4:45 p.m.
+% \item Wednesday, December 13, 2017, 2:45 - 4:45 p.m.
+% \item Thursday, December 14, 2017, 2:45 - 4:45 p.m.
+% \item Friday, December 15, 2017, 2:45 - 4:45 p.m.
+% \end{enumerate}
+% \end{frame}
+% 
+% \frame{\textbf{chapter 1.1 -- Populations and Samples}
+% 
+% Copyright \copyright 2018 by Loren L. Heun at Western Michigan University
+% 
+% }
+% 
+% \begin{frame}[fragile]{Populations, Samples}
+% 
+% \begin{itemize}
+% \item {\textbf{Population}}
+% 
+% \item Researchers focus on a collection of defined objects from a population.  
+% \item An example: a study of all individuals graduated with a B.S. in enginering during the 2017 academic year.
+% \item When all the information from a desired population is available, we call that collect of data a census.
+% \end{itemize}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{Populations, Samples}
+% 
+% \begin{itemize}
+% \item {\textbf{Samples}}
+% 
+% \item A subset of a population is called a sample.  \item An example: To obtain information about the starting salaries of last year's graduating class of engineers.
+% \item Why do we conduct a sample?  
+% \item It is a matter of limited resources: money, time, and other scarce resources.
+% \end{itemize}
+% 
+% \end{frame}
+%  
+% \begin{frame}[fragile]{Essentials of population objects}
+% 
+% Typically, our interest lies in certain characteristics of the objects in a population such as age, height, length, starting salaries, etc.
+% 
+% \begin{itemize}
+% \item Categorical/Qualitative: objects are put in groups and given label with/without order. Examples include gender, religion, type of malfunction and so on.
+%   \begin{itemize}
+%   \item Ordinal with order, e.g., grades: A, B, C, \dots
+%   \item Nominal without order, e.g., gender, females or males.
+%   \end{itemize}
+% \end{itemize}
+% 
+% \end{frame}
+%  
+% \begin{frame}[fragile]{Continued}
+% 
+% \begin{itemize}
+% \item Numerical/Quantitative: objects can be finite/infinite numerical values. Examples are age, height, weight, money, length, etc.
+%   \begin{itemize}
+%     \item Ratio, e.g., ratios exists and zero is an absence of the variable
+%     \item Interval, e.g., distance exists but no ratios; grades: A, B, C, \dots
+%   \end{itemize}
+% \end{itemize}
+% 
+% \end{frame}
+%  
+% \begin{frame}[fragile]{Continued}
+% 
+% \begin{itemize}
+% \item A variable is any characteristic whose value changes from one object to another in the population. We denote variables by lowercase letters from the end of our alphabet. Examples include the following:
+%   \begin{itemize}
+%   \item x = brand of cell phone owned by a student
+%   \item y = number of visits to the WMU Web site during a specified period
+%   \item z = braking distance of a SUV under specified conditions
+%   \end{itemize}
+% \end{itemize}
+% \end{frame}
+%  
+% \begin{frame}[fragile]{Continued}
+% 
+% Data sets contain observations of a single
+% variable or more than one variable at the same time:
+% 
+% \begin{itemize}
+% \item \textbf{Univariate}: data set consists of observations on a single variable. Such as type of transmission, automatic (A) or manual (M), on automobiles
+% \item \textbf{Bivariate}: observations are made on each of two variables, eg., (height, weight) pair for each
+% basketball player on a team
+% \item \textbf{Multivariate}: observations are made on more than one variable (so bivariate is a special case of
+% multivariate).
+% \end{itemize}
+% \end{frame}
+%  
+% \begin{frame}[fragile]{Discipline of Statistics}
+% 
+% \begin{itemize}
+% \item Descriptive Statistics
+% \item Inferential Statistics
+% \end{itemize}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{Descriptive Statistics}
+% 
+% {\textbf{Descriptive statistics}} have important features showing how data are summarized and described.
+% 
+% \begin{itemize}
+% \item Graphical methods:
+% \item such as boxplots, dotplots, histograms and scatter plots.
+% \item Computational methods:
+% \item For example: means, standard deviations, correlation coefficients, etc.
+% \item Example 1.1 on Page 4
+% \end{itemize}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{Example 1.1}
+% <<label=LBL1, results="asis", echo=FALSE>>=
+%   FundRsng <- c(6.1,2.2,7.5,6.4,8.8,15.3,12.6,3.1,3.9,10.8,5.1,16.6,34.7,1.3,10.1,83.1,3.7,8.8,1.6,1.1,8.1,3.6,26.3,12.0,18.8,14.1,19.5,6.2,6.0,4.7,2.2,4.0,5.2,6.3,48.0,14.7,3.0,21.0,12.0,16.3,8.2,6.4,2.2,6.1,15.8,12.7,11.7,17.0,5.6,1.3,10.4,1.3,7.2,2.5,3.8,20.4,5.2,0.8,3.9,16.2)
+% @
+% 
+% These figures show a stem-and-leaf display as well as a histogram:
+% 
+% \begin{minipage}[ht]{7cm}
+% 
+% {\tiny{
+% \begin{verbatim}
+% <<label=LBL2, results="asis", echo=FALSE, out.width="7cm">>=
+%   stem(FundRsng, scale=2)
+% @
+% \end{verbatim}
+% }}
+% \end{minipage}
+% \begin{minipage}[ht]{4cm}
+% 
+% <<label=LBL3, results="asis", echo=FALSE, out.width="4cm">>=
+%    hist(FundRsng)
+% @
+% \end{minipage}
+% 
+%  What are the features of these graphics?
+% 
+% \end{frame}
+%  
+% \begin{frame}[fragile]{Inferential Thinking}
+% 
+% \begin{itemize}
+% \item Having obtained a sample from a population, an investigator would frequently like to use sample information to draw some type of conclusion (make an inference of some sort) about the population.
+% \item That is, the sample is a means to an end rather than an end in itself. 
+% \item Techniques for generalizing from a sample to a population are gathered within the branch of our discipline called inferential statistics.
+% \end{itemize}
+% \end{frame}
+%  
+% \begin{frame}[fragile]{Inference}
+% 
+% {\textbf{Researcher / investigator}}
+% 
+% \begin{itemize} %
+% \item Collects data
+% \item Analyzes data
+% \item Draws a conclusion about the population
+% \item Reports the conclusion to the appropriate audience.
+% \item The process for generalizing sample data into population information is called inferential statistics.
+% \item Remember data is not information.
+% \end{itemize}
+% \end{frame}
