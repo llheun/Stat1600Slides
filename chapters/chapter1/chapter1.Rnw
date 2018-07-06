@@ -181,172 +181,90 @@ How are we going to design a study to compare these?
 \end{itemize}
 \end{frame}
 
+\begin{frame}[fragile]{Building knowledge step-by-step}
 
+5. Analyze the Data
 
+\begin{itemize}
+\item Are there significant differences in average weight loss between the diet groups?
+\item Are there differences in cholesterol, blood pressure, glucose levels or other biochemistry measures relating to health?
+\item Are there differences in how well participants adhere to each diet plan?
+\end{itemize}
+\end{frame}
 
+\begin{frame}[fragile]{Building knowledge step-by-step}
 
-% \begin{frame}[fragile]{Clicker Question}
-% 
-% When do you take the final exam?
-% 
-% \begin{enumerate}
-% \item Monday, December 11, 2017, 2:45 - 4:45 p.m.
-% \item Tuesday, December 12, 2017, 2:45 - 4:45 p.m.
-% \item Wednesday, December 13, 2017, 2:45 - 4:45 p.m.
-% \item Thursday, December 14, 2017, 2:45 - 4:45 p.m.
-% \item Friday, December 15, 2017, 2:45 - 4:45 p.m.
-% \end{enumerate}
-% \end{frame}
-% 
-% \frame{\textbf{chapter 1.1 -- Populations and Samples}
-% 
-% Copyright \copyright 2018 by Loren L. Heun at Western Michigan University
-% 
-% }
-% 
-% \begin{frame}[fragile]{Populations, Samples}
-% 
-% \begin{itemize}
-% \item {\textbf{Population}}
-% 
-% \item Researchers focus on a collection of defined objects from a population.  
-% \item An example: a study of all individuals graduated with a B.S. in enginering during the 2017 academic year.
-% \item When all the information from a desired population is available, we call that collect of data a census.
-% \end{itemize}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Populations, Samples}
-% 
-% \begin{itemize}
-% \item {\textbf{Samples}}
-% 
-% \item A subset of a population is called a sample.  \item An example: To obtain information about the starting salaries of last year's graduating class of engineers.
-% \item Why do we conduct a sample?  
-% \item It is a matter of limited resources: money, time, and other scarce resources.
-% \end{itemize}
-% 
-% \end{frame}
-%  
-% \begin{frame}[fragile]{Essentials of population objects}
-% 
-% Typically, our interest lies in certain characteristics of the objects in a population such as age, height, length, starting salaries, etc.
-% 
-% \begin{itemize}
-% \item Categorical/Qualitative: objects are put in groups and given label with/without order. Examples include gender, religion, type of malfunction and so on.
-%   \begin{itemize}
-%   \item Ordinal with order, e.g., grades: A, B, C, \dots
-%   \item Nominal without order, e.g., gender, females or males.
-%   \end{itemize}
-% \end{itemize}
-% 
-% \end{frame}
-%  
-% \begin{frame}[fragile]{Continued}
-% 
-% \begin{itemize}
-% \item Numerical/Quantitative: objects can be finite/infinite numerical values. Examples are age, height, weight, money, length, etc.
-%   \begin{itemize}
-%     \item Ratio, e.g., ratios exists and zero is an absence of the variable
-%     \item Interval, e.g., distance exists but no ratios; grades: A, B, C, \dots
-%   \end{itemize}
-% \end{itemize}
-% 
-% \end{frame}
-%  
-% \begin{frame}[fragile]{Continued}
-% 
-% \begin{itemize}
-% \item A variable is any characteristic whose value changes from one object to another in the population. We denote variables by lowercase letters from the end of our alphabet. Examples include the following:
-%   \begin{itemize}
-%   \item x = brand of cell phone owned by a student
-%   \item y = number of visits to the WMU Web site during a specified period
-%   \item z = braking distance of a SUV under specified conditions
-%   \end{itemize}
-% \end{itemize}
-% \end{frame}
-%  
-% \begin{frame}[fragile]{Continued}
-% 
-% Data sets contain observations of a single
-% variable or more than one variable at the same time:
-% 
-% \begin{itemize}
-% \item \textbf{Univariate}: data set consists of observations on a single variable. Such as type of transmission, automatic (A) or manual (M), on automobiles
-% \item \textbf{Bivariate}: observations are made on each of two variables, eg., (height, weight) pair for each
-% basketball player on a team
-% \item \textbf{Multivariate}: observations are made on more than one variable (so bivariate is a special case of
-% multivariate).
-% \end{itemize}
-% \end{frame}
-%  
-% \begin{frame}[fragile]{Discipline of Statistics}
-% 
-% \begin{itemize}
-% \item Descriptive Statistics
-% \item Inferential Statistics
-% \end{itemize}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Descriptive Statistics}
-% 
-% {\textbf{Descriptive statistics}} have important features showing how data are summarized and described.
-% 
-% \begin{itemize}
-% \item Graphical methods:
-% \item such as boxplots, dotplots, histograms and scatter plots.
-% \item Computational methods:
-% \item For example: means, standard deviations, correlation coefficients, etc.
-% \item Example 1.1 on Page 4
-% \end{itemize}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Example 1.1}
-% <<label=LBL1, results="asis", echo=FALSE>>=
-%   FundRsng <- c(6.1,2.2,7.5,6.4,8.8,15.3,12.6,3.1,3.9,10.8,5.1,16.6,34.7,1.3,10.1,83.1,3.7,8.8,1.6,1.1,8.1,3.6,26.3,12.0,18.8,14.1,19.5,6.2,6.0,4.7,2.2,4.0,5.2,6.3,48.0,14.7,3.0,21.0,12.0,16.3,8.2,6.4,2.2,6.1,15.8,12.7,11.7,17.0,5.6,1.3,10.4,1.3,7.2,2.5,3.8,20.4,5.2,0.8,3.9,16.2)
-% @
-% 
-% These figures show a stem-and-leaf display as well as a histogram:
-% 
-% \begin{minipage}[ht]{7cm}
-% 
-% {\tiny{
-% \begin{verbatim}
-% <<label=LBL2, results="asis", echo=FALSE, out.width="7cm">>=
-%   stem(FundRsng, scale=2)
-% @
-% \end{verbatim}
-% }}
-% \end{minipage}
-% \begin{minipage}[ht]{4cm}
-% 
-% <<label=LBL3, results="asis", echo=FALSE, out.width="4cm">>=
-%    hist(FundRsng)
-% @
-% \end{minipage}
-% 
-%  What are the features of these graphics?
-% 
-% \end{frame}
-%  
-% \begin{frame}[fragile]{Inferential Thinking}
-% 
-% \begin{itemize}
-% \item Having obtained a sample from a population, an investigator would frequently like to use sample information to draw some type of conclusion (make an inference of some sort) about the population.
-% \item That is, the sample is a means to an end rather than an end in itself. 
-% \item Techniques for generalizing from a sample to a population are gathered within the branch of our discipline called inferential statistics.
-% \end{itemize}
-% \end{frame}
-%  
-% \begin{frame}[fragile]{Inference}
-% 
-% {\textbf{Researcher / investigator}}
-% 
-% \begin{itemize} %
-% \item Collects data
-% \item Analyzes data
-% \item Draws a conclusion about the population
-% \item Reports the conclusion to the appropriate audience.
-% \item The process for generalizing sample data into population information is called inferential statistics.
-% \item Remember data is not information.
-% \end{itemize}
-% \end{frame}
+6. Conclusions
+
+\begin{itemize}
+\item After analyzing the results what do we conclude is the best diet? Why?
+\item Can we generalize results to the larger population?
+\item Are we sure weight loss can be attributed to the diet?
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Building knowledge step-by-step}
+
+7. Disseminate results
+
+\begin{itemize}
+\item How are we going to present the results?
+\item What tables and graphs would make the study easy to read and understand?
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Questioning results of a study}
+
+{\small{
+If we are reading the results of a study we need to be able to ask ourselves some questions:
+
+\begin{itemize}
+\item What is the long term result (perhaps the results will differ if measurements are taken at longer time points)?
+\item What was the sample and to what population are we trying to generalize the results (males, females, age, ethnic differences)?  We want to make sure we can generalize to the population outside of the study sample.
+\item Was the sample size large enough to allow for generalizing to the outside population?
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Questioning results of a study}
+
+There is variation in study design and some studies are designed better than others.  We need to be able to judge the validity and reliability of a study.
+\end{frame}
+
+\begin{frame}[fragile]{Fallacies in interpreting evidence}
+
+\begin{enumerate}
+\item Lack of evidence
+  \begin{itemize}
+  \item ``No proof that the drug is unsafe''
+  \item This is flawed as a lack of evidence does not mean the contrary is true and that the drug is safe
+  \end{itemize}
+\item Anecdotal evidence
+  \begin{itemize}
+  \item ``Testimonies of real people this worked for \dots''
+  \item Infomercials
+  \item Existence does not mean prevalence.  Perhaps the drug or supplement worked for some people, but does that mean it is effective for the broader population?
+  \end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Fallacies in interpreting evidence}
+
+\begin{itemize}
+\item Correlation equals causation
+  \begin{itemize}
+  \item ``married people are happier than single people''
+  \item Did marriage cause the `happier' outcome?  Maybe happy people are the ones who tend to get married.
+  \item Two things happening at the same time does not mean one causes the other
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Examples of Wrong Reasoning Leading to Wrong Conclusions}
+
+\begin{itemize}
+\item Lack of evidence fallacy.  The fallacy lies in the reasoning that lack of evidence means the contrary it true.
+\item Anecdotal evidence fallacy.  The fallacy lies in the reasoning that existence means prevalence.
+\item Correlation equals causation fallacy.  The fallacy lies in the reasoning that ``two things happening together'' must mean one causes the other.
+\end{itemize}
+\end{frame}
