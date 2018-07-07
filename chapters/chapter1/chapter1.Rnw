@@ -27,7 +27,7 @@ Data Presentation \# 1
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Building knowledge step by step}
+\begin{frame}[fragile]{Building knowledge step-by-step}
 
 1. Conceptualize the problem
 
@@ -36,17 +36,17 @@ Data Presentation \# 1
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Building knowledge step by step}
+\begin{frame}[fragile]{Building knowledge step-by-step}
 
 2. Operationalize the problem
 
 \begin{itemize}
 \item The investigator formulates specific questions to answer
-\item What do you want to measure?  These will become your dependent variables.
+\item What do you want to measure?  These will become our dependent variables.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Building knowledge step by step}
+\begin{frame}[fragile]{Building knowledge step-by-step}
 
 3. Design the Study
 
@@ -56,7 +56,7 @@ Data Presentation \# 1
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Building knowledge step by step}
+\begin{frame}[fragile]{Building knowledge step-by-step}
 
 4. Collect the Data
 
@@ -67,7 +67,7 @@ Data Presentation \# 1
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Building knowledge step by step}
+\begin{frame}[fragile]{Building knowledge step-by-step}
 
 5. Analyze the Data
 
@@ -77,7 +77,7 @@ Data Presentation \# 1
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Building knowledge step by step}
+\begin{frame}[fragile]{Building knowledge step-by-step}
 
 6. Conclusions
 
@@ -108,7 +108,7 @@ Data Presentation \# 1
 \item Collect the Data -- measurement instrument
 \item Analyze the Data -- comparing what
 \item Conclusions -- repeatability and generalization
-\item Disseminate results -- presenation of results
+\item Disseminate results -- presentation of results
 \end{itemize}
 \end{frame}
 
@@ -166,7 +166,7 @@ How are we going to design a study to compare these?
 \item Where are we recruiting our subjects?
 \item How long will the study last?
 \item Do they choose the diet or do we randomly assign them to it?
-\item How do we ensure they stay on the diet?
+\item How do we ensure they stay on a diet?
 \item What do we do with participants who go off the diet, do we eliminate them from the study?
 \end{itemize}
 \end{frame}
@@ -177,7 +177,7 @@ How are we going to design a study to compare these?
 
 \begin{itemize}
 \item How many times will we measure their weights?
-\item Are we taking blood samples? Urine samples? Are we sending samples to lab?
+\item Are we taking blood samples? Urine samples? Are we sending samples to the lab?
 \end{itemize}
 \end{frame}
 
@@ -219,7 +219,7 @@ How are we going to design a study to compare these?
 If we are reading the results of a study we need to be able to ask ourselves some questions:
 
 \begin{itemize}
-\item What is the long term result (perhaps the results will differ if measurements are taken at longer time points)?
+\item What is the long-term result (perhaps the results will differ if measurements are taken at longer time points)?
 \item What was the sample and to what population are we trying to generalize the results (males, females, age, ethnic differences)?  We want to make sure we can generalize to the population outside of the study sample.
 \item Was the sample size large enough to allow for generalizing to the outside population?
 \end{itemize}
@@ -228,7 +228,7 @@ If we are reading the results of a study we need to be able to ask ourselves som
 
 \begin{frame}[fragile]{Questioning results of a study}
 
-There is variation in study design and some studies are designed better than others.  We need to be able to judge the validity and reliability of a study.
+There is variation in study design, and some studies are designed better than others.  We need to be able to judge the validity and reliability of a study.
 \end{frame}
 
 \begin{frame}[fragile]{Fallacies in interpreting evidence}
@@ -236,13 +236,13 @@ There is variation in study design and some studies are designed better than oth
 \begin{enumerate}
 \item Lack of evidence
   \begin{itemize}
-  \item ``No proof that the drug is unsafe''
-  \item This is flawed as a lack of evidence does not mean the contrary is true and that the drug is safe
+  \item ``No proof that the drug is unsafe.''
+  \item This is flawed as a lack of evidence does not mean the contrary is true and that the drug is safe.
   \end{itemize}
 \item Anecdotal evidence
   \begin{itemize}
   \item ``Testimonies of real people this worked for \dots''
-  \item Infomercials
+  \item Infomercials.
   \item Existence does not mean prevalence.  Perhaps the drug or supplement worked for some people, but does that mean it is effective for the broader population?
   \end{itemize}
 \end{enumerate}
@@ -253,9 +253,9 @@ There is variation in study design and some studies are designed better than oth
 \begin{itemize}
 \item Correlation equals causation
   \begin{itemize}
-  \item ``married people are happier than single people''
+  \item ``married people are happier than single people.''
   \item Did marriage cause the `happier' outcome?  Maybe happy people are the ones who tend to get married.
-  \item Two things happening at the same time does not mean one causes the other
+  \item Two things happening at the same time does not mean one causes the other.
   \end{itemize}
 \end{itemize}
 \end{frame}
@@ -263,7 +263,7 @@ There is variation in study design and some studies are designed better than oth
 \begin{frame}[fragile]{Examples of Wrong Reasoning Leading to Wrong Conclusions}
 
 \begin{itemize}
-\item Lack of evidence fallacy.  The fallacy lies in the reasoning that lack of evidence means the contrary it true.
+\item Lack of evidence fallacy.  The fallacy lies in the reasoning that lack of evidence means the contrary is true.
 \item Anecdotal evidence fallacy.  The fallacy lies in the reasoning that existence means prevalence.
 \item Correlation equals causation fallacy.  The fallacy lies in the reasoning that ``two things happening together'' must mean one causes the other.
 \end{itemize}
