@@ -1,0 +1,152 @@
+%!Rnw root = ../../Master.Rnw
+
+\section{STAT1600 Ch 4 Threats to Valid Comparisons}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+STAT1600 \\ Ch 4 Threats to Valid Comparisons
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Threats to Valid Comparisons  
+
+\begin{itemize}
+\item Hidden Confounder
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Hidden Confounder}
+
+Lower Extremity Fractures Example
+
+In the study of `Lower extremity fractures in motor vehicle collisions:  Influence of direction of impact and seatbelt use,' one of the  conclusions is of interest: there was a higher incidence of lower  extremity fracture among women.
+
+\end{frame}
+
+\begin{frame}[fragile]{Lower Extremity Fractures}
+
+Wrong assumptions may lead to wrong conclusions
+
+by falsely assuming that gender \textbf{causes} higher/lower leg fractures, one  may reach these \textbf{false conclusions} about the study outcome `women  have higher rates of leg fractures'
+
+\begin{itemize}
+\item because they drive faster?  
+\item apply brakes more slowly?  
+\item have weaker bones?
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Lower Extremity Fractures}
+
+{\small{
+A follow-up study titled `the role of driver gender and height'
+
+turns out that \textbf{height} was the culprit.\\
+Because \textbf{height} and \textbf{gender} have a strong link, a false conclusion  can result from a false assumption.\\
+The pathway graph below describes the true relationship:
+
+\vspace{3mm}
+
+\begin{tabular}{@{} lllll @{}} 
+\texttt{Confounder} & \texttt{Height} & $\Rightarrow$ & \texttt{Leg Fracture} & \texttt{Outcome} \\
+\texttt{(actual cause)} & $\updownarrow$ &  & \\
+\texttt{Prob cause} &\texttt{Gender} & &
+\end{tabular}
+
+\vspace{3mm}
+
+$\updownarrow$  Means `association' or `probable cause' \\
+$\Rightarrow$  Means `cause-and-effect'
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Lower Extremity Fractures}
+
+\begin{tabular}{@{} lllll @{}} 
+ & \texttt{Height} & $\Rightarrow$ & \texttt{Leg Fracture}  \\
+\texttt{pathway graph :} & $\updownarrow$ &  & \\
+ &\texttt{Gender} & &
+\end{tabular}
+
+\begin{itemize}
+\item outcome variable: leg fracture.
+\item probable cause: gender.
+\item confounder or confounding variable: the hidden variable height.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Confounding Variable or Confounder}
+
+A \textbf{confounder} is a third variable that is associated with both the probable cause and  the \textbf{outcome}.
+
+\begin{itemize}
+\item \textit{Overlooking} its existence can lead us to drawing a \textit{wrong  conclusion} about the cause-and-effect relationship.
+\item Hidden confounders are one of the biggest sources of (often  unknowingly) \textit{invalid comparisons}. One could end up comparing  apples to oranges! (Note: women as a group are shorter than men!)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Lower Extremity Fractures, cont'd}
+
+Potential confounders other than height includes 
+
+\begin{itemize}
+\item weight,  
+\item none/light/heavy smoker, 
+\item alcohol consumption, 
+\item short/long hair,  
+\item wearing higher heels or not, 
+\item ..., etc.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 4.1}
+
+According to ``Cumulative Use of Strong Anticholinergics and Incident  Dementia'' (JAMA, March 2015), from 10 years of tracking older adults  and their use of anticholinergic drugs (meant to reduce symptoms of  allergies, inability to sleep, anxiety, depression and bladder over-activity), the risk of Alzheimer's was 63 percent higher. Which of  the following is the \textbf{outcome variable} (response)?
+
+\begin{enumerate}
+\item use of anticholinergic drugs
+\item risk of Alzheimer's
+\item hidden variables such as high blood pressure
+\item none of the previous
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 4.2}
+
+According to ``Cumulative Use of Strong Anticholinergics and Incident  Dementia'' (JAMA, March 2015), from 10 years of tracking older adults  and their use of anticholinergic drugs (meant to reduce symptoms of  allergies, inability to sleep, anxiety, depression and bladder over-activity), the risk of Alzheimer's was 63 percent higher. Which of  the following is the \textbf{probable cause}?
+
+\begin{enumerate}
+\item use of anticholinergic drugs
+\item risk of Alzheimer's
+\item hidden variables such as high blood pressure
+\item none of the previous
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Threats to Valid Comparisons  
+
+\begin{itemize}
+\item[1] Hidden Confounder
+\item[2] In the Headlines
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Examples In the Headlines}
+
+\begin{itemize}
+\item<1-> Smoking `causes' lung cancer. True? Having lung cancer or not is  the outcome variable, smoking is probable cause, potential  confounders abound. (see textbook)
+\item<2-> not true for a single study or a few studies.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Examples In the Headlines}
+
+\begin{itemize}
+\item<1-> ``Older Viagra Users More Likely to Get STDs'' -- the Chicago Sun  Times and the like. See critiques by Rebecca Goldin and Jing  Peng in August 2010 from  \texttt{http://www.stats.org} titled `If you  take Viagra, will you get an STD?' Pathway graph for this is `person type' (i.e. lifestyle) is a confounder which is the cause (or surrogate of causes)
+\item<2-> `taking ED drugs or not' is only a probable cause
+\end{itemize}
+\end{frame}

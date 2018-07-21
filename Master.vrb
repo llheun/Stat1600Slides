@@ -1,7 +1,10 @@
-\frametitle{Examples of Wrong Reasoning Leading to Wrong Conclusions}
+\frametitle{iClicker Question 9.3}
 
-\begin{itemize}
-\item Lack of evidence fallacy.  The fallacy lies in the reasoning that lack of evidence means the contrary is true.
-\item Anecdotal evidence fallacy.  The fallacy lies in the reasoning that existence means prevalence.
-\item Correlation equals causation fallacy.  The fallacy lies in the reasoning that ``two things happening together'' must mean one causes the other.
-\end{itemize}
+A 95\% confidence interval was constructed for difference in the proportions $p_1 - p_2$ in two independent populations: (-0.04, 0.16). Which of the following is true?
+
+\begin{enumerate}
+\item The p-value $\le 0.05$, the difference is statistically significant.
+\item The p-value $\le 0.01$, the difference is called highly significant.
+\item The p-value $> 0.05$, the difference is insignificant.
+\item None of the above.
+\end{enumerate}

@@ -1,2 +1,12 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{STAT 1600 Statistics and Data Analysis Slides}{2}{0}{1}
+\beamer@sectionintoc {2}{STAT 1600 Statistics and Data Analysis Slides}{26}{0}{2}
+\beamer@sectionintoc {3}{STAT 1600 Ch 2.4.4 Box and Whisker Plot}{43}{0}{3}
+\beamer@sectionintoc {4}{STAT 1600 Ch 2.4.4 Box and Whisker Plot}{80}{0}{4}
+\beamer@sectionintoc {5}{STAT 1600 Ch 3.2 Estimates of Spread}{117}{0}{5}
+\beamer@sectionintoc {6}{STAT1600 Ch 4 Threats to Valid Comparisons}{142}{0}{6}
+\beamer@sectionintoc {7}{STAT1600 Ch 5 Study Designs}{157}{0}{7}
+\beamer@sectionintoc {8}{STAT 1600 Ch. 6 The Normal Distribution}{183}{0}{8}
+\beamer@sectionintoc {9}{Stat1600 Ch 7 The Binomial Distribution}{196}{0}{9}
+\beamer@sectionintoc {10}{STAT1600 Ch. 8 Sampling Distribution of the Proportion}{222}{0}{10}
+\beamer@sectionintoc {11}{STAT 1600 Ch 9 Comparing Two Proportions, Part 1 Difference in Proportions}{264}{0}{11}

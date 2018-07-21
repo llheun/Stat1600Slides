@@ -1,0 +1,292 @@
+%!Rnw root = ../../Master.Rnw
+
+\section{STAT 1600 Ch 3.2 Estimates of Spread}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+STAT 1600 \\
+Ch 3.2 Estimates of Spread 
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Estimates of Spread  
+
+\begin{itemize}
+\item Estimates of Spread
+\item The Sample Standard Deviation
+\item Effect of Multiplication/Addition by a Constant 
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Estimates of Spread }
+
+(or Uncertainty, Variation)
+
+\begin{itemize}
+\item<1-> An estimate of spread is a measure of uncertainty, or  variation, or `give or take'
+\item<2-> When two or more comparable data sets (comparable means data sets are of same type/same unit of numerical  measurements) are compared, the one with the smallest spread has the least uncertainty around the estimate of center (i.e., least  scattered)
+\item<3-> Estimates of spread are non-negative
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Estimates of Spread, Cont'd}
+
+ i.e., 
+ 
+\begin{itemize} 
+\item<1-> The standard deviation (SD) is typically used as a `give or  take' number in describing the spread of a dataset 
+\item<2->
+\begin{equation*}
+\texttt{Sample SD} = s = \sqrt{ \frac{ \sum (X - \bar{X})^2}{n - 1}} = \sqrt{ \frac{SS}{n -1}}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}[fragile]{The Sample Standard Deviation (SD)}
+
+\begin{minipage}[ht]{5cm}
+
+{\footnotesize{
+<<label=LBL3Aa, results="asis", echo=FALSE>>=
+  library(xtable)
+  diff3a <- dt3g - mn3a
+  sqdf3a <- diff3a^2
+  sum3Aa <- sum(sqdf3a)
+  sd3Aa  <- sprintf("%.1f", sd(dt3g)) 
+  tbl3Aa <- cbind(dt3g, diff3a, sqdf3a)
+  colnames(tbl3Aa) <- c("Rent", "Diff", "Diff Sqd" )
+  print(xtable(tbl3Aa, digits=0))
+@
+}}
+
+\end{minipage}
+\begin{minipage}[ht]{6cm}
+
+{\footnotesize{
+\begin{itemize}
+\item<1-> Step 1. Compute $\bar{x} = \Sexpr{mn3a}$
+\item<2-> Step 2. Calculate Diff, i.e., how much an obs. `missed by' the average, (i.e., deviation).
+\item<3-> Step 3. Square the `missed by' differences.
+\item<4-> Step 4. Add all the squared `missed by' differences, i.e., SS
+\item<5-> Step 5. Take the square-root of $\frac{SS}{n - 1}$ to get SD
+
+\begin{equation*}
+SD = \sqrt{ \frac{\Sexpr{sum3Aa}}{ 10 - 1 }} = \Sexpr{sd3Aa}
+\end{equation*}
+
+\end{itemize}
+}}
+\end{minipage}
+
+\end{frame}
+
+\begin{frame}[fragile]{Interpretation of SD}
+
+<<label=LBLAb, results="asis", echo=FALSE>>=
+  dtf7a <- c(163, 231, 224, 238, 279, 239, 226)
+  mnf7a <- sprintf("%.1f", mean(dtf7a))
+  sdf7a <- sprintf("%.2f", sd(dtf7a))
+  dtl7a <- c(246, 244, 247, 248, 237, 258, 246)
+  mnl7a <- sprintf("%.1f", mean(dtl7a))
+  sdl7a <- sprintf("%.2f", sd(dtl7a))
+@  
+
+{\small{
+\begin{table}
+\caption{Bowling Example}
+\begin{tabular}{@{} lc | c c @{}} \hline
+Games & Scores & Mean & SD \\ \hline
+First games & 163, 231, 224, 238, 279, 239, 226 & \Sexpr{mnf7a} & \Sexpr{sdf7a} \\
+Last games  & 246, 244, 247, 248, 237, 258, 246 & \Sexpr{mnl7a} & \Sexpr{sdl7a} \\ \hline
+\end{tabular}
+\end{table}
+
+Scores of Walter Ray Williams Jr. in 2008 bowling  tournament, Indiana
+
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Interpretation of SD}
+
+{\footnotesize{
+Scores of Walter Ray Williams Jr. in 2008 bowling  tournament, Indiana 
+
+<<label=LBLAc, results="asis", echo=FALSE, out.width="6cm", fig.height=3>>=
+  typGm <- c(rep("First", 7), rep("Last", 7))
+  dtc7a <- c(dtf7a, dtl7a)
+  boxplot(dtc7a ~ typGm, horizontal=TRUE)
+@  
+
+\begin{itemize}
+\item Bigger swings (larger SD) in earlier games and scored typically lower  (smaller Mean)
+\item He played consistently (smaller SD) in later games, and typically with  better scores (larger Mean)
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Sample Standard Deviation is Not Robust}
+
+As an estimate of the spread of a data set, the sample standard  deviation \textbf{is sensitive to outliers}.
+
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 3.2.1}
+
+The fuel efficiency (MPG) of 5 Japanese made cars are listed below
+
+27.5,	27.2,	34.1,	29.5,	31.8
+
+Ignoring any rounding error, what is the sum of all the deviations (MPG  for Japanese made cars) from the mean MPG for Japanese made  cars?
+
+\begin{enumerate}
+\item 9.38
+\item 4.19
+\item 0.00
+\item -4.19
+\item 30.58
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 3.2.2}
+
+Recall that an estimate is robust if it is insensitive to outliers. Which of  the following statements is true.
+
+\begin{enumerate}
+\item The sample mean and the standard deviation are robust.
+\item The sample mean is robust but the standard deviation is  not.
+\item The sample mean is not robust but the standard deviation  is.
+\item The sample mean and the standard deviation are not  robust.
+\item None of the previous statements is true.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Effect of Multiplication/Addition by a Constant}
+
+<<label=LBL3Ad, results="asis", echo=FALSE>>=
+  mn3Aa <- mn3a / 2
+  sd3Aa <- sprintf("%.1f", sd3a / 2 )
+  mn3Ab <- mn3a - 100  
+  tmp3a <- sprintf("%.1f", sd3a)
+@  
+
+\begin{center}
+apartment rental example
+\end{center}
+
+\begin{itemize}
+\item<1-> Recall that the mean and SD are \$ $\Sexpr{mn3a} \pm \Sexpr{tmp3a}$ \\ ($\pm$ means `give or take')
+\item<2-> Get a roommate and pay half the rent: \$ $\Sexpr{mn3Aa} \pm \Sexpr{sd3Aa}$ %$323  ± $52
+\item<3-> No roommate but has contribution of \$100 per month from parents: $\Sexpr{mn3Aa} \pm \Sexpr{tmp3a}$    % $526 ± $104
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{General Rules}
+
+\begin{itemize}
+\item<1-> when a constant is \textbf{added to/subtracted from} each data  value, the same thing happens to the average, but the SD  remains unchanged,
+\item<2-> when each data value is \textbf{multiplied or divided} by a positive  constant, the same thing happens to both the average and  the SD.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{General Rules}
+
+\begin{minipage}[ht]{5cm}
+
+{\small{
+Eg. data: 1, 2, 3
+
+\begin{tabular}{@{} ccc @{}} \hline
+X & Diff & Sqd \\ \hline
+1 & -1 & 1 \\
+2 & 0 & 0 \\
+3 & 1 & 1 \\ \hline
+$\bar{x}=2$ & 0 & $SS=2$ \\ \hline
+\end{tabular}
+
+\begin{equation*}
+SD = \sqrt{ \frac{2}{(3-1)}} = 1
+\end{equation*}
+}}
+\end{minipage}
+\begin{minipage}[ht]{5cm}
+{\small{
+Eg. data: 3, 4, 5 (added 2)
+
+\begin{tabular}{@{} ccc @{}} \hline
+X & Diff & Sqd \\ \hline
+3 & -1 & 1 \\
+4 & 0 & 0 \\
+5 & 1 & 1 \\ \hline
+$\bar{x}=4$ & 0 & $SS=2$ \\ \hline
+\end{tabular}
+
+\begin{equation*}
+SD = \sqrt{ \frac{2}{(3-1)}} = 1
+\end{equation*}
+}}
+\end{minipage}
+
+Notice here the mean increased from 2 to 4, yet the SD did not change.
+
+\end{frame}
+
+\begin{frame}[fragile]{General Rules}
+
+\begin{minipage}[ht]{5cm}
+
+{\small{
+Eg. data: 1, 2, 3
+
+\begin{tabular}{@{} ccc @{}} \hline
+X & Diff & Sqd \\ \hline
+1 & -1 & 1 \\
+2 & 0 & 0 \\
+3 & 1 & 1 \\ \hline
+$\bar{x}=2$ & 0 & $SS=2$ \\ \hline
+\end{tabular}
+
+\begin{equation*}
+SD = \sqrt{ \frac{2}{(3-1)}} = 1
+\end{equation*}
+}}
+\end{minipage}
+\begin{minipage}[ht]{5cm}
+{\small{
+Eg. data: 2, 4, 6 (times 2)
+
+\begin{tabular}{@{} ccc @{}} \hline
+X & Diff & Sqd \\ \hline
+2 & -2 & 4 \\
+4 & 0 & 0 \\
+6 & 2 & 4 \\ \hline
+$\bar{x}=4$ & 0 & $SS=8$ \\ \hline
+\end{tabular}
+
+\begin{equation*}
+SD = \sqrt{ \frac{4}{(3-1)}} = 2
+\end{equation*}
+}}
+\end{minipage}
+
+In this second example, multiplying by 2 the mean doubled AND the SD doubled.
+
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 3.2.3}
+
+Compute the mean given the following data:
+
+8, 12, 15, 22, 28
+
+\begin{enumerate}
+\item 5
+\item 10
+\item 15
+\item 17
+\item 20
+\end{enumerate}
+\end{frame}

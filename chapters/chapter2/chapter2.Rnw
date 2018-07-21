@@ -1,0 +1,267 @@
+%!Rnw root = ../../Master.Rnw
+
+\section{STAT 1600 Statistics and Data Analysis Slides}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+Ch 2.4 Summarizing  Numerical Data
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Data Presentation \#2  
+
+\begin{itemize}
+\item Summarizing Numerical Data
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Sorted Data List}
+
+Payment (Rent or Mortgage), ACS Data:
+
+<<label=LBL2a, results="asis", echo=FALSE>>=
+  Mort <- c(190,200,200,230,290,340,370,380,420,440,450,500,500,510,530,550,670,700,700,710,720,740,750,770,800,850,900,900,970,990,1000,1000,1100,1200,1200,1200,1200,1300,1400,1400,1500,1800,2400,5200) 
+  Rent <- c(140,	220,	250,	280,	340,	350,	380,	400,	490,	500,
+560,	650,	670,	700,	700,	740,	760,	880,	910, 1200)
+  indep1 <- c(rep("Rent",20), rep("Mort", 44))
+  
+  dt2tmp <- c(Rent, Mort)
+  dt2a   <- sort(dt2tmp)
+ 
+  mn2a <- min(dt2a)
+  md2a <- median(dt2a)
+  mx2a <- max(dt2a)
+@
+
+\Sexpr{dt2a}
+
+\end{frame}
+
+\begin{frame}[fragile]{Sorted Data List}
+
+Payment (Rent or Mortgage), ACS Data:
+
+\Sexpr{dt2a}
+
+MIN = smallest observation = \Sexpr{mn2a} 
+\end{frame}
+
+\begin{frame}[fragile]{Sorted Data List}
+
+Payment (Rent or Mortgage), ACS Data:
+
+\Sexpr{dt2a}
+
+MIN = smallest observation = \Sexpr{mn2a} 
+
+typical payment = around \Sexpr{md2a}
+
+\end{frame}
+
+\begin{frame}[fragile]{Sorted Data List}
+
+Payment (Rent or Mortgage), ACS Data:
+
+\Sexpr{dt2a}
+
+MIN = smallest observation = \Sexpr{mn2a} 
+
+MAX = largest observation = \Sexpr{mx2a}, an outlier  
+
+typical payment = around \Sexpr{md2a}
+
+\end{frame}
+
+\begin{frame}[fragile]{Outlier}
+
+An observation that falls apart from the rest of the data
+
+$\Rightarrow$ check for correctness  
+
+Here,
+
+{\small{
+\begin{tabular}{@{} cccccc   @{}} \hline
+Household & State & Bedrooms & Payment & Type & Income \\ \hline
+28 & Michigan & 4 & 5200 & Mortgage & 358000 \\ \hline
+\end{tabular}
+}}
+
+$\Rightarrow$ OK
+\end{frame}
+
+\begin{frame}[fragile]{Stem-and-Leaf Plot}
+
+\begin{itemize}
+\item See next slide and page 24 for two views of the payment data  (Mortgage \& Rent combined) using stem-and-leaf plots
+\item See page 25 for the comparison of the payments of the two types,  Mortgage and Rent, using side-by-side stem-and-leaf plots (same  scale, i.e., same stem width)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Stem-and-Leaf Plot}
+
+{\tiny{
+\begin{verbatim}
+<<label=LBL2b, results="asis", echo=FALSE>>=
+  stem(dt2a[1:62], scale=3) 
+@  
+\end{verbatim}
+}}
+
+{\small{
+Note: 140, the one (1) to the left of $|$ is the hundredths digit and the four (4) to the right of $|$ is the tens digit. }}  
+\end{frame}
+
+\begin{frame}[fragile]{Stem-and-Leaf Plot}
+
+{\tiny{
+\begin{verbatim}
+<<label=LBL2c, results="asis", echo=FALSE>>=
+  stem(dt2a[1:62], scale=3) 
+@  
+\end{verbatim}
+}}
+
+{\small{
+Note: 190, the one (1) to the left of $|$ is the hundredths digit and the nine (9) to the right of $|$ is the tens digit. }}  
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 2.4.1}
+
+The stem-and-leaf display below shows the BMI (Body Mass Index) of  14 individuals. What number(s) does `2 $|$ 56' represent?
+
+
+\begin{minipage}[ht]{4.5cm}
+
+{\small{
+\begin{enumerate}
+\item 2.5 and 2.6
+\item 25 and 26
+\item 250 and 260
+\item 256
+\item None of the above
+\end{enumerate}
+}}
+\end{minipage} \hfill
+\begin{minipage}[ht]{7cm}
+
+{\tiny{
+\begin{verbatim}
+<<label=LBL2d, results="asis", echo=FALSE>>=
+  dt2b <- c(15,18,18,21,21,22,22,22,23,23,24,25,26,31)
+  stem(dt2b, scale=1) 
+@  
+\end{verbatim}
+}}
+\end{minipage}
+\end{frame}
+
+\begin{frame}[fragile]{Relative Frequency Table}
+
+The data range is first divided into several (usually) equal-width class intervals and then we obtain the frequency/relative frequency of data  values contained in each class interval.
+
+\begin{itemize}
+\item Often has 5 to 15 intervals (depending on number of observations)  
+\item Starting value of the first (i,e, left-most) interval = \underline{\phantom{xxxxx}}.
+\item Settle boundary disputes (for example we may have intervals contain the left endpoint but not the right)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Relative Frequency Table}
+
+{\scriptsize{
+\begin{tabular}{@{} ccc @{}} \hline
+Monthly Payment(\$)* & Frequency & Rel. freq.(\%) \\ \hline
+0-200 & 2 & 3.2 \\
+200-400 & 13 & 20.6 \\
+400-600 & 12 & 19.0 \\
+600-800 & 14 & 22.2 \\
+800-1000 & 8 & 12.7 \\
+1000-1200 & 3 & 4.8 \\
+1200-1400 & 6 & 9.5 \\
+1400-1600 & 3 & 4.8 \\
+1600-1800 & 0 & 0 \\
+1800-2000 & 1 & 1.6 \\
+2000-2200 & 0 & 0 \\
+2200-2400 & 0 & 0 \\
+2400-2600 & 1 & 1.6 \\ \hline
+Total     & 63 & 100 \\ \hline
+\end{tabular}
+}}
+
+* Interval contain the left endpoint, but not the right
+\end{frame}
+
+\begin{frame}[fragile]{Histogram}
+
+{\small{
+A graphical display of the relative frequency table defined by the class  intervals \\
+$\Rightarrow$ frequencies (or relative frequencies) are plotted as columns
+}}
+
+\begin{center}
+
+<<label=LBL2e, results="asis", echo=FALSE, out.width="4cm">>=
+  hist(x=dt2a[1:63], breaks=13, ylab="Frequency", xlab="Monthly Payment (in 400 dollars)", main="Histogram Monthly Payment")
+@
+
+\end{center}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 2.4.2}
+
+{\small{
+The histogram below shows the BMI (Body Mass Index) of 15  individuals. The right inclusion rule was used in the construction of the  histogram. What class interval(s) occurs least frequently?
+}}
+
+\begin{minipage}[ht]{5cm}
+
+{\small{
+\begin{enumerate}
+\item (25, 30]
+\item (30, 35]
+\item (20, 25]
+\item (25, 30] and (30, 35]
+\item Unknown
+\end{enumerate}
+}}
+\end{minipage} \hfill
+\begin{minipage}[ht]{6cm}
+
+<<label=LBL2f, results="asis", echo=FALSE, out.width="3.5cm">>=
+  hist(x=dt2b, breaks=3, xlab="BMI", main="")
+@
+\end{minipage}
+
+\end{frame}
+
+\begin{frame}[fragile]{Dotplot}
+
+\begin{itemize}
+\item Each observation is represented by a dot, repeated values are  stacked
+upwards
+\item Below is a comparison dotplot of the monthly payments from the two  types of payment:
+\end{itemize}
+
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[width=4cm]{chapters/chapter2/ext_figure/dotchart.png} % requires the graphicx package
+   %\caption{example caption}
+   %\label{fig:example}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 2.4.3}
+
+We summarize numerical data with all of the following EXCEPT:
+
+\begin{enumerate}
+\item Bar chart
+\item Dotplot
+\item Histogram
+\item Scatterplot
+\item Stem and leaf
+\end{enumerate}
+\end{frame}

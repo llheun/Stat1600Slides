@@ -1,0 +1,267 @@
+%!Rnw root = ../../Master.Rnw
+
+\section{STAT1600 Ch. 8 Sampling Distribution of the Proportion}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+STAT1600 \\ Ch. 8 Sampling Distribution of the Proportion
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Distribution of the Sample Proportion  
+
+\begin{itemize}
+\item Best Buy Example
+\item Theory
+\item Law of Large Numbers for Sample Proportions
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Sampling Distribution of the Proportion}
+
+\begin{itemize}
+\item<1-> Suppose Best Buy sells 60 extended protection plans with 300 smart watches sold.
+
+\item<2-> The protection plan sales rate is  $\frac{60}{300} = 0.20$.
+
+\item<3-> Therefore, let X denote the number of successes out of a sample  of $n$ observations. Then $X$ is a binomial random variable with  parameters $n$ and $p$. Note that $p$ is the (population) proportion of  successes.
+
+\item<4-> The (sample) proportion of successes, $\hat{p} = \frac{x}{n}$ in a sample is also a random variable.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Sampling Distribution of the Proportion}
+
+\begin{itemize}
+\item<1-> $\hat{p} = \frac{X}{n}$ = (number of successes) / (sample size)
+
+\item<2-> For the binomial, X, the number of successes, is expected to be around $np$ give or take $\sqrt{ n p q}$.
+
+\item<3-> For the proportion, $\hat{p}$ is expected to be $p = \frac{n \hat{p}}{n}$ give or take $\sqrt{ \frac{p q}{n}} = \frac{ \sqrt{n p q}}{n}$. 
+
+\item<4->
+\begin{table}
+\centering
+\begin{tabular}{@{} ccc @{}} \hline
+Random Variable & Mean & SD \\ \hline
+X & $np$ & $\sqrt{n p q}$ \\
+$\hat{p}$ & p & $\sqrt{ \frac{p q}{n}}$ \\ \hline
+\end{tabular}
+\end{table}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Best Buy example, revisited}
+
+\begin{itemize}
+\item<1-> The number of protection plans sold is expected to be around $60 \pm 7$
+
+\item<2-> The proportion of plans sold is expected to be around
+\begin{equation*}
+  \frac{60}{300} \pm \frac{7}{300} \texttt{ or } 0.2 \pm 0.02
+\end{equation*}
+
+\item<3-> The \textit{percentage} of plans sold is expected to be around 20\%  give or take 2\% (Note: percentage = proportion $\times$ 100\%)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Gamers Retro Rental Eg., revisited}
+
+{\footnotesize{
+\begin{itemize}
+\item<1-> Historically, 5\% of videogame rentals from Gamers Retro Rental are returned late.
+\item<2-> Gamers Retro Rental rented out 100 videogames yesterday. The percentage  that will be returned late should be around 5\%, give or take
+\begin{equation*}
+100\% \times \sqrt{ \frac{ 0.05 \times 0.95}{100}} \approx 2.2\%
+\end{equation*}
+\item<3-> Gamers Retro Rental  rented out 700 videogames yesterday. The percentage  that will be returned late should be around 5\%, give or take
+\begin{equation*}
+100\% \times \sqrt{ \frac{ 0.05 \times 0.95}{700}} \approx 0.8\%
+\end{equation*}
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 8.1}
+
+A study surveyed 100 students who took a standardized test. Among  these students, 43 said they would like math help. What is the sample  percentage of students needing math help?
+
+\begin{enumerate}
+\item 100\%
+\item 43\%
+\item 0.43\%
+\item 1\%
+\item cannot determine
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Law of Large Numbers}
+
+\begin{itemize}
+\item<1-> for sample proportions
+\item<1-> The sample proportion tends to get closer to the true proportion as  sample size increases.
+
+\item<2-> For the Best Buy Example:
+\item<2-> Recall if Best Buy sold 300 protection plans then $sd = 0.02$. Note that  $p = 0.2$.
+
+\item<3-> If Best Buy sold 1200 plans then,
+\begin{equation*}
+SD = \sqrt{ \frac{ 0.2 \cdot 0.8}{1200}} = 0.0115
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Sampling Distn of Sample Proportion}
+
+If Best Buy sold 100 protection plans with their smart watches last year, the percentage of watches sold with protection plans is expected to be around 20\% give or take 4\%.  Estimate the likelihood that it sold a protection plan with each smart watch  for more  than 25\% of those watches, in other words,
+
+\begin{equation*}
+  P[ \hat{p} > 0.25] = ?
+\end{equation*}
+\end{frame}
+
+\begin{frame}[fragile]{Sample Proportion is approx. normal}
+
+\begin{minipage}[ht]{6cm}
+
+Given: $n = 100$ and $p = .2$ and 
+$SD = \sqrt{ \frac{.2(.8)}{100}} = 0.04$ and
+$P[ \hat{p} > 0.25] = ?$ 
+
+Note that $\hat{p} \approx N( 0.2, 0.04)$
+
+$z = \frac{0.25 - 0.2}{0.04} = 1.25$
+
+{\small{
+\begin{eqnarray*}
+P[ \hat{p} > 0.25] & \approx & P[ Z > 1.25] \\
+& \approx & 1 - P[Z < 1.25] \\
+& \approx & 1 - .8944 \\
+& \approx & 0.1056
+\end{eqnarray*}
+}}
+\end{minipage} \hfill
+\begin{minipage}[ht]{4cm}
+
+<<label=LBL8a, results="asis", echo=FALSE, out.width="4cm">>=
+  plot( dt4nd, dt4y, type="l", xlab="z-score")
+  tmpyy <- c(dt4nd[dt4nd > 1.25], 1.25)
+  tmpzz <- c(dnorm(dt4nd[dt4nd > 1.25] ), 1e-3)
+  polygon(tmpyy, tmpzz, col="skyblue")
+@
+
+\end{minipage}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 6.2}
+
+Recall that if Best Buy sold 100 smart watches last year, the percentage of  watches sold with extended protection plans is expected to be around 20\% give or take 4\%.  What is the chance that the percentage of plans sold with extended warranties is between  $12\% (= 20\% - 2 \times 4\%) \texttt{ and } 28\% (=  20\% + 2 \times 4\%$)?
+
+\begin{enumerate}
+\item 99.7\%
+\item 95\%
+\item 68\%
+\item 75\%
+\item cannot determine
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+% Distribution of the Sample Proportion  
+
+Estimating Proportion
+
+\begin{itemize}
+ 
+\item<1-> Questions Asked About Population Proportion
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Questions Asked}
+
+about the population proportion
+
+\begin{itemize}
+\item<1-> The population proportion p are generally unknown and are  estimated from the data.
+\item<2-> Suppose we want to estimate the number of students planning to  attend graduate school.
+  \begin{enumerate}[1]
+   \item<3-> Will the sample proportion equal the population proportion? Yes or  No.
+    \item<4-> If not, by how much will it miss?
+  \end{enumerate}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Estimating the population proportion p}
+
+\begin{itemize}
+\item<1-> $\hat{p}$ is an estimate of the population proportion, i.e.,
+\begin{equation*}
+E[ \hat{p} ] = p
+\end{equation*}
+
+\item<2-> Our estimate misses it by the standard error of the proportion
+\begin{equation*}
+SE = \sqrt{ \frac{ \hat{p} (1 - \hat{p})}{n}}
+\end{equation*}
+
+\item<3-> Consider our example: $n = 40$ graduating seniors, $X = 6$ plan to  attend graduate school.
+
+\begin{enumerate}[1]
+  \item<4-> What is the proportion of graduating seniors planning to attend  graduate school?
+  \item<5-> By how much will it miss the true population proportion?
+\end{enumerate}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Estimating the pop. proportion -- Cont'd}
+
+{\small{
+\begin{itemize}
+\item<1-> $\hat{p} = \frac{X}{n} = \frac{6}{40} = 0.15$
+
+\item<2-> 
+\begin{eqnarray*}
+SE_{\hat{p}} &=& \sqrt{ \frac{\hat{p} (1 - \hat{p})}{n}} 
+= \sqrt{ \frac{.15 \times .85}{40}} \\
+&=& 0.056 
+\end{eqnarray*}
+
+\item<3-> What if 54 out of 360 students plan to go to graduate school. The  proportion of all students who plan to go to graduate school is  estimated as
+
+\item<4-> $\hat{p} = \frac{54}{360} = 0.15$ with $SE_{\hat{p}} = \sqrt{ \frac{.15 \times .85}{360}} = .0188$
+
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Estimating the pop. proportion -- Cont'd}
+
+\begin{itemize}
+\item<1-> The \textbf{population} proportion $p$ is estimated using the sample proportion $\hat{p}$,  i.e., $E[ \hat{p}] = p$.   
+
+\item<2-> This estimate tends to miss by an amount called the $SE_{\hat{p}}$.
+
+\item<3-> The $SE_{\hat{p}}$ is calculated as 
+\begin{equation*}
+SE_{\hat{p}} = \sqrt{ \frac{ \hat{p} ( 1 - \hat{p})}{n}}
+\end{equation*}
+
+\item<4-> As sample size increases, the $SE_{\hat{p}}$ decreases.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 8.3}
+
+Which of the following statements is true about the standard error of  the sample proportion?
+
+\begin{enumerate}
+\item The standard error increases when sample size  increases.
+\item The standard error decreases when sample size  decreases.
+\item The increase/decrease of sample size has no effect on  the value of the standard error.
+\item The standard error decreases when sample size  increases.
+\item None of the previous.
+\end{enumerate}
+\end{frame}

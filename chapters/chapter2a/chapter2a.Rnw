@@ -1,0 +1,335 @@
+%!Rnw root = ../../Master.Rnw
+
+\section{STAT 1600 Ch 2.4.4 Box and Whisker Plot}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+STAT 1600 \\
+Ch 2.4.4 Box and Whisker Plot
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Summarizing Numerical Data, \#2  
+
+\begin{itemize}
+\item Box-and-Whisker Plot  
+\item Symmetry and Skewness
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Box -and-whisker plot  (or Boxplot)}
+
+\begin{minipage}[ht]{6cm}
+
+{\small{
+This is a graphical picture of the  distribution of quarters of the  data
+}}
+\end{minipage}
+\begin{minipage}[ht]{5cm}
+
+<<label=LBL2Aa, results="asis", echo=FALSE, out.width="5cm", fig.height=3>>=
+  boxplot(x=dt2a, horizontal=TRUE)
+  text(140, 1.4, "*")
+  text(415, 1.4, "*")
+  text(700, 1.4, "*")
+  text(975, 1.4, "*")
+  text(5200, 1.4, "*")
+@
+\end{minipage}
+
+{\footnotesize{
+\begin{itemize}
+\item \textbf{This shows the range of each of the four quarters of data:}  
+\item MINimum to Q1 (upper boundary of first quarter): 140, 415
+\item Median (upper boundary of second quarter, also known as Q2): 700  
+\item Q3 is the upper boundary of the third quarter: 975
+\item MAXimum is the largest of the ordered observations: 5200
+\end{itemize}
+}}
+
+\end{frame}
+
+\begin{frame}[fragile]{Five-number Summary}
+
+Payment (Rent/Mortgage, outlier excluded), ACS Data
+n = 63;	(n + 1)/4 = 16;	1st quarter of the data 
+
+\vspace{3mm}
+
+\Sexpr{dt2a}
+
+\vspace{3mm}
+
+The range is from 140 to 415
+\end{frame}
+
+\begin{frame}[fragile]{Five-number Summary}
+
+Payment (Rent/Mortgage, outlier excluded), ACS Data
+n = 63;	(n + 1)/4 = 16;	2nd quarter of the data 
+
+\vspace{3mm}
+
+\Sexpr{dt2a}
+
+\vspace{3mm}
+
+The range is from 415 to 700
+\end{frame}
+
+\begin{frame}[fragile]{Five-number Summary}
+
+Payment (Rent/Mortgage, outlier excluded), ACS Data
+n = 63;	(n + 1)/4 = 16;	3rd quarter of the data 
+
+\vspace{3mm}
+
+\Sexpr{dt2a}
+
+\vspace{3mm}
+
+The range is from 700 to 975
+\end{frame}
+
+\begin{frame}[fragile]{Five-number Summary}
+
+Payment (Rent/Mortgage, outlier excluded), ACS Data
+n = 63;	(n + 1)/4 = 16;	4th quarter of the data 
+
+\vspace{3mm}
+
+\Sexpr{dt2a}
+
+\vspace{3mm}
+
+The range is from 975 to 2400
+\end{frame}
+
+\begin{frame}[fragile]{Five-number Summary}
+
+Payment (Rent/Mortgage, outlier excluded), ACS Data
+n = 63;	(n + 1)/4 = 16;	In summary,
+
+\begin{itemize} 
+\item MIN = smallest observation = 140 
+\item Q1  = 1st quartile = 400
+\item MED = median (= 2nd quartile) = 700
+\item Q3  = 3rd quartile = 970
+\item MAX = largest observation = 2400
+\item
+\item MIN, Q1, MED, Q3, and MAX give five-number summary
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Five-number Summary}
+
+Payment (Rent/Mortgage, outlier excluded), ACS Data
+n = 63;	(n + 1)/4 = 16;	In summary,
+
+\begin{itemize} 
+\item 50\% of data values $\le$ MED
+\item 50\% of data values $\ge$ MED
+\item 25\% of data values $\le$ Q1
+\item 75\% of data values $\ge$ Q1
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Computing Five-number Summary}
+
+\begin{enumerate}
+\item<1-> Sort data into a list of ordered values  
+\item<2-> Find MIN and MAX
+\item<3-> Determine the sample size (i.e., number of observations) n
+\item<4-> Q1 = 0.25(n + 1)th ordered value
+\item<5-> MED = 0.5(n + 1)th ordered value
+\item<6-> Q3 = 0.75(n + 1)th ordered value
+\item<7-> If a non-integer resulted in any computation of the quartiles  (Q1, MED, Q3) above, average the two adjacent ordered  values for the respective quartile
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Five-number Summary for Monthly Rent}
+
+{\small{
+Sorted monthly payments for Type = Rent (n = 20), ACS Data}}
+
+\vspace{3mm}
+
+\Sexpr{Rent}
+
+{\small{
+\begin{enumerate}
+\item<1-> MIN = 140, MAX = 1200
+\item<2-> 0.25(n + 1) = 5.25 and hence Q1 = average of 5th and 6th  ordered values = (340 + 350)/2 = 345
+\item<3-> 0.5(n + 1) = 10.5 and hence MED = average of 10th and 11th  ordered values = (500 + 560)/2 = 530
+\item<4-> 0.75(n + 1) = 15.75 and hence Q3 = average of 15th and 16th  ordered values = (700 + 740)/2 = 720
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 2.4.4.1}
+
+ In general, the middle 50\% of data values are bounded by what  statistics?
+\begin{enumerate}
+
+\item The first quartile and the median.
+\item The first quartile and the third quartile.
+\item The median and the third quartile.
+\item The median and the maximum.
+\item The minimum and the maximum.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 2.4.4.2}
+
+Given the 5-Number summary (MIN, Q1, Q2, Q3, and MAX) of any  data set, approximately 75\% of data values are at or above what  statistic?
+
+\begin{enumerate}
+\item The median.
+\item The first quartile.
+\item The third quartile.
+\item The maximum.
+\item The minimum.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Box-and-whisker Plot}
+
+<<label=LBL2Ac, results="asis", echo=FALSE, out.width="5cm", fig.height=3>>=
+  boxplot(x=dt2a[1:63], horizontal=TRUE)
+@
+
+\vspace{-8mm}
+
+\begin{itemize}
+\item<1-> Draw a horizontal axis covering data range
+\item<2-> Draw a box with edges at Q1 and Q3
+\item<3-> Draw within the box, a line located at MED
+\item<4-> Draw `fences' (lines) at the MIN and MAX
+\item<5-> Draw `whiskers' extending from the edges of the box to the MIN and MAX
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Comparison Boxplots}
+
+<<label=LBL2Ad, results="asis", echo=FALSE, out.width="6cm">>=
+  indep1 <- c(rep("Rent", 20), rep("Mort", 43))
+  dt3c   <- c(Rent, Mort[1:43])
+  boxplot(dt3c ~ indep1, horizontal=TRUE, xlab="Monthly Payment", main="Comparison Boxplots  of Payment Type")
+@  
+\end{frame}
+
+\begin{frame}[fragile]{Symmetry/Skewness}
+
+Left-skewed
+{\footnotesize{
+\begin{verbatim}
+
+<<label=LBL2Af, results="asis", echo=FALSE>>=
+  dt3d <-c(40,55,62,81,87,92,94,94,95,100,101,101,102,104,105,105,106,109,115,118)
+  stem(x=dt3d, scale=2)
+@
+\end{verbatim}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Symmetry/Skewness}
+
+Symmetric
+
+{\footnotesize{
+\begin{verbatim}
+
+<<label=LBL2Ag, results="asis", echo=FALSE>>=
+  dt3e <-c(47,53,55,60,60,65,71,71,72,70,70,88,84,86,87,89,89,90,91,99,99,101,104,111)
+  stem(x=dt3e, scale=2)
+@
+\end{verbatim}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Symmetry/Skewness}
+
+Right-skewed
+
+{\footnotesize{
+\begin{verbatim}
+
+<<label=LBL2Ah, results="asis", echo=FALSE>>=
+  dt3f <-c(45,48,50,51,51,52,54,55,55,56,59,62,64,64,65,71,77,92,105,110)
+  stem(x=dt3f, scale=2)
+@
+\end{verbatim}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Symmetry/Skewness, continued}
+
+\begin{itemize}
+\item<1-> \textbf{Symmetric:} data shape in two mirror-imaged halves  
+\item<2-> \textbf{Right-skewed:} long right tail
+\item<3-> \textbf{Left-skewed:} long left tail
+\item<4-> \textbf{Symmetry/Skewness} can be detected by inspecting the stem-and-leaf plot (first turn it  counter-clockwise 90 degrees), histogram, dotplot, or boxplot  (median is half way from the edges of the box, whiskers on two sides of equal length)
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 2.4.4.3}
+
+The stem-and-leaf displays of two data sets are given below. Describe  the shape of these two data sets.
+
+\vspace{3mm}
+
+\begin{minipage}[ht]{7.5cm}
+
+\begin{enumerate}
+\item 1. symmetric; 2. left skewed
+\item 1. right skewed; 2. symmetric
+\item 1. symmetric; 2. symmetric
+\item 1. left skewed; 2. left skewed
+\item 1. symmetric; 2. right skewed
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[ht]{2cm}
+
+{\footnotesize{
+\begin{tabular}{@{} r|l @{}} \hline
+ & Set 1 \\ \hline
+1 & 599 \\
+2 & 0113 \\
+3 & 669 \\ \hline
+\end{tabular}
+
+\begin{tabular}{@{} r|l @{}} \hline
+& Set 2 \\ \hline
+0 & 1223466 \\
+1 & 0015 \\
+2 & 9 \\ \hline
+\end{tabular}
+}}
+\end{minipage}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 2.4.4.4}
+
+Describe the shape of the box-and-whisker plot (boxplot) below.
+
+\begin{minipage}[ht]{5cm}
+
+{\small{
+\begin{enumerate}
+\item Symmetric
+\item Right skewed
+\item Left skewed
+\item right and left skewed
+\item None of the above
+\end{enumerate}
+}}
+\end{minipage}
+\begin{minipage}[ht]{5.5cm}
+  
+  <<label=LBL2Ae, results="asis", echo=FALSE, fig.height=3, out.width="5cm">>=
+  boxplot(x=dt3d, horizontal=TRUE)
+@  
+\end{minipage}
+\end{frame}

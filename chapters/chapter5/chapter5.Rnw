@@ -1,0 +1,158 @@
+%!Rnw root = ../../Master.Rnw
+
+\section{STAT1600 Ch 5 Study Designs}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+STAT1600 \\ Ch 5 Study Designs
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Study Designs  
+
+\begin{itemize}
+\item Randomized Trials
+\item Double-blind Randomized Controlled Trials  
+\item Observational Studies
+\item iClicker Questions
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Diet Comparison Example}
+
+The diet comparison example ``Comparison of the Atkins, Zone,  Ornish, and LEARN Diets for Change in Weight and Related Risk  Factors Among Overweight Premenopausal Women The A TO Z  Weight Loss Study: A Randomized Trial'' by C.D. Gardner, et al.  (JAMA, Vol. 297, pp. 969–977, March 2007) is a good example of  \textbf{randomized trials}.
+
+An important characteristic of the experiment is that the comparison  groups are similar to each other in all aspects, \textbf{except for the  treatment} (see Table 5.1 on page 79). Hence such experiment offers  fair comparison of the treatment among the four diet groups.
+\end{frame}
+
+\begin{frame}[fragile]{Randomization and Randomized Trials}
+
+\begin{itemize}
+\item<1-> In a randomized trial, subjects entering the trial in a randomized  fashion (using virtual roll of a die) into one of several treatment groups.  This process is called:
+
+\item<2-> Randomization
+
+\item<3-> the best way to safeguard against potential confounders so that the  comparison groups are similar in all factors except for the treatment  itself.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Randomized Controlled Experiment (or Trial)}
+
+is a randomized experiment in which one of the comparison groups is  a control group or placebo group.
+\end{frame}
+
+\begin{frame}[fragile]{Double-blind Randomized Controlled Trial}
+
+is a randomized controlled trial in which neither doctor (the  experimenter) nor patient (experimental subject) knows what treatment  the patient receives.
+
+\begin{itemize}
+\item<1-> done by giving the patient a pill that looks/smells... like the  treatment pill, but is actually an inert pill or placebo.
+\item<2-> Blinding achieves additional protection against bias.
+\item<3-> All groups have the same frame of mind (as opposed to knowing  you are not really getting the new drug)
+\item<4-> The experimenter has the same frame of mind evaluating patients  from each group.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Leg Fracture Example}
+
+In many cases, randomization cannot be achieved in that the  treatments being compared cannot be assigned, e.g., the study  involving women and leg fractures. When a new subject enters the  study (by having a car accident), we observe what gender they belong  to, instead of randomly assigning it. This is an example of  \textit{observational studies}.
+\end{frame}
+
+\begin{frame}[fragile]{Typical Reasons for Observational Studies}
+
+{\footnotesize{
+\begin{itemize}
+\item<1-> Assigning treatment is impossible \\
+E.g. to compare fracture rates between men and women, we  cannot randomize subjects into the comparison groups
+\item<2-> Assigning treatment is unethical \\
+E.g. to compare cancer rates of smokers and nonsmokers, we do  not want to \textit{randomize} subjects into smoker-nonsmoker comparison groups
+\item<3-> Assigning treatment is impractical \\
+E.g. the outcome is a rare event like cancer or stroke, and a  randomized trial would need too many subjects and too much  time.
+\item<4-> In cases like these, a case-control study is generally the way to go.
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Case-control Study}
+
+{\footnotesize{
+\textit{starts with the outcome} and then works backward to the type of treatment. For instance in the diet comparison trial, a case-control study would look for people in the population who lost weight, and then ask them what diet they used.
+
+\vspace{3mm}
+
+Case-control studies, compared to randomized controlled experiments,
+
+\begin{itemize}
+\item<1-> are frequently used because they are cheaper and easier to conduct;  
+\item<2-> are less time-consuming to conduct;
+\item<3-> are able to conclude a link or `association,' but are not able to prove  `causation;'
+\item<4-> provide initial evidence that can generate resources for more rigorous  studies like double-blind randomized controlled trials.
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Successful Story of a Case-control Study}
+
+The first study formally linking lung cancer to smoking was a 1950  case-control study ``Smoking and Carcinoma of the Lung'' by Richard  Doll and A. Bradford Hill (British Medical Journal, 1950 September 30;  2(4682): page 739–748). This study led to numerous studies, and  consequently, it is now accepted by the scientific community that  smoking causes lung cancer.
+
+\end{frame}
+
+\begin{frame}[fragile]{Case-crossover Study}
+
+allows subjects in the treatment group `cross over' to the control group  an vice versa. That is, each subject can be their own control.
+
+\vspace{3mm}
+
+A successful example: a 1997 study linking cell phone use to car  accidents: ``Association between cellular-telephone calls and motor  vehicle collisions'' by D.A. Redelmeier and R.J. Tibshirani (The New  England Journal of Medicine, 1997 Feb 13; vol 336, pp. 453–458).
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 5.1}
+
+According to ``Cumulative Use of Strong Anticholinergics and Incident  Dementia'' (JAMA, March 2015), from 10 years of tracking older adults  and their use of anticholinergic drugs (meant to reduce symptoms of  allergies, inability to sleep, anxiety, depression and bladder over-activity), the risk of Alzheimer's was 63 percent higher. What type  of study is this?
+
+\begin{enumerate}
+  \item randomized controlled experiment
+  \item case-control study
+  \item none of the previous
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 5.2}
+
+Which of the following is \textit{false} about a case-control study when it is  compared to a randomized controlled trial?
+
+\begin{enumerate}
+  \item case-control study is less time-consuming to conduct
+  \item case-control study is cheaper to conduct
+  \item case-control study can be used to determine causation
+  \item case-control study is easier to conduct
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 5.3}
+
+A clinical trial was conducted in which 120 patients with similar clinical  features were randomly divided into a control group and a treatment  group, each consisting of 60 patients. What type of study this is?
+
+\begin{enumerate}
+  \item randomized controlled trial
+  \item case-control study
+  \item none of the previous
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 5.4}
+
+{\footnotesize{
+Western Michigan University offers a 1 credit course for freshmen, UNIV 1010, which teaches about university resources and study habits for success in college. It is an elective course and about half of the freshmen take it. WMU has studied the results by comparing the retention and GPAs of students who took this class against those who did not take this class. It was found that retention and GPAs were generally higher for those who took UNIV 1010. This evidence was put forth as proof that the course was successful and that it should be continued. \\
+What potential source(s) of bias have not been accounted for by WMU?
+
+\begin{enumerate}
+  \item GPAs before college.
+  \item Lack of randomization in subject selection for UNIV 1010
+  \item Chosen majors of the students
+  \item All the above
+\end{enumerate}
+}}
+\end{frame}

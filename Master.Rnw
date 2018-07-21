@@ -66,8 +66,36 @@ opts_chunk$set(
 <<Ch1, child="chapters/chapter1/chapter1.Rnw",eval=TRUE>>=
 @
 
-% <<Sec1, child="sections/section1/section1.Rnw",eval=TRUE>>=
-% @
+<<Ch2, child="chapters/chapter2/chapter2.Rnw",eval=TRUE>>=
+@
+
+<<Ch2a, child="chapters/chapter2a/chapter2a.Rnw",eval=TRUE>>=
+@
+
+<<Ch3, child="chapters/chapter3/chapter3.Rnw",eval=TRUE>>=
+@
+
+<<Ch3a, child="chapters/chapter3a/chapter3a.Rnw",eval=TRUE>>=
+@
+
+<<Ch4, child="chapters/chapter4/chapter4.Rnw",eval=TRUE>>=
+@
+
+<<Ch5, child="chapters/chapter5/chapter5.Rnw",eval=TRUE>>=
+@
+
+<<Ch6, child="chapters/chapter6/chapter6.Rnw",eval=TRUE>>=
+@
+
+<<Ch7, child="chapters/chapter7/chapter7.Rnw",eval=TRUE>>=
+@
+
+<<Ch8, child="chapters/chapter8/chapter8.Rnw",eval=TRUE>>=
+@
+
+<<Ch9, child="chapters/chapter9/chapter9.Rnw",eval=TRUE>>=
+@
+
 % 
 % 
 % <<Sec2, child="sections/section2/section2.Rnw",eval=TRUE>>=  
