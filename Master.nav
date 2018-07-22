@@ -405,8 +405,17 @@
 \headcommand {\beamer@framepages {298}{298}}
 \headcommand {\slideentry {11}{0}{19}{299/299}{}{0}}
 \headcommand {\beamer@framepages {299}{299}}
-\headcommand {\beamer@partpages {1}{299}}
-\headcommand {\beamer@subsectionpages {264}{299}}
 \headcommand {\beamer@sectionpages {264}{299}}
-\headcommand {\beamer@documentpages {299}}
-\headcommand {\gdef \inserttotalframenumber {187}}
+\headcommand {\beamer@subsectionpages {264}{299}}
+\headcommand {\sectionentry {12}{Stat1600 Ch 9.3.1 Comparing Two Proportions, Part 2 Risk Ratio}{300}{Stat1600 Ch 9.3.1 Comparing Two Proportions, Part 2 Risk Ratio}{0}}
+\headcommand {\slideentry {12}{0}{1}{300/300}{}{0}}
+\headcommand {\beamer@framepages {300}{300}}
+\headcommand {\slideentry {12}{0}{2}{301/301}{}{0}}
+\headcommand {\beamer@framepages {301}{301}}
+\headcommand {\slideentry {12}{0}{3}{302/302}{}{0}}
+\headcommand {\beamer@framepages {302}{302}}
+\headcommand {\beamer@partpages {1}{302}}
+\headcommand {\beamer@subsectionpages {300}{302}}
+\headcommand {\beamer@sectionpages {300}{302}}
+\headcommand {\beamer@documentpages {302}}
+\headcommand {\gdef \inserttotalframenumber {190}}
