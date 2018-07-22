@@ -10,4 +10,5 @@
 \beamer@sectionintoc {9}{Stat1600 Ch 7 The Binomial Distribution}{196}{0}{9}
 \beamer@sectionintoc {10}{STAT1600 Ch. 8 Sampling Distribution of the Proportion}{222}{0}{10}
 \beamer@sectionintoc {11}{STAT 1600 Ch 9 Comparing Two Proportions, Part 1 Difference in Proportions}{264}{0}{11}
-\beamer@sectionintoc {12}{Stat1600 Ch 9.3.1 Comparing Two Proportions, Part 2 Risk Ratio}{300}{0}{12}
+\beamer@sectionintoc {12}{Stat1600 Ch 9.3.2 Comparing Two Proportions, Part 2 Risk Ratio}{300}{0}{12}
+\beamer@sectionintoc {13}{Stat1600 Ch 9.3.3 Comparing Two Proportions, Part 3 Odds Ratio}{319}{0}{13}

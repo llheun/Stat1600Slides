@@ -1,10 +1,10 @@
 %!Rnw root = ../../Master.Rnw
 
-\section{Stat1600 Ch 9.3.1 Comparing Two  Proportions, Part 2 Risk Ratio}
+\section{Stat1600 Ch 9.3.2 Comparing Two  Proportions, Part 2 Risk Ratio}
 
 \begin{frame}[fragile]{Statistics and Data Analysis}
 
-Stat1600 \\ Ch 9.3.1 Comparing Two  Proportions, \\ Part 2 Risk Ratio
+Stat1600 \\ Ch 9.3.2 Comparing Two  Proportions, \\ Part 2 Risk Ratio
 
 \end{frame}
 
@@ -35,218 +35,128 @@ How?
 
 \end{frame}
 
-% \begin{frame}[fragile]{Notation}
-% 
-% A categorical variable with binary responses (`success' and `failure') is of  interest for two independent populations.
-% 
-% \begin{itemize}
-% \item<1-> Population 1 has proportion $p_1$ of successes.  
-% \item<2-> Population 2 has proportion $p_2$ of successes.
-% \item<3-> Sample of size $n_1$  is taken from population 1: $X$ successes observed in the sample with sample proportion $\hat{p_1} = \frac{X}{n_1}$
-% \item<4-> Sample of size $n_2$  is taken from population 2: $Y$ successes observed in the sample with sample proportion $\hat{p_2} = \frac{Y}{n_2}$
-% \item<5-> The two samples are independent.
-% \end{itemize}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Standard Error of Difference}
-% 
-% The SE (Standard Error) of the difference in the sample proportions of  two independent samples is
-% 
-% $$SE_{\hat{p_1} - \hat{p_2}} = \sqrt{ (SE_{\hat{p_1}})^2 + (SE_{\hat{p_2}})^2} $$
-% 
-% where
-% 
-% {\small{
-% $$ SE_{\hat{p_1}} = \sqrt{ \frac{ \hat{p}_1 ( 1 - \hat{p}_1)}{n_1}} $$
-% 
-% $$ SE_{\hat{p_2}} = \sqrt{ \frac{ \hat{p}_2 ( 1 - \hat{p}_2)}{n_2}} $$
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Change in Student Retention Rate}
-% 
-% {\footnotesize{
-% \begin{itemize}
-% \item<1-> For 1989 sample $\hat{p}_1 = 0.74$ give or take (i.e., with a standard error)
-% $$ SE_{\hat{p_1}} = \sqrt{ \frac{ 0.74 ( 0.26)}{200}} = \sqrt{0.000962} = 0.031 $$
-% 
-% \item<2-> For 1999 sample $\hat{p}_2 = 0.66$ give or take (i.e., with a standard error)
-% $$ SE_{\hat{p_2}} = \sqrt{ \frac{ 0.66 ( 0.34)}{200}} = \sqrt{0.001122} = 0.033 $$
-% 
-% \item<3-> and hence for the difference in sample proportions.
-% $$SE_{\hat{p_1} - \hat{p_2}} = \sqrt{ 0.000962 + 0.001122} = 0.0456 $$
-% 
-% \end{itemize}
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Calculation of the $SE_{\hat{p}_1 - \hat{p}_2}$}
-% 
-% {\footnotesize{
-% \begin{itemize}
-% \item<1-> Calculate ($SE_1)^2$, the squared $SE_{\hat{p_1}}$
-% \begin{equation*}
-%   (SE_1)^2 =  \frac{ \hat{p}_1 (1 - \hat{p}_1)}{n_1}
-% \end{equation*}
-% keeping 6 decimal places to the right of the decimal point.  
-% \item<2-> Calculate ($SE_2)^2$, the squared $SE_{\hat{p_2}}$
-% \begin{equation*}
-%   (SE_2)^2 = \frac{ \hat{p}_2 (1 - \hat{p}_2)}{n_2} 
-% \end{equation*}
-% keeping 6 decimal places to the right of the decimal point.  
-% \item<3-> Calculate $(SE_1)^2 + (SE_2)^2$.
-% \item<4-> $SE_{\hat{p}_1 - \hat{p}_2} = \sqrt{(SE_1)^2 + (SE_2)^2}$
-% 
-% \end{itemize}
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Calculation of the $SE_{\hat{p}_1 - \hat{p}_2}$}
-% 
-% Change in Retention Rate Example
-% 
-% \begin{eqnarray*}
-% (SE_1)^2 &=& \frac{.74 \times .26}{200} = 0.000962 \\
-% (SE_2)^2 &=& \frac{.66 \times .34}{200} = 0.001122 \\
-% (SE_1)^2 + (SE_2)^2 &=& 0.000962 + 0.001122 = 0.002084 \\
-% SE_{ \hat{p}_1 - \hat{p}_2} &=& \sqrt{0.002084} = 0.0456
-% \end{eqnarray*}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Outline}
-% 
-% Confidence Interval for Difference in Proportions  
-% 
-% \begin{itemize}
-% \item Confidence Interval for Difference in Proportions  
-% \item iClicker Questions
-% \end{itemize}
-% 
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Confidence Interval for $\hat{p}_1 - \hat{p}_2$}
-% 
-% {\small{
-% A 95\% confidence interval for the true difference $p_1 - p_2$ is
-% 
-% $$\hat{p}_1 - \hat{p}_2 \pm 1.96 \times SE_{ \hat{p}_1 - \hat{p}_2}$$
-% 
-% That is 
-% 
-% $$\hat{p}_1 - \hat{p}_2 \pm 1.96 \sqrt{ \frac{\hat{p}_1 (1-\hat{p}_1)}{n_1} + \frac{\hat{p}_2 (1-\hat{p}_2)}{n_2}}$$
-% 
-% \textit{If the interval excludes zero (0), then we say that the difference in sample proportions is statistically significant.} \\ However, If the interval includes 0 then the difference is statistically insignificant.
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Change in Student Retention Rate}
-% 
-% {\small{
-% \begin{itemize}
-% \item<1-> Recall that the standard error of the difference in the sample  proportions is
-% $$SE_{\hat{p}_1 - \hat{p}_2} = 0.0456$$
-% \item<2-> So, a 95\% CI (confidence interval) for $p_1 - p_2$ is
-% $(0.74 - 0.66) \pm 1.96 \times 0.0456 = 0.8 \pm 0.089 \Rightarrow$ (-.009, 0.169) 
-% \item<3-> If we round it off to (-.01, .17), or, in percentages, (-1\%, 17\%), we say  that the drop in retention rate from 1989 to 1999 is between -1\% and  17\% with 95\% confidence. 
-% \item<4-> Note: 0\% is contained in this interval and  hence there is still a probability that there might not be a real change in retention rate, just chance variability.
-% \end{itemize}
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{iClicker Question 9.1}
-% 
-% A 95\% confidence interval was constructed for the difference in the  proportions $p_1 - p_2$ in two independent populations: (-0.08, 0.26).  Which of the following is true?
-% 
-% \begin{enumerate}
-% \item The difference in the proportions is significant.
-% \item $p_1$  differs from $p_2$ significantly.
-% \item The difference in the proportions is insignificant.
-% \item None of the previous.
-% \end{enumerate}
-% 
-% \end{frame}
-% 
-% \begin{frame}[fragile]{iClicker Question 9.2}
-% 
-% {\small{
-% A study of the television viewing preferences of children, each child is  asked if the Sesame Street is the program he or she likes the best  among others. Of 200 girls surveyed, 85 like Sesame Street the best;  of 100 boys surveyed, 30 like Sesame Street the best. A 95\%  confidence interval for the difference in the percentages of children like  the Sesame Street the best between girls and boys is (1.2\%,23.8\%).
-% 
-% \begin{enumerate}
-% \item Which of the following is true?
-% \item The two percentages differ significantly.
-% \item The two percentages do not differ significantly.
-% \item The two proportions do not differ significantly.
-% \item None of the previous.
-% \end{enumerate}
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Outline}
-% 
-% Statistical Significance  
-% 
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Cooks or Chefs}
-% 
-% \begin{itemize}
-% \item According to a 2009 occupation survey by the Census Bureau, regular cooks were a separate classification from chefs or head cooks:
-% 
-% \vspace{3mm}
-% 
-% \begin{tabular}{@{} ccccc @{}} \hline
-% Occupation & Women & Men & Total & \% Women \\ \hline
-% Cooks & 441 & 762 & 1203 & 37 \\
-% Chefs & 45  & 245 & 290  & 16 \\ \hline
-% \end{tabular}
-% 
-% \item The difference in percentage is approximately 21\%.
-% \item Is the difference in percentages just luck of the draw, or due to something  else besides chance?
-% \end{itemize}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Cooks or Chefs -- Cont'd}
-% 
-% \begin{itemize}
-% \item If chance was at work, how likely we get a difference in proportions of  0.21?
-% \item The chance of this occurs is small $\Rightarrow < 0.0001$. That is, less than 1 in 10,000.  This chance of getting 0.21 by chance is called a P-value.
-% \item But how do we know that this P-value is less than 0.0001?
-% \end{itemize}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Cooks or Chefs -- Cont'd}
-% 
-% {\small{
-% \begin{itemize}
-% \item The SE for the difference in proportion is
-% $$ SE_{\hat{p}_1 - \hat{p}_2} = \sqrt{ \frac{ .37 \cdot .63}{1203} + \frac{ .16 \cdot .84}{290} } = 0.026 $$ 
-% \item And hence the chance to get a difference beyond $\pm 0.078$ (= 3SE ) is 0.003  (= 1 - .997 by the empirical rule), or 3 in 1,000.
-% \item Similarly, the chance to get a difference beyond $\pm 0.104$ (= 4SE ) is $0.00006 < 0.0001$, or less than 1 in 10,000.
-% \item Now, in our example, a difference of 0.21 is beyond 8 SE. This cannot be  just chance variability.  Something else is at work.
-% \item Note: the probability of 0.00006 above was obtained by computer.
-% \end{itemize}
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Statistical Significance, The P-Value}
-% 
-% The general rule for P-value for the difference:
-% 
-% \begin{itemize}
-% \item If P-value $\le .05$, the difference is \textbf{statistically significant}.  (difference is at least 1.96SE in absolute value)
-% \item If P-value $\le .01$, the difference is called \textbf{highly significant}.  (difference is at least 2.58SE in absolute value)
-% \item If P-value $> .05$, the difference is \textbf{insignificant}. (difference is less  than 1.96SE in absolute value)
-% \end{itemize}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{iClicker Question 9.3}
-% 
-% A 95\% confidence interval was constructed for difference in the proportions $p_1 - p_2$ in two independent populations: (-0.04, 0.16). Which of the following is true?
-% 
-% \begin{enumerate}
-% \item The p-value $\le 0.05$, the difference is statistically significant.
-% \item The p-value $\le 0.01$, the difference is called highly significant.
-% \item The p-value $> 0.05$, the difference is insignificant.
-% \item None of the above.
-% \end{enumerate}
-% \end{frame}
+\begin{frame}[fragile]{Risk ratio}
+
+{\small{
+Consider:
+\vspace{2mm}
+
+\begin{tabular}{@{} cccc @{}} \hline
+     & \multicolumn{2}{c}{Disease} \\
+     & Yes & No & Total \\ \hline
+Exposure & a & b & a + b \\
+No exposure & c & d & c + d \\ \hline
+\end{tabular}
+
+where Exposure = Exposure to treatment (i.e., Vaccine in this example).
+
+\vspace{2mm}
+
+The \textit{risk ratio} (or relative risk) is
+
+\begin{equation*}
+RR = \frac{ P[ Disease, exposure]}{ P[ Disease, No exposure]} = \frac{ \frac{a}{a+b}}{ \frac{c}{c+d}} 
+\end{equation*}
+
+and the \textit{efficacy} of the exposure is (1 - risk ratio) \\ if \texttt{risk ratio} $ \le 1$. 
+
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Hepatitis E Vaccine Eg., Cont'd}
+
+\begin{equation*}
+RR = \frac{ \frac{3}{898}}{ \frac{66}{896}} = 0.045 \texttt{ or } 4.5\%
+\end{equation*}
+
+\vspace{3mm}
+
+That is, getting the vaccine reduces your risk to only 4.5\% of the  original. The efficacy of the vaccine is 95.5\% (= 100\% - 4.5\%)
+
+\end{frame}
+
+\begin{frame}[fragile]{Calculating a 95\% CI for RR}
+
+{\small{
+\begin{enumerate}
+\item<1-> Calculate a 95\% confidence interval for ln(RR):
+  \begin{enumerate}
+  \item<2-> calculate ln(RR)
+  \item<3-> calculate
+  \begin{equation*}
+    SE_{ln(RR)} = \sqrt{\frac{1}{a} + \frac{1}{c} - \frac{1}{a+b} - \frac{1}{c+d}}
+  \end{equation*}
+  \item<4-> calculate 95\% CI for ln(RR)
+  \begin{equation*}
+    (ln(RR) - 1.96 SE, ln(RR) + 1.96 SE )
+  \end{equation*}
+  \end{enumerate}
+\item<5-> A 95\% confidence interval for RR is
+\begin{equation*}
+    (e^{ln(RR) - 1.96 SE}, e^{ln(RR) + 1.96 SE} )
+  \end{equation*}
+  
+\item<6-> and RR is statistical significant if the interval excludes one (1).
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Hepatits E Vaccine Example, Cont'd}
+
+{\small{
+\begin{enumerate}
+\item<1-> Calculate a 95\% confidence interval for ln(RR):
+  \begin{enumerate}
+  \item<2-> calculate ln(RR) = ln(.045) = -3.101
+  \item<3-> calculate
+  \begin{eqnarray*}
+    SE_{ln(RR)} &=& \sqrt{\frac{1}{3} + \frac{1}{66} - \frac{1}{3+898} - \frac{1}{66+896}}  \\
+    &=& \sqrt{.3462} \\
+    &=& 0.5884 
+  \end{eqnarray*}
+  \item<4-> calculate 95\% CI for ln(RR)
+  \begin{eqnarray*}
+    CI &=& (-3.101-1.96 \cdot .5884, -3.101+1.96 \cdot .5884) \\
+    &=& (-4.254, -1.948)
+  \end{eqnarray*}
+  \end{enumerate}
+\end{enumerate}  
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Hepatits E Vaccine Example, Cont'd}
+
+\begin{enumerate}
+\item<1-> A 95\% confidence interval for RR is
+\begin{equation*}
+    (e^{-4.254}, e^{-1.948} ) = (.014, .143)
+  \end{equation*}
+  
+\item<2-> That is, with 95\% confidence, the relative risk of getting hepatitis with the vaccine is only 1.4\% to 14.3\% of placebo. In other words, the vaccine reduces your risk by as low as 85.7\% (=100\% - 14.3\%) or as high as 98.6\% (= 100\% - 1.4\%).
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 9.2.1}
+
+In an observational study, a sample of 10000 smokers was taken, 50  were found to have lung cancer. Another sample of 10000 non-smokers was taken, only 2 have lung cancer. What is the relative  risk of having lung cancer for smokers versus non-smokers?
+
+\begin{enumerate}
+  \item 50
+  \item 2
+  \item 25  
+  \item 100
+  \item cannot determine
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 9.2.2}
+
+In an observational study, a sample of 10000 smokers was taken, 50  were found to have lung cancer. Another sample of 10000 non-smokers was taken, only 2 have lung cancer. A 95\% confidence  interval for the relative risk of having lung cancer for smokers versus  smokers is (6.1, 102.5). Which of the following is true?
+
+\begin{enumerate}
+\item The proportion of smokers having lung cancer is  significantly different than that of non-smokers.
+\item There is no difference between the two proportions.
+\item cannot determine
+\end{enumerate}
+\end{frame}

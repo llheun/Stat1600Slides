@@ -407,15 +407,42 @@
 \headcommand {\beamer@framepages {299}{299}}
 \headcommand {\beamer@sectionpages {264}{299}}
 \headcommand {\beamer@subsectionpages {264}{299}}
-\headcommand {\sectionentry {12}{Stat1600 Ch 9.3.1 Comparing Two Proportions, Part 2 Risk Ratio}{300}{Stat1600 Ch 9.3.1 Comparing Two Proportions, Part 2 Risk Ratio}{0}}
+\headcommand {\sectionentry {12}{Stat1600 Ch 9.3.2 Comparing Two Proportions, Part 2 Risk Ratio}{300}{Stat1600 Ch 9.3.2 Comparing Two Proportions, Part 2 Risk Ratio}{0}}
 \headcommand {\slideentry {12}{0}{1}{300/300}{}{0}}
 \headcommand {\beamer@framepages {300}{300}}
 \headcommand {\slideentry {12}{0}{2}{301/301}{}{0}}
 \headcommand {\beamer@framepages {301}{301}}
 \headcommand {\slideentry {12}{0}{3}{302/302}{}{0}}
 \headcommand {\beamer@framepages {302}{302}}
-\headcommand {\beamer@partpages {1}{302}}
-\headcommand {\beamer@subsectionpages {300}{302}}
-\headcommand {\beamer@sectionpages {300}{302}}
-\headcommand {\beamer@documentpages {302}}
-\headcommand {\gdef \inserttotalframenumber {190}}
+\headcommand {\slideentry {12}{0}{4}{303/303}{}{0}}
+\headcommand {\beamer@framepages {303}{303}}
+\headcommand {\slideentry {12}{0}{5}{304/304}{}{0}}
+\headcommand {\beamer@framepages {304}{304}}
+\headcommand {\slideentry {12}{0}{6}{305/310}{}{0}}
+\headcommand {\beamer@framepages {305}{310}}
+\headcommand {\slideentry {12}{0}{7}{311/314}{}{0}}
+\headcommand {\beamer@framepages {311}{314}}
+\headcommand {\slideentry {12}{0}{8}{315/316}{}{0}}
+\headcommand {\beamer@framepages {315}{316}}
+\headcommand {\slideentry {12}{0}{9}{317/317}{}{0}}
+\headcommand {\beamer@framepages {317}{317}}
+\headcommand {\slideentry {12}{0}{10}{318/318}{}{0}}
+\headcommand {\beamer@framepages {318}{318}}
+\headcommand {\beamer@sectionpages {300}{318}}
+\headcommand {\beamer@subsectionpages {300}{318}}
+\headcommand {\sectionentry {13}{Stat1600 Ch 9.3.3 Comparing Two Proportions, Part 3 Odds Ratio}{319}{Stat1600 Ch 9.3.3 Comparing Two Proportions, Part 3 Odds Ratio}{0}}
+\headcommand {\slideentry {13}{0}{1}{319/319}{}{0}}
+\headcommand {\beamer@framepages {319}{319}}
+\headcommand {\slideentry {13}{0}{2}{320/320}{}{0}}
+\headcommand {\beamer@framepages {320}{320}}
+\headcommand {\slideentry {13}{0}{3}{321/321}{}{0}}
+\headcommand {\beamer@framepages {321}{321}}
+\headcommand {\slideentry {13}{0}{4}{322/322}{}{0}}
+\headcommand {\beamer@framepages {322}{322}}
+\headcommand {\slideentry {13}{0}{5}{323/323}{}{0}}
+\headcommand {\beamer@framepages {323}{323}}
+\headcommand {\beamer@partpages {1}{323}}
+\headcommand {\beamer@subsectionpages {319}{323}}
+\headcommand {\beamer@sectionpages {319}{323}}
+\headcommand {\beamer@documentpages {323}}
+\headcommand {\gdef \inserttotalframenumber {202}}

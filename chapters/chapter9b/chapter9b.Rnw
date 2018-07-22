@@ -1,0 +1,162 @@
+%!Rnw root = ../../Master.Rnw
+
+\section{Stat1600 Ch 9.3.3 Comparing Two  Proportions, Part 3 Odds Ratio}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+Stat 1600 \\ Ch 9.3.3 Comparing Two  Proportions, Part 3 Odds Ratio
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+\begin{itemize}
+\item Odds Ratio
+\item iClicker Questions
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Odds}
+
+The odds that an event occurs is
+
+{\small{
+\begin{equation*}
+Odds = \frac{ \texttt{Probability that an event occurs}}{ \texttt{Probability that event does not occur}} = \frac{p}{1 - p}
+\end{equation*}
+}}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} cc @{}} \hline
+Probability & Odds \\
+0.10 & $\frac{1}{9} = 0.11$ \\
+0.20 & $\frac{1}{4} = 0.25$ \\
+0.50 & $\frac{1}{1} = 1.00$ \\
+0.80 & $\frac{4}{1} = 4.00$ \\
+0.90 & $\frac{9}{1} = 9.00$ \\
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 15.1}
+
+{\small{
+A clinical trial was conducted to study the efficacy of a new drug  intended to lower the LDL (low-density lipoprotein, a.k.a., bad  cholesterol). All study subjects showed a high LDL level at the baseline.  Of the 100 treated subjects, 80 of them showed reduction to normal  LDL level two weeks after treatment. What is the odds that a treated  subject was having a reduction in LDL to normal level after two weeks?
+
+\begin{enumerate}
+\item 0.25
+\item 4
+\item 80
+\item 20
+\item cannot determine
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+\begin{itemize}
+\item Odds Ratio
+\item iClicker Questions
+\end{itemize}
+\end{frame}
+
+
+% \begin{frame}[fragile]{Hepatitis E Vaccine Eg., Cont'd}
+% 
+% \begin{equation*}
+% RR = \frac{ \frac{3}{898}}{ \frac{66}{896}} = 0.045 \texttt{ or } 4.5\%
+% \end{equation*}
+% 
+% \vspace{3mm}
+% 
+% That is, getting the vaccine reduces your risk to only 4.5\% of the  original. The efficacy of the vaccine is 95.5\% (= 100\% - 4.5\%)
+% 
+% \end{frame}
+% 
+% \begin{frame}[fragile]{Calculating a 95\% CI for RR}
+% 
+% {\small{
+% \begin{enumerate}
+% \item<1-> Calculate a 95\% confidence interval for ln(RR):
+%   \begin{enumerate}
+%   \item<2-> calculate ln(RR)
+%   \item<3-> calculate
+%   \begin{equation*}
+%     SE_{ln(RR)} = \sqrt{\frac{1}{a} + \frac{1}{c} - \frac{1}{a+b} - \frac{1}{c+d}}
+%   \end{equation*}
+%   \item<4-> calculate 95\% CI for ln(RR)
+%   \begin{equation*}
+%     (ln(RR) - 1.96 SE, ln(RR) + 1.96 SE )
+%   \end{equation*}
+%   \end{enumerate}
+% \item<5-> A 95\% confidence interval for RR is
+% \begin{equation*}
+%     (e^{ln(RR) - 1.96 SE}, e^{ln(RR) + 1.96 SE} )
+%   \end{equation*}
+%   
+% \item<6-> and RR is statistical significant if the interval excludes one (1).
+% \end{enumerate}
+% }}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{Hepatits E Vaccine Example, Cont'd}
+% 
+% {\small{
+% \begin{enumerate}
+% \item<1-> Calculate a 95\% confidence interval for ln(RR):
+%   \begin{enumerate}
+%   \item<2-> calculate ln(RR) = ln(.045) = -3.101
+%   \item<3-> calculate
+%   \begin{eqnarray*}
+%     SE_{ln(RR)} &=& \sqrt{\frac{1}{3} + \frac{1}{66} - \frac{1}{3+898} - \frac{1}{66+896}}  \\
+%     &=& \sqrt{.3462} \\
+%     &=& 0.5884 
+%   \end{eqnarray*}
+%   \item<4-> calculate 95\% CI for ln(RR)
+%   \begin{eqnarray*}
+%     CI &=& (-3.101-1.96 \cdot .5884, -3.101+1.96 \cdot .5884) \\
+%     &=& (-4.254, -1.948)
+%   \end{eqnarray*}
+%   \end{enumerate}
+% \end{enumerate}  
+% }}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{Hepatits E Vaccine Example, Cont'd}
+% 
+% \begin{enumerate}
+% \item<1-> A 95\% confidence interval for RR is
+% \begin{equation*}
+%     (e^{-4.254}, e^{-1.948} ) = (.014, .143)
+%   \end{equation*}
+%   
+% \item<2-> That is, with 95\% confidence, the relative risk of getting hepatitis with the vaccine is only 1.4\% to 14.3\% of placebo. In other words, the vaccine reduces your risk by as low as 85.7\% (=100\% - 14.3\%) or as high as 98.6\% (= 100\% - 1.4\%).
+% \end{enumerate}
+% 
+% \end{frame}
+% 
+% \begin{frame}[fragile]{iClicker Question 9.2.1}
+% 
+% In an observational study, a sample of 10000 smokers was taken, 50  were found to have lung cancer. Another sample of 10000 non-smokers was taken, only 2 have lung cancer. What is the relative  risk of having lung cancer for smokers versus non-smokers?
+% 
+% \begin{enumerate}
+%   \item 50
+%   \item 2
+%   \item 25  
+%   \item 100
+%   \item cannot determine
+% \end{enumerate}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{iClicker Question 9.2.2}
+% 
+% In an observational study, a sample of 10000 smokers was taken, 50  were found to have lung cancer. Another sample of 10000 non-smokers was taken, only 2 have lung cancer. A 95\% confidence  interval for the relative risk of having lung cancer for smokers versus  smokers is (6.1, 102.5). Which of the following is true?
+% 
+% \begin{enumerate}
+% \item The proportion of smokers having lung cancer is  significantly different than that of non-smokers.
+% \item There is no difference between the two proportions.
+% \item cannot determine
+% \end{enumerate}
+% \end{frame}

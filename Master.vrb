@@ -1,14 +1,6 @@
-\frametitle{Hepatitis E Vaccine}
+\frametitle{Outline}
 
-From the study `Safety and Efficacy of a Recombinant Hepatitis E  Vaccine' by Shrestha et al. in the New England Journal of Medicine in  March 2007 (Vol. 356 No. 9), the results were
-
-\begin{tabular}{@{} cccc @{}} \hline
-     & \multicolumn{2}{c}{Hepatitis E} \\
-     & Yes & No & Total \\ \hline
-Vaccine & 3 & 895 & 898 \\
-Placebo & 66 & 830 & 896 \\ \hline
-\end{tabular}
-
-The vaccine efficacy, as reported in the article, was 95.5\% with a 95\%  confidence interval of (85.6\%, 98.6\%). \\
-How?
-
+\begin{itemize}
+\item Odds Ratio
+\item iClicker Questions
+\end{itemize}
