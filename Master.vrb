@@ -1,6 +1,23 @@
-\frametitle{Outline}
+\frametitle{Hepatits E Vaccine Example, revisited}
 
-\begin{itemize}
-\item Odds Ratio
-\item iClicker Questions
+{\small{
+  \begin{itemize}
+
+  \item<1-> a 95\% CI for ln(OR):
+    {\footnotesize{
+    \begin{equation*}
+      (3.165 - 1.96(.5923), 3.165 + 1.96(.5923)) \Rightarrow ( 2.004, 4.326)
+    \end{equation*}
+    }}
+
+  \item<2-> A 95\% confidence interval for $OR$ is
+  {\small{
+  \begin{equation*}
+    (e^{2.004}, e^{4.326} ) \Rightarrow (7.4, 75.6)
+  \end{equation*}
+  }}
+
+  \item<3-> So, with 95\% confidence, the odds of \textit{unvaccinated} subjects getting hepatitis is approximately between 7 and 76 times greater than that of the vaccinated subjects.
+
 \end{itemize}
+}}

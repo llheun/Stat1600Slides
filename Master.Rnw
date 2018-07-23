@@ -103,23 +103,6 @@ opts_chunk$set(
 @
 
 
-
-
-% 
-% 
-% <<Sec2, child="sections/section2/section2.Rnw",eval=TRUE>>=  
-% @
-% 
-% <<Sec3, child="sections/section3/section3.Rnw",eval=TRUE>>=   
-% @
-% 
-% <<Sec4, child="sections/section4/section4.Rnw",eval=TRUE>>=  
-% @
-% 
-% <<label=LBLrn, results="asis", echo=FALSE>>=
-%   system('mv Master.pdf ch1.pdf')
-% @
-
 % \printbibliography
 %\bibliographystyle{plain}
 %\bibliography{chapters/mybibliography}   % name your BibTeX data base

@@ -1093,7 +1093,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 
 
 
-  650, 400, 740, 880, 500, 350, 280, 380, 250, 220
+  880, 380, 650, 910, 760, 560, 340, 740, 220, 500
   
 \vspace{3mm}
 
@@ -1113,7 +1113,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 \item<4-> (2-bedroom appartment rental example)
 \item<5->
 \begin{equation*}
-\bar{X} = \frac{650 + 400 + \cdots + 220}{10} = 465
+\bar{X} = \frac{880 + 380 + \cdots + 500}{10} = 594
 \end{equation*}
 \end{itemize}
 
@@ -1122,7 +1122,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 \begin{frame}[fragile]{Sample Mean is an Est. of Pop. Mean}
 
 \begin{itemize}
-\item<1-> That is, the average rent for 2-bedroom apartments in  Kalamazoo area is \$ 465 in our sample
+\item<1-> That is, the average rent for 2-bedroom apartments in  Kalamazoo area is \$ 594 in our sample
 \item<2-> This is not to be interpreted as the actual \textit{population average}  (i.e., the actual average rent of all 2-bedroom apartments in  the entire Kalamazoo area)
 \item<3-> It is subject to \textit{sampling error}
 \item<4-> It likely missed the true population mean \\ (denoted $\mu$), by $| \bar{X} - \mu |$,  the \textit{sampling error}.
@@ -1144,7 +1144,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 
 \vspace{3mm}
 
-220, 250, 280, 350, 380, 400, 500, 650, 740, 880
+220, 340, 380, 500, 560, 650, 740, 760, 880, 910
 \item<2->
 \begin{equation*}
 0.5(n + 1) = 0.5 \times 11 = 5.5
@@ -1154,7 +1154,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 \item<4-> Hence, MED = average of 5th \& 6th ordered values
 \item<5->
 \begin{equation*}
-\tilde{x} = \frac{ 380 + 400 }{2} = 390
+\tilde{x} = \frac{ 560 + 650 }{2} = 605
 \end{equation*}
 \end{itemize}
 }}
@@ -1186,7 +1186,7 @@ What is the median MPG?
 \item<1-> Sample mean is sensitive to outliers
 \item<2-> Sample median is \textit{insensitive} to outliers
 \item<3-> In the Kalamazoo apartment rental data, what if the smallest value \$ 220 is replaced by \$100?
-\item<4-> The MED remains unchanged (\$ 390) but $\bar{X} = 453$, down by from the original data (\$ 465).
+\item<4-> The MED remains unchanged (\$ 605) but $\bar{X} = 582$, down by from the original data (\$ 594).
 \end{itemize}
 \end{frame}
 
@@ -1214,12 +1214,12 @@ We can see the median has not been affected by the outlier, whereas the  mean ha
 \item<2-> 10\% trimmed mean = mean of data with lowest 10\% values and  highest 10\% values excluded = mean of middle 80\% values
 \item<3-> in Kalamazoo apartment rental data, 10\% of n = 10 is 1 ($n \times 0.1 = 1$)
 
-250, 280, 350, 380, 400, 500, 650, 740
+340, 380, 500, 560, 650, 740, 760, 880
 % $500	$500	$525	$555	$635	$650	$670	$675	$750	$800
 \item<4-> Hence, 10\% trimmed mean, denoted $\bar{X}_{tr}$, is computed by
 \begin{eqnarray*}
-\bar{X}_{tr} &=& \frac{250+280+350+380+400+500+650+740}{8} \\
-     &=&443.75
+\bar{X}_{tr} &=& \frac{340+380+500+560+650+740+760+880}{8} \\
+     &=&601.25
 \end{eqnarray*}
 \end{itemize}
 }}
@@ -1356,23 +1356,23 @@ Estimates of Spread
 
 {\footnotesize{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 22 19:18:43 2018
+% Mon Jul 23 14:29:45 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrr}
   \hline
  & Rent & Diff & Diff Sqd \\ 
   \hline
-1 & 650 & 185 & 34225 \\ 
-  2 & 400 & -65 & 4225 \\ 
-  3 & 740 & 275 & 75625 \\ 
-  4 & 880 & 415 & 172225 \\ 
-  5 & 500 & 35 & 1225 \\ 
-  6 & 350 & -115 & 13225 \\ 
-  7 & 280 & -185 & 34225 \\ 
-  8 & 380 & -85 & 7225 \\ 
-  9 & 250 & -215 & 46225 \\ 
-  10 & 220 & -245 & 60025 \\ 
+1 & 880 & 286 & 81796 \\ 
+  2 & 380 & -214 & 45796 \\ 
+  3 & 650 & 56 & 3136 \\ 
+  4 & 910 & 316 & 99856 \\ 
+  5 & 760 & 166 & 27556 \\ 
+  6 & 560 & -34 & 1156 \\ 
+  7 & 340 & -254 & 64516 \\ 
+  8 & 740 & 146 & 21316 \\ 
+  9 & 220 & -374 & 139876 \\ 
+  10 & 500 & -94 & 8836 \\ 
    \hline
 \end{tabular}
 \end{table}
@@ -1384,14 +1384,14 @@ Estimates of Spread
 
 {\footnotesize{
 \begin{itemize}
-\item<1-> Step 1. Compute $\bar{x} = 465$
+\item<1-> Step 1. Compute $\bar{x} = 594$
 \item<2-> Step 2. Calculate Diff, i.e., how much an obs. `missed by' the average, (i.e., deviation).
 \item<3-> Step 3. Square the `missed by' differences.
 \item<4-> Step 4. Add all the squared `missed by' differences, i.e., SS
 \item<5-> Step 5. Take the square-root of $\frac{SS}{n - 1}$ to get SD
 
 \begin{equation*}
-SD = \sqrt{ \frac{\ensuremath{4.4845\times 10^{5}}}{ 10 - 1 }} = 223.2
+SD = \sqrt{ \frac{\ensuremath{4.9384\times 10^{5}}}{ 10 - 1 }} = 234.2
 \end{equation*}
 
 \end{itemize}
@@ -1480,9 +1480,9 @@ apartment rental example
 \end{center}
 
 \begin{itemize}
-\item<1-> Recall that the mean and SD are \$ $465 \pm 223.2$ \\ ($\pm$ means `give or take')
-\item<2-> Get a roommate and pay half the rent: \$ $232.5 \pm 111.6$ %$323  ± $52
-\item<3-> No roommate but has contribution of \$100 per month from parents: $232.5 \pm 223.2$    % $526 ± $104
+\item<1-> Recall that the mean and SD are \$ $594 \pm 234.2$ \\ ($\pm$ means `give or take')
+\item<2-> Get a roommate and pay half the rent: \$ $297 \pm 117.1$ %$323  ± $52
+\item<3-> No roommate but has contribution of \$100 per month from parents: $297 \pm 234.2$    % $526 ± $104
 \end{itemize}
 \end{frame}
 
@@ -2430,7 +2430,7 @@ P[ \hat{p} > 0.25] & \approx & P[ Z > 1.25] \\
 \begin{minipage}[ht]{4cm}
 
 
-\includegraphics[width=4cm]{figure/LBL8a-1} 
+\includegraphics[width=3.5cm]{figure/LBL8a-1} 
 
 
 \end{minipage}
@@ -3003,7 +3003,7 @@ Probability & Odds \\
 \end{table}
 \end{frame}
 
-\begin{frame}[fragile]{iClicker Question 15.1}
+\begin{frame}[fragile]{iClicker Question 9.1}
 
 {\small{
 A clinical trial was conducted to study the efficacy of a new drug  intended to lower the LDL (low-density lipoprotein, a.k.a., bad  cholesterol). All study subjects showed a high LDL level at the baseline.  Of the 100 treated subjects, 80 of them showed reduction to normal  LDL level two weeks after treatment. What is the odds that a treated  subject was having a reduction in LDL to normal level after two weeks?
@@ -3027,121 +3027,184 @@ A clinical trial was conducted to study the efficacy of a new drug  intended to 
 \end{frame}
 
 
-% \begin{frame}[fragile]{Hepatitis E Vaccine Eg., Cont'd}
-% 
-% \begin{equation*}
-% RR = \frac{ \frac{3}{898}}{ \frac{66}{896}} = 0.045 \texttt{ or } 4.5\%
-% \end{equation*}
-% 
-% \vspace{3mm}
-% 
-% That is, getting the vaccine reduces your risk to only 4.5\% of the  original. The efficacy of the vaccine is 95.5\% (= 100\% - 4.5\%)
-% 
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Calculating a 95\% CI for RR}
-% 
-% {\small{
-% \begin{enumerate}
-% \item<1-> Calculate a 95\% confidence interval for ln(RR):
-%   \begin{enumerate}
-%   \item<2-> calculate ln(RR)
-%   \item<3-> calculate
-%   \begin{equation*}
-%     SE_{ln(RR)} = \sqrt{\frac{1}{a} + \frac{1}{c} - \frac{1}{a+b} - \frac{1}{c+d}}
-%   \end{equation*}
-%   \item<4-> calculate 95\% CI for ln(RR)
-%   \begin{equation*}
-%     (ln(RR) - 1.96 SE, ln(RR) + 1.96 SE )
-%   \end{equation*}
-%   \end{enumerate}
-% \item<5-> A 95\% confidence interval for RR is
-% \begin{equation*}
-%     (e^{ln(RR) - 1.96 SE}, e^{ln(RR) + 1.96 SE} )
-%   \end{equation*}
-%   
-% \item<6-> and RR is statistical significant if the interval excludes one (1).
-% \end{enumerate}
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Hepatits E Vaccine Example, Cont'd}
-% 
-% {\small{
-% \begin{enumerate}
-% \item<1-> Calculate a 95\% confidence interval for ln(RR):
-%   \begin{enumerate}
-%   \item<2-> calculate ln(RR) = ln(.045) = -3.101
-%   \item<3-> calculate
-%   \begin{eqnarray*}
-%     SE_{ln(RR)} &=& \sqrt{\frac{1}{3} + \frac{1}{66} - \frac{1}{3+898} - \frac{1}{66+896}}  \\
-%     &=& \sqrt{.3462} \\
-%     &=& 0.5884 
-%   \end{eqnarray*}
-%   \item<4-> calculate 95\% CI for ln(RR)
-%   \begin{eqnarray*}
-%     CI &=& (-3.101-1.96 \cdot .5884, -3.101+1.96 \cdot .5884) \\
-%     &=& (-4.254, -1.948)
-%   \end{eqnarray*}
-%   \end{enumerate}
-% \end{enumerate}  
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Hepatits E Vaccine Example, Cont'd}
-% 
-% \begin{enumerate}
-% \item<1-> A 95\% confidence interval for RR is
-% \begin{equation*}
-%     (e^{-4.254}, e^{-1.948} ) = (.014, .143)
-%   \end{equation*}
-%   
-% \item<2-> That is, with 95\% confidence, the relative risk of getting hepatitis with the vaccine is only 1.4\% to 14.3\% of placebo. In other words, the vaccine reduces your risk by as low as 85.7\% (=100\% - 14.3\%) or as high as 98.6\% (= 100\% - 1.4\%).
-% \end{enumerate}
-% 
-% \end{frame}
-% 
-% \begin{frame}[fragile]{iClicker Question 9.2.1}
-% 
-% In an observational study, a sample of 10000 smokers was taken, 50  were found to have lung cancer. Another sample of 10000 non-smokers was taken, only 2 have lung cancer. What is the relative  risk of having lung cancer for smokers versus non-smokers?
-% 
-% \begin{enumerate}
-%   \item 50
-%   \item 2
-%   \item 25  
-%   \item 100
-%   \item cannot determine
-% \end{enumerate}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{iClicker Question 9.2.2}
-% 
-% In an observational study, a sample of 10000 smokers was taken, 50  were found to have lung cancer. Another sample of 10000 non-smokers was taken, only 2 have lung cancer. A 95\% confidence  interval for the relative risk of having lung cancer for smokers versus  smokers is (6.1, 102.5). Which of the following is true?
-% 
-% \begin{enumerate}
-% \item The proportion of smokers having lung cancer is  significantly different than that of non-smokers.
-% \item There is no difference between the two proportions.
-% \item cannot determine
-% \end{enumerate}
-% \end{frame}
+\begin{frame}[fragile]{Odds Ratio}
 
+When comparing two groups, the odds ratio is
 
+\vspace{3mm}
 
+\begin{equation*}
+OR = \frac{\texttt{Odds of group 1}}{\texttt{Odds of group 2}}
+\end{equation*}
 
-% 
-% 
-% <<Sec2, child="sections/section2/section2.Rnw",eval=TRUE>>=  
-% @
-% 
-% <<Sec3, child="sections/section3/section3.Rnw",eval=TRUE>>=   
-% @
-% 
-% <<Sec4, child="sections/section4/section4.Rnw",eval=TRUE>>=  
-% @
-% 
-% <<label=LBLrn, results="asis", echo=FALSE>>=
-%   system('mv Master.pdf ch1.pdf')
-% @
+\vspace{3mm}
+
+It is easier to interpret an OR when it's greater than 1 and hence, when  $OR < 1$, exchange the roles of the groups above to get an $OR > 1$.
+\end{frame}
+
+\begin{frame}[fragile]{Hepatits E Vaccine Example, revisited}
+
+{\footnotesize{
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} cccc @{}} \hline
+     & \multicolumn{2}{c}{Hepatitis E} \\
+     & Yes & No & Total \\ \hline
+     Placebo & 66 & 830 & 896 \\
+     Vaccine & 3 & 895 & 898 \\ \hline
+\end{tabular}
+\end{table}
+
+If we consider the placebo (i.e., unvaccinated) group as group 1, then
+
+\begin{equation*}
+Odds(Hep | Placebo) = \frac{ \frac{66}{896}}{ \frac{830}{896}} = \frac{66}{830} = .07952
+\end{equation*}
+
+\begin{equation*}
+Odds(Hep | vaccine) = \frac{ \frac{3}{898}}{ \frac{895}{898}} = \frac{3}{895} = .00335
+\end{equation*}
+
+\begin{equation*}
+Odds Ratio = \frac{\texttt{unvaccinated}}{\texttt{vaccinated}} = \frac{.07952}{.00335} = 23.7
+\end{equation*}
+
+So, the odds of getting hepatitis is about 24 times greater if you remain  unvaccinated.
+
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Hepatits E Vaccine Example, Cont'd}
+
+Consider, 
+
+{\footnotesize{
+\begin{table}[ht]
+\centering
+\begin{tabular}{@{} cccc @{}} \hline
+     & \multicolumn{2}{c}{Disease} \\
+     & Yes & No & Total \\ \hline
+     Group 1 & a & b & a + b \\
+     Group 2 & c & d & c + d \\ \hline
+\end{tabular}
+\end{table}
+
+The odds ratio is then 
+
+\begin{equation*}
+OR = \frac{a \times d}{b \times c}  = \frac{ success_1 \times failure_2}{ failure_1 \times success_2} = \frac{ success_1 / failure_1}{ success_2 / failure_2  }
+\end{equation*}
+
+where $successes_1$  = \# of `successes' (yes's) in group 1 and $failures_1$ = \# of `failures' (no's) in group 1;  \\ $successes_2$ = \# of `successes' (yes's) in group 2 and  $failures_2$  = \# of `failures' (no's) in group 2. \\
+Note: assume $OR > 1$. If $OR < 1$ then switch the rows above and then  the new OR is the reciprocal of the old one.
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 9.2}
+
+{\footnotesize{
+A clinical trial was conducted to study the efficacy of a new drug  intended to lower the LDL (low-density lipoprotein, a.k.a., bad  cholesterol). All study subjects showed high LDL level at the baseline.  Of the 100 treated subjects, 80 of them showed reduction to normal  LDL level two weeks after treatment. On the other hand, of the 100  subjects who received placebo, only 10 showed reduction to normal  LDL level after two weeks. What is the odds ratio of the treatment  group versus the placebo group?
+
+\begin{enumerate}
+\item 36
+\item 4
+\item 9
+\item 8
+\item cannot determine
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{A 95\% Confidence Interval for Odds Ratio}
+
+{\footnotesize{
+\begin{enumerate}
+\item<1-> Calculate a 95\% confidence interval for the ln odds ratio
+  \begin{itemize}
+  \item<2-> calculate ln odds ratio
+    {\footnotesize{
+    \begin{equation*}
+    ln( OR) = \frac{ad}{bc}
+    \end{equation*}
+    }}
+  \item<3-> calculate the standard error of ln(odds ratio)
+    {\scriptsize{
+    \begin{equation*}
+    SE = \sqrt{\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d} }
+    \end{equation*}
+    }}
+  \item<4-> a 95\% CI for ln(OR):
+    {\footnotesize{
+    \begin{equation*}
+      (ln(OR) - 1.96(SE), ln(OR) + 1.96(SE))
+    \end{equation*}
+    }}
+  \end{itemize}
+
+\item<5-> A 95\% confidence interval for $OR$ is
+  {\footnotesize{
+  \begin{equation*}
+    (e^{ln(OR) - 1.96(SE)}, e^{ln(OR) + 1.96(SE)} )
+  \end{equation*}
+  }}
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Hepatits E Vaccine Example, revisited}
+
+{\small{
+\begin{itemize}
+  \item<1-> Recall that the odds ratio of placebo subjects getting hepatitis against that of vaccinated subjects is
+
+  \item<2-> calculate ln odds ratio
+    {\footnotesize{
+    \begin{equation*}
+    ln( OR) = \frac{66 \times 895}{830 \times 3} = 23.7
+    \end{equation*}
+    }}
+  \item<3-> 95\% CI for ln(OR):
+  \item<4->
+    {\footnotesize{
+    \begin{equation*}
+      ln(OR) = ln(23.7) = 3.165
+    \end{equation*}
+    }}
+    \item<5-> calculate the standard error of ln(odds ratio)
+    {\footnotesize{
+    \begin{equation*}
+    SE = \sqrt{\frac{1}{66} + \frac{1}{830} + \frac{1}{3} + \frac{1}{895} } = .5923
+    \end{equation*}
+    }}
+  \end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Hepatits E Vaccine Example, revisited}
+
+{\small{
+  \begin{itemize}
+
+  \item<1-> a 95\% CI for ln(OR):
+    {\footnotesize{
+    \begin{equation*}
+      (3.165 - 1.96(.5923), 3.165 + 1.96(.5923)) \Rightarrow ( 2.004, 4.326)
+    \end{equation*}
+    }}
+
+  \item<2-> A 95\% confidence interval for $OR$ is
+  {\small{
+  \begin{equation*}
+    (e^{2.004}, e^{4.326} ) \Rightarrow (7.4, 75.6)
+  \end{equation*}
+  }}
+
+  \item<3-> So, with 95\% confidence, the odds of \textit{unvaccinated} subjects getting hepatitis is approximately between 7 and 76 times greater than that of the vaccinated subjects.
+
+\end{itemize}
+}}
+\end{frame}
+
 
 % \printbibliography
 %\bibliographystyle{plain}

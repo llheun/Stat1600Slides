@@ -145,7 +145,7 @@ P[ \hat{p} > 0.25] & \approx & P[ Z > 1.25] \\
 \end{minipage} \hfill
 \begin{minipage}[ht]{4cm}
 
-<<label=LBL8a, results="asis", echo=FALSE, out.width="4cm">>=
+<<label=LBL8a, results="asis", echo=FALSE, out.width="3.5cm">>=
   plot( dt4nd, dt4y, type="l", xlab="z-score")
   tmpyy <- c(dt4nd[dt4nd > 1.25], 1.25)
   tmpzz <- c(dnorm(dt4nd[dt4nd > 1.25] ), 1e-3)
