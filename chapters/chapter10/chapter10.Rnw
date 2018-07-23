@@ -1,0 +1,257 @@
+%!Rnw root = ../../Master.Rnw
+
+\section{Stat 1600 Ch. 10 Sampling Distribution of the Mean}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+Stat 1600 \\ Ch. 10 Sampling Distribution of the Mean
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Sampling Distribution of the Mean  
+
+\begin{itemize}
+\item Sample Mean Versus Individual Values  
+\item Sampling From Normal Population  
+\item iClicker Questions
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Intro to the Sampling Distr'n of the Mean}
+
+\begin{itemize}
+\item<1-> If we look at variability in the x variable (individual values) we would notice some extreme values
+\item<2-> If we take a random sample of size n from the population we can calculate the sample mean, $\bar{X}$.
+\item<3-> The mean for our sample has to account for extremes in  the data but if we take many more samples of the same size we would see the variability in the possible sample means will be less than the variability for the individual X values.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Intro to the Sampling Distr'n of the Mean}
+
+\begin{itemize}
+\item<1-> This is because any extreme value will be averaged with other values in the sample. 
+\item<2-> Therefore, as you increase the size of the sample, you have  more information; consequently, the sample mean is more accurate.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Example}
+
+Start with a population of numbers.
+
+[ 1, 2, 3, 4, 5]
+
+$$\texttt{Mean } \mu = 3, \texttt{SD } \sigma = 1.41$$
+
+Consider the process of taking a random sample of size $n = 3$  from the box and calculating the sample mean $\bar{x}$. 
+
+\begin{enumerate}
+\item<1-> Sample 1: [2, 4, 5];  $\bar{x}_1 = 3.67$
+\item<2-> Sample 2: [1, 3, 5];  $\bar{x}_2 = 3.00$
+\item<3-> Sample 3: [1, 3, 4];  $\bar{x}_3 = 2.67$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Example}
+
+{\small{
+Start with a population of numbers.
+
+[ 1, 2, 3, 4, 5]  $\texttt{ Mean } \mu = 3, \texttt{ SD } \sigma = 1.41$
+
+Consider the process of taking a random sample of size $n = 3$  from the box and calculating the sample mean $\bar{x}$. 
+
+{\footnotesize{
+\begin{itemize}
+\item Sample 1: [2, 4, 5];  $\bar{x}_1 = 3.67$
+\item Sample 2: [1, 3, 5];  $\bar{x}_2 = 3.00$
+\item Sample 3: [1, 3, 4];  $\bar{x}_3 = 2.67$
+\item Sample 4: [1, 4, 5];  $\bar{x}_4 = 3.33$
+\item Sample 5: [2, 3, 4];  $\bar{x}_5 = 3.00$
+\end{itemize}
+}}
+
+Notice the different values for $\bar{X}_i$!
+
+The value we would get for $\bar{x}$ is random, depending on chance.  Different samples yield different values for $\bar{x}$. 
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Standard Error of the Mean}
+
+Standard Error of the sample mean is the variation in $\bar{X}$:
+
+\begin{equation*}
+  \sigma_{\bar{x}} = SE_{\bar{x}} = \frac{SD}{\sqrt{n}}
+\end{equation*}
+
+where SD is the variability (the standard deviation) in the individual  values and $n$ is the sample size.
+
+\vspace{3mm}
+
+Note: The sample mean $\bar{X}$ has expected value of $\mu$ ( the population  mean). That is, the average of the sample means of all size-$n$ samples  is the population mean.
+
+\end{frame}
+
+\begin{frame}[fragile]{Sampling Distribution of a Sample Mean}
+
+\begin{minipage}[ht]{5cm}
+
+{\small{
+The expected value of $\bar{x}$ is 
+}}
+
+$$ E[\bar{x}] = \mu $$
+
+{\footnotesize{
+The standard error of the mean is
+}}
+
+$$ SE = \frac{ \sigma}{ \sqrt{n}} $$
+
+\end{minipage}
+\begin{minipage}[ht]{5cm}
+
+<<label=LBL10a, results="asis", echo=FALSE, out.width="4cm">>=
+  plot( dt4nd, dt4y, type="l")
+  ## tmpyy <- c(dt4nd[dt4nd < 0.5], 0.5)
+  ## tmpzz <- c(dnorm(dt4nd[dt4nd < 0.5] ), 1e-4)
+  ## polygon(tmpyy, tmpzz, col="skyblue")
+  
+@
+
+\end{minipage}
+
+\end{frame}
+
+% \begin{frame}[fragile]{Hepatits E Vaccine Example, Cont'd}
+% 
+% Consider, 
+% 
+% {\footnotesize{
+% \begin{table}[ht]
+% \centering
+% \begin{tabular}{@{} cccc @{}} \hline
+%      & \multicolumn{2}{c}{Disease} \\
+%      & Yes & No & Total \\ \hline
+%      Group 1 & a & b & a + b \\
+%      Group 2 & c & d & c + d \\ \hline
+% \end{tabular}
+% \end{table}
+% 
+% The odds ratio is then 
+% 
+% \begin{equation*}
+% OR = \frac{a \times d}{b \times c}  = \frac{ success_1 \times failure_2}{ failure_1 \times success_2} = \frac{ success_1 / failure_1}{ success_2 / failure_2  }
+% \end{equation*}
+% 
+% where $successes_1$  = \# of `successes' (yes's) in group 1 and $failures_1$ = \# of `failures' (no's) in group 1;  \\ $successes_2$ = \# of `successes' (yes's) in group 2 and  $failures_2$  = \# of `failures' (no's) in group 2. \\
+% Note: assume $OR > 1$. If $OR < 1$ then switch the rows above and then  the new OR is the reciprocal of the old one.
+% }}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{iClicker Question 9.2}
+% 
+% {\footnotesize{
+% A clinical trial was conducted to study the efficacy of a new drug  intended to lower the LDL (low-density lipoprotein, a.k.a., bad  cholesterol). All study subjects showed high LDL level at the baseline.  Of the 100 treated subjects, 80 of them showed reduction to normal  LDL level two weeks after treatment. On the other hand, of the 100  subjects who received placebo, only 10 showed reduction to normal  LDL level after two weeks. What is the odds ratio of the treatment  group versus the placebo group?
+% 
+% \begin{enumerate}
+% \item 36
+% \item 4
+% \item 9
+% \item 8
+% \item cannot determine
+% \end{enumerate}
+% }}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{A 95\% Confidence Interval for Odds Ratio}
+% 
+% {\footnotesize{
+% \begin{enumerate}
+% \item<1-> Calculate a 95\% confidence interval for the ln odds ratio
+%   \begin{itemize}
+%   \item<2-> calculate ln odds ratio
+%     {\footnotesize{
+%     \begin{equation*}
+%     ln( OR) = \frac{ad}{bc}
+%     \end{equation*}
+%     }}
+%   \item<3-> calculate the standard error of ln(odds ratio)
+%     {\scriptsize{
+%     \begin{equation*}
+%     SE = \sqrt{\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d} }
+%     \end{equation*}
+%     }}
+%   \item<4-> a 95\% CI for ln(OR):
+%     {\footnotesize{
+%     \begin{equation*}
+%       (ln(OR) - 1.96(SE), ln(OR) + 1.96(SE))
+%     \end{equation*}
+%     }}
+%   \end{itemize}
+% 
+% \item<5-> A 95\% confidence interval for $OR$ is
+%   {\footnotesize{
+%   \begin{equation*}
+%     (e^{ln(OR) - 1.96(SE)}, e^{ln(OR) + 1.96(SE)} )
+%   \end{equation*}
+%   }}
+% \end{enumerate}
+% }}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{Hepatits E Vaccine Example, revisited}
+% 
+% {\small{
+% \begin{itemize}
+%   \item<1-> Recall that the odds ratio of placebo subjects getting hepatitis against that of vaccinated subjects is
+% 
+%   \item<2-> calculate ln odds ratio
+%     {\footnotesize{
+%     \begin{equation*}
+%     ln( OR) = \frac{66 \times 895}{830 \times 3} = 23.7
+%     \end{equation*}
+%     }}
+%   \item<3-> 95\% CI for ln(OR):
+%   \item<4->
+%     {\footnotesize{
+%     \begin{equation*}
+%       ln(OR) = ln(23.7) = 3.165
+%     \end{equation*}
+%     }}
+%     \item<5-> calculate the standard error of ln(odds ratio)
+%     {\footnotesize{
+%     \begin{equation*}
+%     SE = \sqrt{\frac{1}{66} + \frac{1}{830} + \frac{1}{3} + \frac{1}{895} } = .5923
+%     \end{equation*}
+%     }}
+%   \end{itemize}
+% }}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{Hepatits E Vaccine Example, revisited}
+% 
+% {\small{
+%   \begin{itemize}
+% 
+%   \item<1-> a 95\% CI for ln(OR):
+%     {\footnotesize{
+%     \begin{equation*}
+%       (3.165 - 1.96(.5923), 3.165 + 1.96(.5923)) \Rightarrow ( 2.004, 4.326)
+%     \end{equation*}
+%     }}
+% 
+%   \item<2-> A 95\% confidence interval for $OR$ is
+%   {\small{
+%   \begin{equation*}
+%     (e^{2.004}, e^{4.326} ) \Rightarrow (7.4, 75.6)
+%   \end{equation*}
+%   }}
+% 
+%   \item<3-> So, with 95\% confidence, the odds of \textit{unvaccinated} subjects getting hepatitis is approximately between 7 and 76 times greater than that of the vaccinated subjects.
+% 
+% \end{itemize}
+% }}
+% \end{frame}

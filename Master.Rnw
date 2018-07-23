@@ -102,6 +102,11 @@ opts_chunk$set(
 <<Ch9b, child="chapters/chapter9b/chapter9b.Rnw",eval=TRUE>>=
 @
 
+<<Ch10, child="chapters/chapter10/chapter10.Rnw",eval=TRUE>>=
+@
+
+
+
 
 % \printbibliography
 %\bibliographystyle{plain}

@@ -1,23 +1,25 @@
-\frametitle{Hepatits E Vaccine Example, revisited}
+\frametitle{Sampling Distribution of a Sample Mean}
+
+\begin{minipage}[ht]{5cm}
 
 {\small{
-  \begin{itemize}
-
-  \item<1-> a 95\% CI for ln(OR):
-    {\footnotesize{
-    \begin{equation*}
-      (3.165 - 1.96(.5923), 3.165 + 1.96(.5923)) \Rightarrow ( 2.004, 4.326)
-    \end{equation*}
-    }}
-
-  \item<2-> A 95\% confidence interval for $OR$ is
-  {\small{
-  \begin{equation*}
-    (e^{2.004}, e^{4.326} ) \Rightarrow (7.4, 75.6)
-  \end{equation*}
-  }}
-
-  \item<3-> So, with 95\% confidence, the odds of \textit{unvaccinated} subjects getting hepatitis is approximately between 7 and 76 times greater than that of the vaccinated subjects.
-
-\end{itemize}
+The expected value of $\bar{x}$ is
 }}
+
+$$ E[\bar{x}] = \mu $$
+
+{\footnotesize{
+The standard error of the mean is
+}}
+
+$$ SE = \frac{ \sigma}{ \sqrt{n}} $$
+
+\end{minipage}
+\begin{minipage}[ht]{5cm}
+
+
+\includegraphics[width=4cm]{figure/LBL10a-1}
+
+
+\end{minipage}
+
