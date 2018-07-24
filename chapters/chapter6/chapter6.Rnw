@@ -145,7 +145,7 @@ z &=& \frac{X - \mu}{\sigma} \\
 <<label=LBL6b, results="asis", echo=FALSE, out.width="4cm">>=
   plot( dt4nd, dt4y, type="l")
   tmpyy <- c(dt4nd[dt4nd < 0.5], 0.5)
-  tmpzz <- c(dnorm(dt4nd[dt4nd < 0.5] ), 1e-4)
+  tmpzz <- c(dnorm(dt4nd[dt4nd < 0.5] ), 4e-3)
   polygon(tmpyy, tmpzz, col="skyblue")
 @
 \end{minipage}

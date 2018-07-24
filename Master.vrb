@@ -1,24 +1,20 @@
-\frametitle{Sampling Distribution of a Sample Mean}
+\frametitle{Men's Height Example}
 
 \begin{minipage}[ht]{5cm}
+
+selecting one man
 
 {\small{
-The expected value of $\bar{x}$ is
+Suppose that male's height is  approximately: \\
+$N(mean = 69, SD = 3)$. \\
+Using empirical rule \\
+$0.68 \approx P(66 \le X \le 72)$
 }}
-
-$$ E[\bar{x}] = \mu $$
-
-{\footnotesize{
-The standard error of the mean is
-}}
-
-$$ SE = \frac{ \sigma}{ \sqrt{n}} $$
-
-\end{minipage}
+\end{minipage} \hfill
 \begin{minipage}[ht]{5cm}
 
 
-\includegraphics[width=4cm]{figure/LBL10a-1}
+\includegraphics[width=4.5cm]{figure/LBL10b-1}
 
 
 \end{minipage}

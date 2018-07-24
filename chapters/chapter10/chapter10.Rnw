@@ -110,20 +110,55 @@ The standard error of the mean is
 
 $$ SE = \frac{ \sigma}{ \sqrt{n}} $$
 
-\end{minipage}
+\end{minipage} \hfill
 \begin{minipage}[ht]{5cm}
 
-<<label=LBL10a, results="asis", echo=FALSE, out.width="4cm">>=
-  plot( dt4nd, dt4y, type="l")
-  ## tmpyy <- c(dt4nd[dt4nd < 0.5], 0.5)
-  ## tmpzz <- c(dnorm(dt4nd[dt4nd < 0.5] ), 1e-4)
-  ## polygon(tmpyy, tmpzz, col="skyblue")
-  
+<<label=LBL10a, results="asis", echo=FALSE, out.width="4.5cm">>=
+  plot( dt4nd, dt4y, type="l", xlab="Values of Sample Means", ylab=" ")
+  tmpyy <- c(dt4nd[dt4nd < 0.0], 0.0)
+  tmpzz <- c(dnorm(dt4nd[dt4nd < 0.0] ), 4e-3)
+  polygon(tmpyy, tmpzz, col="skyblue")
+  lines(c(0,1), c(.24,.24))
+  text(2, .352, "SE")
+  arrows(2, .33, 0.7, .242)
+  text(2, .17, "mu")
+  arrows(2, .15, 0.0, 4e-3)
 @
 
 \end{minipage}
 
+The sampling distribution is approximately normal (recommend $n > 30$). 
+
 \end{frame}
+
+\begin{frame}[fragile]{Men's Height Example}
+
+\begin{minipage}[ht]{5cm}
+
+selecting one man
+
+{\small{
+Suppose that male's height is  approximately: \\
+$N(mean = 69, SD = 3)$. \\
+Using empirical rule \\
+$0.68 \approx P(66 \le X \le 72)$
+}}
+\end{minipage} \hfill
+\begin{minipage}[ht]{5cm}
+
+<<label=LBL10b, results="asis", echo=FALSE, out.width="4.5cm">>=
+  dt10nd <- seq(60, 78, .1)
+  dt10y  <- dnorm(dt10nd, mean=69, sd=3)
+  plot( dt10nd, dt10y, type="l", xlab="Height(in) (n = 1)", ylab=" ")
+  tmpyy <- c(dt10nd[dt10nd > 66 & dt10nd < 72], 72, 66)
+  tmpzz <- c(dnorm(dt10nd[dt10nd > 66 & dt10nd < 72], mean=69, sd=3), 1e-3, 1e-3)
+  polygon(tmpyy, tmpzz, col="skyblue")
+ @
+
+\end{minipage}
+
+\end{frame}
+
 
 % \begin{frame}[fragile]{Hepatits E Vaccine Example, Cont'd}
 % 
