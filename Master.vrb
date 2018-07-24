@@ -1,21 +1,7 @@
-\frametitle{Men's Height Example}
+\frametitle{WMU Undergraduates’ Average GPA}
 
-\begin{minipage}[ht]{5cm}
+Recall that the sample of $n = 25$ students yielded a sample mean of $\bar{X} = 3.05$ with a standard error of $SE = 0.08$.  The margin of error is then $ME = 1.96 \times 0.08 = 0.157$. Hence a 95\% CI for the true average  GPA, $\mu$, is:
 
-selecting one man
+$$(3.05 - 0.157, 3.05 + 0.157) = (2.893, 3.207)$$.
 
-{\small{
-Suppose that male's height is  approximately: \\
-$N(mean = 69, SD = 3)$. \\
-Using empirical rule \\
-$0.68 \approx P(66 \le X \le 72)$
-}}
-\end{minipage} \hfill
-\begin{minipage}[ht]{5cm}
-
-
-\includegraphics[width=4.5cm]{figure/LBL10b-1}
-
-
-\end{minipage}
-
+Interpretation: based on the sample, we are 95\% confident that the  true mean GPA is in between 2.9 and 3.2, approximately.

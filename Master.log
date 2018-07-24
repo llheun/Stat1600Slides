@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.16)  23 JUL 2018 20:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.16)  24 JUL 2018 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2482,7 +2482,7 @@ Package pdftex.def Info: figure/LBL10a-1.pdf  used on input line 21.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL10b-1.pdf, id=9908, 289.08pt x 289.08pt>
+<figure/LBL10b-1.pdf, id=9909, 289.08pt x 289.08pt>
 File: figure/LBL10b-1.pdf Graphic file (type pdf)
 <use figure/LBL10b-1.pdf>
 Package pdftex.def Info: figure/LBL10b-1.pdf  used on input line 17.
@@ -2490,6 +2490,132 @@ Package pdftex.def Info: figure/LBL10b-1.pdf  used on input line 17.
 ) [354
 
  <./figure/LBL10b-1.pdf>]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb
+<figure/LBL10c-1.pdf, id=9942, 289.08pt x 289.08pt>
+File: figure/LBL10c-1.pdf Graphic file (type pdf)
+<use figure/LBL10c-1.pdf>
+Package pdftex.def Info: figure/LBL10c-1.pdf  used on input line 15.
+(pdftex.def)             Requested size: 128.0374pt x 128.03368pt.
+) [355
+
+ <./figure/LBL10c-1.pdf>]
+\openout4 = `Master.vrb'.
+
+
+(./Master.vrb) [356
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [357
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb
+<figure/LBL10d-1.pdf, id=10031, 289.08pt x 289.08pt>
+File: figure/LBL10d-1.pdf Graphic file (type pdf)
+<use figure/LBL10d-1.pdf>
+Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
+(pdftex.def)             Requested size: 128.0374pt x 128.03368pt.
+) [358
+
+ <./figure/LBL10d-1.pdf>]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [359
+
+] (./Master.vrb) [360
+
+] (./Master.vrb) [361
+
+]
+(./Master.vrb) [362
+
+] (./Master.vrb) [363
+
+] (./Master.vrb) [364
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb)
+[365
+
+] (./Master.vrb) [366
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [367
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [368
+
+]
+\openout4 = `Master.vrb'.
+
+
+(./Master.vrb) [369
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [370
+
+] (./Master.vrb) [371
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb)
+[372
+
+] (./Master.vrb) [373
+
+] (./Master.vrb) [374
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [375
+
+]
+(./Master.vrb) [376
+
+] (./Master.vrb) [377
+
+] (./Master.vrb) [378
+
+] (./Master.vrb)
+[379
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [380
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [381
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [382
+
+]
+\openout4 = `Master.vrb'.
+
+
+(./Master.vrb) [383
+
+]
 \tf@nav=\write6
 \openout6 = `Master.nav'.
 
@@ -2499,20 +2625,20 @@ Package pdftex.def Info: figure/LBL10b-1.pdf  used on input line 17.
 \tf@snm=\write8
 \openout8 = `Master.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3500.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3500.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3600.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3600.
  (./Master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3500.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3500.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3600.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3600.
 
 Package rerunfilecheck Info: File `Master.out' has not changed.
 (rerunfilecheck)             Checksum: F5378703FA6E2D19BBFC65CB08E5A53C;1153.
  ) 
 Here is how much of TeX's memory you used:
- 19694 strings out of 492646
- 359197 string characters out of 6129563
- 446549 words of memory out of 5000000
- 21704 multiletter control sequences out of 15000+600000
+ 19852 strings out of 492646
+ 360994 string characters out of 6129563
+ 448622 words of memory out of 5000000
+ 21744 multiletter control sequences out of 15000+600000
  20925 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,63p,844b,813s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2537,10 +2663,10 @@ l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
 texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on Master.pdf (354 pages, 1326929 bytes).
+Output written on Master.pdf (383 pages, 1411101 bytes).
 PDF statistics:
- 10172 PDF objects out of 10688 (max. 8388607)
- 9650 compressed objects within 97 object streams
- 723 named destinations out of 1000 (max. 500000)
- 275 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 10992 PDF objects out of 12825 (max. 8388607)
+ 10429 compressed objects within 105 object streams
+ 781 named destinations out of 1000 (max. 500000)
+ 285 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -138,7 +138,7 @@ The sampling distribution is approximately normal (recommend $n > 30$).
 selecting one man
 
 {\small{
-Suppose that male's height is  approximately: \\
+Suppose that male's height is approximately: \\
 $N(mean = 69, SD = 3)$. \\
 Using empirical rule \\
 $0.68 \approx P(66 \le X \le 72)$
@@ -149,144 +149,257 @@ $0.68 \approx P(66 \le X \le 72)$
 <<label=LBL10b, results="asis", echo=FALSE, out.width="4.5cm">>=
   dt10nd <- seq(60, 78, .1)
   dt10y  <- dnorm(dt10nd, mean=69, sd=3)
-  plot( dt10nd, dt10y, type="l", xlab="Height(in) (n = 1)", ylab=" ")
+  plot( dt10nd, dt10y, type="l", xlab="Average Height(in) (n = 1)", ylab=" ")
   tmpyy <- c(dt10nd[dt10nd > 66 & dt10nd < 72], 72, 66)
   tmpzz <- c(dnorm(dt10nd[dt10nd > 66 & dt10nd < 72], mean=69, sd=3), 1e-3, 1e-3)
   polygon(tmpyy, tmpzz, col="skyblue")
  @
 
 \end{minipage}
+\end{frame}
+
+\begin{frame}[fragile]{Men's Height Example}
+
+\begin{minipage}[ht]{5cm}
+
+selecting nine men
+
+{\small{
+Nine ($n = 9$) men are randomly selected.  Now, \\ $SE = \frac{3}{\sqrt{9}}$.  Using empirical  rule, \\
+$0.997 \approx P[66 \le X \le 72]$
+}}
+\end{minipage} 
+\begin{minipage}[ht]{5cm}
+
+<<label=LBL10c, results="asis", echo=FALSE, out.width="4.5cm">>=
+  # dt10nd <- seq(60, 78, .1)
+  dt10y  <- dnorm(dt10nd, mean=69, sd=1)
+  plot( dt10nd, dt10y, type="l", xlab="Height(in) (n = 9)", ylab=" ")
+  tmpyy <- c(dt10nd[dt10nd > 66 & dt10nd < 72], 72, 66)
+  tmpzz <- c(dnorm(dt10nd[dt10nd > 66 & dt10nd < 72], mean=69, sd=1), 1e-3, 1e-3)
+  polygon(tmpyy, tmpzz, col="skyblue")
+ @
+
+\end{minipage}
+\end{frame}
+
+\begin{frame}[fragile]{Men’s Height Example; discussion}
+
+Therefore, when considering sample sizes of 1 or 9, our probability  went from 68.27\% to 99.73\%.
+
+\vspace{3mm}
+
+The reason for this difference is that it is harder to get the mean height of 9 men to be less than 66 or greater than 72 versus for a single male
 
 \end{frame}
 
+\begin{frame}[fragile]{Distribution of the Sample Mean}
 
-% \begin{frame}[fragile]{Hepatits E Vaccine Example, Cont'd}
-% 
-% Consider, 
-% 
-% {\footnotesize{
-% \begin{table}[ht]
-% \centering
-% \begin{tabular}{@{} cccc @{}} \hline
-%      & \multicolumn{2}{c}{Disease} \\
-%      & Yes & No & Total \\ \hline
-%      Group 1 & a & b & a + b \\
-%      Group 2 & c & d & c + d \\ \hline
-% \end{tabular}
-% \end{table}
-% 
-% The odds ratio is then 
-% 
-% \begin{equation*}
-% OR = \frac{a \times d}{b \times c}  = \frac{ success_1 \times failure_2}{ failure_1 \times success_2} = \frac{ success_1 / failure_1}{ success_2 / failure_2  }
-% \end{equation*}
-% 
-% where $successes_1$  = \# of `successes' (yes's) in group 1 and $failures_1$ = \# of `failures' (no's) in group 1;  \\ $successes_2$ = \# of `successes' (yes's) in group 2 and  $failures_2$  = \# of `failures' (no's) in group 2. \\
-% Note: assume $OR > 1$. If $OR < 1$ then switch the rows above and then  the new OR is the reciprocal of the old one.
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{iClicker Question 9.2}
-% 
-% {\footnotesize{
-% A clinical trial was conducted to study the efficacy of a new drug  intended to lower the LDL (low-density lipoprotein, a.k.a., bad  cholesterol). All study subjects showed high LDL level at the baseline.  Of the 100 treated subjects, 80 of them showed reduction to normal  LDL level two weeks after treatment. On the other hand, of the 100  subjects who received placebo, only 10 showed reduction to normal  LDL level after two weeks. What is the odds ratio of the treatment  group versus the placebo group?
-% 
-% \begin{enumerate}
-% \item 36
-% \item 4
-% \item 9
-% \item 8
-% \item cannot determine
-% \end{enumerate}
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{A 95\% Confidence Interval for Odds Ratio}
-% 
-% {\footnotesize{
-% \begin{enumerate}
-% \item<1-> Calculate a 95\% confidence interval for the ln odds ratio
-%   \begin{itemize}
-%   \item<2-> calculate ln odds ratio
-%     {\footnotesize{
-%     \begin{equation*}
-%     ln( OR) = \frac{ad}{bc}
-%     \end{equation*}
-%     }}
-%   \item<3-> calculate the standard error of ln(odds ratio)
-%     {\scriptsize{
-%     \begin{equation*}
-%     SE = \sqrt{\frac{1}{a} + \frac{1}{b} + \frac{1}{c} + \frac{1}{d} }
-%     \end{equation*}
-%     }}
-%   \item<4-> a 95\% CI for ln(OR):
-%     {\footnotesize{
-%     \begin{equation*}
-%       (ln(OR) - 1.96(SE), ln(OR) + 1.96(SE))
-%     \end{equation*}
-%     }}
-%   \end{itemize}
-% 
-% \item<5-> A 95\% confidence interval for $OR$ is
-%   {\footnotesize{
-%   \begin{equation*}
-%     (e^{ln(OR) - 1.96(SE)}, e^{ln(OR) + 1.96(SE)} )
-%   \end{equation*}
-%   }}
-% \end{enumerate}
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Hepatits E Vaccine Example, revisited}
-% 
-% {\small{
-% \begin{itemize}
-%   \item<1-> Recall that the odds ratio of placebo subjects getting hepatitis against that of vaccinated subjects is
-% 
-%   \item<2-> calculate ln odds ratio
-%     {\footnotesize{
-%     \begin{equation*}
-%     ln( OR) = \frac{66 \times 895}{830 \times 3} = 23.7
-%     \end{equation*}
-%     }}
-%   \item<3-> 95\% CI for ln(OR):
-%   \item<4->
-%     {\footnotesize{
-%     \begin{equation*}
-%       ln(OR) = ln(23.7) = 3.165
-%     \end{equation*}
-%     }}
-%     \item<5-> calculate the standard error of ln(odds ratio)
-%     {\footnotesize{
-%     \begin{equation*}
-%     SE = \sqrt{\frac{1}{66} + \frac{1}{830} + \frac{1}{3} + \frac{1}{895} } = .5923
-%     \end{equation*}
-%     }}
-%   \end{itemize}
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Hepatits E Vaccine Example, revisited}
-% 
-% {\small{
-%   \begin{itemize}
-% 
-%   \item<1-> a 95\% CI for ln(OR):
-%     {\footnotesize{
-%     \begin{equation*}
-%       (3.165 - 1.96(.5923), 3.165 + 1.96(.5923)) \Rightarrow ( 2.004, 4.326)
-%     \end{equation*}
-%     }}
-% 
-%   \item<2-> A 95\% confidence interval for $OR$ is
-%   {\small{
-%   \begin{equation*}
-%     (e^{2.004}, e^{4.326} ) \Rightarrow (7.4, 75.6)
-%   \end{equation*}
-%   }}
-% 
-%   \item<3-> So, with 95\% confidence, the odds of \textit{unvaccinated} subjects getting hepatitis is approximately between 7 and 76 times greater than that of the vaccinated subjects.
-% 
-% \end{itemize}
-% }}
-% \end{frame}
+when sampling from normal population.
+
+If a population has a normal shaped histogram with $mean = \mu$, and standard deviation, $SD = \sigma$, then $n$-member averages will have a normal shaped histogram with $mean = \mu$ and $SE_{\bar{x}} = \frac{\sigma}{\sqrt{n}}$.
+
+
+If $X_1, X_2, \cdots , X_n$ are sampled from $N(\mu, \sigma)$ then
+
+$$ X \sim N( \mu, \frac{\sigma}{\sqrt{n}})$$.
+
+\end{frame}
+
+\begin{frame}[fragile]{Sampling Distribution of a Sample Mean}
+
+\begin{minipage}[ht]{5cm}
+
+{\small{
+The expected value of $\bar{x}$ is 
+}}
+
+$$ E[\bar{x}] = \mu $$
+
+{\footnotesize{
+The standard error of the mean is
+}}
+
+$$ SE = \frac{ \sigma}{ \sqrt{n}} $$
+
+\end{minipage} \hfill
+\begin{minipage}[ht]{5cm}
+
+<<label=LBL10d, results="asis", echo=FALSE, out.width="4.5cm">>=
+  plot( dt4nd, dt4y, type="l", xlab="Values of Sample Means", ylab=" ")
+  tmpyy <- c(dt4nd[dt4nd < 0.0], 0.0)
+  tmpzz <- c(dnorm(dt4nd[dt4nd < 0.0] ), 4e-3)
+  polygon(tmpyy, tmpzz, col="skyblue")
+  lines(c(0,1), c(.24,.24))
+  text(2, .352, "SE")
+  arrows(2, .33, 0.7, .242)
+  text(2, .17, "mu")
+  arrows(2, .15, 0.0, 4e-3)
+@
+
+\end{minipage}
+
+The sampling distribution is approximately normal (recommend $n > 30$). 
+
+\end{frame}
+
+\begin{frame}[fragile]{Men's Height Example 1}
+
+\begin{enumerate}[a]
+\item<1-> $n = 1$; $P[X > 71] =?$; $z = \frac{71 - 69}{3} = 0.67$
+
+{\footnotesize{
+$P[ X > 71] = P[ z > 0.67] = 1 - P[ z \le 0.67] = 1 - .7486 = .2514$
+}}
+\item<2-> $n = 1$; $P[X > 71] = 0.2514 $
+\item<3-> $n = 9$; $P[\bar{X} > 71] =?$; $SE = \frac{3}{\sqrt{9}} = 1$;  $z =  \frac{71 - 69}{1} = 2$
+
+{\footnotesize{
+$P[ X > 71] = P[ z > 2] = 1 - P[ z \le 2] = 1 - .9772 = .0228$
+}}
+\item<4-> $n = 9$; $P[\bar{X} > 71] =  0.0228 $
+\item<5-> $n = 25$; $P[\bar{X} > 71] =?$; $SE = \frac{3}{\sqrt{25}} = .6$;  $z =  \frac{71 - 69}{.6} = 3.33$
+
+{\footnotesize{
+$P[ \bar{X} > 71] = P[ z > 3.33] = 1 - P[ z \le 3.33] = 1 - .9996 = .0004$
+}}
+\item<6-> $n = 25$; $P[\bar{X} > 71] =  0.0004 $
+
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Men's Height Example 1}
+
+\begin{enumerate}[a]
+\item<1-> $n = 9$; $P[\bar{X} > a] =.9$; $a = ?$
+
+Note that $P[ z \ge -1.28] = 0.8997 \approx 0.9$.
+
+
+$P[ \bar{X} > a] = P\Big[ z > \frac{a - 69}{ \sqrt{ \frac{3}{\sqrt{9}}}} \Big] \approx .90$ \\
+$z \approx -1.28$
+
+
+{\footnotesize{
+$ -1.28 = \frac{a - 69}{1} \Rightarrow a = 69 + 1(-1.28) = 67.72$
+}}
+
+\item<2-> $P[\bar{X} > a] = 0.9 \Rightarrow a = 67.72 $
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 10.1}
+
+It is suggested that the substrate concentration ($mg/cm^3$) of influent to  a domestic-waste biofilm reactor is normally distributed with mean 0.30  and standard deviation of 0.06. A sample of 9 reactors is taken. What  is the chance that the mean substrate concentration of influent of  these reactors is in between $0.26 mg/cm^3$  and $0.34 mg/cm^3$?
+
+\begin{enumerate}
+\item 68\%
+\item 90\%
+\item 95\%
+\item 99.7\%
+\item none of the previous
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Estimating the Population Mean $\mu$    
+\begin{itemize}
+\item Estimating the Population Mean $\mu$
+\item iClicker Questions
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Estimating the Population Mean}
+
+\begin{itemize}
+\item The population mean $\mu$ is estimated using the sample mean $\bar{X}$.  \item This  estimate tends to miss by an amount called the standard error ($SE_{\bar{x}}$) of
+the mean. 
+\item This is calculated as $\frac{SD}{\sqrt{n}}$.  Note that SD is the sample standard deviation 
+\item
+\begin{equation*}
+  SD = \sqrt{ \frac{\sum (X - \bar{X})^2 }{n - 1}}
+\end{equation*}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{WMU Undergraduates' Average GPA}
+
+\begin{itemize}
+\item<1-> Suppose a sample of $n = 25$ WMU students yielded an average GPA of $\bar{X} = 3.05$ and a standard deviation of 0.40. Then the WMU true population average GPA, $\mu$, is estimated by 3.05 with a standard error of $\frac{SD}{\sqrt{n}}$.  What is the SE? 
+\item<2-> $\frac{SD}{\sqrt{n}} = \frac{0.40}{\sqrt{25}} = 0.08$
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{WMU Undergraduates' Average Stay}
+
+\begin{itemize}
+\item<1-> A sample of $n = 25$ graduating students were randomly selected and  asked about their length of stay. 
+\item<2-> Suppose that the sample averaged 5.3 years, with an SD of 1.5 years. \item<3-> Then the true WMU average stay, $\mu$, is estimated as $\bar{X} = 5.3$ years give or take $SE = \frac{SD}{\sqrt{n}} = \frac{1.5}{\sqrt{25}} = 0.3$ years.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{WMU Undergraduates' Average Stay}
+
+\begin{itemize}
+\item<1-> A second sample of 100 students were interviewed. 
+\item<2-> The mean and SD for the second sample were also 5.3 years and 1.5 years, respectively.  
+\item<3-> Then the true average stay $\mu$ is estimated as $\bar{X} = 5.3$ years give or take $SE = \frac{SD}{\sqrt{n}} = \frac{1.5}{\sqrt{100}} = 0.15$ years. 
+\item<4-> Effect of Sample Size on Standard Error
+\item<5-> The standard error of the mean decreases like the square root of the  sample size.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 10.2}
+
+{\small{
+The HDL (high-density lipoprotein, a.k.a., good cholesterol) among  adults is normally distributed. A sample of 25 adults was selected  which yielded a sample standard deviation of $5.3 mg/dL$. A second  sample of 100 adults was selected which also yielded a sample  standard deviation of $5.3 mg/dL$. Which of the following is true about  the SEs (standard errors of the mean) of the two samples? ($SE_1 = SE_{n=25}$, $SE_2 = SE_{n=100}$)
+
+\begin{enumerate}
+\item $SE_1 = 4 SE_2$
+\item $SE_2 = 2 SE_1$
+\item $SE_1 = 2 SE_2$
+\item $SE_2 = 4 SE_1$
+\item none of the previous
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Sampling Distribution of the Mean  
+
+\begin{itemize}
+\item Confidence Interval for Population Mean
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Confidence Interval for Pop. Mean}
+
+A 95\% confidence interval for $\mu$
+
+\begin{equation*}
+  \bar{X} \pm 1.96 \frac{SD}{\sqrt{n}}
+\end{equation*}
+
+\begin{enumerate}
+\item That is, first calculate the margin of error:
+\begin{equation*}
+ME = 1.96 \times SE = 1.96 \frac{SD}{\sqrt{n}}
+\end{equation*}
+\item Then a 95\% confidence interval is
+\begin{equation*}
+(\bar{X} - ME, \bar{X} + ME)
+\end{equation*}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{WMU Undergraduates’ Average GPA}
+
+Recall that the sample of $n = 25$ students yielded a sample mean of $\bar{X} = 3.05$ with a standard error of $SE = 0.08$.  The margin of error is then $ME = 1.96 \times 0.08 = 0.157$. Hence a 95\% CI for the true average  GPA, $\mu$, is:
+
+$$(3.05 - 0.157, 3.05 + 0.157) = (2.893, 3.207)$$.
+
+Interpretation: based on the sample, we are 95\% confident that the  true mean GPA is in between 2.9 and 3.2, approximately.
+\end{frame}
