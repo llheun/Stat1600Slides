@@ -1,0 +1,216 @@
+%!Rnw root = ../../Master.Rnw
+
+\section{Stat 1600 Ch. 11  Comparing Two Means}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+Stat 1600 \\ Ch. 11  Comparing Two Means
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Comparing Two Means
+
+\begin{itemize}
+\item Comparing Means of Two Independent Populations  
+\item Estimating the Difference
+\item iClicker Questions  
+\item The P-Value
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Two-Sample Problem}
+
+Two \textit{independent} populations are to be compared for a characteristic,  either a quantitative meansurement or a categorical one.  A random  sample is taken from each population to study.  The samples are  independent.  In a controlled study, the subjects are selected with  uniformity with respect to known source(s) of variation (similar weight, similar health condition, etc).
+\end{frame}
+
+\begin{frame}[fragile]{Examples}
+
+{\small{
+\begin{itemize}
+\item Is there ``grade inflation'' in WMU? How does the average GPA of  WMU students today compare with 10 years ago? Suppose a  random sample of 100 student records from 10 years ago yields a  sample average GPA of 2.90 with a standard deviation of 0.40.  A  random sample of 100 current students today yields a sample average of 2.98 with a standard deviation of .45. The difference  between the two sample means is $2.98 - 2.90 = .08$. Is this proof  that GPA's are higher today than 10 years ago?  Or the chance  variability is at work?
+\item How does the reduction of BMI of the Atkins diet compare to that  of Zone diet at 12 months?
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Notation}
+
+\begin{itemize}
+\item<1-> Population 1 has mean $\mu_1$ and standard deviation $\sigma_1$ (usually  unknown).
+\item<2-> Population 2 has mean $\mu_2$ and standard deviation $\sigma_2$ (usually  unknown).
+\item<3-> Sample of size $n_1$ is taken from population 1: the sample mean is $\bar{X}_1$, the sample standard deviation is $SD_1$, and the standard error is $SE_1 = \frac{SD_1}{\sqrt{n_1}}$  
+\item<4-> Sample of size $n_2$ is taken from population 2: the sample mean is $\bar{X}_2$, the sample standard deviation is $SD_2$, and the standard error is $SE_2 = \frac{SD_2}{\sqrt{n_2}}$
+\item<5-> The two samples are independent.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Estimating the Difference in Means}
+
+\begin{itemize}
+\item<1-> of two independent populations: $\mu_1 - \mu_2$
+\item<2-> Point estimate $\bar{X}_1 - \bar{X}_2$
+\item<3-> Standard Error:
+{\small{
+\begin{equation*}
+SE = \sqrt{ (SE_{\bar{x}_1})^2 + (SE_{\bar{x}_2})^2 } = \sqrt{ \frac{SD_1^2}{n_1} + \frac{SD_2^2}{n_2}}
+\end{equation*}
+}}
+\item<4-> 95\% CI for $\mu_1 - \mu_2$
+\begin{equation*}
+(\bar{X}_1 - \bar{X}_2) \pm ME
+\end{equation*}
+
+where 
+{\small{
+\begin{equation*}
+ ME = 1.96 \sqrt{ \frac{SD_1^2}{n_1} + \frac{SD_2^2}{n_2}}
+\end{equation*}
+}}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Statistical Significance}
+
+\begin{itemize}
+\item<1-> If the 95\% confidence interval for $\mu_1 - \mu_2$ \textbf{excludes zero (0)}, then we  say that the difference is \textbf{statistically significant} or that the mean for one group differs significantly than that for the other group.
+\item<2-> If the 95\% confidence interval for $\mu_1 - \mu_2$ \textbf{includes zero}, then we say that the difference is \textbf{insignificant} or that there is no significant  difference between the two population means.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Difference in GPA Averages Example}
+
+{\footnotesize{
+Let the GPAs today be of group 1 and that of 10 years ago be of group 2.
+
+\begin{itemize}
+\item point estimate: $\bar{X}_1 - \bar{X}_2 = 2.98 - 2.90 = 0.08$
+
+\item standard error:
+\begin{equation*}
+SE = \sqrt{ \frac{(.45)^2}{100} + \frac{(.40)^2}{100}} = 0.06
+\end{equation*}
+
+\item Margin of error:
+\begin{equation*}
+ME = 1.96 \times SE = 1.96 \times 0.06 = 0.118
+\end{equation*}
+
+\item 95\% CI for $\mu_1 - \mu_2$
+\begin{equation*}
+( 0.08 - 0.118, 0.08 + 0.118) \Rightarrow (-0.038, 0.198)
+\end{equation*}
+
+\item The interval \textbf{includes zero} and hence, the difference is \textbf{insignificant}.  Simple chance variability can be a viable explanation for the observed  difference.
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Diet Comparison Example}
+
+{\footnotesize{
+\begin{itemize}
+\item<1-> Consider Atkins and Zone diets at 12 months. Denote $\mu_1$ the mean  change in BMI for Zone diet group and $\mu_2$ the mean change in BMI for  Atkins diet group.
+
+\item<2-> point estimate: $\bar{X}_1 - \bar{X}_2 = (-.53) - (-1.65 ) = 1.12$
+
+\item<3-> standard error:
+\begin{equation*}
+SE = \sqrt{ \frac{(2.00)^2}{79} + \frac{(2.54)^2}{77}} = 0.367
+\end{equation*}
+
+\item<4-> Margin of error:
+\begin{equation*}
+ME = 1.96 \times SE = 1.96 \times 0.367 = 0.72
+\end{equation*}
+
+\item<5-> 95\% CI for $\mu_1 - \mu_2$
+\begin{equation*}
+( 1.12 - 0.72, 1.12 + 0.72) \Rightarrow (0.40, 1.84)
+\end{equation*}
+
+\item<6-> This CI excludes zero (0) so therefore the difference is statistically significant.
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 11.1}
+
+{\small{
+A 95\% confidence interval for the difference in the means of a  numerical measurement on two independent populations was  calculated from two independent samples. The result is (1.2, 10.5).  Which of the following is true?
+
+\begin{enumerate}
+\item the confidence interval excludes 0 hence the difference is insignificant
+\item the confidence interval includes 0 hence the difference is insignificant
+\item the confidence interval includes 0 hence the difference is significant
+\item the confidence interval excludes 0 hence the difference is significant
+% \item none of the above
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 11.2}
+
+{\small{
+A 95\% confidence interval for the difference in the means of a  numerical measurement on two independent populations was  calculated from two independent samples. The result is (1.2, 10.5).  Which of the following is a correct interpretation of the confidence  interval?
+}}
+{\footnotesize{
+\begin{enumerate}
+\item we are 95\% confident that the difference in sample  means is between \\ 1.2 and 10.5
+\item we are 95\% confident that the difference in the true  means is between \\ 1.2 and 10.5
+\item there is 95\% chance that the difference in the true means  is between \\ 1.2 and 10.5
+\item there is 95\% chance that the difference in sample means  is between \\ 1.2 and 10.5
+\item none of the above
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 11.3}
+
+What effect is there on the standard error of the difference in means  if the sample sizes are each quadrupled?
+
+\begin{enumerate}
+\item the standard error is likely to decrease
+\item the standard error is likely to increase
+\item there is no effect
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Computing the P-value for the Difference}
+
+in means of two independent populations
+
+For a two-tailed test for the difference in means we can use the z-table to indicate probabilities:
+
+\begin{equation*}
+  \texttt{P-value} = 2 \times \Big[ 1 - P \Big[ Z \le \frac{ \bar{X}_1 - \bar{X}_2}{SE} \Big]  \Big]
+\end{equation*}
+\end{frame}
+
+\begin{frame}[fragile]{Diet Comparison Example, Cont'd}
+
+\begin{itemize}
+\item Is it viable to explain that the difference in changes in BMI of 1.12 is  due to chance variability?
+\item Note that we take the difference in changes in BMI of 1.12 and divide by the SE 0.367 to get a z-value: 1.12/0.367 = 3.05 
+\item If the true difference were zero (0), the chance to observe a value as far as $\pm$ 3.05 or more SE's away from the mean would be:
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Diet Comparison Example, Cont'd}
+
+{\small{
+\begin{itemize}
+\item 
+\begin{eqnarray*}
+P(Z < -3.05 \texttt{ or } Z > 3.05) &=& 2 P(Z > 3.05) \\
+  &=& 2 [1 - P(Z \le 3.05)] \\
+  &=& 2 [1 - 0.9989] \\
+  &=& 0.0022
+\end{eqnarray*}
+
+\item This is a very small chance making it hard to believe that the true difference is zero (0). 
+\item Hence, we conclude that statistically, the two means are different.  Or we can say that the means are significantly different.
+\end{itemize}
+}}
+\end{frame}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.16)  24 JUL 2018 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.16)  25 JUL 2018 19:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1096,7 +1096,7 @@ thkerncmss.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL2e-1.pdf, id=1131, 289.08pt x 289.08pt>
+<figure/LBL2e-1.pdf, id=1139, 289.08pt x 289.08pt>
 File: figure/LBL2e-1.pdf Graphic file (type pdf)
 <use figure/LBL2e-1.pdf>
 Package pdftex.def Info: figure/LBL2e-1.pdf  used on input line 11.
@@ -1108,7 +1108,7 @@ Package pdftex.def Info: figure/LBL2e-1.pdf  used on input line 11.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL2f-1.pdf, id=1165, 289.08pt x 289.08pt>
+<figure/LBL2f-1.pdf, id=1173, 289.08pt x 289.08pt>
 File: figure/LBL2f-1.pdf Graphic file (type pdf)
 <use figure/LBL2f-1.pdf>
 Package pdftex.def Info: figure/LBL2f-1.pdf  used on input line 22.
@@ -1120,7 +1120,7 @@ Package pdftex.def Info: figure/LBL2f-1.pdf  used on input line 22.
 
 
 (./Master.vrb
-<chapters/chapter2/ext_figure/dotchart.png, id=1198, 469.755pt x 359.3425pt>
+<chapters/chapter2/ext_figure/dotchart.png, id=1206, 469.755pt x 359.3425pt>
 File: chapters/chapter2/ext_figure/dotchart.png Graphic file (type png)
 <use chapters/chapter2/ext_figure/dotchart.png>
 Package pdftex.def Info: chapters/chapter2/ext_figure/dotchart.png  used on inp
@@ -1147,7 +1147,7 @@ ut line 11.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL2Aa-1.pdf, id=1311, 289.08pt x 216.81pt>
+<figure/LBL2Aa-1.pdf, id=1319, 289.08pt x 216.81pt>
 File: figure/LBL2Aa-1.pdf Graphic file (type pdf)
 <use figure/LBL2Aa-1.pdf>
 Package pdftex.def Info: figure/LBL2Aa-1.pdf  used on input line 12.
@@ -1229,7 +1229,7 @@ Package pdftex.def Info: figure/LBL2Aa-1.pdf  used on input line 12.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL2Ac-1.pdf, id=1868, 289.08pt x 216.81pt>
+<figure/LBL2Ac-1.pdf, id=1876, 289.08pt x 216.81pt>
 File: figure/LBL2Ac-1.pdf Graphic file (type pdf)
 <use figure/LBL2Ac-1.pdf>
 Package pdftex.def Info: figure/LBL2Ac-1.pdf  used on input line 4.
@@ -1269,7 +1269,7 @@ Package pdftex.def Info: figure/LBL2Ac-1.pdf  used on input line 4.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL2Ad-1.pdf, id=2011, 289.08pt x 289.08pt>
+<figure/LBL2Ad-1.pdf, id=2019, 289.08pt x 289.08pt>
 File: figure/LBL2Ad-1.pdf Graphic file (type pdf)
 <use figure/LBL2Ad-1.pdf>
 Package pdftex.def Info: figure/LBL2Ad-1.pdf  used on input line 4.
@@ -1313,7 +1313,7 @@ Package pdftex.def Info: figure/LBL2Ad-1.pdf  used on input line 4.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL2Ae-1.pdf, id=2264, 289.08pt x 216.81pt>
+<figure/LBL2Ae-1.pdf, id=2272, 289.08pt x 216.81pt>
 File: figure/LBL2Ae-1.pdf Graphic file (type pdf)
 <use figure/LBL2Ae-1.pdf>
 Package pdftex.def Info: figure/LBL2Ae-1.pdf  used on input line 20.
@@ -1334,7 +1334,7 @@ Package pdftex.def Info: figure/LBL2Ae-1.pdf  used on input line 20.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL3a-1.pdf, id=2354, 289.08pt x 208.78pt>
+<figure/LBL3a-1.pdf, id=2362, 289.08pt x 208.78pt>
 File: figure/LBL3a-1.pdf Graphic file (type pdf)
 <use figure/LBL3a-1.pdf>
 Package pdftex.def Info: figure/LBL3a-1.pdf  used on input line 4.
@@ -1520,7 +1520,7 @@ Package pdftex.def Info: figure/LBL3a-1.pdf  used on input line 4.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBLAc-1.pdf, id=3688, 289.08pt x 216.81pt>
+<figure/LBLAc-1.pdf, id=3696, 289.08pt x 216.81pt>
 File: figure/LBLAc-1.pdf Graphic file (type pdf)
 <use figure/LBLAc-1.pdf>
 Package pdftex.def Info: figure/LBLAc-1.pdf  used on input line 7.
@@ -1768,7 +1768,7 @@ Package pdftex.def Info: figure/LBLAc-1.pdf  used on input line 7.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL6a-1.pdf, id=5202, 289.08pt x 289.08pt>
+<figure/LBL6a-1.pdf, id=5210, 289.08pt x 289.08pt>
 File: figure/LBL6a-1.pdf Graphic file (type pdf)
 <use figure/LBL6a-1.pdf>
 Package pdftex.def Info: figure/LBL6a-1.pdf  used on input line 17.
@@ -1784,7 +1784,7 @@ Package pdftex.def Info: figure/LBL6a-1.pdf  used on input line 17.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<chapters/chapter6/ext_figure/norm1.png, id=5263, 388.45125pt x 293.095pt>
+<chapters/chapter6/ext_figure/norm1.png, id=5271, 388.45125pt x 293.095pt>
 File: chapters/chapter6/ext_figure/norm1.png Graphic file (type png)
 <use chapters/chapter6/ext_figure/norm1.png>
 Package pdftex.def Info: chapters/chapter6/ext_figure/norm1.png  used on input 
@@ -1797,7 +1797,7 @@ line 3.
 
 
 (./Master.vrb
-<chapters/chapter6/ext_figure/norm2.png, id=5293, 298.11375pt x 293.095pt>
+<chapters/chapter6/ext_figure/norm2.png, id=5301, 298.11375pt x 293.095pt>
 File: chapters/chapter6/ext_figure/norm2.png Graphic file (type png)
 <use chapters/chapter6/ext_figure/norm2.png>
 Package pdftex.def Info: chapters/chapter6/ext_figure/norm2.png  used on input 
@@ -1809,7 +1809,7 @@ line 3.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<chapters/chapter6/ext_figure/norm3.png, id=5322, 517.935pt x 233.87375pt>
+<chapters/chapter6/ext_figure/norm3.png, id=5330, 517.935pt x 233.87375pt>
 File: chapters/chapter6/ext_figure/norm3.png Graphic file (type png)
 <use chapters/chapter6/ext_figure/norm3.png>
 Package pdftex.def Info: chapters/chapter6/ext_figure/norm3.png  used on input 
@@ -1837,7 +1837,7 @@ line 3.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<chapters/chapter6/ext_figure/norm4.png, id=5461, 351.3125pt x 232.87pt>
+<chapters/chapter6/ext_figure/norm4.png, id=5470, 351.3125pt x 232.87pt>
 File: chapters/chapter6/ext_figure/norm4.png Graphic file (type png)
 <use chapters/chapter6/ext_figure/norm4.png>
 Package pdftex.def Info: chapters/chapter6/ext_figure/norm4.png  used on input 
@@ -1850,7 +1850,7 @@ line 9.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL6b-1.pdf, id=5490, 289.08pt x 289.08pt>
+<figure/LBL6b-1.pdf, id=5498, 289.08pt x 289.08pt>
 File: figure/LBL6b-1.pdf Graphic file (type pdf)
 <use figure/LBL6b-1.pdf>
 Package pdftex.def Info: figure/LBL6b-1.pdf  used on input line 20.
@@ -2046,7 +2046,7 @@ Package pdftex.def Info: figure/LBL6b-1.pdf  used on input line 20.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL8a-1.pdf, id=6814, 289.08pt x 289.08pt>
+<figure/LBL8a-1.pdf, id=6822, 289.08pt x 289.08pt>
 File: figure/LBL8a-1.pdf Graphic file (type pdf)
 <use figure/LBL8a-1.pdf>
 Package pdftex.def Info: figure/LBL8a-1.pdf  used on input line 25.
@@ -2471,7 +2471,7 @@ Package pdftex.def Info: figure/LBL8a-1.pdf  used on input line 25.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL10a-1.pdf, id=9875, 289.08pt x 289.08pt>
+<figure/LBL10a-1.pdf, id=9885, 289.08pt x 289.08pt>
 File: figure/LBL10a-1.pdf Graphic file (type pdf)
 <use figure/LBL10a-1.pdf>
 Package pdftex.def Info: figure/LBL10a-1.pdf  used on input line 21.
@@ -2482,7 +2482,7 @@ Package pdftex.def Info: figure/LBL10a-1.pdf  used on input line 21.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL10b-1.pdf, id=9909, 289.08pt x 289.08pt>
+<figure/LBL10b-1.pdf, id=9919, 289.08pt x 289.08pt>
 File: figure/LBL10b-1.pdf Graphic file (type pdf)
 <use figure/LBL10b-1.pdf>
 Package pdftex.def Info: figure/LBL10b-1.pdf  used on input line 17.
@@ -2493,7 +2493,7 @@ Package pdftex.def Info: figure/LBL10b-1.pdf  used on input line 17.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL10c-1.pdf, id=9942, 289.08pt x 289.08pt>
+<figure/LBL10c-1.pdf, id=9952, 289.08pt x 289.08pt>
 File: figure/LBL10c-1.pdf Graphic file (type pdf)
 <use figure/LBL10c-1.pdf>
 Package pdftex.def Info: figure/LBL10c-1.pdf  used on input line 15.
@@ -2515,7 +2515,7 @@ Package pdftex.def Info: figure/LBL10c-1.pdf  used on input line 15.
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL10d-1.pdf, id=10031, 289.08pt x 289.08pt>
+<figure/LBL10d-1.pdf, id=10041, 289.08pt x 289.08pt>
 File: figure/LBL10d-1.pdf Graphic file (type pdf)
 <use figure/LBL10d-1.pdf>
 Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
@@ -2616,6 +2616,195 @@ Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
 (./Master.vrb) [383
 
 ]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [384
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [385
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb)
+[386
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [387
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [388
+
+] (./Master.vrb) [389
+
+]
+(./Master.vrb) [390
+
+] (./Master.vrb) [391
+
+] (./Master.vrb) [392
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb)
+[393
+
+] (./Master.vrb) [394
+
+] (./Master.vrb) [395
+
+] (./Master.vrb) [396
+
+]
+\openout4 = `Master.vrb'.
+
+
+(./Master.vrb) [397
+
+] (./Master.vrb) [398
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [399
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb)
+[400
+
+] (./Master.vrb) [401
+
+] (./Master.vrb) [402
+
+] (./Master.vrb) [403
+
+]
+(./Master.vrb) [404
+
+] (./Master.vrb) [405
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [406
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb)
+[407
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [408
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [409
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [410
+
+]
+\openout4 = `Master.vrb'.
+
+
+(./Master.vrb) [411
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [412
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [413
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb)
+[414
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [415
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [416
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [417
+
+]
+\openout4 = `Master.vrb'.
+
+
+(./Master.vrb) [418
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [419
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [420
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb)
+[421
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [422
+
+] (./Master.vrb) [423
+
+] (./Master.vrb) [424
+
+]
+\openout4 = `Master.vrb'.
+
+
+(./Master.vrb) [425
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [426
+
+] (./Master.vrb) [427
+
+] (./Master.vrb)
+[428
+
+] (./Master.vrb) [429
+
+]
 \tf@nav=\write6
 \openout6 = `Master.nav'.
 
@@ -2625,20 +2814,20 @@ Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
 \tf@snm=\write8
 \openout8 = `Master.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3600.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3600.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4118.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4118.
  (./Master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3600.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3600.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4118.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4118.
 
 Package rerunfilecheck Info: File `Master.out' has not changed.
-(rerunfilecheck)             Checksum: F5378703FA6E2D19BBFC65CB08E5A53C;1153.
+(rerunfilecheck)             Checksum: 0AD8958D04C9AC318D9FFFFD32AB2CA0;1318.
  ) 
 Here is how much of TeX's memory you used:
- 19852 strings out of 492646
- 360994 string characters out of 6129563
- 448622 words of memory out of 5000000
- 21744 multiletter control sequences out of 15000+600000
+ 20102 strings out of 492646
+ 363578 string characters out of 6129563
+ 450504 words of memory out of 5000000
+ 21808 multiletter control sequences out of 15000+600000
  20925 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,63p,844b,813s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2663,10 +2852,10 @@ l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
 texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on Master.pdf (383 pages, 1411101 bytes).
+Output written on Master.pdf (429 pages, 1522537 bytes).
 PDF statistics:
- 10992 PDF objects out of 12825 (max. 8388607)
- 10429 compressed objects within 105 object streams
- 781 named destinations out of 1000 (max. 500000)
- 285 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 12282 PDF objects out of 12825 (max. 8388607)
+ 11661 compressed objects within 117 object streams
+ 875 named destinations out of 1000 (max. 500000)
+ 301 words of extra memory for PDF output out of 10000 (max. 10000000)
 

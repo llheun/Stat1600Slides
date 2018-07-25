@@ -1,7 +1,47 @@
-\frametitle{WMU Undergraduates’ Average GPA}
+\frametitle{Head Injury Criterion (HIC) eg., Cont'd}
 
-Recall that the sample of $n = 25$ students yielded a sample mean of $\bar{X} = 3.05$ with a standard error of $SE = 0.08$.  The margin of error is then $ME = 1.96 \times 0.08 = 0.157$. Hence a 95\% CI for the true average  GPA, $\mu$, is:
+{\footnotesize{
+\begin{itemize}
+\item<1-> The differences of Head Injury Criterion (HIC) Driver -- Passenger:
+2, 85, 2, 133, 23, 196, 74
+\item<2-> Mean difference: $\bar{D} = 73.6$
+\item<3-> Variation measures
 
-$$(3.05 - 0.157, 3.05 + 0.157) = (2.893, 3.207)$$.
+\begin{minipage}[ht]{3.3cm}
 
-Interpretation: based on the sample, we are 95\% confident that the  true mean GPA is in between 2.9 and 3.2, approximately.
+{\scriptsize{
+\begin{eqnarray*}
+SD &=& \sqrt{ \frac{ \sum (d_i - \bar{D})^2}{n - 1}} \\
+&=&  72.4
+\end{eqnarray*}
+}}
+\end{minipage}
+\begin{minipage}[ht]{3.3cm}
+
+{\scriptsize{
+\begin{eqnarray*}
+SE &=& \frac{SD}{\sqrt{n}} \\
+&=&   27.4
+\end{eqnarray*}
+}}
+\end{minipage}
+\begin{minipage}[ht]{3.3cm}
+
+{\scriptsize{
+\begin{eqnarray*}
+ME &=&  1.96 \times SE \\
+&=&   53.6
+\end{eqnarray*}
+}}
+\end{minipage}
+
+\vspace{-6mm}
+\item<4-> A 95\% CI for mean difference in HICs (Driver - Passenger):
+\begin{equation*}
+  (73.6 - 53.6, 73.6 + 53.6) \Rightarrow (19.9, 127.2)
+\end{equation*}
+
+  which \textbf{excludes} zero (0) and hence the mean difference in HICs is  statistically \textbf{significant}.
+
+\end{itemize}
+}}

@@ -1093,7 +1093,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 
 
 
-  700, 650, 380, 760, 280, 340, 700, 670, 880, 250
+  490, 700, 740, 910, 340, 1200, 350, 280, 140, 700
   
 \vspace{3mm}
 
@@ -1113,7 +1113,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 \item<4-> (2-bedroom appartment rental example)
 \item<5->
 \begin{equation*}
-\bar{X} = \frac{700 + 650 + \cdots + 250}{10} = 561
+\bar{X} = \frac{490 + 700 + \cdots + 700}{10} = 585
 \end{equation*}
 \end{itemize}
 
@@ -1122,7 +1122,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 \begin{frame}[fragile]{Sample Mean is an Est. of Pop. Mean}
 
 \begin{itemize}
-\item<1-> That is, the average rent for 2-bedroom apartments in  Kalamazoo area is \$ 561 in our sample
+\item<1-> That is, the average rent for 2-bedroom apartments in  Kalamazoo area is \$ 585 in our sample
 \item<2-> This is not to be interpreted as the actual \textit{population average}  (i.e., the actual average rent of all 2-bedroom apartments in  the entire Kalamazoo area)
 \item<3-> It is subject to \textit{sampling error}
 \item<4-> It likely missed the true population mean \\ (denoted $\mu$), by $| \bar{X} - \mu |$,  the \textit{sampling error}.
@@ -1144,7 +1144,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 
 \vspace{3mm}
 
-250, 280, 340, 380, 650, 670, 700, 700, 760, 880
+140, 280, 340, 350, 490, 700, 700, 740, 910, 1200
 \item<2->
 \begin{equation*}
 0.5(n + 1) = 0.5 \times 11 = 5.5
@@ -1154,7 +1154,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 \item<4-> Hence, MED = average of 5th \& 6th ordered values
 \item<5->
 \begin{equation*}
-\tilde{x} = \frac{ 650 + 670 }{2} = 660
+\tilde{x} = \frac{ 490 + 700 }{2} = 595
 \end{equation*}
 \end{itemize}
 }}
@@ -1185,8 +1185,8 @@ What is the median MPG?
 \begin{itemize}
 \item<1-> Sample mean is sensitive to outliers
 \item<2-> Sample median is \textit{insensitive} to outliers
-\item<3-> In the Kalamazoo apartment rental data, what if the smallest value \$ 250 is replaced by \$100?
-\item<4-> The MED remains unchanged (\$ 660) but $\bar{X} = 546$, down by from the original data (\$ 561).
+\item<3-> In the Kalamazoo apartment rental data, what if the smallest value \$ 140 is replaced by \$100?
+\item<4-> The MED remains unchanged (\$ 595) but $\bar{X} = 581$, down by from the original data (\$ 585).
 \end{itemize}
 \end{frame}
 
@@ -1214,12 +1214,12 @@ We can see the median has not been affected by the outlier, whereas the  mean ha
 \item<2-> 10\% trimmed mean = mean of data with lowest 10\% values and  highest 10\% values excluded = mean of middle 80\% values
 \item<3-> in Kalamazoo apartment rental data, 10\% of n = 10 is 1 ($n \times 0.1 = 1$)
 
-280, 340, 380, 650, 670, 700, 700, 760
+280, 340, 350, 490, 700, 700, 740, 910
 % $500	$500	$525	$555	$635	$650	$670	$675	$750	$800
 \item<4-> Hence, 10\% trimmed mean, denoted $\bar{X}_{tr}$, is computed by
 \begin{eqnarray*}
-\bar{X}_{tr} &=& \frac{280+340+380+650+670+700+700+760}{8} \\
-     &=&560
+\bar{X}_{tr} &=& \frac{280+340+350+490+700+700+740+910}{8} \\
+     &=&563.75
 \end{eqnarray*}
 \end{itemize}
 }}
@@ -1356,23 +1356,23 @@ Estimates of Spread
 
 {\footnotesize{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Tue Jul 24 16:32:43 2018
+% Wed Jul 25 19:25:24 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrr}
   \hline
  & Rent & Diff & Diff Sqd \\ 
   \hline
-1 & 700 & 139 & 19321 \\ 
-  2 & 650 & 89 & 7921 \\ 
-  3 & 380 & -181 & 32761 \\ 
-  4 & 760 & 199 & 39601 \\ 
-  5 & 280 & -281 & 78961 \\ 
-  6 & 340 & -221 & 48841 \\ 
-  7 & 700 & 139 & 19321 \\ 
-  8 & 670 & 109 & 11881 \\ 
-  9 & 880 & 319 & 101761 \\ 
-  10 & 250 & -311 & 96721 \\ 
+1 & 490 & -95 & 9025 \\ 
+  2 & 700 & 115 & 13225 \\ 
+  3 & 740 & 155 & 24025 \\ 
+  4 & 910 & 325 & 105625 \\ 
+  5 & 340 & -245 & 60025 \\ 
+  6 & 1200 & 615 & 378225 \\ 
+  7 & 350 & -235 & 55225 \\ 
+  8 & 280 & -305 & 93025 \\ 
+  9 & 140 & -445 & 198025 \\ 
+  10 & 700 & 115 & 13225 \\ 
    \hline
 \end{tabular}
 \end{table}
@@ -1384,14 +1384,14 @@ Estimates of Spread
 
 {\footnotesize{
 \begin{itemize}
-\item<1-> Step 1. Compute $\bar{x} = 561$
+\item<1-> Step 1. Compute $\bar{x} = 585$
 \item<2-> Step 2. Calculate Diff, i.e., how much an obs. `missed by' the average, (i.e., deviation).
 \item<3-> Step 3. Square the `missed by' differences.
 \item<4-> Step 4. Add all the squared `missed by' differences, i.e., SS
 \item<5-> Step 5. Take the square-root of $\frac{SS}{n - 1}$ to get SD
 
 \begin{equation*}
-SD = \sqrt{ \frac{\ensuremath{4.5709\times 10^{5}}}{ 10 - 1 }} = 225.4
+SD = \sqrt{ \frac{\ensuremath{9.4965\times 10^{5}}}{ 10 - 1 }} = 324.8
 \end{equation*}
 
 \end{itemize}
@@ -1480,9 +1480,9 @@ apartment rental example
 \end{center}
 
 \begin{itemize}
-\item<1-> Recall that the mean and SD are \$ $561 \pm 225.4$ \\ ($\pm$ means `give or take')
-\item<2-> Get a roommate and pay half the rent: \$ $280.5 \pm 112.7$ %$323  ± $52
-\item<3-> No roommate but has contribution of \$100 per month from parents: $280.5 \pm 225.4$    % $526 ± $104
+\item<1-> Recall that the mean and SD are \$ $585 \pm 324.8$ \\ ($\pm$ means `give or take')
+\item<2-> Get a roommate and pay half the rent: \$ $292.5 \pm 162.4$ %$323  ± $52
+\item<3-> No roommate but has contribution of \$100 per month from parents: $292.5 \pm 324.8$    % $526 ± $104
 \end{itemize}
 \end{frame}
 
@@ -3584,6 +3584,524 @@ Recall that the sample of $n = 25$ students yielded a sample mean of $\bar{X} = 
 $$(3.05 - 0.157, 3.05 + 0.157) = (2.893, 3.207)$$.
 
 Interpretation: based on the sample, we are 95\% confident that the  true mean GPA is in between 2.9 and 3.2, approximately.
+\end{frame}
+
+
+%!Rnw root = ../../Master.Rnw
+
+\section{Stat 1600 Ch. 11  Comparing Two Means}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+Stat 1600 \\ Ch. 11  Comparing Two Means
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Comparing Two Means
+
+\begin{itemize}
+\item Comparing Means of Two Independent Populations  
+\item Estimating the Difference
+\item iClicker Questions  
+\item The P-Value
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Two-Sample Problem}
+
+Two \textit{independent} populations are to be compared for a characteristic,  either a quantitative meansurement or a categorical one.  A random  sample is taken from each population to study.  The samples are  independent.  In a controlled study, the subjects are selected with  uniformity with respect to known source(s) of variation (similar weight, similar health condition, etc).
+\end{frame}
+
+\begin{frame}[fragile]{Examples}
+
+{\small{
+\begin{itemize}
+\item Is there ``grade inflation'' in WMU? How does the average GPA of  WMU students today compare with 10 years ago? Suppose a  random sample of 100 student records from 10 years ago yields a  sample average GPA of 2.90 with a standard deviation of 0.40.  A  random sample of 100 current students today yields a sample average of 2.98 with a standard deviation of .45. The difference  between the two sample means is $2.98 - 2.90 = .08$. Is this proof  that GPA's are higher today than 10 years ago?  Or the chance  variability is at work?
+\item How does the reduction of BMI of the Atkins diet compare to that  of Zone diet at 12 months?
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Notation}
+
+\begin{itemize}
+\item<1-> Population 1 has mean $\mu_1$ and standard deviation $\sigma_1$ (usually  unknown).
+\item<2-> Population 2 has mean $\mu_2$ and standard deviation $\sigma_2$ (usually  unknown).
+\item<3-> Sample of size $n_1$ is taken from population 1: the sample mean is $\bar{X}_1$, the sample standard deviation is $SD_1$, and the standard error is $SE_1 = \frac{SD_1}{\sqrt{n_1}}$  
+\item<4-> Sample of size $n_2$ is taken from population 2: the sample mean is $\bar{X}_2$, the sample standard deviation is $SD_2$, and the standard error is $SE_2 = \frac{SD_2}{\sqrt{n_2}}$
+\item<5-> The two samples are independent.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Estimating the Difference in Means}
+
+\begin{itemize}
+\item<1-> of two independent populations: $\mu_1 - \mu_2$
+\item<2-> Point estimate $\bar{X}_1 - \bar{X}_2$
+\item<3-> Standard Error:
+{\small{
+\begin{equation*}
+SE = \sqrt{ (SE_{\bar{x}_1})^2 + (SE_{\bar{x}_2})^2 } = \sqrt{ \frac{SD_1^2}{n_1} + \frac{SD_2^2}{n_2}}
+\end{equation*}
+}}
+\item<4-> 95\% CI for $\mu_1 - \mu_2$
+\begin{equation*}
+(\bar{X}_1 - \bar{X}_2) \pm ME
+\end{equation*}
+
+where 
+{\small{
+\begin{equation*}
+ ME = 1.96 \sqrt{ \frac{SD_1^2}{n_1} + \frac{SD_2^2}{n_2}}
+\end{equation*}
+}}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Statistical Significance}
+
+\begin{itemize}
+\item<1-> If the 95\% confidence interval for $\mu_1 - \mu_2$ \textbf{excludes zero (0)}, then we  say that the difference is \textbf{statistically significant} or that the mean for one group differs significantly than that for the other group.
+\item<2-> If the 95\% confidence interval for $\mu_1 - \mu_2$ \textbf{includes zero}, then we say that the difference is \textbf{insignificant} or that there is no significant  difference between the two population means.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Difference in GPA Averages Example}
+
+{\footnotesize{
+Let the GPAs today be of group 1 and that of 10 years ago be of group 2.
+
+\begin{itemize}
+\item point estimate: $\bar{X}_1 - \bar{X}_2 = 2.98 - 2.90 = 0.08$
+
+\item standard error:
+\begin{equation*}
+SE = \sqrt{ \frac{(.45)^2}{100} + \frac{(.40)^2}{100}} = 0.06
+\end{equation*}
+
+\item Margin of error:
+\begin{equation*}
+ME = 1.96 \times SE = 1.96 \times 0.06 = 0.118
+\end{equation*}
+
+\item 95\% CI for $\mu_1 - \mu_2$
+\begin{equation*}
+( 0.08 - 0.118, 0.08 + 0.118) \Rightarrow (-0.038, 0.198)
+\end{equation*}
+
+\item The interval \textbf{includes zero} and hence, the difference is \textbf{insignificant}.  Simple chance variability can be a viable explanation for the observed  difference.
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Diet Comparison Example}
+
+{\footnotesize{
+\begin{itemize}
+\item<1-> Consider Atkins and Zone diets at 12 months. Denote $\mu_1$ the mean  change in BMI for Zone diet group and $\mu_2$ the mean change in BMI for  Atkins diet group.
+
+\item<2-> point estimate: $\bar{X}_1 - \bar{X}_2 = (-.53) - (-1.65 ) = 1.12$
+
+\item<3-> standard error:
+\begin{equation*}
+SE = \sqrt{ \frac{(2.00)^2}{79} + \frac{(2.54)^2}{77}} = 0.367
+\end{equation*}
+
+\item<4-> Margin of error:
+\begin{equation*}
+ME = 1.96 \times SE = 1.96 \times 0.367 = 0.72
+\end{equation*}
+
+\item<5-> 95\% CI for $\mu_1 - \mu_2$
+\begin{equation*}
+( 1.12 - 0.72, 1.12 + 0.72) \Rightarrow (0.40, 1.84)
+\end{equation*}
+
+\item<6-> This CI excludes zero (0) so therefore the difference is statistically significant.
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 11.1}
+
+{\small{
+A 95\% confidence interval for the difference in the means of a  numerical measurement on two independent populations was  calculated from two independent samples. The result is (1.2, 10.5).  Which of the following is true?
+
+\begin{enumerate}
+\item the confidence interval excludes 0 hence the difference is insignificant
+\item the confidence interval includes 0 hence the difference is insignificant
+\item the confidence interval includes 0 hence the difference is significant
+\item the confidence interval excludes 0 hence the difference is significant
+% \item none of the above
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 11.2}
+
+{\small{
+A 95\% confidence interval for the difference in the means of a  numerical measurement on two independent populations was  calculated from two independent samples. The result is (1.2, 10.5).  Which of the following is a correct interpretation of the confidence  interval?
+}}
+{\footnotesize{
+\begin{enumerate}
+\item we are 95\% confident that the difference in sample  means is between \\ 1.2 and 10.5
+\item we are 95\% confident that the difference in the true  means is between \\ 1.2 and 10.5
+\item there is 95\% chance that the difference in the true means  is between \\ 1.2 and 10.5
+\item there is 95\% chance that the difference in sample means  is between \\ 1.2 and 10.5
+\item none of the above
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 11.3}
+
+What effect is there on the standard error of the difference in means  if the sample sizes are each quadrupled?
+
+\begin{enumerate}
+\item the standard error is likely to decrease
+\item the standard error is likely to increase
+\item there is no effect
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Computing the P-value for the Difference}
+
+in means of two independent populations
+
+For a two-tailed test for the difference in means we can use the z-table to indicate probabilities:
+
+\begin{equation*}
+  \texttt{P-value} = 2 \times \Big[ 1 - P \Big[ Z \le \frac{ \bar{X}_1 - \bar{X}_2}{SE} \Big]  \Big]
+\end{equation*}
+\end{frame}
+
+\begin{frame}[fragile]{Diet Comparison Example, Cont'd}
+
+\begin{itemize}
+\item Is it viable to explain that the difference in changes in BMI of 1.12 is  due to chance variability?
+\item Note that we take the difference in changes in BMI of 1.12 and divide by the SE 0.367 to get a z-value: 1.12/0.367 = 3.05 
+\item If the true difference were zero (0), the chance to observe a value as far as $\pm$ 3.05 or more SE's away from the mean would be:
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Diet Comparison Example, Cont'd}
+
+{\small{
+\begin{itemize}
+\item 
+\begin{eqnarray*}
+P(Z < -3.05 \texttt{ or } Z > 3.05) &=& 2 P(Z > 3.05) \\
+  &=& 2 [1 - P(Z \le 3.05)] \\
+  &=& 2 [1 - 0.9989] \\
+  &=& 0.0022
+\end{eqnarray*}
+
+\item This is a very small chance making it hard to believe that the true difference is zero (0). 
+\item Hence, we conclude that statistically, the two means are different.  Or we can say that the means are significantly different.
+\end{itemize}
+}}
+\end{frame}
+
+
+%!Rnw root = ../../Master.Rnw
+
+\section{Stat 1600 Ch. 11.2  Comparing Two Means -- Paired Data}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+STAT 1600 \\ Ch 11.2 Comparing Two Means -- Paired Data
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Paired Data
+
+\begin{itemize}
+\item Comparing Means in Paired Data  
+\item (General) Paired Data
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Paired Data, Before-and-After Data}
+
+{\small{
+Data come in pairs, each subject was measured twice, before and  after.  Note that it's NOT two samples, it's one sample of subjects, each  measured twice. Weight Loss Example:
+}}
+
+\begin{table}
+{\footnotesize{
+\caption{Weight in pounds before and  after 12 months on diet}
+\begin{tabular}{@{} ccc @{}} \hline
+Subject & Before & After \\ \hline
+1 & 180 & 155 \\
+2 & 192 & 187 \\
+3 & 205 & 194 \\
+4 & 166 & 176 \\
+5 & 220 & 205 \\
+6 & 177 & 172 \\
+7 & 189 & 173 \\ \hline
+\end{tabular}
+}}
+\end{table}
+
+\end{frame}
+
+\begin{frame}[fragile]{Analysis of Paired Data}
+
+{\small{
+\begin{itemize}
+\item It's WRONG to analyze the data using two-sample method. The proper  procedure is laid out below:
+\item Calculate the pairwise differences in a consistent manner:
+$d_i = \texttt{Before} - \texttt{After}, i = 1, \cdots , n$.
+\item Treat the differences as one sample and
+\item Mean difference: $\bar{D} = \frac{ d_1 + d_2 \cdots d_n}{n} $
+\item Standard error $SE_{\bar{D}}$:
+  {\scriptsize{
+  \begin{equation*}
+    SE = \frac{SD}{n} \texttt{  where } SD = SD_{d} = \sqrt{ \frac{ \sum (d_i - \bar{D})^2}{n - 1}}
+  \end{equation*}
+  }}
+\item A 95\% CI for $\mu_d$:
+  \begin{equation*}
+    (\bar{D} \pm ME) \texttt{ where } ME = 1.96 \times SE
+  \end{equation*}
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Analysis of Paired Data, Cont'd}
+
+\begin{itemize}
+\item If the confidence interval EXCLUDES zero (0), then the difference in means is statistically significant.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Weight Loss Example, revisited}
+
+{\footnotesize{
+% latex table generated in R 3.5.1 by xtable 1.8-2 package
+% Wed Jul 25 19:25:24 2018
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrr}
+  \hline
+ & Before & After & Diff(d) & d - mean \\ 
+  \hline
+1 & 180.00 & 155.00 & 25.00 & 15.43 \\ 
+  2 & 192.00 & 187.00 & 5.00 & -4.57 \\ 
+  3 & 205.00 & 194.00 & 11.00 & 1.43 \\ 
+  4 & 166.00 & 176.00 & -10.00 & -19.57 \\ 
+  5 & 220.00 & 205.00 & 15.00 & 5.43 \\ 
+  6 & 177.00 & 172.00 & 5.00 & -4.57 \\ 
+  7 & 189.00 & 173.00 & 16.00 & 6.43 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{equation*}
+SD = \sqrt{ \frac{ \sum (d_i - \bar{D})^2}{n - 1}} = 11.1
+\end{equation*}
+
+Hence, 
+\begin{equation*}
+SE = \frac{SD}{\sqrt{n}} = 4.2
+\end{equation*}
+}}
+\end{frame}
+ 
+\begin{frame}[fragile]{Weight Loss Example, cont'd}
+  
+The margin of error is
+ \begin{equation*}
+ ME = 1.96 \times SE = 1.96 \times 4.2 = 8.2
+\end{equation*}
+
+Hence a 95\% confidence interval for mean weight loss (i.e., mean  difference of Before and After) is
+
+\begin{equation*}
+( (9.6 - 8.2), (9.6 + 8.2) )  \Rightarrow  (1.4, 17.8)
+\end{equation*}
+
+% % (9.6 − 8.2, 9.6 + 8.2) = (1.4, 17.8)
+This CI \textbf{excludes} zero (0) and hence the mean weight loss is statistically \textbf{significant}.
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 11.2.1}
+
+Measurements of the left-hand and right-hand gripping strengths of 10  left-handed writers are recorded:
+
+\begin{table}[ht]
+\centering
+{\small{
+\begin{tabular}{@{} ccccccccccc @{}} \hline
+  & \multicolumn{10}{c}{Person} \\
+  & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+LH & 140&90&125&130&95&121&85&97&131&110 \\
+RH & 138&87&110&132&96&120&86&90&129&100 \\ \hline
+\end{tabular}
+}}
+\end{table}
+
+\vspace{3mm}
+
+Should this data set be treated as a paired data problem?
+
+\begin{enumerate}
+\item Yes.
+\item No.
+\item Cannot determine.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 11.2.2}
+
+{\scriptsize{
+Measurements of the left-hand and right-hand gripping strengths of 10  left-handed writers are recorded:
+}}
+
+\begin{table}[ht]
+\centering
+{\footnotesize{
+\begin{tabular}{@{} ccccccccccc @{}} \hline
+  & \multicolumn{10}{c}{Person} \\
+  & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+LH & 140&90&125&130&95&121&85&97&131&110 \\
+RH & 138&87&110&132&96&120&86&90&129&100 \\ \hline
+\end{tabular}
+}}
+\end{table}
+
+{\footnotesize{
+A 95\% confidence interval for $\mu_{left} - \mu_{right}$ is calculated and the result is  (0.22,6.98). Which statement below is true about the confidence interval?
+
+\vspace{-3mm}
+
+\begin{enumerate}
+\item We are 95\% confident that the difference in sample means is  between 0.22 and 6.98.
+\item There is a 95\% probability that the difference in the true mean  gripping strengths of the two hands is between 0.22 and 6.98.
+\item We are 95\% confident that the difference in the true mean  gripping strengths is between 0.22 and 6.98.
+% \item There is a 95\% probability that the difference in the sample  mean gripping strengths of the two hands is between 0.22  and 6.98.
+% \item None of the previous.
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 11.2.3}
+
+{\scriptsize{
+Measurements of the left-hand and right-hand gripping strengths of 10  left-handed writers are recorded:
+}}
+
+\begin{table}[ht]
+\centering
+{\footnotesize{
+\begin{tabular}{@{} ccccccccccc @{}} \hline
+  & \multicolumn{10}{c}{Person} \\
+  & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+LH & 140&90&125&130&95&121&85&97&131&110 \\
+RH & 138&87&110&132&96&120&86&90&129&100 \\ \hline
+\end{tabular}
+}}
+\end{table}
+
+{\footnotesize{
+A 95\% confidence interval for $\mu_{left} - \mu_{right}$ is calculated and the result is  (0.22,6.98). Which statement below is true about the confidence interval?
+
+\vspace{-3mm}
+
+\begin{enumerate}
+\item The average gripping strength of the left hand differs  significantly than that of the right hand since the confidence  interval includes 0.
+\item The average gripping strength of the left hand differs  significantly than that of the right hand since the confidence  interval excludes 0.
+% \item The difference in average gripping strengths of the two hands  is insignificant since the confidence interval excludes 0.
+\item The difference in average gripping strengths of the two hands  is insignificant since the confidence interval includes 0.
+% \item None of the previous.
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{(General) Paired Data}
+
+\begin{itemize}
+\item<1-> Paired data are data in which natural matchings occur.
+\item<2-> Even when we have two samples, if each observation in one  sample is uniquely matched to an observation in the other sample,  then we have paired data.
+\item<3-> The analysis of such data should follow that of before-and-after  paired data.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Head Injury Criterion (HIC) Example}
+
+% latex table generated in R 3.5.1 by xtable 1.8-2 package
+% Wed Jul 25 19:25:24 2018
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrr}
+  \hline
+ & Driver & Passenger \\ 
+  \hline
+Acura Integra 87 & 599.00 & 597.00 \\ 
+  Audi 80 89 & 600.00 & 515.00 \\ 
+  Chev Camaro 91 & 585.00 & 583.00 \\ 
+  Ford Escort 87 & 551.00 & 418.00 \\ 
+  Honda Accord LX 91 & 562.00 & 539.00 \\ 
+  Toyota Corolla Fx 88 & 593.00 & 397.00 \\ 
+  Volvo 740 LE 88 & 519.00 & 445.00 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+\begin{frame}[fragile]{Head Injury Criterion (HIC) eg., Cont'd}
+
+{\footnotesize{
+\begin{itemize}
+\item<1-> The differences of Head Injury Criterion (HIC) Driver -- Passenger:
+2, 85, 2, 133, 23, 196, 74
+\item<2-> Mean difference: $\bar{D} = 73.6$
+\item<3-> Variation measures
+
+\begin{minipage}[ht]{3.3cm}
+
+{\scriptsize{
+\begin{eqnarray*}
+SD &=& \sqrt{ \frac{ \sum (d_i - \bar{D})^2}{n - 1}} \\ 
+&=&  72.4
+\end{eqnarray*}
+}}
+\end{minipage}
+\begin{minipage}[ht]{3.3cm}
+
+{\scriptsize{
+\begin{eqnarray*}
+SE &=& \frac{SD}{\sqrt{n}} \\
+&=&   27.4
+\end{eqnarray*}
+}}
+\end{minipage}
+\begin{minipage}[ht]{3.3cm}
+
+{\scriptsize{
+\begin{eqnarray*}
+ME &=&  1.96 \times SE \\
+&=&   53.6
+\end{eqnarray*}
+}}
+\end{minipage}
+
+\vspace{-6mm}
+\item<4-> A 95\% CI for mean difference in HICs (Driver - Passenger):
+\begin{equation*}
+  (73.6 - 53.6, 73.6 + 53.6) \Rightarrow (19.9, 127.2)
+\end{equation*}
+
+  which \textbf{excludes} zero (0) and hence the mean difference in HICs is  statistically \textbf{significant}.
+
+\end{itemize}
+}}
 \end{frame}
 
 

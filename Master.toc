@@ -13,3 +13,5 @@
 \beamer@sectionintoc {12}{Stat1600 Ch 9.3.2 Comparing Two Proportions, Part 2 Risk Ratio}{300}{0}{12}
 \beamer@sectionintoc {13}{Stat1600 Ch 9.3.3 Comparing Two Proportions, Part 3 Odds Ratio}{319}{0}{13}
 \beamer@sectionintoc {14}{Stat 1600 Ch. 10 Sampling Distribution of the Mean}{341}{0}{14}
+\beamer@sectionintoc {15}{Stat 1600 Ch. 11 Comparing Two Means}{384}{0}{15}
+\beamer@sectionintoc {16}{Stat 1600 Ch. 11.2 Comparing Two Means -- Paired Data}{412}{0}{16}
