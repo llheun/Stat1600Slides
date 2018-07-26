@@ -570,8 +570,25 @@
 \headcommand {\beamer@framepages {425}{425}}
 \headcommand {\slideentry {16}{0}{13}{426/429}{}{0}}
 \headcommand {\beamer@framepages {426}{429}}
-\headcommand {\beamer@partpages {1}{429}}
-\headcommand {\beamer@subsectionpages {412}{429}}
 \headcommand {\beamer@sectionpages {412}{429}}
-\headcommand {\beamer@documentpages {429}}
-\headcommand {\gdef \inserttotalframenumber {262}}
+\headcommand {\beamer@subsectionpages {412}{429}}
+\headcommand {\sectionentry {17}{Ch. 12 Testing Independence of Two Categorical Variables}{430}{Ch. 12 Testing Independence of Two Categorical Variables}{0}}
+\headcommand {\slideentry {17}{0}{1}{430/430}{}{0}}
+\headcommand {\beamer@framepages {430}{430}}
+\headcommand {\slideentry {17}{0}{2}{431/431}{}{0}}
+\headcommand {\beamer@framepages {431}{431}}
+\headcommand {\slideentry {17}{0}{3}{432/434}{}{0}}
+\headcommand {\beamer@framepages {432}{434}}
+\headcommand {\slideentry {17}{0}{4}{435/435}{}{0}}
+\headcommand {\beamer@framepages {435}{435}}
+\headcommand {\slideentry {17}{0}{5}{436/436}{}{0}}
+\headcommand {\beamer@framepages {436}{436}}
+\headcommand {\slideentry {17}{0}{6}{437/440}{}{0}}
+\headcommand {\beamer@framepages {437}{440}}
+\headcommand {\slideentry {17}{0}{7}{441/441}{}{0}}
+\headcommand {\beamer@framepages {441}{441}}
+\headcommand {\beamer@partpages {1}{441}}
+\headcommand {\beamer@subsectionpages {430}{441}}
+\headcommand {\beamer@sectionpages {430}{441}}
+\headcommand {\beamer@documentpages {441}}
+\headcommand {\gdef \inserttotalframenumber {269}}

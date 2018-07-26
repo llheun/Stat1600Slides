@@ -15,3 +15,4 @@
 \beamer@sectionintoc {14}{Stat 1600 Ch. 10 Sampling Distribution of the Mean}{341}{0}{14}
 \beamer@sectionintoc {15}{Stat 1600 Ch. 11 Comparing Two Means}{384}{0}{15}
 \beamer@sectionintoc {16}{Stat 1600 Ch. 11.2 Comparing Two Means -- Paired Data}{412}{0}{16}
+\beamer@sectionintoc {17}{Ch. 12 Testing Independence of Two Categorical Variables}{430}{0}{17}

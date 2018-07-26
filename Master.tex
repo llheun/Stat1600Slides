@@ -1093,7 +1093,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 
 
 
-  490, 700, 740, 910, 340, 1200, 350, 280, 140, 700
+  140, 220, 280, 1200, 380, 560, 400, 880, 700, 670
   
 \vspace{3mm}
 
@@ -1113,7 +1113,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 \item<4-> (2-bedroom appartment rental example)
 \item<5->
 \begin{equation*}
-\bar{X} = \frac{490 + 700 + \cdots + 700}{10} = 585
+\bar{X} = \frac{140 + 220 + \cdots + 670}{10} = 543
 \end{equation*}
 \end{itemize}
 
@@ -1122,7 +1122,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 \begin{frame}[fragile]{Sample Mean is an Est. of Pop. Mean}
 
 \begin{itemize}
-\item<1-> That is, the average rent for 2-bedroom apartments in  Kalamazoo area is \$ 585 in our sample
+\item<1-> That is, the average rent for 2-bedroom apartments in  Kalamazoo area is \$ 543 in our sample
 \item<2-> This is not to be interpreted as the actual \textit{population average}  (i.e., the actual average rent of all 2-bedroom apartments in  the entire Kalamazoo area)
 \item<3-> It is subject to \textit{sampling error}
 \item<4-> It likely missed the true population mean \\ (denoted $\mu$), by $| \bar{X} - \mu |$,  the \textit{sampling error}.
@@ -1144,7 +1144,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 
 \vspace{3mm}
 
-140, 280, 340, 350, 490, 700, 700, 740, 910, 1200
+140, 220, 280, 380, 400, 560, 670, 700, 880, 1200
 \item<2->
 \begin{equation*}
 0.5(n + 1) = 0.5 \times 11 = 5.5
@@ -1154,7 +1154,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 \item<4-> Hence, MED = average of 5th \& 6th ordered values
 \item<5->
 \begin{equation*}
-\tilde{x} = \frac{ 490 + 700 }{2} = 595
+\tilde{x} = \frac{ 400 + 560 }{2} = 480
 \end{equation*}
 \end{itemize}
 }}
@@ -1186,7 +1186,7 @@ What is the median MPG?
 \item<1-> Sample mean is sensitive to outliers
 \item<2-> Sample median is \textit{insensitive} to outliers
 \item<3-> In the Kalamazoo apartment rental data, what if the smallest value \$ 140 is replaced by \$100?
-\item<4-> The MED remains unchanged (\$ 595) but $\bar{X} = 581$, down by from the original data (\$ 585).
+\item<4-> The MED remains unchanged (\$ 480) but $\bar{X} = 539$, down by from the original data (\$ 543).
 \end{itemize}
 \end{frame}
 
@@ -1214,12 +1214,12 @@ We can see the median has not been affected by the outlier, whereas the  mean ha
 \item<2-> 10\% trimmed mean = mean of data with lowest 10\% values and  highest 10\% values excluded = mean of middle 80\% values
 \item<3-> in Kalamazoo apartment rental data, 10\% of n = 10 is 1 ($n \times 0.1 = 1$)
 
-280, 340, 350, 490, 700, 700, 740, 910
+220, 280, 380, 400, 560, 670, 700, 880
 % $500	$500	$525	$555	$635	$650	$670	$675	$750	$800
 \item<4-> Hence, 10\% trimmed mean, denoted $\bar{X}_{tr}$, is computed by
 \begin{eqnarray*}
-\bar{X}_{tr} &=& \frac{280+340+350+490+700+700+740+910}{8} \\
-     &=&563.75
+\bar{X}_{tr} &=& \frac{220+280+380+400+560+670+700+880}{8} \\
+     &=&511.25
 \end{eqnarray*}
 \end{itemize}
 }}
@@ -1356,23 +1356,23 @@ Estimates of Spread
 
 {\footnotesize{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Wed Jul 25 19:25:24 2018
+% Thu Jul 26 14:50:44 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrr}
   \hline
  & Rent & Diff & Diff Sqd \\ 
   \hline
-1 & 490 & -95 & 9025 \\ 
-  2 & 700 & 115 & 13225 \\ 
-  3 & 740 & 155 & 24025 \\ 
-  4 & 910 & 325 & 105625 \\ 
-  5 & 340 & -245 & 60025 \\ 
-  6 & 1200 & 615 & 378225 \\ 
-  7 & 350 & -235 & 55225 \\ 
-  8 & 280 & -305 & 93025 \\ 
-  9 & 140 & -445 & 198025 \\ 
-  10 & 700 & 115 & 13225 \\ 
+1 & 140 & -403 & 162409 \\ 
+  2 & 220 & -323 & 104329 \\ 
+  3 & 280 & -263 & 69169 \\ 
+  4 & 1200 & 657 & 431649 \\ 
+  5 & 380 & -163 & 26569 \\ 
+  6 & 560 & 17 & 289 \\ 
+  7 & 400 & -143 & 20449 \\ 
+  8 & 880 & 337 & 113569 \\ 
+  9 & 700 & 157 & 24649 \\ 
+  10 & 670 & 127 & 16129 \\ 
    \hline
 \end{tabular}
 \end{table}
@@ -1384,14 +1384,14 @@ Estimates of Spread
 
 {\footnotesize{
 \begin{itemize}
-\item<1-> Step 1. Compute $\bar{x} = 585$
+\item<1-> Step 1. Compute $\bar{x} = 543$
 \item<2-> Step 2. Calculate Diff, i.e., how much an obs. `missed by' the average, (i.e., deviation).
 \item<3-> Step 3. Square the `missed by' differences.
 \item<4-> Step 4. Add all the squared `missed by' differences, i.e., SS
 \item<5-> Step 5. Take the square-root of $\frac{SS}{n - 1}$ to get SD
 
 \begin{equation*}
-SD = \sqrt{ \frac{\ensuremath{9.4965\times 10^{5}}}{ 10 - 1 }} = 324.8
+SD = \sqrt{ \frac{\ensuremath{9.6921\times 10^{5}}}{ 10 - 1 }} = 328.2
 \end{equation*}
 
 \end{itemize}
@@ -1480,9 +1480,9 @@ apartment rental example
 \end{center}
 
 \begin{itemize}
-\item<1-> Recall that the mean and SD are \$ $585 \pm 324.8$ \\ ($\pm$ means `give or take')
-\item<2-> Get a roommate and pay half the rent: \$ $292.5 \pm 162.4$ %$323  ± $52
-\item<3-> No roommate but has contribution of \$100 per month from parents: $292.5 \pm 324.8$    % $526 ± $104
+\item<1-> Recall that the mean and SD are \$ $543 \pm 328.2$ \\ ($\pm$ means `give or take')
+\item<2-> Get a roommate and pay half the rent: \$ $271.5 \pm 164.1$ %$323  ± $52
+\item<3-> No roommate but has contribution of \$100 per month from parents: $271.5 \pm 328.2$    % $526 ± $104
 \end{itemize}
 \end{frame}
 
@@ -3883,7 +3883,7 @@ $d_i = \texttt{Before} - \texttt{After}, i = 1, \cdots , n$.
 
 {\footnotesize{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Wed Jul 25 19:25:24 2018
+% Thu Jul 26 14:50:44 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4035,7 +4035,7 @@ A 95\% confidence interval for $\mu_{left} - \mu_{right}$ is calculated and the 
 \begin{frame}[fragile]{Head Injury Criterion (HIC) Example}
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Wed Jul 25 19:25:24 2018
+% Thu Jul 26 14:50:44 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrr}
@@ -4059,7 +4059,7 @@ Acura Integra 87 & 599.00 & 597.00 \\
 
 {\footnotesize{
 \begin{itemize}
-\item<1-> The differences of Head Injury Criterion (HIC) Driver -- Passenger:
+\item<1-> The differences of Head Injury Criterion (HIC) Driver -- Passenger: \\
 2, 85, 2, 133, 23, 196, 74
 \item<2-> Mean difference: $\bar{D} = 73.6$
 \item<3-> Variation measures
@@ -4103,6 +4103,288 @@ ME &=&  1.96 \times SE \\
 \end{itemize}
 }}
 \end{frame}
+
+
+%!Rnw root = ../../Master.Rnw
+
+\section{Ch. 12 Testing Independence of Two Categorical  Variables}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+STAT 1600 \\ Ch. 12 Testing Independence of Two Categorical  Variables
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Association/Independence of Categorical Variables  
+
+\begin{itemize}
+\item Association/Independence of Categorical Variables  
+\item Testing for Statistical Association
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Assoc./Indep. of two Cat. Var.}
+
+{\small{
+Association and Independence \\
+Two variables A and B are said to be associated if the distribution of B  tends to change with the level of the A variable. Otherwise, they are  said to be not associated.
+
+Each of the following are likely to be as stated:
+
+\begin{itemize}
+\item<1-> Gender and height are associated: males tend to be taller than  females.
+\item<2-> GPA and height are independent: `height distribution tends to be the same for 3.0 students as well as 3.5 students.'
+\item<3-> Shoe size and height are associated: taller people tend to wear larger-sized shoes.
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Example: HS GPA and College Attrition}
+
+Is there an association between HS GPA (high school GPA) and college  attrition? A sample of $n = 189$ students entering a business school  program were followed as part of an attrition (i.e. drop out, transfer) study.  The students were cross classified according to Three (3) categories of attrition  outcomes and four (4) categories of HS GPA (the Observed frequency table):
+
+{\small{
+% latex table generated in R 3.5.1 by xtable 1.8-2 package
+% Thu Jul 26 14:50:44 2018
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrr}
+  \hline
+ & 2.0-2.5 & 2.5-3.0 & 3.0-3.5 & 3.5-4.0 \\ 
+  \hline
+not returned 2nd year & 25 & 3 & 4 & 6 \\ 
+  not returned 3rd year & 14 & 7 & 4 & 6 \\ 
+  returned 3rd year & 41 & 7 & 28 & 44 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+}}
+\end{frame}
+
+\begin{frame}[fragile]{GPA and Attrition Example, Cont'd}
+
+If grades and attrition were independent, then the (Observed) frequency  table should have looked more like the Expected frequency table below:
+
+{\small{
+\begin{kframe}
+
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning in chisq.test(MX12A, correct = TRUE): Chi-squared approximation may be incorrect}}\end{kframe}% latex table generated in R 3.5.1 by xtable 1.8-2 package
+% Thu Jul 26 14:50:44 2018
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrr}
+  \hline
+ & 2.0-2.5 & 2.5-3.0 & 3.0-3.5 & 3.5-4.0 \\ 
+  \hline
+not returned 2nd year & 16.08 & 3.42 & 7.24 & 11.26 \\ 
+  not returned 3rd year & 13.12 & 2.79 & 5.90 & 9.19 \\ 
+  returned 3rd year & 50.79 & 10.79 & 22.86 & 35.56 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+}}
+
+How do we construct such a table?
+
+\end{frame}
+
+\begin{frame}[fragile]{Constructing Expected Frequency Table}
+
+\begin{itemize}
+\item<1-> Compute the row totals of the table.  
+\item<2-> Calculate the column totals.
+\item<3-> Calculate the grand total which is the sample size $n$. The total of  row totals should equal $n$ and the total of column totals should  equal $n$.
+\item<4-> Calculate the expected frequency counts (these are E's, the  expected): For each cell,
+
+{\small{
+\begin{equation*}
+E_i = \frac{\texttt{row total (i)} \times \texttt{col total (j)} }{\texttt{Grand Total}}
+\end{equation*}
+}}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 11.2.1}
+
+Measurements of the left-hand and right-hand gripping strengths of 10  left-handed writers are recorded:
+
+\begin{table}[ht]
+\centering
+{\small{
+\begin{tabular}{@{} ccccccccccc @{}} \hline
+  & \multicolumn{10}{c}{Person} \\
+  & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+LH & 140&90&125&130&95&121&85&97&131&110 \\
+RH & 138&87&110&132&96&120&86&90&129&100 \\ \hline
+\end{tabular}
+}}
+\end{table}
+
+\vspace{3mm}
+
+Should this data set be treated as a paired data problem?
+
+\begin{enumerate}
+\item Yes.
+\item No.
+\item Cannot determine.
+\end{enumerate}
+\end{frame}
+
+% \begin{frame}[fragile]{iClicker Question 11.2.2}
+% 
+% {\scriptsize{
+% Measurements of the left-hand and right-hand gripping strengths of 10  left-handed writers are recorded:
+% }}
+% 
+% \begin{table}[ht]
+% \centering
+% {\footnotesize{
+% \begin{tabular}{@{} ccccccccccc @{}} \hline
+%   & \multicolumn{10}{c}{Person} \\
+%   & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+% LH & 140&90&125&130&95&121&85&97&131&110 \\
+% RH & 138&87&110&132&96&120&86&90&129&100 \\ \hline
+% \end{tabular}
+% }}
+% \end{table}
+% 
+% {\footnotesize{
+% A 95\% confidence interval for $\mu_{left} - \mu_{right}$ is calculated and the result is  (0.22,6.98). Which statement below is true about the confidence interval?
+% 
+% \vspace{-3mm}
+% 
+% \begin{enumerate}
+% \item We are 95\% confident that the difference in sample means is  between 0.22 and 6.98.
+% \item There is a 95\% probability that the difference in the true mean  gripping strengths of the two hands is between 0.22 and 6.98.
+% \item We are 95\% confident that the difference in the true mean  gripping strengths is between 0.22 and 6.98.
+% % \item There is a 95\% probability that the difference in the sample  mean gripping strengths of the two hands is between 0.22  and 6.98.
+% % \item None of the previous.
+% \end{enumerate}
+% }}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{iClicker Question 11.2.3}
+% 
+% {\scriptsize{
+% Measurements of the left-hand and right-hand gripping strengths of 10  left-handed writers are recorded:
+% }}
+% 
+% \begin{table}[ht]
+% \centering
+% {\footnotesize{
+% \begin{tabular}{@{} ccccccccccc @{}} \hline
+%   & \multicolumn{10}{c}{Person} \\
+%   & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+% LH & 140&90&125&130&95&121&85&97&131&110 \\
+% RH & 138&87&110&132&96&120&86&90&129&100 \\ \hline
+% \end{tabular}
+% }}
+% \end{table}
+% 
+% {\footnotesize{
+% A 95\% confidence interval for $\mu_{left} - \mu_{right}$ is calculated and the result is  (0.22,6.98). Which statement below is true about the confidence interval?
+% 
+% \vspace{-3mm}
+% 
+% \begin{enumerate}
+% \item The average gripping strength of the left hand differs  significantly than that of the right hand since the confidence  interval includes 0.
+% \item The average gripping strength of the left hand differs  significantly than that of the right hand since the confidence  interval excludes 0.
+% % \item The difference in average gripping strengths of the two hands  is insignificant since the confidence interval excludes 0.
+% \item The difference in average gripping strengths of the two hands  is insignificant since the confidence interval includes 0.
+% % \item None of the previous.
+% \end{enumerate}
+% }}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{(General) Paired Data}
+% 
+% \begin{itemize}
+% \item<1-> Paired data are data in which natural matchings occur.
+% \item<2-> Even when we have two samples, if each observation in one  sample is uniquely matched to an observation in the other sample,  then we have paired data.
+% \item<3-> The analysis of such data should follow that of before-and-after  paired data.
+% \end{itemize}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{Head Injury Criterion (HIC) Example}
+% 
+% <<label=LBL11Ab, results="asis", echo=FALSE>>=
+%   DVR11b <- c(599,600,585,551,562,593,519)
+%   PSS11b <- c(597,515,583,418,539,397,445)
+%   DFT11b <- DVR11b - PSS11b
+%   mn11b  <- mean(DFT11b)
+%   
+%   DFMNb <- DFT11b - mn11b
+%   sd11b <- sd(DFT11b)
+%   se11b <- sd11b / sqrt( length(DVR11b))
+%   mn11q <- sprintf('%.1f', mn11b)
+%   sd11q <- sprintf('%.1f', sd11b)
+%   se11q <- sprintf('%.1f', se11b)
+%   tmp11a <- cbind(DVR11b, PSS11b)
+%   colnames(tmp11a) <- c("Driver", "Passenger")
+%   rownames(tmp11a) <- c('Acura Integra 87','Audi 80 89','Chev Camaro 91','Ford Escort 87','Honda Accord LX 91','Toyota Corolla Fx 88','Volvo 740 LE 88')
+%   xtable(tmp11a)
+%   me11b <- se11b * 1.96
+%   lbnd11p <- sprintf("%.1f", (mn11b - me11b))
+%   ubnd11p <- sprintf("%.1f", (mn11b + me11b))
+%   me11q <- sprintf("%.1f", me11b)
+% @  
+% \end{frame}
+% 
+% \begin{frame}[fragile]{Head Injury Criterion (HIC) eg., Cont'd}
+% 
+% {\footnotesize{
+% \begin{itemize}
+% \item<1-> The differences of Head Injury Criterion (HIC) Driver -- Passenger: \\
+% DFT11b
+% \item<2-> Mean difference: $\bar{D} = mn11q$
+% \item<3-> Variation measures
+% 
+% \begin{minipage}[ht]{3.3cm}
+% 
+% {\scriptsize{
+% \begin{eqnarray*}
+% SD &=& \sqrt{ \frac{ \sum (d_i - \bar{D})^2}{n - 1}} \\ 
+% &=&  sd11q
+% \end{eqnarray*}
+% }}
+% \end{minipage}
+% \begin{minipage}[ht]{3.3cm}
+% 
+% {\scriptsize{
+% \begin{eqnarray*}
+% SE &=& \frac{SD}{\sqrt{n}} \\
+% &=&   se11q
+% \end{eqnarray*}
+% }}
+% \end{minipage}
+% \begin{minipage}[ht]{3.3cm}
+% 
+% {\scriptsize{
+% \begin{eqnarray*}
+% ME &=&  1.96 \times SE \\
+% &=&   me11q
+% \end{eqnarray*}
+% }}
+% \end{minipage}
+% 
+% \vspace{-6mm}
+% \item<4-> A 95\% CI for mean difference in HICs (Driver - Passenger):
+% \begin{equation*}
+%   (mn11q - me11q, mn11q + me11q) \Rightarrow (lbnd11p, ubnd11p)
+% \end{equation*}
+% 
+%   which \textbf{excludes} zero (0) and hence the mean difference in HICs is  statistically \textbf{significant}.
+% 
+% \end{itemize}
+% }}
+% \end{frame}
 
 
 

@@ -1,47 +1,25 @@
-\frametitle{Head Injury Criterion (HIC) eg., Cont'd}
+\frametitle{iClicker Question 11.2.1}
 
-{\footnotesize{
-\begin{itemize}
-\item<1-> The differences of Head Injury Criterion (HIC) Driver -- Passenger:
-2, 85, 2, 133, 23, 196, 74
-\item<2-> Mean difference: $\bar{D} = 73.6$
-\item<3-> Variation measures
+Measurements of the left-hand and right-hand gripping strengths of 10  left-handed writers are recorded:
 
-\begin{minipage}[ht]{3.3cm}
-
-{\scriptsize{
-\begin{eqnarray*}
-SD &=& \sqrt{ \frac{ \sum (d_i - \bar{D})^2}{n - 1}} \\
-&=&  72.4
-\end{eqnarray*}
+\begin{table}[ht]
+\centering
+{\small{
+\begin{tabular}{@{} ccccccccccc @{}} \hline
+  & \multicolumn{10}{c}{Person} \\
+  & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+LH & 140&90&125&130&95&121&85&97&131&110 \\
+RH & 138&87&110&132&96&120&86&90&129&100 \\ \hline
+\end{tabular}
 }}
-\end{minipage}
-\begin{minipage}[ht]{3.3cm}
+\end{table}
 
-{\scriptsize{
-\begin{eqnarray*}
-SE &=& \frac{SD}{\sqrt{n}} \\
-&=&   27.4
-\end{eqnarray*}
-}}
-\end{minipage}
-\begin{minipage}[ht]{3.3cm}
+\vspace{3mm}
 
-{\scriptsize{
-\begin{eqnarray*}
-ME &=&  1.96 \times SE \\
-&=&   53.6
-\end{eqnarray*}
-}}
-\end{minipage}
+Should this data set be treated as a paired data problem?
 
-\vspace{-6mm}
-\item<4-> A 95\% CI for mean difference in HICs (Driver - Passenger):
-\begin{equation*}
-  (73.6 - 53.6, 73.6 + 53.6) \Rightarrow (19.9, 127.2)
-\end{equation*}
-
-  which \textbf{excludes} zero (0) and hence the mean difference in HICs is  statistically \textbf{significant}.
-
-\end{itemize}
-}}
+\begin{enumerate}
+\item Yes.
+\item No.
+\item Cannot determine.
+\end{enumerate}
