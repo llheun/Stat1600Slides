@@ -1,0 +1,301 @@
+%!Rnw root = ../../Master.Rnw
+
+\section{Stat 1600 Ch. 11.2  Comparing Two Means -- Paired Data}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+STAT 1600 \\ Ch 11.2 Comparing Two Means -- Paired Data
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Paired Data
+
+\begin{itemize}
+\item Comparing Means in Paired Data  
+\item (General) Paired Data
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Paired Data, Before-and-After Data}
+
+{\small{
+Data come in pairs, each subject was measured twice, before and  after.  Note that it's NOT two samples, it's one sample of subjects, each  measured twice. Weight Loss Example:
+}}
+
+\begin{table}
+{\footnotesize{
+\caption{Weight in pounds before and  after 12 months on diet}
+\begin{tabular}{@{} ccc @{}} \hline
+Subject & Before & After \\ \hline
+1 & 180 & 155 \\
+2 & 192 & 187 \\
+3 & 205 & 194 \\
+4 & 166 & 176 \\
+5 & 220 & 205 \\
+6 & 177 & 172 \\
+7 & 189 & 173 \\ \hline
+\end{tabular}
+}}
+\end{table}
+
+\end{frame}
+
+\begin{frame}[fragile]{Analysis of Paired Data}
+
+{\small{
+\begin{itemize}
+\item It's WRONG to analyze the data using two-sample method. The proper  procedure is laid out below:
+\item Calculate the pairwise differences in a consistent manner:
+$d_i = \texttt{Before} - \texttt{After}, i = 1, \cdots , n$.
+\item Treat the differences as one sample and
+\item Mean difference: $\bar{D} = \frac{ d_1 + d_2 \cdots d_n}{n} $
+\item Standard error $SE_{\bar{D}}$:
+  {\scriptsize{
+  \begin{equation*}
+    SE = \frac{SD}{n} \texttt{  where } SD = SD_{d} = \sqrt{ \frac{ \sum (d_i - \bar{D})^2}{n - 1}}
+  \end{equation*}
+  }}
+\item A 95\% CI for $\mu_d$:
+  \begin{equation*}
+    (\bar{D} \pm ME) \texttt{ where } ME = 1.96 \times SE
+  \end{equation*}
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Analysis of Paired Data, Cont'd}
+
+\begin{itemize}
+\item If the confidence interval EXCLUDES zero (0), then the difference in means is statistically significant.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Weight Loss Example, revisited}
+
+{\footnotesize{
+<<label=LBL11Aa, results="asis", echo=FALSE>>=
+  BFR11 <- c(180,192,205,166,220,177,189 )
+  AFT11 <- c(155,187,194,176,205,172,173 )
+  DFF11 <- BFR11 - AFT11
+  mn11a <- mean(DFF11)
+  
+  DFMN  <- DFF11 - mn11a
+  sd11a <- sd(DFF11)
+  se11a <- sd11a / sqrt( length(BFR11))
+  mn11p <- sprintf('%.1f', mn11a)
+  sd11p <- sprintf('%.1f', sd11a)
+  se11p <- sprintf('%.1f', se11a)
+  tmp11a <- cbind(BFR11, AFT11, DFF11, DFMN)
+  colnames(tmp11a) <- c("Before", "After", "Diff(d)", "d - mean")
+  xtable(tmp11a)
+  me11a <- se11a * 1.96
+  lbnd11p <- sprintf("%.1f", (mn11a - me11a))
+  ubnd11p <- sprintf("%.1f", (mn11a + me11a))
+  me11p <- sprintf("%.1f", me11a)
+@
+
+\begin{equation*}
+SD = \sqrt{ \frac{ \sum (d_i - \bar{D})^2}{n - 1}} = \Sexpr{sd11p}
+\end{equation*}
+
+Hence, 
+\begin{equation*}
+SE = \frac{SD}{\sqrt{n}} = \Sexpr{se11p}
+\end{equation*}
+}}
+\end{frame}
+ 
+\begin{frame}[fragile]{Weight Loss Example, cont'd}
+  
+The margin of error is
+ \begin{equation*}
+ ME = 1.96 \times SE = 1.96 \times \Sexpr{se11p} = \Sexpr{me11p}
+\end{equation*}
+
+Hence a 95\% confidence interval for mean weight loss (i.e., mean  difference of Before and After) is
+
+\begin{equation*}
+( (\Sexpr{mn11p} - \Sexpr{me11p}), (\Sexpr{mn11p} + \Sexpr{me11p}) )  \Rightarrow  (\Sexpr{lbnd11p}, \Sexpr{ubnd11p})
+\end{equation*}
+
+% % (9.6 − 8.2, 9.6 + 8.2) = (1.4, 17.8)
+This CI \textbf{excludes} zero (0) and hence the mean weight loss is statistically \textbf{significant}.
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 11.2.1}
+
+Measurements of the left-hand and right-hand gripping strengths of 10  left-handed writers are recorded:
+
+\begin{table}[ht]
+\centering
+{\small{
+\begin{tabular}{@{} ccccccccccc @{}} \hline
+  & \multicolumn{10}{c}{Person} \\
+  & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+LH & 140&90&125&130&95&121&85&97&131&110 \\
+RH & 138&87&110&132&96&120&86&90&129&100 \\ \hline
+\end{tabular}
+}}
+\end{table}
+
+\vspace{3mm}
+
+Should this data set be treated as a paired data problem?
+
+\begin{enumerate}
+\item Yes.
+\item No.
+\item Cannot determine.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 11.2.2}
+
+{\scriptsize{
+Measurements of the left-hand and right-hand gripping strengths of 10  left-handed writers are recorded:
+}}
+
+\begin{table}[ht]
+\centering
+{\footnotesize{
+\begin{tabular}{@{} ccccccccccc @{}} \hline
+  & \multicolumn{10}{c}{Person} \\
+  & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+LH & 140&90&125&130&95&121&85&97&131&110 \\
+RH & 138&87&110&132&96&120&86&90&129&100 \\ \hline
+\end{tabular}
+}}
+\end{table}
+
+{\footnotesize{
+A 95\% confidence interval for $\mu_{left} - \mu_{right}$ is calculated and the result is  (0.22,6.98). Which statement below is true about the confidence interval?
+
+\vspace{-3mm}
+
+\begin{enumerate}
+\item We are 95\% confident that the difference in sample means is  between 0.22 and 6.98.
+\item There is a 95\% probability that the difference in the true mean  gripping strengths of the two hands is between 0.22 and 6.98.
+\item We are 95\% confident that the difference in the true mean  gripping strengths is between 0.22 and 6.98.
+% \item There is a 95\% probability that the difference in the sample  mean gripping strengths of the two hands is between 0.22  and 6.98.
+% \item None of the previous.
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 11.2.3}
+
+{\scriptsize{
+Measurements of the left-hand and right-hand gripping strengths of 10  left-handed writers are recorded:
+}}
+
+\begin{table}[ht]
+\centering
+{\footnotesize{
+\begin{tabular}{@{} ccccccccccc @{}} \hline
+  & \multicolumn{10}{c}{Person} \\
+  & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+LH & 140&90&125&130&95&121&85&97&131&110 \\
+RH & 138&87&110&132&96&120&86&90&129&100 \\ \hline
+\end{tabular}
+}}
+\end{table}
+
+{\footnotesize{
+A 95\% confidence interval for $\mu_{left} - \mu_{right}$ is calculated and the result is  (0.22,6.98). Which statement below is true about the confidence interval?
+
+\vspace{-3mm}
+
+\begin{enumerate}
+\item The average gripping strength of the left hand differs  significantly than that of the right hand since the confidence  interval includes 0.
+\item The average gripping strength of the left hand differs  significantly than that of the right hand since the confidence  interval excludes 0.
+% \item The difference in average gripping strengths of the two hands  is insignificant since the confidence interval excludes 0.
+\item The difference in average gripping strengths of the two hands  is insignificant since the confidence interval includes 0.
+% \item None of the previous.
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{(General) Paired Data}
+
+\begin{itemize}
+\item<1-> Paired data are data in which natural matchings occur.
+\item<2-> Even when we have two samples, if each observation in one  sample is uniquely matched to an observation in the other sample,  then we have paired data.
+\item<3-> The analysis of such data should follow that of before-and-after  paired data.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Head Injury Criterion (HIC) Example}
+
+<<label=LBL11Ab, results="asis", echo=FALSE>>=
+  DVR11b <- c(599,600,585,551,562,593,519)
+  PSS11b <- c(597,515,583,418,539,397,445)
+  DFT11b <- DVR11b - PSS11b
+  mn11b  <- mean(DFT11b)
+  
+  DFMNb <- DFT11b - mn11b
+  sd11b <- sd(DFT11b)
+  se11b <- sd11b / sqrt( length(DVR11b))
+  mn11q <- sprintf('%.1f', mn11b)
+  sd11q <- sprintf('%.1f', sd11b)
+  se11q <- sprintf('%.1f', se11b)
+  tmp11a <- cbind(DVR11b, PSS11b)
+  colnames(tmp11a) <- c("Driver", "Passenger")
+  rownames(tmp11a) <- c('Acura Integra 87','Audi 80 89','Chev Camaro 91','Ford Escort 87','Honda Accord LX 91','Toyota Corolla Fx 88','Volvo 740 LE 88')
+  xtable(tmp11a)
+  me11b <- se11b * 1.96
+  lbnd11p <- sprintf("%.1f", (mn11b - me11b))
+  ubnd11p <- sprintf("%.1f", (mn11b + me11b))
+  me11q <- sprintf("%.1f", me11b)
+@  
+\end{frame}
+
+\begin{frame}[fragile]{Head Injury Criterion (HIC) eg., Cont'd}
+
+{\footnotesize{
+\begin{itemize}
+\item<1-> The differences of Head Injury Criterion (HIC) Driver -- Passenger: \\
+\Sexpr{DFT11b}
+\item<2-> Mean difference: $\bar{D} = \Sexpr{mn11q}$
+\item<3-> Variation measures
+
+\begin{minipage}[ht]{3.3cm}
+
+{\scriptsize{
+\begin{eqnarray*}
+SD &=& \sqrt{ \frac{ \sum (d_i - \bar{D})^2}{n - 1}} \\ 
+&=&  \Sexpr{sd11q}
+\end{eqnarray*}
+}}
+\end{minipage}
+\begin{minipage}[ht]{3.3cm}
+
+{\scriptsize{
+\begin{eqnarray*}
+SE &=& \frac{SD}{\sqrt{n}} \\
+&=&   \Sexpr{se11q}
+\end{eqnarray*}
+}}
+\end{minipage}
+\begin{minipage}[ht]{3.3cm}
+
+{\scriptsize{
+\begin{eqnarray*}
+ME &=&  1.96 \times SE \\
+&=&   \Sexpr{me11q}
+\end{eqnarray*}
+}}
+\end{minipage}
+
+\vspace{-6mm}
+\item<4-> A 95\% CI for mean difference in HICs (Driver - Passenger):
+\begin{equation*}
+  (\Sexpr{mn11q} - \Sexpr{me11q}, \Sexpr{mn11q} + \Sexpr{me11q}) \Rightarrow (\Sexpr{lbnd11p}, \Sexpr{ubnd11p})
+\end{equation*}
+
+  which \textbf{excludes} zero (0) and hence the mean difference in HICs is  statistically \textbf{significant}.
+
+\end{itemize}
+}}
+\end{frame}
