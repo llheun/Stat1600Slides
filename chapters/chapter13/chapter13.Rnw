@@ -1,0 +1,444 @@
+%!Rnw root = ../../Master.Rnw
+
+\section{STAT 1600 Ch. 13 Correlation}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+STAT 1600 \\ Ch. 13 Correlation
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Correlation Coefficient
+
+\begin{itemize}
+\item Association Between Two Numerical Measurements  
+\item Scatterplots
+\item Sample Correlation Coefficient
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Association Bet'n Two Numerical Vars.}
+
+It is of interest to study the association (relationship) between two  Numerical variables. Examples abound:
+
+\begin{itemize}
+\item<1-> How is the height of the adult firstborn son related to father's height? \item<2-> How does the household expenditure vary with income?
+\item<3-> Does blood pressure depend on age in adults? In what manner?  
+\item<4-> What is the relationship between advertising expenditures and sales?  
+\item<5-> What is the relationship between height and weight in young children.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Cor. Coef. Measures Linear Relationship}
+
+(Linear) Correlation coefficient is used to measure the strength of linear  association between two quantitative variables. The population correlation  coefficient is denoted by $\rho$.
+
+\begin{itemize}
+\item<1-> $ -1 \le \rho \le 1 $
+\item<2-> 
+
+\begin{table}[ht]
+{\footnotesize{
+\caption{Linear Relationship as measured by $\rho$}
+\begin{tabular}{@{} ccccccc @{}} \hline
+Strong(-) & $\leftarrow$ & weak & No & weak & $\rightarrow$ & Strong(+) \\ \hline
+-1 & -0.65 & -0.35 & 0 & +0.35 & +0.65 & +1 \\ \hline
+\end{tabular}
+}}
+\end{table}
+
+\item<3-> downward linear relationship if $\rho < 0$.
+\item<4-> upward linear relationship if $\rho > 0$. 
+\item<5-> no linear relationship if $\rho = 0$. 
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Interpretation and Cautions}
+
+\begin{itemize}
+\item<1-> Correlation measures linear association only.
+\item<2-> A zero correlation implies only that the two measurements are not  linearly associated, it does not imply that there is no relationship  between these two measurements.
+\item<3> Correlation does not imply causation: The number of deaths per  100,000 in England for a year in the late 1800's was recorded along  with the number of church weddings (in thousands) for several years.  The results are shown in the plot below.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Interpretation and Cautions}
+
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[width=9cm]{chapters/chapter13/figure/fig1.png} % requires the graphicx package
+   % \caption{example caption}
+   % \label{fig:example}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 13.1}
+
+{\small{
+The scatterplot of two numerical measurements x  and y is given on the right. Which of the following  statements is true?
+}}
+
+\vspace{3mm}
+
+\begin{minipage}[ht]{6cm}
+
+{\footnotesize{
+\begin{enumerate}
+\item There is no relationship between x and y since the correlation is zero.
+\item There is no linear association  between x and y due to zero  correlation.
+\item The change in x value causes the  change in y value.
+\item There is upward linear relationship  between x and y .
+\item There is downward linear relationship  between x and y .
+\end{enumerate}
+}}
+\end{minipage} \hfill
+\begin{minipage}[ht]{4cm}
+
+
+<<label=LBL13a, results="asis", echo=FALSE, out.width="4cm">>=
+  X13a <- seq(-3, 12, 1)
+  Y13a <- .5*X13a^2 -4 * X13a + 10
+  plot(X13a, Y13a, xlab="x", ylab="y", main="Correlation = 0")
+@
+\end{minipage}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 13.2}
+
+{\small{
+Astringency is the quality in a wine that makes the wine drinker's mouth feel slightly rough, dry, and puckery.  The researchers reported looked at the relationship between perceived astringency and tannin concentration.  Which of the following  statements is true?
+}}
+
+\vspace{3mm}
+
+\begin{minipage}[ht]{6cm}
+
+{\footnotesize{
+\begin{enumerate}
+\item There is no relationship between  astringency(x) and perceived(y).
+\item There is a downward linear  relationship between astringency(x) and perceived(y).
+\item There is a upward linear relationship  between astringency(x) and perceived(y).
+\item None of the above is true.
+\end{enumerate}
+}}
+\end{minipage} \hfill
+\begin{minipage}[ht]{4cm}
+
+
+<<label=LBL13b, results="asis", echo=FALSE, out.width="4cm">>=
+  X13b <- c(23,45,68,91,114,136,159,182,205,228)
+  
+  Y13b <- c(53.3,26.9,54.8,33.8,29.9,8.2,17.2,12.2,3.2,11.1)
+  tmp1 <- cor.test(X13b, Y13b)
+  plot(X13b, Y13b, xlab="Astringency", ylab="Perceived", main="correlation = -0.837")
+@
+\end{minipage}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 13.3}
+
+The correlation between the cheese price and the median house  selling price for the state of Wisconsin from year 1960 to year 2000  was found to be 0.65. Which statement is false?
+
+\begin{enumerate}
+\item There is a upward linear relationship between the two  measurements.
+\item The increase in median house selling price causes the  increase in cheese price.
+\item The linear relationship is moderate.
+\item The increase in median house selling price is positively  associated with the increase in cheese price.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 13.4}
+
+Which value below is not a correlation coefficient?
+
+\begin{enumerate}
+\item -0.999
+\item -0.75
+\item 0
+\item 0.99
+\item 1.2
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Importance of Scatterplots}
+
+To study the association between a pair of numerical measurements, a  sample of $n$ pairs of these measurements is taken. To inspect the  association between these measurements, a scatterplot provides an  excellent visual rendering of these n pairs of measurements.
+
+\end{frame}
+
+\begin{frame}[fragile]{Oil-exporter Example}
+
+{\small{
+In the world bank 85 data (chapter 1), we would like to measure the linear  association between birth rate (y) and per capita gross national product  (x) for the four high-income oil exporters. The data:
+}}
+
+{\small{
+<<label=LBL13c, results="asis", echo=FALSE>>=
+  X13C <- c(45, 42, 34, 30 )
+  Y13C <- c(7.17, 8.85, 14.48, 19.27)
+  TB13C <- cbind(Y13C, X13C)
+  colnames(TB13C) <- c('GNP', 'Birth rate')
+  rownames(TB13C) <- c('Libya', 'Saudi Arabia', 'Kuwait', 'United Arab Emirates')
+  xtable(TB13C, digits=0)
+@ 
+}}
+
+{\small{
+\begin{itemize}
+\item The values of birth rate range from 30 to 45.
+
+\item The values of GNP range from 7,170 to 19,270. This range is  contained in (6,000, 20,000) (the latter to be plotted).
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{(Oil-exporter Example: Scatterplot}
+
+<<label=LBL13d, results="asis", echo=FALSE, out.width="7cm">>=
+  plot(X13C, Y13C, xlab="GNP", ylab="Birth Rate")  
+  arrows(44,16,31,19)
+  arrows(44,16,35,14.5)
+  arrows(44,16,42.5,9.5)
+  arrows(44,16,45,8)
+@  
+
+\end{frame}
+
+\begin{frame}[fragile]{Correlation is Not Robust}
+
+Correlation coefficient is not a robust measure since it is sensitive to  outliers: for the data below
+
+\begin{minipage}[ht]{5cm}
+
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[width=5cm]{chapters/chapter13/figure/fig2.png} % requires the graphicx package
+   % \caption{example caption}
+   % \label{fig:example}
+\end{figure}
+
+\end{minipage}
+\begin{minipage}[ht]{6cm}
+
+\begin{table}[ht]
+{\small{
+\caption{The Corr. Coef. for various cases:}
+\begin{tabular}{@{} rl @{}} \hline
+-0.80 & all but obs 18, 28 \\
+-0.69 & all but obs 28 \\
+-0.34 & all but obs 18 \\
+-0.29 & for full data \\
+0.04  & all but obs 10, 18, 28 \\
+0.17  & all but obs 10, 28 \\
+0.61  & all but obs 10 \\
+0.64  & all but obs 10, 18 \\ \hline
+\end{tabular}
+}}
+\end{table}
+\end{minipage}
+\end{frame}
+
+\begin{frame}[fragile]{Calculating the Correlation Coefficient}
+
+\begin{itemize}
+{\small{
+  \item While keeping the same order of the $n$ pairs, do the following for $x$
+values and for $y$ values separately:
+  \begin{itemize}
+  \item Use 3-column format to compute sample mean and standard  deviation.
+  \item Add 4th column containing the standardized variable values (divide  the second column of deviations by standard deviation).
+  \end{itemize}
+\item Copy the standardized variable values for $x$ and for $y$ to a  separate table. Be sure to keep the same order of the $n$ pairs.
+\item Add a column of the products of the standardized variable values.  
+\item Total this new column to get the numerator of $r$.
+\item Divide the value in the previous step by $n - 1$ to get $r$.
+}}
+\end{itemize} 
+\end{frame}
+
+\begin{frame}[fragile]{Oil-exporter Example}
+
+{\footnotesize{
+In the world bank 85 data (chapter 1), we would like to measure the linear  association between birth rate (y) and per capita gross national product  (x) for the four high-income oil exporters. The data:
+}}
+
+{\footnotesize{
+<<label=LBL13e, results="asis", echo=FALSE>>=
+  TB13C <- cbind(Y13C, X13C)
+  colnames(TB13C) <- c('GNP', 'Birth rate')
+  rownames(TB13C) <- c('Libya', 'Saudi Arabia', 'Kuwait', 'United Arab Emirates')
+  xtable(TB13C, digits=0)
+@ 
+}}
+
+\begin{itemize}
+{\small{
+\item The values of birth rate range from 30 to 45.
+
+\item The values of GNP range from 7,170 to 19,270. This range is  contained in (6,000, 20,000) (the latter to be plotted).
+\item How do we find the correlation coefficient for these two numeric variables?
+}}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Oil-exporter Example: Correlation, step 1}
+
+\begin{minipage}[ht]{6cm}
+
+{\footnotesize{
+Birth Rate:
+
+<<label=LBL13f, results="asis", echo=FALSE>>=
+  MN13Y <- mean(Y13C)
+  DF13Y <- Y13C - MN13Y
+  DFSQY <- DF13Y^2
+  SD13Y <- sd(Y13C)
+  Z13Y  <- (Y13C - MN13Y) / SD13Y
+  TBL13D <- cbind(Y13C, DF13Y, DFSQY, Z13Y)
+  colnames(TBL13D) <- c("Y", "Diff", "Diff_sq", "Zy")
+  xtable(TBL13D, digits=2)
+@
+}}
+\end{minipage}
+\begin{minipage}[ht]{5cm}
+
+{\scriptsize{
+\begin{eqnarray*}
+\bar{Y} &=& \frac{ \sum Y_i}{n} \\
+Diff &=& Y_i - \bar{Y} \\
+Diff_{sq} &=& \sum (Y_i - \bar{Y})^2 \\
+SD_y &=& \sqrt{ \frac{ \sum ( Y_i - \bar{Y})^2}{n - 1}} \\
+Zy &=& \frac{(Y_i - \bar{Y})}{SD_y}
+\end{eqnarray*}
+}}
+\end{minipage}
+
+\end{frame}
+
+\begin{frame}[fragile]{Oil-exporter Example: Correlation, step 2}
+
+\begin{minipage}[ht]{6cm}
+
+{\footnotesize{
+GNP:
+
+<<label=LBL13g, results="asis", echo=FALSE>>=
+  MN13X <- mean(X13C)
+  DF13X <- X13C - MN13X
+  DFSQX <- DF13X^2
+  SD13X <- sd(X13C)
+  Z13X  <- (X13C - MN13X) / SD13X
+  TBL13x <- cbind(X13C, DF13X, DFSQX, Z13X)
+  colnames(TBL13x) <- c("X", "Diff", "Diff_sq", "Zx")
+  xtable(TBL13x, digits=2)
+@
+}}
+\end{minipage}
+\begin{minipage}[ht]{5cm}
+
+{\scriptsize{
+\begin{eqnarray*}
+\bar{X} &=& \frac{ \sum X_i}{n} \\
+Diff &=& X_i - \bar{X} \\
+Diff_{sq} &=& \sum (X_i - \bar{X})^2 \\
+SD_x &=& \sqrt{ \frac{ \sum ( X_i - \bar{X})^2}{n - 1}} \\
+Zx &=& \frac{(X_i - \bar{X})}{SD_x}
+\end{eqnarray*}
+}}
+\end{minipage}
+
+\end{frame}
+
+\begin{frame}[fragile]{Oil-exporter Example: Correlation, step 3}
+
+Now, calculate the correlation using standardized variable values:
+
+
+<<label=LBL13h, results="asis", echo=FALSE>>=
+  tmp13a <- Z13X * Z13Y
+  tmp13b <- sum(tmp13a)
+  tmp13s <- sprintf("%.4f", tmp13b)
+  TBL13c <- cbind(Z13X, Z13Y, tmp13a)
+  colnames(TBL13c) <- c("Zx", "Zy", "Zx * Zy")
+  r13a   <- tmp13b / (length(tmp13a) - 1)
+  n13s   <- sprintf("%.0f", length(tmp13a))
+  xtable(TBL13c, digits=2)
+@
+
+\end{frame}
+
+\begin{frame}[fragile]{Sample Correlation Coefficient}
+
+{\footnotesize{
+The two measurements are observed in n pairs:
+$(x_1, y_1), (x_2, y_2), \cdots , (x_n, y_n)$. It is always recommended to plot these $n$  pairs in a scatterplot. The sample correlation (known as Pearson's  correlation coefficient), denoted by $r$ , can be computed by
+}}
+
+{\scriptsize{
+\begin{eqnarray*}
+  r &=& \frac{ \texttt{ Sum(products of standardized variables)}}{\texttt{one less number of pairs}} \\
+  &=& \frac{ \sum \Big(\frac{(X - \bar{X})}{SD_x} \times \frac{(Y - \bar{Y})}{SD_y} \Big) }{n - 1} \\
+  &=& \frac{ \sum (Z_x \times Z_y)}{n - 1}
+\end{eqnarray*}
+}}
+
+\vspace{-6mm}
+
+{\footnotesize{
+where $\bar{X}$ and $SD_x$ are the sample mean and standard deviation for $x$  values, and $\bar{Y}$ and $SD_y$ are the sample mean and standard deviation for $y$ values.
+}}
+
+\end{frame}
+
+\begin{frame}[fragile]{Oil-exporter Example: Correlation, step 3}
+
+{\small{
+Now, calculate the correlation using standardized variable values:
+}}
+
+{\footnotesize{
+<<label=LBL13i, results="asis", echo=FALSE>>=
+  xtable(TBL13c, digits=2)
+@  
+}}
+
+\vspace{-6mm}
+
+{\footnotesize{
+\begin{eqnarray*}
+sumZ &=& \sum Zx * Zy = \Sexpr{tmp13b} \\
+r    &=& \frac{ \Sexpr{tmp13b}}{ (\Sexpr{n13s} - 1)} = \Sexpr{r13a}
+\end{eqnarray*}
+}}
+
+{\small{
+GNP and birth rate exhibit a strong negative (or downward) linear  relationship..
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 13.5}
+
+Which of the following graphs has the strongest negative correlation?
+
+\begin{minipage}[ht]{4cm}
+
+\begin{enumerate}[A]
+\item Car Weight
+\item R/S
+\item Ave.Temp.
+\item Square Feet
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[ht]{6cm}
+
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[width=6cm]{chapters/chapter13/figure/fig3.png} % requires the graphicx package
+   % \caption{example caption}
+   % \label{fig:example}
+\end{figure}
+\end{minipage}
+\end{frame}

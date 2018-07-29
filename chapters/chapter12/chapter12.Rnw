@@ -19,6 +19,13 @@ Association/Independence of Categorical Variables
 
 \end{frame}
 
+\begin{frame}[fragile]{Association vs. Independence}
+
+{\small{
+If we are thinking, ``association and independence are the same,'' we are almost right. The difference is about design. In the test of independence, we collect observational units at random from a population, and the two categorical variables are observed for each unit. In the test of association, we collect the data by randomly sampling from each sub-group \textbf{separately}. (Say, 100 Democrat, 100 Republican, 100 Independent, and so on.) The null hypothesis is that each sub-group shares the same distribution of another categorical variable. (Say, ``chain smoker'', ``occasional smoker'', ``non-smoker''.)  The difference between these two tests is subtle yet important.
+}}
+\end{frame}
+
 \begin{frame}[fragile]{Assoc./Indep. of two Cat. Var.}
 
 {\small{
@@ -80,7 +87,7 @@ How do we construct such a table?
 
 {\small{
 \begin{equation*}
-E_i = \frac{\texttt{row total (i)} \times \texttt{col total (j)} }{\texttt{Grand Total}}
+E_{ij} = \frac{\texttt{row total (i)} \times \texttt{col total (j)} }{\texttt{Grand Total}}
 \end{equation*}
 }}
 \end{itemize}
@@ -88,182 +95,294 @@ E_i = \frac{\texttt{row total (i)} \times \texttt{col total (j)} }{\texttt{Grand
 
 \begin{frame}[fragile]{GPA and Attrition Example, cont'd}
 
+\begin{minipage}[ht]{6cm}
 
+{\tiny{
 
+O, Observed 
+
+<<label=LBL12c, results="asis", echo=FALSE>>=
+  DT12c <- c(25,14,41,80,3,7,7,17,4,4,28,36,6,6,44,56,38,31,120,189)
+  MX12C <- matrix(data=DT12c, nrow=4)
+  xtable(MX12C)
+@  
+}}
+\end{minipage} \hfill
+\begin{minipage}[ht]{5cm}
+
+{\tiny{
+
+E, Expected
+
+<<label=LBL12d, results="asis", echo=FALSE>>=
+  DT12d <- c(16.08,13.12,50.79,3.42,2.79,10.79,7.24,5.90,22.86,11.26,9.19,35.56)
+  MX12D <- matrix(data=DT12d, nrow=3)
+  xtable(MX12D)
+@  
+}}
+\end{minipage}
+
+{\small{
+\begin{eqnarray*}
+E_{11} &=& \frac{38 \times 30}{189} = 16.08 \\
+E_{22} &=& \frac{31 \times 17}{189} = 2.79
+\end{eqnarray*}
+}}
 \end{frame}
 
-\begin{frame}[fragile]{iClicker Question 11.2.1}
+\begin{frame}[fragile]{iClicker Question 12.1}
 
-Measurements of the left-hand and right-hand gripping strengths of 10  left-handed writers are recorded:
-
-\begin{table}[ht]
-\centering
 {\small{
-\begin{tabular}{@{} ccccccccccc @{}} \hline
-  & \multicolumn{10}{c}{Person} \\
-  & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
-LH & 140&90&125&130&95&121&85&97&131&110 \\
-RH & 138&87&110&132&96&120&86&90&129&100 \\ \hline
-\end{tabular}
+In a study, investigators classified adults by obesity and hypertension:
+
+<<label=LBL12e, results="asis", echo=FALSE>>=
+  DT12e <- c(24,109,133,33,101,134,46,87,133,103,297,400)
+  MX12E <- matrix(data=DT12e, nrow=3)
+  colnames(MX12E) <- c('Low','Average','High','Total')
+  row.names(MX12E) <- c('Yes','No','Total')
+  xtable(MX12E, digits=0)  
+@  
+
+Calculate the expected frequency of those who do not have  hypertension (No) and with the `Average' obesity category.
+
+\begin{enumerate}
+\item 34.5
+\item 99.5
+\item 34.2
+\item 98.8
+\end{enumerate}
 }}
-\end{table}
+\end{frame}
+
+\begin{frame}[fragile]{Measuring `Closeness' of Observed and Expected}
+
+If the Observed (O) frequency table is close to (i.e, like) the Expected
+(E) frequency table then the two categorical variables are independent.  Otherwise the variables are associated. \\
+But how to measure this `closeness'/`farness' between O's and E's?
 
 \vspace{3mm}
 
-Should this data set be treated as a paired data problem?
+\textbf{Answer.}  We use the Chi-Square ($\chi^2$) statistic:
 
-\begin{enumerate}
-\item Yes.
-\item No.
-\item Cannot determine.
-\end{enumerate}
+\vspace{3mm}
+
+We conclude statistical association if $\chi^2 > b$ 
+
+where $b$ is the critical value.
+
 \end{frame}
 
-% \begin{frame}[fragile]{iClicker Question 11.2.2}
-% 
-% {\scriptsize{
-% Measurements of the left-hand and right-hand gripping strengths of 10  left-handed writers are recorded:
-% }}
-% 
-% \begin{table}[ht]
-% \centering
-% {\footnotesize{
-% \begin{tabular}{@{} ccccccccccc @{}} \hline
-%   & \multicolumn{10}{c}{Person} \\
-%   & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
-% LH & 140&90&125&130&95&121&85&97&131&110 \\
-% RH & 138&87&110&132&96&120&86&90&129&100 \\ \hline
-% \end{tabular}
-% }}
-% \end{table}
-% 
-% {\footnotesize{
-% A 95\% confidence interval for $\mu_{left} - \mu_{right}$ is calculated and the result is  (0.22,6.98). Which statement below is true about the confidence interval?
-% 
-% \vspace{-3mm}
-% 
-% \begin{enumerate}
-% \item We are 95\% confident that the difference in sample means is  between 0.22 and 6.98.
-% \item There is a 95\% probability that the difference in the true mean  gripping strengths of the two hands is between 0.22 and 6.98.
-% \item We are 95\% confident that the difference in the true mean  gripping strengths is between 0.22 and 6.98.
-% % \item There is a 95\% probability that the difference in the sample  mean gripping strengths of the two hands is between 0.22  and 6.98.
-% % \item None of the previous.
-% \end{enumerate}
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{iClicker Question 11.2.3}
-% 
-% {\scriptsize{
-% Measurements of the left-hand and right-hand gripping strengths of 10  left-handed writers are recorded:
-% }}
-% 
-% \begin{table}[ht]
-% \centering
-% {\footnotesize{
-% \begin{tabular}{@{} ccccccccccc @{}} \hline
-%   & \multicolumn{10}{c}{Person} \\
-%   & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
-% LH & 140&90&125&130&95&121&85&97&131&110 \\
-% RH & 138&87&110&132&96&120&86&90&129&100 \\ \hline
-% \end{tabular}
-% }}
-% \end{table}
-% 
-% {\footnotesize{
-% A 95\% confidence interval for $\mu_{left} - \mu_{right}$ is calculated and the result is  (0.22,6.98). Which statement below is true about the confidence interval?
-% 
-% \vspace{-3mm}
-% 
-% \begin{enumerate}
-% \item The average gripping strength of the left hand differs  significantly than that of the right hand since the confidence  interval includes 0.
-% \item The average gripping strength of the left hand differs  significantly than that of the right hand since the confidence  interval excludes 0.
-% % \item The difference in average gripping strengths of the two hands  is insignificant since the confidence interval excludes 0.
-% \item The difference in average gripping strengths of the two hands  is insignificant since the confidence interval includes 0.
-% % \item None of the previous.
-% \end{enumerate}
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{(General) Paired Data}
-% 
-% \begin{itemize}
-% \item<1-> Paired data are data in which natural matchings occur.
-% \item<2-> Even when we have two samples, if each observation in one  sample is uniquely matched to an observation in the other sample,  then we have paired data.
-% \item<3-> The analysis of such data should follow that of before-and-after  paired data.
-% \end{itemize}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Head Injury Criterion (HIC) Example}
-% 
-% <<label=LBL11Ab, results="asis", echo=FALSE>>=
-%   DVR11b <- c(599,600,585,551,562,593,519)
-%   PSS11b <- c(597,515,583,418,539,397,445)
-%   DFT11b <- DVR11b - PSS11b
-%   mn11b  <- mean(DFT11b)
-%   
-%   DFMNb <- DFT11b - mn11b
-%   sd11b <- sd(DFT11b)
-%   se11b <- sd11b / sqrt( length(DVR11b))
-%   mn11q <- sprintf('%.1f', mn11b)
-%   sd11q <- sprintf('%.1f', sd11b)
-%   se11q <- sprintf('%.1f', se11b)
-%   tmp11a <- cbind(DVR11b, PSS11b)
-%   colnames(tmp11a) <- c("Driver", "Passenger")
-%   rownames(tmp11a) <- c('Acura Integra 87','Audi 80 89','Chev Camaro 91','Ford Escort 87','Honda Accord LX 91','Toyota Corolla Fx 88','Volvo 740 LE 88')
-%   xtable(tmp11a)
-%   me11b <- se11b * 1.96
-%   lbnd11p <- sprintf("%.1f", (mn11b - me11b))
-%   ubnd11p <- sprintf("%.1f", (mn11b + me11b))
-%   me11q <- sprintf("%.1f", me11b)
-% @  
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Head Injury Criterion (HIC) eg., Cont'd}
-% 
-% {\footnotesize{
-% \begin{itemize}
-% \item<1-> The differences of Head Injury Criterion (HIC) Driver -- Passenger: \\
-% \Sexpr{DFT11b}
-% \item<2-> Mean difference: $\bar{D} = \Sexpr{mn11q}$
-% \item<3-> Variation measures
-% 
-% \begin{minipage}[ht]{3.3cm}
-% 
-% {\scriptsize{
-% \begin{eqnarray*}
-% SD &=& \sqrt{ \frac{ \sum (d_i - \bar{D})^2}{n - 1}} \\ 
-% &=&  \Sexpr{sd11q}
-% \end{eqnarray*}
-% }}
-% \end{minipage}
-% \begin{minipage}[ht]{3.3cm}
-% 
-% {\scriptsize{
-% \begin{eqnarray*}
-% SE &=& \frac{SD}{\sqrt{n}} \\
-% &=&   \Sexpr{se11q}
-% \end{eqnarray*}
-% }}
-% \end{minipage}
-% \begin{minipage}[ht]{3.3cm}
-% 
-% {\scriptsize{
-% \begin{eqnarray*}
-% ME &=&  1.96 \times SE \\
-% &=&   \Sexpr{me11q}
-% \end{eqnarray*}
-% }}
-% \end{minipage}
-% 
-% \vspace{-6mm}
-% \item<4-> A 95\% CI for mean difference in HICs (Driver - Passenger):
-% \begin{equation*}
-%   (\Sexpr{mn11q} - \Sexpr{me11q}, \Sexpr{mn11q} + \Sexpr{me11q}) \Rightarrow (\Sexpr{lbnd11p}, \Sexpr{ubnd11p})
-% \end{equation*}
-% 
-%   which \textbf{excludes} zero (0) and hence the mean difference in HICs is  statistically \textbf{significant}.
-% 
-% \end{itemize}
-% }}
-% \end{frame}
+\begin{frame}[fragile]{Computing Chi-square Statistic}
+
+{\small{
+\begin{itemize}
+\item<1-> Create chi-square contribution table: each cell is of the form
+{\footnotesize{
+\begin{equation*}
+\frac{(O - E)^2}{E}
+\end{equation*}
+}}
+
+\vspace{-3mm}
+
+\item<2-> Add up all $r \times c$ chi-square contributions to get the $\chi^2$ statistic.
+{\footnotesize{
+\begin{equation*}
+\chi^2 = \sum \frac{(O - E)^2}{E}
+\end{equation*}
+}}
+
+\vspace{-3mm}
+
+\item<3-> Note that the degrees of freedom for the test is:
+{\footnotesize{
+\begin{eqnarray*}
+df &=& (\texttt{one less no. of rows}) \times (\texttt{one less no. of columns}) \\
+  &=& (r - 1) \times (c - 1)
+\end{eqnarray*}
+}}
+
+\vspace{-6mm}
+
+\item<4-> We conclude statistical association if $\chi^2 > b$ where $b$ is the critical value
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{(Critical Values of Chi-square Statistic}
+
+\begin{minipage}[ht]{8cm}
+
+The critical value $b$ of the chi-square statistic depends on the degrees  of freedom $df$ and is tabulated for selected values of $df$:
+
+ \vspace{4mm}
+ 
+In the GPA \& Attrition example, the degrees of freedom \\
+$df = (3 - 1) \times (4 - 1) = 6$ and hence the critical value $b = 12.59$. If $\chi^2 > 12.59$ then the variables are dependent; otherwise, they are independent.
+
+\end{minipage} \hfill
+\begin{minipage}[ht]{3cm}
+
+{\small{
+\begin{tabular}{@{} cc @{}} \hline
+$df$ & $b$ \\ \hline
+1 & 3.84 \\
+2 & 5.99 \\
+3 & 7.81 \\
+4 & 9.49 \\
+5 & 11.07 \\
+6 & 12.59 \\
+7 & 14.07 \\
+8 & 15.51 \\
+9 & 16.92 \\
+10 & 18.31 \\ \hline
+\end{tabular}
+}}
+\end{minipage}
+
+\end{frame}
+
+\begin{frame}[fragile]{iClicker question 12.2}
+
+For a 4 rows and 4 columns contingency table, what is the degrees of  freedom for the chi-square statistic?
+
+\begin{enumerate}
+\item 7
+\item 8
+\item 9
+\item 15
+\item 16
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[fragile]{iClicker question 12.3}
+
+\begin{minipage}[ht]{8cm}
+
+For a 2 rows and 4 columns contingency table. What is the critical value $b$?
+
+\begin{enumerate}
+\item 7.81
+\item 9.49
+\item 11.07
+\item 12.59
+\item 15.51
+\end{enumerate}
+
+\end{minipage} \hfill
+\begin{minipage}[ht]{3cm}
+
+{\small{
+\begin{tabular}{@{} cc @{}} \hline
+$df$ & $b$ \\ \hline
+1 & 3.84 \\
+2 & 5.99 \\
+3 & 7.81 \\
+4 & 9.49 \\
+5 & 11.07 \\
+6 & 12.59 \\
+7 & 14.07 \\
+8 & 15.51 \\
+9 & 16.92 \\
+10 & 18.31 \\ \hline
+\end{tabular}
+}}
+\end{minipage}
+
+\end{frame}
+
+\begin{frame}[fragile]{GPA and Attrition Example, cont'd}
+
+\begin{minipage}[ht]{6cm}
+
+{\tiny{
+
+O, Observed 
+
+<<label=LBL12f, results="asis", echo=FALSE>>=
+  
+  xtable(MX12C)
+@  
+}}
+\end{minipage} \hfill
+\begin{minipage}[ht]{5cm}
+
+{\tiny{
+
+E, Expected
+
+<<label=LBL12g, results="asis", echo=FALSE>>=
+  
+  xtable(MX12D)
+@  
+}}
+\end{minipage}
+
+\vspace{3mm}
+
+We already have our Observed and Expected values so we can compute our Chi-Square test statistic.
+
+\end{frame}
+
+\begin{frame}[fragile]{GPA and Attrition Example, cont'd}
+
+\begin{minipage}[ht]{6cm}
+
+{\tiny{
+
+O, Observed 
+
+<<label=LBL12h, results="asis", echo=FALSE>>=
+  
+  xtable(MX12C)
+@  
+}}
+\end{minipage} \hfill
+\begin{minipage}[ht]{5cm}
+
+{\tiny{
+
+E, Expected
+
+<<label=LBL12i, results="asis", echo=FALSE>>=
+  
+  xtable(MX12D)
+@  
+}}
+\end{minipage}
+
+\vspace{-4mm}
+
+{\small{
+\begin{itemize}
+\item<1-> The $\chi^2$ is 
+{\scriptsize{
+\begin{eqnarray*}
+\chi^2 &=& \frac{(25-16.08)^2}{16.08} + \frac{(3-3.42)^2}{3.42} + \cdots + \frac{(44-35.56)^2}{35.56} \\
+&=& 4.9 + 0.1 + 1.4 + 2.5 + 0.1 + 6.4 + 0.6 + 1.1 + 1.9 + 1.3 + 1.2 + 2 \\
+&=& 23.42  
+\end{eqnarray*}
+}}
+
+\vspace{-6mm}
+
+\item<2-> Is $\chi^2 > b$?  Yes, $23.5 > 12.59$ 
+
+\item<3-> Therefore, we conclude that the HS GPA is dependent on  college attrition.
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{End Note}
+
+If it is concluded that the two categorical variables are associated, it  \textbf{does NOT} establish causation.
+
+\end{frame}
+
+
+
+
+
+
+

@@ -1,25 +1,22 @@
-\frametitle{iClicker Question 11.2.1}
+\frametitle{iClicker Question 13.5}
 
-Measurements of the left-hand and right-hand gripping strengths of 10  left-handed writers are recorded:
+Which of the following graphs has the strongest negative correlation?
 
-\begin{table}[ht]
-\centering
-{\small{
-\begin{tabular}{@{} ccccccccccc @{}} \hline
-  & \multicolumn{10}{c}{Person} \\
-  & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
-LH & 140&90&125&130&95&121&85&97&131&110 \\
-RH & 138&87&110&132&96&120&86&90&129&100 \\ \hline
-\end{tabular}
-}}
-\end{table}
+\begin{minipage}[ht]{4cm}
 
-\vspace{3mm}
-
-Should this data set be treated as a paired data problem?
-
-\begin{enumerate}
-\item Yes.
-\item No.
-\item Cannot determine.
+\begin{enumerate}[A]
+\item Car Weight
+\item R/S
+\item Ave.Temp.
+\item Square Feet
 \end{enumerate}
+\end{minipage}
+\begin{minipage}[ht]{6cm}
+
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[width=6cm]{chapters/chapter13/figure/fig3.png} % requires the graphicx package
+   % \caption{example caption}
+   % \label{fig:example}
+\end{figure}
+\end{minipage}
