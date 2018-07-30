@@ -20,7 +20,7 @@
 
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
-\title{Stat 1600}
+\title{Measuring Uncertainty and Confidence \\ Stat 1600}
 % \subtitle{Overview and Descriptive Statistics}
 \author{Loren Heun}
 \institute{WMU}
