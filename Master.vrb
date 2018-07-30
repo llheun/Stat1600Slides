@@ -1,22 +1,40 @@
-\frametitle{iClicker Question 13.5}
+\frametitle{Calculate Predicted Values}
 
-Which of the following graphs has the strongest negative correlation?
+{\footnotesize{
+The predicted value of the response, PREDICTED Y or $\hat{Y}$, for a `new' $X$ value (within $X$ data range) can be calculated:
 
-\begin{minipage}[ht]{4cm}
+{\footnotesize{
+\begin{equation*}
+\texttt{PREDICTED Y or } \hat{Y} = \hat{a} + \hat{b} \cdot X
+\end{equation*}
+}}
 
-\begin{enumerate}[A]
-\item Car Weight
-\item R/S
-\item Ave.Temp.
-\item Square Feet
-\end{enumerate}
-\end{minipage}
-\begin{minipage}[ht]{6cm}
+\vspace{-5mm}
 
-\begin{figure}[htbp]
-   \centering
-   \includegraphics[width=6cm]{chapters/chapter13/figure/fig3.png} % requires the graphicx package
-   % \caption{example caption}
-   % \label{fig:example}
-\end{figure}
-\end{minipage}
+For the Saturn Price example, the straight line model is:
+
+{\footnotesize{
+\begin{equation*}
+\texttt{PREDICTED Y } = 8136 + (-0.05127) \cdot X
+\end{equation*}
+}}
+
+\vspace{-6mm}
+
+\begin{itemize}
+\item This is valid for cars with driven miles contained in the $X$ data range.  \item Therefore, the predicted sales price for a car with $Miles = 100,000$ (this value is in range) can be calculated by
+
+\vspace{-4mm}
+
+{\footnotesize{
+\begin{equation*}
+\texttt{PRED Y } = 8136 + (-0.05127) \times 100,000 = 8136 - 5187 = 2949
+\end{equation*}
+}}
+
+\vspace{-4mm}
+
+that is, a predicted price of \$2,949.
+
+\end{itemize}
+}}

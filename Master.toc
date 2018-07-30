@@ -17,3 +17,4 @@
 \beamer@sectionintoc {16}{Stat 1600 Ch. 11.2 Comparing Two Means -- Paired Data}{412}{0}{16}
 \beamer@sectionintoc {17}{Ch. 12 Testing Independence of Two Categorical Variables}{430}{0}{17}
 \beamer@sectionintoc {18}{STAT 1600 Ch. 13 Correlation}{457}{0}{18}
+\beamer@sectionintoc {19}{STAT 1600 Ch 14 Linear Regression}{489}{0}{19}

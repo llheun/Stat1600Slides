@@ -1,0 +1,477 @@
+%!Rnw root = ../../Master.Rnw
+
+\section{STAT 1600 Ch 14 Linear Regression}
+
+\begin{frame}[fragile]{Statistics and Data Analysis}
+
+STAT 1600 \\ Ch 14 Linear Regression
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Simple Linear Regression
+
+\begin{itemize}
+\item Regression and Straight Line Model  
+\item Least Square Solution
+\item Fitted-Line Plot
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Why Regression}
+
+For a pair of numerical variables, we want not only to measure the  strength of linear association (i.e., correlation), but also to estimate the  linear relationship and establish a sound straight line model to relate  these two variables.
+
+\end{frame}
+
+\begin{frame}[fragile]{Straight Line Model}
+
+\begin{itemize}
+\item<1-> We want to relate a $y$ value (value of a numerical variable) for an $x$ value  (value of another numerical variable) and establish the straight line model:
+
+\item<2->
+\begin{equation*}
+y = a + bx
+\end{equation*}
+
+
+\item<3-> $y$ is called the response variable
+\item<4-> $x$ is called a explanatory or predictor variable
+\item<5-> $a$ and $b$ are, respectively, the ($y$-)intercept and the slope of the straight line.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Simple Linear Regression Model}
+
+\begin{itemize}
+\item<1-> For a sample of $n$ pairs of the numerical variable values, the $x$ values  and the $y$ values usually do not follow exactly the straight line pattern.  For instance, in relating son's height ($y$) with father's height ($x$), fathers  of the same height may have sons of different heights. Consequently,  the straight line may better be described as
+
+\vspace{-3mm}
+
+\begin{equation*}
+y = a + bx + e
+\end{equation*}
+
+\item<2-> $e$ is the error which represents the deviation of an individual $y$
+value from the straight line
+\item<3-> smaller errors overall imply a tighter linear pattern
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 14.1}
+
+{\small{Data were collected for the average public school teacher pay and  spending on public schools per pupil in year 1985 for the Northeast  and North Central states. Suppose we want to predict the average  public school teacher pay from the spending on public schools per  pupil. Which of the following statements is true?
+
+
+\begin{enumerate}[A]
+\item Spending is the response and teacher pay is the  explanatory variable.
+\item Both spending and teach pay are response variables.
+\item Teacher pay is the response and spending is the  explanatory variable.
+\item Both spending and teacher pay are explanatory variables.
+\item None of the previous is true.
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 14.2}
+
+{\footnotesize{
+A child's first year of life is often said to be more important to development than any other. A critical child psychologist wondered if this was true, so she decided to collect some real data that might help her find out. She asked several hundred parents of 18 year old's how many hours they spent reading to their children per week over the first year of life, and recorded the high school GPA's of all the children. If she fits a least square regression line to her data, what should she select as her explanatory and response variables?
+
+\begin{enumerate}[A]
+\item High school GPA is explanatory, and hours reading is response.
+\item Quality of parents is explanatory, and high school GPA is response.
+\item High school GPA is explanatory, and quality of parents Is response.
+\item Hours reading is explanatory, and high school GPA is response.
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Predicted Value and Residual}
+
+{\small{
+\begin{itemize}
+\item<1-> \textbf{Predicted value}. For a given $X$ value, we use the straight line  model to `predict' the associated $Y$ value. Denote
+PRED = PREDICTED $Y$ the \textit{predicted} (or estimated or fitted)  \textit{mean} $Y$ value. We call it \textbf{predicted} value (or fitted value). That  is,
+
+\vspace{-1mm}
+
+{\footnotesize{
+\begin{equation*}
+PRED = a + bX
+\end{equation*}
+}}
+
+\vspace{-6mm}
+
+\item<2-> \textbf{Residual}. A residual is the difference (or deviation) between a $Y$ value and a predicted value. That is, the residual is computed by
+
+\vspace{-3mm}
+
+{\footnotesize{
+\begin{equation*}
+\texttt{RESIDUAL} = Y - \texttt{PREDICTED} Y
+\end{equation*}
+}}
+
+\vspace{-4mm}
+
+\item<3-> A good fit of the data to the model is one with reasonably small  residuals.
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Method of Least Squares}
+
+{\footnotesize{
+\begin{itemize}
+\item<1-> Least squares solution to a straight line model.
+
+{\footnotesize{
+\begin{eqnarray*}
+\hat{b} &=& r \times \frac{SD_y}{SD_x} \\
+\hat{a} &=& \bar{Y} - \hat{b} \bar{X}
+\end{eqnarray*}
+}}
+
+\vspace{-6mm}
+
+and hence,
+
+\vspace{-3mm}
+
+{\footnotesize{
+\begin{eqnarray*}
+\texttt{PREDICTED Y} &=& \hat{a} + \hat{b} X \\
+\texttt{RESIDUAL} &=& Y - \texttt{PREDICTED} Y
+\end{eqnarray*}
+}}
+
+\vspace{-6mm}
+
+\item<2-> Residual sum of squares. The residual sum of squares,  denoted SSE (i.e., Sum of Squared Errors), is the sum of the  squared residuals which reflects the total variation not captured by  the model.
+\item<3-> Method of least squares. The method of least squares produces  minimal residual sum of squares.
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Saturn Price Example}
+
+Proceeding with the computation procedure for the data, we have the  mean and the standard deviation for Miles: $X = 61,195$ and $SD_x = 50,989$; and the mean and the standard deviation for Price:  $Y = \$4,999$ and $SD_y = \$4,079$; and the correlation between Miles and  Price: $r = -0.641$.  Hence, the least squares solution of the straight  line:
+
+{\footnotesize{
+\begin{eqnarray*}
+\texttt{slope: } \hat{b} &=& -0.641 \times \frac{4079}{50989} = -0.05127 \\
+\texttt{intercept: } \hat{a} &=& 4999 - (-0.05127) \times 61195 = 8136
+\end{eqnarray*}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Interpretation of Slope and Intercept}
+
+\begin{itemize}
+\item<1-> Cautions must be exercised in interpreting the slope and the intercept:
+\item<2-> The increase by 1 unit in $x$ value is, on average, associated with $\hat{b}$ units increase/decrease in $y$. The use of wording such as `causes`  is INCORRECT.
+\item<3-> If zero is not included in the range of the $x$ data values, then there  is no \textit{practical} explanation of the intercept ($\hat{a}$).
+\item<4-> The straight line equation is used to `predict' y value for $x$ value  which is within the $x$ data range. It is not to be used to `forecast' $y$  value for which $x$ value falls beyond the $x$ data range.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Saturn Price Example, cont'd}
+
+Recall that the estimated slope and intercept are
+
+\begin{itemize}
+\item<1-> 
+$\texttt{Slope } \hat{b} = -0.05127$ per Mile and $\texttt{Intercept } \hat{a} = \$8,136$
+
+\item<2->   and hence the least square line is
+{\footnotesize{
+\begin{equation*}
+\texttt{PREDICTED PRICE} = 8136 + (0.05127) \times \texttt{MILES}
+\end{equation*}
+}}
+
+\vspace{-6mm}
+
+\item<3-> \textbf{Slope}: the predicted Price tends to drop about 5 cents for every  additional mile driven, or about \$512.70 for every 10,000 miles.
+
+\item<4-> \textbf{Intercept}: should NOT be interpreted as the predicted price of a car with zero (0) mileage.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 14.3}
+
+{\footnotesize{
+Data were collected for the average public school teacher pay (\$) and  spending (\$) on public schools per pupil in year 1985 for the Northeast  and North Central states. The LS equation is
+
+{\footnotesize{
+\begin{equation*}
+Pay = \$10,670 + \$3.53 \texttt{ Spending.}
+\end{equation*}
+}}
+
+\vspace{-3mm}
+
+Which of the following statements is \textbf{false}?
+
+\begin{enumerate}[A]
+\item The average public school teacher pay increases \$3.53  on average for an additional dollar spending on public  schools per pupil.
+\item The correlation between spending and pay is positive. 
+\item There is a upward linear relationship between spending and pay. 
+\item Interpretation of the intercept: the teachers get an average pay of  \$10,670 even when there is zero dollar spending.
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 14.4}
+
+{\footnotesize{
+Data were collected for the average public school teacher pay (\$) and  spending (\$) on public schools per pupil in year 1985 for the Northeast  and North Central states. The LS equation is
+
+{\footnotesize{
+\begin{equation*}
+Pay = \$10,670 + \$3.53 \texttt{ Spending.}
+\end{equation*}
+}}
+
+\vspace{-3mm}
+
+Which of the following statements is \textbf{false}?
+
+\begin{enumerate}[A]
+\item The average public school teacher pay increases 3.53 on  average for an additional dollar spending on public  schools per pupil.
+\item The correlation between spending and pay is positive.
+\item A \$1 increase in spending causes \$3.53 increase in pay.
+\item There is a upward linear relationship between spending  and pay.
+\end{enumerate}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{Calculate Predicted Values}
+
+{\footnotesize{
+The predicted value of the response, PREDICTED Y or $\hat{Y}$, for a `new' $X$ value (within $X$ data range) can be calculated:
+
+{\footnotesize{
+\begin{equation*}
+\texttt{PREDICTED Y or } \hat{Y} = \hat{a} + \hat{b} \cdot X
+\end{equation*}
+}}
+
+\vspace{-5mm}
+
+For the Saturn Price example, the straight line model is:
+
+{\footnotesize{
+\begin{equation*}
+\texttt{PREDICTED Y } = 8136 + (-0.05127) \cdot X
+\end{equation*}
+}}
+
+\vspace{-6mm}
+
+\begin{itemize}
+\item This is valid for cars with driven miles contained in the $X$ data range.  \item Therefore, the predicted sales price for a car with $Miles = 100,000$ (this value is in range) can be calculated by
+
+\vspace{-4mm}
+
+{\footnotesize{
+\begin{equation*}
+\texttt{PRED Y } = 8136 + (-0.05127) \times 100,000 = 8136 - 5187 = 2949
+\end{equation*}
+}}
+
+\vspace{-4mm}
+
+that is, a predicted price of \$2,949.
+
+\end{itemize}
+}}
+\end{frame}
+
+% \begin{frame}[fragile]{Oil-exporter Example}
+% 
+% {\footnotesize{
+% In the world bank 85 data (chapter 1), we would like to measure the linear  association between birth rate (y) and per capita gross national product  (x) for the four high-income oil exporters. The data:
+% }}
+% 
+% {\footnotesize{
+% <<label=LBL13e, results="asis", echo=FALSE>>=
+%   TB13C <- cbind(Y13C, X13C)
+%   colnames(TB13C) <- c('GNP', 'Birth rate')
+%   rownames(TB13C) <- c('Libya', 'Saudi Arabia', 'Kuwait', 'United Arab Emirates')
+%   xtable(TB13C, digits=0)
+% @ 
+% }}
+% 
+% \begin{itemize}
+% {\small{
+% \item The values of birth rate range from 30 to 45.
+% 
+% \item The values of GNP range from 7,170 to 19,270. This range is  contained in (6,000, 20,000) (the latter to be plotted).
+% \item How do we find the correlation coefficient for these two numeric variables?
+% }}
+% \end{itemize}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{Oil-exporter Example: Correlation, step 1}
+% 
+% \begin{minipage}[ht]{6cm}
+% 
+% {\footnotesize{
+% Birth Rate:
+% 
+% <<label=LBL13f, results="asis", echo=FALSE>>=
+%   MN13Y <- mean(Y13C)
+%   DF13Y <- Y13C - MN13Y
+%   DFSQY <- DF13Y^2
+%   SD13Y <- sd(Y13C)
+%   Z13Y  <- (Y13C - MN13Y) / SD13Y
+%   TBL13D <- cbind(Y13C, DF13Y, DFSQY, Z13Y)
+%   colnames(TBL13D) <- c("Y", "Diff", "Diff_sq", "Zy")
+%   xtable(TBL13D, digits=2)
+% @
+% }}
+% \end{minipage}
+% \begin{minipage}[ht]{5cm}
+% 
+% {\scriptsize{
+% \begin{eqnarray*}
+% \bar{Y} &=& \frac{ \sum Y_i}{n} \\
+% Diff &=& Y_i - \bar{Y} \\
+% Diff_{sq} &=& \sum (Y_i - \bar{Y})^2 \\
+% SD_y &=& \sqrt{ \frac{ \sum ( Y_i - \bar{Y})^2}{n - 1}} \\
+% Zy &=& \frac{(Y_i - \bar{Y})}{SD_y}
+% \end{eqnarray*}
+% }}
+% \end{minipage}
+% 
+% \end{frame}
+% 
+% \begin{frame}[fragile]{Oil-exporter Example: Correlation, step 2}
+% 
+% \begin{minipage}[ht]{6cm}
+% 
+% {\footnotesize{
+% GNP:
+% 
+% <<label=LBL13g, results="asis", echo=FALSE>>=
+%   MN13X <- mean(X13C)
+%   DF13X <- X13C - MN13X
+%   DFSQX <- DF13X^2
+%   SD13X <- sd(X13C)
+%   Z13X  <- (X13C - MN13X) / SD13X
+%   TBL13x <- cbind(X13C, DF13X, DFSQX, Z13X)
+%   colnames(TBL13x) <- c("X", "Diff", "Diff_sq", "Zx")
+%   xtable(TBL13x, digits=2)
+% @
+% }}
+% \end{minipage}
+% \begin{minipage}[ht]{5cm}
+% 
+% {\scriptsize{
+% \begin{eqnarray*}
+% \bar{X} &=& \frac{ \sum X_i}{n} \\
+% Diff &=& X_i - \bar{X} \\
+% Diff_{sq} &=& \sum (X_i - \bar{X})^2 \\
+% SD_x &=& \sqrt{ \frac{ \sum ( X_i - \bar{X})^2}{n - 1}} \\
+% Zx &=& \frac{(X_i - \bar{X})}{SD_x}
+% \end{eqnarray*}
+% }}
+% \end{minipage}
+% 
+% \end{frame}
+% 
+% \begin{frame}[fragile]{Oil-exporter Example: Correlation, step 3}
+% 
+% Now, calculate the correlation using standardized variable values:
+% 
+% 
+% <<label=LBL13h, results="asis", echo=FALSE>>=
+%   tmp13a <- Z13X * Z13Y
+%   tmp13b <- sum(tmp13a)
+%   tmp13s <- sprintf("%.4f", tmp13b)
+%   TBL13c <- cbind(Z13X, Z13Y, tmp13a)
+%   colnames(TBL13c) <- c("Zx", "Zy", "Zx * Zy")
+%   r13a   <- tmp13b / (length(tmp13a) - 1)
+%   n13s   <- sprintf("%.0f", length(tmp13a))
+%   xtable(TBL13c, digits=2)
+% @
+% 
+% \end{frame}
+% 
+% \begin{frame}[fragile]{Sample Correlation Coefficient}
+% 
+% {\footnotesize{
+% The two measurements are observed in n pairs:
+% $(x_1, y_1), (x_2, y_2), \cdots , (x_n, y_n)$. It is always recommended to plot these $n$  pairs in a scatterplot. The sample correlation (known as Pearson's  correlation coefficient), denoted by $r$ , can be computed by
+% }}
+% 
+% {\scriptsize{
+% \begin{eqnarray*}
+%   r &=& \frac{ \texttt{ Sum(products of standardized variables)}}{\texttt{one less number of pairs}} \\
+%   &=& \frac{ \sum \Big(\frac{(X - \bar{X})}{SD_x} \times \frac{(Y - \bar{Y})}{SD_y} \Big) }{n - 1} \\
+%   &=& \frac{ \sum (Z_x \times Z_y)}{n - 1}
+% \end{eqnarray*}
+% }}
+% 
+% \vspace{-6mm}
+% 
+% {\footnotesize{
+% where $\bar{X}$ and $SD_x$ are the sample mean and standard deviation for $x$  values, and $\bar{Y}$ and $SD_y$ are the sample mean and standard deviation for $y$ values.
+% }}
+% 
+% \end{frame}
+% 
+% \begin{frame}[fragile]{Oil-exporter Example: Correlation, step 3}
+% 
+% {\small{
+% Now, calculate the correlation using standardized variable values:
+% }}
+% 
+% {\footnotesize{
+% <<label=LBL13i, results="asis", echo=FALSE>>=
+%   xtable(TBL13c, digits=2)
+% @  
+% }}
+% 
+% \vspace{-6mm}
+% 
+% {\footnotesize{
+% \begin{eqnarray*}
+% sumZ &=& \sum Zx * Zy = \Sexpr{tmp13b} \\
+% r    &=& \frac{ \Sexpr{tmp13b}}{ (\Sexpr{n13s} - 1)} = \Sexpr{r13a}
+% \end{eqnarray*}
+% }}
+% 
+% {\small{
+% GNP and birth rate exhibit a strong negative (or downward) linear  relationship..
+% }}
+% \end{frame}
+% 
+% \begin{frame}[fragile]{iClicker Question 13.5}
+% 
+% Which of the following graphs has the strongest negative correlation?
+% 
+% \begin{minipage}[ht]{4cm}
+% 
+% \begin{enumerate}[A]
+% \item Car Weight
+% \item R/S
+% \item Ave.Temp.
+% \item Square Feet
+% \end{enumerate}
+% \end{minipage}
+% \begin{minipage}[ht]{6cm}
+% 
+% \begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width=6cm]{chapters/chapter13/figure/fig3.png} % requires the graphicx package
+%    % \caption{example caption}
+%    % \label{fig:example}
+% \end{figure}
+% \end{minipage}
+% \end{frame}
