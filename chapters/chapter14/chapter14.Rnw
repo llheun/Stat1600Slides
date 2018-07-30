@@ -292,186 +292,212 @@ that is, a predicted price of \$2,949.
 }}
 \end{frame}
 
-% \begin{frame}[fragile]{Oil-exporter Example}
-% 
-% {\footnotesize{
-% In the world bank 85 data (chapter 1), we would like to measure the linear  association between birth rate (y) and per capita gross national product  (x) for the four high-income oil exporters. The data:
-% }}
-% 
-% {\footnotesize{
-% <<label=LBL13e, results="asis", echo=FALSE>>=
-%   TB13C <- cbind(Y13C, X13C)
-%   colnames(TB13C) <- c('GNP', 'Birth rate')
-%   rownames(TB13C) <- c('Libya', 'Saudi Arabia', 'Kuwait', 'United Arab Emirates')
-%   xtable(TB13C, digits=0)
-% @ 
-% }}
-% 
-% \begin{itemize}
-% {\small{
-% \item The values of birth rate range from 30 to 45.
-% 
-% \item The values of GNP range from 7,170 to 19,270. This range is  contained in (6,000, 20,000) (the latter to be plotted).
-% \item How do we find the correlation coefficient for these two numeric variables?
-% }}
-% \end{itemize}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Oil-exporter Example: Correlation, step 1}
-% 
-% \begin{minipage}[ht]{6cm}
-% 
-% {\footnotesize{
-% Birth Rate:
-% 
-% <<label=LBL13f, results="asis", echo=FALSE>>=
-%   MN13Y <- mean(Y13C)
-%   DF13Y <- Y13C - MN13Y
-%   DFSQY <- DF13Y^2
-%   SD13Y <- sd(Y13C)
-%   Z13Y  <- (Y13C - MN13Y) / SD13Y
-%   TBL13D <- cbind(Y13C, DF13Y, DFSQY, Z13Y)
-%   colnames(TBL13D) <- c("Y", "Diff", "Diff_sq", "Zy")
-%   xtable(TBL13D, digits=2)
-% @
-% }}
-% \end{minipage}
-% \begin{minipage}[ht]{5cm}
-% 
-% {\scriptsize{
-% \begin{eqnarray*}
-% \bar{Y} &=& \frac{ \sum Y_i}{n} \\
-% Diff &=& Y_i - \bar{Y} \\
-% Diff_{sq} &=& \sum (Y_i - \bar{Y})^2 \\
-% SD_y &=& \sqrt{ \frac{ \sum ( Y_i - \bar{Y})^2}{n - 1}} \\
-% Zy &=& \frac{(Y_i - \bar{Y})}{SD_y}
-% \end{eqnarray*}
-% }}
-% \end{minipage}
-% 
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Oil-exporter Example: Correlation, step 2}
-% 
-% \begin{minipage}[ht]{6cm}
-% 
-% {\footnotesize{
-% GNP:
-% 
-% <<label=LBL13g, results="asis", echo=FALSE>>=
-%   MN13X <- mean(X13C)
-%   DF13X <- X13C - MN13X
-%   DFSQX <- DF13X^2
-%   SD13X <- sd(X13C)
-%   Z13X  <- (X13C - MN13X) / SD13X
-%   TBL13x <- cbind(X13C, DF13X, DFSQX, Z13X)
-%   colnames(TBL13x) <- c("X", "Diff", "Diff_sq", "Zx")
-%   xtable(TBL13x, digits=2)
-% @
-% }}
-% \end{minipage}
-% \begin{minipage}[ht]{5cm}
-% 
-% {\scriptsize{
-% \begin{eqnarray*}
-% \bar{X} &=& \frac{ \sum X_i}{n} \\
-% Diff &=& X_i - \bar{X} \\
-% Diff_{sq} &=& \sum (X_i - \bar{X})^2 \\
-% SD_x &=& \sqrt{ \frac{ \sum ( X_i - \bar{X})^2}{n - 1}} \\
-% Zx &=& \frac{(X_i - \bar{X})}{SD_x}
-% \end{eqnarray*}
-% }}
-% \end{minipage}
-% 
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Oil-exporter Example: Correlation, step 3}
-% 
-% Now, calculate the correlation using standardized variable values:
-% 
-% 
-% <<label=LBL13h, results="asis", echo=FALSE>>=
-%   tmp13a <- Z13X * Z13Y
-%   tmp13b <- sum(tmp13a)
-%   tmp13s <- sprintf("%.4f", tmp13b)
-%   TBL13c <- cbind(Z13X, Z13Y, tmp13a)
-%   colnames(TBL13c) <- c("Zx", "Zy", "Zx * Zy")
-%   r13a   <- tmp13b / (length(tmp13a) - 1)
-%   n13s   <- sprintf("%.0f", length(tmp13a))
-%   xtable(TBL13c, digits=2)
-% @
-% 
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Sample Correlation Coefficient}
-% 
-% {\footnotesize{
-% The two measurements are observed in n pairs:
-% $(x_1, y_1), (x_2, y_2), \cdots , (x_n, y_n)$. It is always recommended to plot these $n$  pairs in a scatterplot. The sample correlation (known as Pearson's  correlation coefficient), denoted by $r$ , can be computed by
-% }}
-% 
-% {\scriptsize{
-% \begin{eqnarray*}
-%   r &=& \frac{ \texttt{ Sum(products of standardized variables)}}{\texttt{one less number of pairs}} \\
-%   &=& \frac{ \sum \Big(\frac{(X - \bar{X})}{SD_x} \times \frac{(Y - \bar{Y})}{SD_y} \Big) }{n - 1} \\
-%   &=& \frac{ \sum (Z_x \times Z_y)}{n - 1}
-% \end{eqnarray*}
-% }}
-% 
-% \vspace{-6mm}
-% 
-% {\footnotesize{
-% where $\bar{X}$ and $SD_x$ are the sample mean and standard deviation for $x$  values, and $\bar{Y}$ and $SD_y$ are the sample mean and standard deviation for $y$ values.
-% }}
-% 
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Oil-exporter Example: Correlation, step 3}
-% 
-% {\small{
-% Now, calculate the correlation using standardized variable values:
-% }}
-% 
-% {\footnotesize{
-% <<label=LBL13i, results="asis", echo=FALSE>>=
-%   xtable(TBL13c, digits=2)
-% @  
-% }}
-% 
-% \vspace{-6mm}
-% 
-% {\footnotesize{
-% \begin{eqnarray*}
-% sumZ &=& \sum Zx * Zy = \Sexpr{tmp13b} \\
-% r    &=& \frac{ \Sexpr{tmp13b}}{ (\Sexpr{n13s} - 1)} = \Sexpr{r13a}
-% \end{eqnarray*}
-% }}
-% 
-% {\small{
-% GNP and birth rate exhibit a strong negative (or downward) linear  relationship..
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{iClicker Question 13.5}
-% 
-% Which of the following graphs has the strongest negative correlation?
-% 
-% \begin{minipage}[ht]{4cm}
-% 
-% \begin{enumerate}[A]
-% \item Car Weight
-% \item R/S
-% \item Ave.Temp.
-% \item Square Feet
-% \end{enumerate}
-% \end{minipage}
-% \begin{minipage}[ht]{6cm}
-% 
-% \begin{figure}[htbp]
-%    \centering
-%    \includegraphics[width=6cm]{chapters/chapter13/figure/fig3.png} % requires the graphicx package
-%    % \caption{example caption}
-%    % \label{fig:example}
-% \end{figure}
-% \end{minipage}
-% \end{frame}
+\begin{frame}[fragile]{Fitted-Line Plot}
+
+{\small{
+To get a fitted-line plot (LS line superimposed on the scatterplot):
+}}
+
+\begin{itemize}
+\item<1-> Produce a scatterplot.
+\item<2-> Calculate the predicted response values at the two extreme $X$ values in the range:
+
+{\footnotesize{
+\begin{eqnarray*}
+  PRED_{min} &=& \hat{a} + \hat{b} X_{min} \\
+  PRED_{max} &=& \hat{a} + \hat{b} X_{max}
+\end{eqnarray*}
+}}
+
+\vspace{-6mm}
+
+\item<3-> Mark these two points ($X_{min}, PRED_{min}$) and ($X_{max}, PRED_{max}$ ) on  the scatterplot and then connect them with a line segment.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Saturn Price Example, revisited}
+
+{\small{
+The fitted-line plot for using Least Squares solution is given:
+}}
+
+\vspace{-6mm}
+
+<<label=LBL14a, results="asis", echo=FALSE, out.width="7cm">>=
+  dtMiles1 <- c(9300,10565,15000,15000,17764,57000,65940,73676,77006,93739,146088,153260)
+  dtPrc1   <- c(7100,15500,4400,4401,5900,4600,8800,2000,2750,2550,960,1025)
+  plot(dtMiles1, dtPrc1, xlab="Miles", ylab="Price")
+@
+
+\end{frame}
+
+\begin{frame}[fragile]{Saturn Price Example, revisited}
+
+{\small{
+The fitted-line plot for using Least Squares solution is given:
+}}
+
+%\begin{minipage}[ht]{5cm}
+
+<<label=LBL14b, results="asis", echo=FALSE, out.width="4.5cm">>=
+  lsm1 <- lm(dtPrc1 ~ dtMiles1)
+  
+  yhatmx1 <- lsm1$coefficients[1] + lsm1$coefficients[2] * max(dtMiles1)
+  yhatmn1 <- lsm1$coefficients[1] + lsm1$coefficients[2] * min(dtMiles1)
+  
+  plot(dtMiles1, dtPrc1, xlab="Miles", ylab="Price")
+  lines( c(min(dtMiles1), max(dtMiles1)), c( yhatmn1, yhatmx1) )
+  tmpco1 <- sprintf("%.0f", lsm1$coefficients[1])
+  tmpco2 <- sprintf("%.4f", lsm1$coefficients[2])
+  tmpY1  <- sprintf("%.0f", yhatmx1)
+  tmpY2  <- sprintf("%.0f", yhatmn1)
+  tmpmxM1 <- sprintf("%.0f", max(dtMiles1))
+@
+
+\vspace{-3mm}
+
+{\footnotesize{
+\begin{eqnarray*}
+  PRED_{forMaxX} &=& \Sexpr{tmpco1} + (\Sexpr{tmpco2}) * \Sexpr{tmpmxM1} = \Sexpr{tmpY1} \\
+  PRED_{forMinX} &=& \Sexpr{tmpco1} + (\Sexpr{tmpco2}) * \Sexpr{min(dtMiles1)} = \Sexpr{tmpY2}
+\end{eqnarray*}
+}}
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Fitted Values and Residuals
+
+\begin{itemize}
+\item Calculate Fitted Values and Residuals
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Calculate Fitted Values and Residuals}
+
+\begin{itemize}
+
+\item Recall that the fitted equation is
+{\footnotesize{
+\begin{equation*}
+Price = \Sexpr{tmpco1} + (\Sexpr{tmpco2}) \times Miles 
+\end{equation*}
+}}
+
+\vspace{-3mm}
+
+\item For car \#6, the (Miles,Price) pair was (57000, 4600). The fitted value is
+
+{\footnotesize{
+\begin{equation*}
+\hat{y} = \Sexpr{tmpco1} + (\Sexpr{tmpco2}) \times 57000 = 5213.61
+\end{equation*}
+}}
+
+\vspace{-3mm}
+
+\item The residual is then:
+
+{\footnotesize{
+\begin{equation*}
+residual = observed - fitted = 4600 - 5212.61 = -613.61 
+\end{equation*}
+}}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Confidence Interval of the Slope
+
+\begin{itemize}
+\item Calculate the Confidence Interval fo the Slope
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Confidence Interval of the Slope}
+
+\begin{itemize}
+\item Standard error of the slope:
+\begin{eqnarray*}
+SE &=& \sqrt{ \frac{ 1 - (\texttt{correlation})^2}{n - 2}} \times \frac{SD_y}{SD_x} \\
+   &=& \sqrt{ \frac{ (1 - r^2)}{r^2 (n - 2)}} \times \texttt{ slope}
+\end{eqnarray*}
+  
+where $r$ = correlation, $\hat{b}$ = slope, and $n$ = number of (x,y) pairs.  
+
+\item The margin of error 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Confidence Interval of the Slope}
+
+\begin{itemize}
+  \item The margin of error is $$ME = 1.96 \times SE$$
+  \item 95\% confidence interval for the slope:
+  \begin{equation*}
+    (\hat{b} \pm SE)
+  \end{equation*}
+  
+\item The slope is statistically \textbf{significant} if the interval \textbf{excludes} zero (0). The  slope is \textbf{insignificant} if the interval includes zero (0).
+  
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Saturn Price Example, revisited}
+
+{\small{
+\begin{itemize}
+\item Standard error of the slope:
+{\footnotesize{
+\begin{eqnarray*}
+SE &=& \sqrt{ \frac{ 1 - (-0.641)^2}{(-0.641)^2 (12 - 2)}} \times (-0.05127) \\
+   &=& \sqrt{ \frac{ (1 - 0.41088)}{0.41088 \times 10}} \times (-0.05127) = 0.0194
+\end{eqnarray*}
+}}
+\item The margin of error $$ ME = 1.96 \times 0.0194 = 0.0380 $$
+
+\item 95\% CI for the slope:
+\begin{equation*}
+(-0.05127) \pm 0.0380) \Rightarrow (-0.0893, -0.0133)
+\end{equation*}
+
+\item The CI excludes 0 and consequently, the linear relationship between mileage and selling price is significant.
+
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 14.2.1}
+
+The correlation and the slope of the LS equation from $n = 27$ pairs of  two numerical variables are -0.80 and -1.20. Which of the following  is the standard error of the slope?
+
+\begin{enumerate}[A]
+\item 0.18
+\item -0.18
+\item 0
+\item 18  
+\item -18
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 14.2.2}
+
+{\footnotesize{
+Data were collected for the average public school teacher pay (\$) and  spending (\$) on public schools per pupil in year 1985 for the Northeast  and North Central states. A 95\% confidence interval for the slope is  (2.148, 4.912). Which of the following statements is true?
+
+\begin{enumerate}[A]
+\item The interval excludes 0 and hence the LS equation  provides significant predicting power.
+\item The interval includes 0 and hence the LS equation does  not provide significant predicting power.
+\item The interval excludes 0 and hence the LS equation does  not provide significant predicting power.
+\item The interval includes 0 and hence the LS equation  provides significant predicting power.
+\item None of the previous is true.
+\end{enumerate}
+}}
+
+\end{frame}

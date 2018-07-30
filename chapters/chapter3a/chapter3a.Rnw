@@ -1,6 +1,6 @@
 %!Rnw root = ../../Master.Rnw
 
-\section{STAT 1600 Ch 3.2 Estimates of Spread}
+% \section{STAT 1600 Ch 3.2 Estimates of Spread}
 
 \begin{frame}[fragile]{Statistics and Data Analysis}
 

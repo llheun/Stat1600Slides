@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.28)  29 JUL 2018 20:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.28)  30 JUL 2018 14:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -884,17 +884,13 @@ tionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 ) (./Master.nav) [1
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Mast
+er.toc)
 \openout4 = `Master.vrb'.
 
  (./Master.vrb) [2
 
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [3
-
-]
+] [3]
 \openout4 = `Master.vrb'.
 
 
@@ -1042,6 +1038,11 @@ Dictionary: translator-theorem-dictionary, Language: English
 ]
 \openout4 = `Master.vrb'.
 
+ (./Master.vrb) [32
+
+]
+\openout4 = `Master.vrb'.
+
  (./Master.vrb
 LaTeX Font Info:    Try loading font information for U+msa on input line 5.
 
@@ -1059,12 +1060,7 @@ line 5.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-)) [32
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [33
+)) [33
 
 ]
 \openout4 = `Master.vrb'.
@@ -1079,13 +1075,13 @@ thkerncmss.
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [36
+ (./Master.vrb) [36
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [37
+
+(./Master.vrb) [37
 
 ]
 \openout4 = `Master.vrb'.
@@ -1095,45 +1091,45 @@ thkerncmss.
 ]
 \openout4 = `Master.vrb'.
 
+ (./Master.vrb) [39
+
+]
+\openout4 = `Master.vrb'.
+
  (./Master.vrb
-<figure/LBL2e-1.pdf, id=1151, 289.08pt x 289.08pt>
+<figure/LBL2e-1.pdf, id=1203, 289.08pt x 289.08pt>
 File: figure/LBL2e-1.pdf Graphic file (type pdf)
 <use figure/LBL2e-1.pdf>
 Package pdftex.def Info: figure/LBL2e-1.pdf  used on input line 11.
 (pdftex.def)             Requested size: 113.81102pt x 113.8082pt.
 )
-[39
+[40
 
  <./figure/LBL2e-1.pdf>]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL2f-1.pdf, id=1185, 289.08pt x 289.08pt>
+<figure/LBL2f-1.pdf, id=1238, 289.08pt x 289.08pt>
 File: figure/LBL2f-1.pdf Graphic file (type pdf)
 <use figure/LBL2f-1.pdf>
 Package pdftex.def Info: figure/LBL2f-1.pdf  used on input line 22.
 (pdftex.def)             Requested size: 99.58464pt x 99.58272pt.
-) [40
+) [41
 
  <./figure/LBL2f-1.pdf>]
 \openout4 = `Master.vrb'.
 
 
 (./Master.vrb
-<chapters/chapter2/ext_figure/dotchart.png, id=1218, 469.755pt x 359.3425pt>
+<chapters/chapter2/ext_figure/dotchart.png, id=1271, 469.755pt x 359.3425pt>
 File: chapters/chapter2/ext_figure/dotchart.png Graphic file (type png)
 <use chapters/chapter2/ext_figure/dotchart.png>
 Package pdftex.def Info: chapters/chapter2/ext_figure/dotchart.png  used on inp
 ut line 11.
 (pdftex.def)             Requested size: 113.81102pt x 87.06094pt.
-) [41
+) [42
 
  <./chapters/chapter2/ext_figure/dotchart.png>]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [42
-
-]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb) [43
@@ -1146,20 +1142,20 @@ ut line 11.
 ]
 \openout4 = `Master.vrb'.
 
+ (./Master.vrb) [45
+
+]
+\openout4 = `Master.vrb'.
+
  (./Master.vrb
-<figure/LBL2Aa-1.pdf, id=1332, 289.08pt x 216.81pt>
+<figure/LBL2Aa-1.pdf, id=1384, 289.08pt x 216.81pt>
 File: figure/LBL2Aa-1.pdf Graphic file (type pdf)
 <use figure/LBL2Aa-1.pdf>
 Package pdftex.def Info: figure/LBL2Aa-1.pdf  used on input line 12.
 (pdftex.def)             Requested size: 142.26378pt x 106.69766pt.
-) [45
+) [46
 
  <./figure/LBL2Aa-1.pdf>]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [46
-
-]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb) [47
@@ -1172,13 +1168,13 @@ Package pdftex.def Info: figure/LBL2Aa-1.pdf  used on input line 12.
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [49
+ (./Master.vrb) [49
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [50
+
+(./Master.vrb) [50
 
 ]
 \openout4 = `Master.vrb'.
@@ -1188,10 +1184,13 @@ Package pdftex.def Info: figure/LBL2Aa-1.pdf  used on input line 12.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb)
-[52
+ (./Master.vrb) [52
 
-] (./Master.vrb) [53
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb)
+[53
 
 ] (./Master.vrb) [54
 
@@ -1203,38 +1202,40 @@ Package pdftex.def Info: figure/LBL2Aa-1.pdf  used on input line 12.
 
 ] (./Master.vrb) [58
 
+] (./Master.vrb) [59
+
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [59
-
-] (./Master.vrb) [60
+ (./Master.vrb) [60
 
 ] (./Master.vrb) [61
 
 ] (./Master.vrb) [62
 
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [63
+] (./Master.vrb) [63
 
 ]
 \openout4 = `Master.vrb'.
 
+ (./Master.vrb) [64
 
-(./Master.vrb) [64
+]
+\openout4 = `Master.vrb'.
+
+
+(./Master.vrb) [65
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL2Ac-1.pdf, id=1888, 289.08pt x 216.81pt>
+<figure/LBL2Ac-1.pdf, id=1940, 289.08pt x 216.81pt>
 File: figure/LBL2Ac-1.pdf Graphic file (type pdf)
 <use figure/LBL2Ac-1.pdf>
 Package pdftex.def Info: figure/LBL2Ac-1.pdf  used on input line 4.
 (pdftex.def)             Requested size: 142.26378pt x 106.69766pt.
-) [65
+) [66
 
  <./figure/LBL2Ac-1.pdf>] (./Master.vrb
 File: figure/LBL2Ac-1.pdf Graphic file (type pdf)
@@ -1242,14 +1243,7 @@ File: figure/LBL2Ac-1.pdf Graphic file (type pdf)
 Package pdftex.def Info: figure/LBL2Ac-1.pdf  used on input line 4.
 (pdftex.def)             Requested size: 142.26378pt x 106.69766pt.
 )
-[66
-
-] (./Master.vrb
-File: figure/LBL2Ac-1.pdf Graphic file (type pdf)
-<use figure/LBL2Ac-1.pdf>
-Package pdftex.def Info: figure/LBL2Ac-1.pdf  used on input line 4.
-(pdftex.def)             Requested size: 142.26378pt x 106.69766pt.
-) [67
+[67
 
 ] (./Master.vrb
 File: figure/LBL2Ac-1.pdf Graphic file (type pdf)
@@ -1265,23 +1259,25 @@ Package pdftex.def Info: figure/LBL2Ac-1.pdf  used on input line 4.
 (pdftex.def)             Requested size: 142.26378pt x 106.69766pt.
 ) [69
 
+] (./Master.vrb
+File: figure/LBL2Ac-1.pdf Graphic file (type pdf)
+<use figure/LBL2Ac-1.pdf>
+Package pdftex.def Info: figure/LBL2Ac-1.pdf  used on input line 4.
+(pdftex.def)             Requested size: 142.26378pt x 106.69766pt.
+) [70
+
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL2Ad-1.pdf, id=2031, 289.08pt x 289.08pt>
+<figure/LBL2Ad-1.pdf, id=2084, 289.08pt x 289.08pt>
 File: figure/LBL2Ad-1.pdf Graphic file (type pdf)
 <use figure/LBL2Ad-1.pdf>
 Package pdftex.def Info: figure/LBL2Ad-1.pdf  used on input line 4.
 (pdftex.def)             Requested size: 170.71652pt x 170.71451pt.
-) [70
+) [71
 
  <./figure/LBL2Ad-1.pdf>]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [71
-
-]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb) [72
@@ -1289,43 +1285,43 @@ Package pdftex.def Info: figure/LBL2Ad-1.pdf  used on input line 4.
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [73
+ (./Master.vrb) [73
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [74
 
-] (./Master.vrb) [75
+(./Master.vrb) [74
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [75
+
+] (./Master.vrb) [76
 
 ] (./Master.vrb)
-[76
+[77
 
-] (./Master.vrb) [77
+] (./Master.vrb) [78
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [78
+ (./Master.vrb) [79
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL2Ae-1.pdf, id=2284, 289.08pt x 216.81pt>
+<figure/LBL2Ae-1.pdf, id=2339, 289.08pt x 216.81pt>
 File: figure/LBL2Ae-1.pdf Graphic file (type pdf)
 <use figure/LBL2Ae-1.pdf>
 Package pdftex.def Info: figure/LBL2Ae-1.pdf  used on input line 20.
 (pdftex.def)             Requested size: 142.26378pt x 106.69766pt.
-) [79
+) [80
 
  <./figure/LBL2Ae-1.pdf>]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [80
-
-]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb) [81
@@ -1333,70 +1329,73 @@ Package pdftex.def Info: figure/LBL2Ae-1.pdf  used on input line 20.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb
-<figure/LBL3a-1.pdf, id=2374, 289.08pt x 208.78pt>
-File: figure/LBL3a-1.pdf Graphic file (type pdf)
-<use figure/LBL3a-1.pdf>
-Package pdftex.def Info: figure/LBL3a-1.pdf  used on input line 4.
-(pdftex.def)             Requested size: 170.71652pt x 123.2938pt.
-) [82
+ (./Master.vrb) [82
 
- <./figure/LBL3a-1.pdf>] (./Master.vrb
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb
+<figure/LBL3a-1.pdf, id=2426, 289.08pt x 208.78pt>
 File: figure/LBL3a-1.pdf Graphic file (type pdf)
 <use figure/LBL3a-1.pdf>
 Package pdftex.def Info: figure/LBL3a-1.pdf  used on input line 4.
 (pdftex.def)             Requested size: 170.71652pt x 123.2938pt.
 ) [83
 
-] (./Master.vrb
+ <./figure/LBL3a-1.pdf>] (./Master.vrb
 File: figure/LBL3a-1.pdf Graphic file (type pdf)
 <use figure/LBL3a-1.pdf>
 Package pdftex.def Info: figure/LBL3a-1.pdf  used on input line 4.
 (pdftex.def)             Requested size: 170.71652pt x 123.2938pt.
 ) [84
 
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [85
-
-]
-\openout4 = `Master.vrb'.
-
-
-(./Master.vrb) [86
+] (./Master.vrb
+File: figure/LBL3a-1.pdf Graphic file (type pdf)
+<use figure/LBL3a-1.pdf>
+Package pdftex.def Info: figure/LBL3a-1.pdf  used on input line 4.
+(pdftex.def)             Requested size: 170.71652pt x 123.2938pt.
+) [85
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [87
+ (./Master.vrb) [86
 
-] (./Master.vrb) [88
+]
+\openout4 = `Master.vrb'.
+
+
+(./Master.vrb) [87
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [88
+
+] (./Master.vrb) [89
 
 ] (./Master.vrb)
-[89
-
-] (./Master.vrb) [90
+[90
 
 ] (./Master.vrb) [91
 
+] (./Master.vrb) [92
+
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [92
-
-] (./Master.vrb) [93
+ (./Master.vrb) [93
 
 ] (./Master.vrb) [94
 
 ] (./Master.vrb) [95
 
+] (./Master.vrb) [96
+
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [96
-
-] (./Master.vrb) [97
+ (./Master.vrb) [97
 
 ] (./Master.vrb) [98
 
@@ -1404,28 +1403,25 @@ Package pdftex.def Info: figure/LBL3a-1.pdf  used on input line 4.
 
 ] (./Master.vrb) [100
 
-]
-\openout4 = `Master.vrb'.
-
-
-(./Master.vrb) [101
+] (./Master.vrb) [101
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [102
 
-] (./Master.vrb) [103
+(./Master.vrb) [102
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [103
+
+] (./Master.vrb) [104
 
 ] (./Master.vrb)
-[104
+[105
 
-] (./Master.vrb) [105
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [106
+] (./Master.vrb) [106
 
 ]
 \openout4 = `Master.vrb'.
@@ -1433,24 +1429,24 @@ Package pdftex.def Info: figure/LBL3a-1.pdf  used on input line 4.
  (./Master.vrb) [107
 
 ]
-(./Master.vrb) [108
+\openout4 = `Master.vrb'.
 
-] (./Master.vrb) [109
+ (./Master.vrb) [108
+
+]
+(./Master.vrb) [109
 
 ] (./Master.vrb) [110
+
+] (./Master.vrb) [111
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[111
+[112
 
-] (./Master.vrb) [112
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [113
+] (./Master.vrb) [113
 
 ]
 \openout4 = `Master.vrb'.
@@ -1460,13 +1456,13 @@ Package pdftex.def Info: figure/LBL3a-1.pdf  used on input line 4.
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [115
+ (./Master.vrb) [115
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [116
+
+(./Master.vrb) [116
 
 ]
 \openout4 = `Master.vrb'.
@@ -1476,63 +1472,63 @@ Package pdftex.def Info: figure/LBL3a-1.pdf  used on input line 4.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb)
-[118
+ (./Master.vrb) [118
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [119
+ (./Master.vrb)
+[119
 
-] (./Master.vrb) [120
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [120
 
 ] (./Master.vrb) [121
 
-]
-\openout4 = `Master.vrb'.
-
-
-(./Master.vrb) [122
-
-] (./Master.vrb) [123
+] (./Master.vrb) [122
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [124
+
+(./Master.vrb) [123
+
+] (./Master.vrb) [124
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [125
 
 ] (./Master.vrb)
-[125
-
-] (./Master.vrb) [126
+[126
 
 ] (./Master.vrb) [127
 
 ] (./Master.vrb) [128
 
+] (./Master.vrb) [129
+
 ]
 \openout4 = `Master.vrb'.
 
 
-(./Master.vrb) [129
+(./Master.vrb) [130
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBLAc-1.pdf, id=3708, 289.08pt x 216.81pt>
+<figure/LBLAc-1.pdf, id=3759, 289.08pt x 216.81pt>
 File: figure/LBLAc-1.pdf Graphic file (type pdf)
 <use figure/LBLAc-1.pdf>
 Package pdftex.def Info: figure/LBLAc-1.pdf  used on input line 7.
 (pdftex.def)             Requested size: 170.71652pt x 128.03587pt.
-) [130
+) [131
 
  <./figure/LBLAc-1.pdf>]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [131
-
-]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb) [132
@@ -1548,22 +1544,22 @@ Package pdftex.def Info: figure/LBLAc-1.pdf  used on input line 7.
  (./Master.vrb) [134
 
 ]
-(./Master.vrb) [135
+\openout4 = `Master.vrb'.
 
-] (./Master.vrb) [136
+ (./Master.vrb) [135
+
+]
+(./Master.vrb) [136
+
+] (./Master.vrb) [137
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [137
+ (./Master.vrb) [138
 
 ] (./Master.vrb)
-[138
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [139
+[139
 
 ]
 \openout4 = `Master.vrb'.
@@ -1578,13 +1574,13 @@ Package pdftex.def Info: figure/LBLAc-1.pdf  used on input line 7.
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [142
+ (./Master.vrb) [142
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [143
+
+(./Master.vrb) [143
 
 ]
 \openout4 = `Master.vrb'.
@@ -1594,13 +1590,13 @@ Package pdftex.def Info: figure/LBLAc-1.pdf  used on input line 7.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb)
-[145
+ (./Master.vrb) [145
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [146
+ (./Master.vrb)
+[146
 
 ]
 \openout4 = `Master.vrb'.
@@ -1615,13 +1611,13 @@ Package pdftex.def Info: figure/LBLAc-1.pdf  used on input line 7.
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [149
+ (./Master.vrb) [149
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [150
+
+(./Master.vrb) [150
 
 ]
 \openout4 = `Master.vrb'.
@@ -1631,28 +1627,28 @@ Package pdftex.def Info: figure/LBLAc-1.pdf  used on input line 7.
 ]
 \openout4 = `Master.vrb'.
 
+ (./Master.vrb) [152
+
+]
+\openout4 = `Master.vrb'.
+
  (./Master.vrb)
-[152
+[153
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [153
+ (./Master.vrb) [154
 
-] (./Master.vrb) [154
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [155
-
-]
-(./Master.vrb) [156
+] (./Master.vrb) [155
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [157
+ (./Master.vrb) [156
+
+]
+(./Master.vrb) [157
 
 ]
 \openout4 = `Master.vrb'.
@@ -1662,40 +1658,40 @@ Package pdftex.def Info: figure/LBLAc-1.pdf  used on input line 7.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb)
-[159
+ (./Master.vrb) [159
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [160
+ (./Master.vrb)
+[160
 
-] (./Master.vrb) [161
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [161
 
 ] (./Master.vrb) [162
 
-]
-\openout4 = `Master.vrb'.
-
-
-(./Master.vrb) [163
+] (./Master.vrb) [163
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [164
 
-] (./Master.vrb) [165
+(./Master.vrb) [164
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [165
+
+] (./Master.vrb) [166
 
 ] (./Master.vrb)
-[166
+[167
 
-] (./Master.vrb) [167
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [168
+] (./Master.vrb) [168
 
 ]
 \openout4 = `Master.vrb'.
@@ -1703,34 +1699,34 @@ Package pdftex.def Info: figure/LBLAc-1.pdf  used on input line 7.
  (./Master.vrb) [169
 
 ]
-(./Master.vrb) [170
+\openout4 = `Master.vrb'.
 
-] (./Master.vrb) [171
+ (./Master.vrb) [170
+
+]
+(./Master.vrb) [171
 
 ] (./Master.vrb) [172
+
+] (./Master.vrb) [173
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[173
-
-] (./Master.vrb) [174
+[174
 
 ] (./Master.vrb) [175
 
 ] (./Master.vrb) [176
 
-]
-\openout4 = `Master.vrb'.
-
-
-(./Master.vrb) [177
+] (./Master.vrb) [177
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [178
+
+(./Master.vrb) [178
 
 ]
 \openout4 = `Master.vrb'.
@@ -1740,13 +1736,13 @@ Package pdftex.def Info: figure/LBLAc-1.pdf  used on input line 7.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb)
-[180
+ (./Master.vrb) [180
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [181
+ (./Master.vrb)
+[181
 
 ]
 \openout4 = `Master.vrb'.
@@ -1761,108 +1757,108 @@ Package pdftex.def Info: figure/LBLAc-1.pdf  used on input line 7.
 ]
 \openout4 = `Master.vrb'.
 
+ (./Master.vrb) [184
 
-(./Master.vrb) [184
+]
+\openout4 = `Master.vrb'.
+
+
+(./Master.vrb) [185
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL6a-1.pdf, id=5222, 289.08pt x 289.08pt>
+<figure/LBL6a-1.pdf, id=5271, 289.08pt x 289.08pt>
 File: figure/LBL6a-1.pdf Graphic file (type pdf)
 <use figure/LBL6a-1.pdf>
 Package pdftex.def Info: figure/LBL6a-1.pdf  used on input line 17.
 (pdftex.def)             Requested size: 142.26378pt x 142.26357pt.
-) [185
+) [186
 
  <./figure/LBL6a-1.pdf>]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [186
+ (./Master.vrb) [187
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<chapters/chapter6/ext_figure/norm1.png, id=5283, 388.45125pt x 293.095pt>
+<chapters/chapter6/ext_figure/norm1.png, id=5332, 388.45125pt x 293.095pt>
 File: chapters/chapter6/ext_figure/norm1.png Graphic file (type png)
 <use chapters/chapter6/ext_figure/norm1.png>
 Package pdftex.def Info: chapters/chapter6/ext_figure/norm1.png  used on input 
 line 3.
 (pdftex.def)             Requested size: 227.62204pt x 171.74834pt.
-) [187
+) [188
 
  <./chapters/chapter6/ext_figure/norm1.png>]
 \openout4 = `Master.vrb'.
 
 
 (./Master.vrb
-<chapters/chapter6/ext_figure/norm2.png, id=5313, 298.11375pt x 293.095pt>
+<chapters/chapter6/ext_figure/norm2.png, id=5361, 298.11375pt x 293.095pt>
 File: chapters/chapter6/ext_figure/norm2.png Graphic file (type png)
 <use chapters/chapter6/ext_figure/norm2.png>
 Package pdftex.def Info: chapters/chapter6/ext_figure/norm2.png  used on input 
 line 3.
 (pdftex.def)             Requested size: 213.39566pt x 209.80283pt.
-) [188
+) [189
 
  <./chapters/chapter6/ext_figure/norm2.png>]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<chapters/chapter6/ext_figure/norm3.png, id=5342, 517.935pt x 233.87375pt>
+<chapters/chapter6/ext_figure/norm3.png, id=5391, 517.935pt x 233.87375pt>
 File: chapters/chapter6/ext_figure/norm3.png Graphic file (type png)
 <use chapters/chapter6/ext_figure/norm3.png>
 Package pdftex.def Info: chapters/chapter6/ext_figure/norm3.png  used on input 
 line 3.
 (pdftex.def)             Requested size: 284.52756pt x 128.48463pt.
 )
-[189
+[190
 
  <./chapters/chapter6/ext_figure/norm3.png>]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [190
+ (./Master.vrb) [191
 
 ]
-(./Master.vrb) [191
+(./Master.vrb) [192
 
-] (./Master.vrb) [192
+] (./Master.vrb) [193
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [193
+ (./Master.vrb) [194
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<chapters/chapter6/ext_figure/norm4.png, id=5482, 351.3125pt x 232.87pt>
+<chapters/chapter6/ext_figure/norm4.png, id=5530, 351.3125pt x 232.87pt>
 File: chapters/chapter6/ext_figure/norm4.png Graphic file (type png)
 <use chapters/chapter6/ext_figure/norm4.png>
 Package pdftex.def Info: chapters/chapter6/ext_figure/norm4.png  used on input 
 line 9.
 (pdftex.def)             Requested size: 142.26378pt x 94.30116pt.
 )
-[194
+[195
 
  <./chapters/chapter6/ext_figure/norm4.png>]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL6b-1.pdf, id=5510, 289.08pt x 289.08pt>
+<figure/LBL6b-1.pdf, id=5559, 289.08pt x 289.08pt>
 File: figure/LBL6b-1.pdf Graphic file (type pdf)
 <use figure/LBL6b-1.pdf>
 Package pdftex.def Info: figure/LBL6b-1.pdf  used on input line 20.
 (pdftex.def)             Requested size: 113.81102pt x 113.8082pt.
-) [195
+) [196
 
  <./figure/LBL6b-1.pdf>]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [196
-
-]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb) [197
@@ -1873,40 +1869,40 @@ Package pdftex.def Info: figure/LBL6b-1.pdf  used on input line 20.
  (./Master.vrb) [198
 
 ]
-(./Master.vrb) [199
+\openout4 = `Master.vrb'.
 
-] (./Master.vrb) [200
+ (./Master.vrb) [199
+
+]
+(./Master.vrb) [200
+
+] (./Master.vrb) [201
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [201
+ (./Master.vrb) [202
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[202
-
-] (./Master.vrb) [203
+[203
 
 ] (./Master.vrb) [204
 
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [205
+] (./Master.vrb) [205
 
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [206
+ (./Master.vrb) [206
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [207
+
+(./Master.vrb) [207
 
 ]
 \openout4 = `Master.vrb'.
@@ -1916,13 +1912,13 @@ Package pdftex.def Info: figure/LBL6b-1.pdf  used on input line 20.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb)
-[209
+ (./Master.vrb) [209
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [210
+ (./Master.vrb)
+[210
 
 ]
 \openout4 = `Master.vrb'.
@@ -1935,12 +1931,12 @@ Package pdftex.def Info: figure/LBL6b-1.pdf  used on input line 20.
  (./Master.vrb) [212
 
 ]
-(./Master.vrb) [213
-
-]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [214
+ (./Master.vrb) [213
+
+]
+(./Master.vrb) [214
 
 ]
 \openout4 = `Master.vrb'.
@@ -1950,22 +1946,22 @@ Package pdftex.def Info: figure/LBL6b-1.pdf  used on input line 20.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb)
-[216
+ (./Master.vrb) [216
 
-] (./Master.vrb) [217
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb)
+[217
 
 ] (./Master.vrb) [218
 
 ] (./Master.vrb) [219
 
-]
-(./Master.vrb) [220
+] (./Master.vrb) [220
 
 ]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [221
+(./Master.vrb) [221
 
 ]
 \openout4 = `Master.vrb'.
@@ -1975,90 +1971,90 @@ Package pdftex.def Info: figure/LBL6b-1.pdf  used on input line 20.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb)
-[223
+ (./Master.vrb) [223
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [224
+ (./Master.vrb)
+[224
 
-] (./Master.vrb) [225
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [225
 
 ] (./Master.vrb) [226
 
+] (./Master.vrb) [227
+
 ]
-(./Master.vrb) [227
+(./Master.vrb) [228
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [228
+ (./Master.vrb) [229
 
-] (./Master.vrb) [229
+] (./Master.vrb) [230
 
 ] (./Master.vrb)
-[230
+[231
 
-] (./Master.vrb) [231
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [232
-
-] (./Master.vrb) [233
-
-]
-(./Master.vrb) [234
+] (./Master.vrb) [232
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [235
+ (./Master.vrb) [233
 
-] (./Master.vrb) [236
+] (./Master.vrb) [234
+
+]
+(./Master.vrb) [235
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [236
+
+] (./Master.vrb) [237
 
 ] (./Master.vrb)
-[237
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [238
+[238
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb) [239
 
-] (./Master.vrb) [240
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [240
+
+] (./Master.vrb) [241
 
 ]
-(./Master.vrb) [241
+(./Master.vrb) [242
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [242
+ (./Master.vrb) [243
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL8a-1.pdf, id=6834, 289.08pt x 289.08pt>
+<figure/LBL8a-1.pdf, id=6881, 289.08pt x 289.08pt>
 File: figure/LBL8a-1.pdf Graphic file (type pdf)
 <use figure/LBL8a-1.pdf>
 Package pdftex.def Info: figure/LBL8a-1.pdf  used on input line 25.
 (pdftex.def)             Requested size: 99.58464pt x 99.58272pt.
-) [243
+) [244
 
  <./figure/LBL8a-1.pdf>]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [244
-
-]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb) [245
@@ -2069,135 +2065,135 @@ Package pdftex.def Info: figure/LBL8a-1.pdf  used on input line 25.
  (./Master.vrb) [246
 
 ]
-(./Master.vrb) [247
+\openout4 = `Master.vrb'.
 
-] (./Master.vrb) [248
+ (./Master.vrb) [247
+
+]
+(./Master.vrb) [248
 
 ] (./Master.vrb) [249
+
+] (./Master.vrb) [250
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[250
-
-] (./Master.vrb) [251
+[251
 
 ] (./Master.vrb) [252
 
 ] (./Master.vrb) [253
 
+] (./Master.vrb) [254
+
 ]
-(./Master.vrb) [254
+(./Master.vrb) [255
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [255
+ (./Master.vrb) [256
 
-] (./Master.vrb) [256
+] (./Master.vrb) [257
 
 ] (./Master.vrb)
-[257
+[258
 
-] (./Master.vrb) [258
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [259
-
-] (./Master.vrb) [260
-
-]
-(./Master.vrb) [261
-
-] (./Master.vrb) [262
+] (./Master.vrb) [259
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [263
+ (./Master.vrb) [260
+
+] (./Master.vrb) [261
+
+]
+(./Master.vrb) [262
+
+] (./Master.vrb) [263
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [264
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[264
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [265
+[265
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb) [266
 
-] (./Master.vrb) [267
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [267
+
+] (./Master.vrb) [268
 
 ]
-(./Master.vrb) [268
-
-] (./Master.vrb) [269
+(./Master.vrb) [269
 
 ] (./Master.vrb) [270
 
+] (./Master.vrb) [271
+
 ] (./Master.vrb)
-[271
+[272
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [272
-
-] (./Master.vrb) [273
+ (./Master.vrb) [273
 
 ] (./Master.vrb) [274
 
-]
-(./Master.vrb) [275
+] (./Master.vrb) [275
 
-] (./Master.vrb) [276
+]
+(./Master.vrb) [276
+
+] (./Master.vrb) [277
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [277
+ (./Master.vrb) [278
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[278
-
-] (./Master.vrb) [279
+[279
 
 ] (./Master.vrb) [280
 
+] (./Master.vrb) [281
+
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [281
+ (./Master.vrb) [282
 
 ]
-(./Master.vrb) [282
-
-] (./Master.vrb) [283
+(./Master.vrb) [283
 
 ] (./Master.vrb) [284
+
+] (./Master.vrb) [285
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[285
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [286
+[286
 
 ]
 \openout4 = `Master.vrb'.
@@ -2210,22 +2206,22 @@ Package pdftex.def Info: figure/LBL8a-1.pdf  used on input line 25.
  (./Master.vrb) [288
 
 ]
-(./Master.vrb) [289
+\openout4 = `Master.vrb'.
 
-] (./Master.vrb) [290
+ (./Master.vrb) [289
+
+]
+(./Master.vrb) [290
 
 ] (./Master.vrb) [291
+
+] (./Master.vrb) [292
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[292
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [293
+[293
 
 ]
 \openout4 = `Master.vrb'.
@@ -2240,13 +2236,13 @@ Package pdftex.def Info: figure/LBL8a-1.pdf  used on input line 25.
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [296
+ (./Master.vrb) [296
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [297
+
+(./Master.vrb) [297
 
 ]
 \openout4 = `Master.vrb'.
@@ -2256,13 +2252,13 @@ Package pdftex.def Info: figure/LBL8a-1.pdf  used on input line 25.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb)
-[299
+ (./Master.vrb) [299
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [300
+ (./Master.vrb)
+[300
 
 ]
 \openout4 = `Master.vrb'.
@@ -2277,60 +2273,60 @@ Package pdftex.def Info: figure/LBL8a-1.pdf  used on input line 25.
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [303
+ (./Master.vrb) [303
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [304
+
+(./Master.vrb) [304
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb) [305
 
-] (./Master.vrb)
-[306
+]
+\openout4 = `Master.vrb'.
 
-] (./Master.vrb) [307
+ (./Master.vrb) [306
+
+] (./Master.vrb)
+[307
 
 ] (./Master.vrb) [308
 
 ] (./Master.vrb) [309
 
+] (./Master.vrb) [310
+
 ]
-(./Master.vrb) [310
+(./Master.vrb) [311
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [311
+ (./Master.vrb) [312
 
-] (./Master.vrb) [312
+] (./Master.vrb) [313
 
 ] (./Master.vrb)
-[313
+[314
 
-] (./Master.vrb) [314
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [315
-
-] (./Master.vrb) [316
+] (./Master.vrb) [315
 
 ]
 \openout4 = `Master.vrb'.
 
+ (./Master.vrb) [316
 
-(./Master.vrb) [317
+] (./Master.vrb) [317
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [318
+
+(./Master.vrb) [318
 
 ]
 \openout4 = `Master.vrb'.
@@ -2340,13 +2336,13 @@ Package pdftex.def Info: figure/LBL8a-1.pdf  used on input line 25.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb)
-[320
+ (./Master.vrb) [320
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [321
+ (./Master.vrb)
+[321
 
 ]
 \openout4 = `Master.vrb'.
@@ -2361,13 +2357,13 @@ Package pdftex.def Info: figure/LBL8a-1.pdf  used on input line 25.
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [324
+ (./Master.vrb) [324
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [325
+
+(./Master.vrb) [325
 
 ]
 \openout4 = `Master.vrb'.
@@ -2377,179 +2373,179 @@ Package pdftex.def Info: figure/LBL8a-1.pdf  used on input line 25.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb)
-[327
+ (./Master.vrb) [327
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [328
+ (./Master.vrb)
+[328
 
-] (./Master.vrb) [329
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [329
 
 ] (./Master.vrb) [330
 
-]
-(./Master.vrb) [331
+] (./Master.vrb) [331
 
-] (./Master.vrb) [332
+]
+(./Master.vrb) [332
+
+] (./Master.vrb) [333
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [333
+ (./Master.vrb) [334
 
 ] (./Master.vrb)
-[334
-
-] (./Master.vrb) [335
+[335
 
 ] (./Master.vrb) [336
 
 ] (./Master.vrb) [337
 
+] (./Master.vrb) [338
+
 ]
 \openout4 = `Master.vrb'.
 
 
-(./Master.vrb) [338
-
-] (./Master.vrb) [339
+(./Master.vrb) [339
 
 ] (./Master.vrb) [340
+
+] (./Master.vrb) [341
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[341
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [342
+[342
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb) [343
 
-] (./Master.vrb) [344
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [344
+
+] (./Master.vrb) [345
 
 ]
-(./Master.vrb) [345
+(./Master.vrb) [346
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [346
+ (./Master.vrb) [347
 
-] (./Master.vrb) [347
+] (./Master.vrb) [348
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[348
-
-] (./Master.vrb) [349
+[349
 
 ] (./Master.vrb) [350
 
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [351
+] (./Master.vrb) [351
 
 ]
 \openout4 = `Master.vrb'.
 
+ (./Master.vrb) [352
 
-(./Master.vrb) [352
+]
+\openout4 = `Master.vrb'.
+
+
+(./Master.vrb) [353
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL10a-1.pdf, id=9897, 289.08pt x 289.08pt>
+<figure/LBL10a-1.pdf, id=9940, 289.08pt x 289.08pt>
 File: figure/LBL10a-1.pdf Graphic file (type pdf)
 <use figure/LBL10a-1.pdf>
 Package pdftex.def Info: figure/LBL10a-1.pdf  used on input line 21.
 (pdftex.def)             Requested size: 128.0374pt x 128.03368pt.
-) [353
+) [354
 
  <./figure/LBL10a-1.pdf>]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL10b-1.pdf, id=9931, 289.08pt x 289.08pt>
+<figure/LBL10b-1.pdf, id=9973, 289.08pt x 289.08pt>
 File: figure/LBL10b-1.pdf Graphic file (type pdf)
 <use figure/LBL10b-1.pdf>
 Package pdftex.def Info: figure/LBL10b-1.pdf  used on input line 17.
 (pdftex.def)             Requested size: 128.0374pt x 128.03368pt.
-) [354
+) [355
 
  <./figure/LBL10b-1.pdf>]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL10c-1.pdf, id=9964, 289.08pt x 289.08pt>
+<figure/LBL10c-1.pdf, id=10007, 289.08pt x 289.08pt>
 File: figure/LBL10c-1.pdf Graphic file (type pdf)
 <use figure/LBL10c-1.pdf>
 Package pdftex.def Info: figure/LBL10c-1.pdf  used on input line 15.
 (pdftex.def)             Requested size: 128.0374pt x 128.03368pt.
-) [355
+) [356
 
  <./figure/LBL10c-1.pdf>]
 \openout4 = `Master.vrb'.
 
 
-(./Master.vrb) [356
+(./Master.vrb) [357
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [357
+ (./Master.vrb) [358
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL10d-1.pdf, id=10053, 289.08pt x 289.08pt>
+<figure/LBL10d-1.pdf, id=10095, 289.08pt x 289.08pt>
 File: figure/LBL10d-1.pdf Graphic file (type pdf)
 <use figure/LBL10d-1.pdf>
 Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
 (pdftex.def)             Requested size: 128.0374pt x 128.03368pt.
-) [358
+) [359
 
  <./figure/LBL10d-1.pdf>]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [359
-
-] (./Master.vrb) [360
+ (./Master.vrb) [360
 
 ] (./Master.vrb) [361
 
-]
-(./Master.vrb) [362
+] (./Master.vrb) [362
 
-] (./Master.vrb) [363
+]
+(./Master.vrb) [363
 
 ] (./Master.vrb) [364
+
+] (./Master.vrb) [365
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[365
+[366
 
-] (./Master.vrb) [366
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [367
+] (./Master.vrb) [367
 
 ]
 \openout4 = `Master.vrb'.
@@ -2559,45 +2555,45 @@ Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [369
+ (./Master.vrb) [369
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [370
 
-] (./Master.vrb) [371
+(./Master.vrb) [370
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [371
+
+] (./Master.vrb) [372
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[372
-
-] (./Master.vrb) [373
+[373
 
 ] (./Master.vrb) [374
 
+] (./Master.vrb) [375
+
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [375
+ (./Master.vrb) [376
 
 ]
-(./Master.vrb) [376
-
-] (./Master.vrb) [377
+(./Master.vrb) [377
 
 ] (./Master.vrb) [378
 
+] (./Master.vrb) [379
+
 ] (./Master.vrb)
-[379
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [380
+[380
 
 ]
 \openout4 = `Master.vrb'.
@@ -2612,13 +2608,13 @@ Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [383
+ (./Master.vrb) [383
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [384
+
+(./Master.vrb) [384
 
 ]
 \openout4 = `Master.vrb'.
@@ -2628,85 +2624,85 @@ Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb)
-[386
+ (./Master.vrb) [386
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [387
+ (./Master.vrb)
+[387
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb) [388
 
-] (./Master.vrb) [389
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [389
+
+] (./Master.vrb) [390
 
 ]
-(./Master.vrb) [390
-
-] (./Master.vrb) [391
+(./Master.vrb) [391
 
 ] (./Master.vrb) [392
+
+] (./Master.vrb) [393
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[393
-
-] (./Master.vrb) [394
+[394
 
 ] (./Master.vrb) [395
 
 ] (./Master.vrb) [396
 
-]
-\openout4 = `Master.vrb'.
-
-
-(./Master.vrb) [397
-
-] (./Master.vrb) [398
+] (./Master.vrb) [397
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [399
+
+(./Master.vrb) [398
+
+] (./Master.vrb) [399
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [400
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[400
-
-] (./Master.vrb) [401
+[401
 
 ] (./Master.vrb) [402
 
 ] (./Master.vrb) [403
 
-]
-(./Master.vrb) [404
+] (./Master.vrb) [404
 
-] (./Master.vrb) [405
+]
+(./Master.vrb) [405
+
+] (./Master.vrb) [406
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [406
+ (./Master.vrb) [407
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[407
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [408
+[408
 
 ]
 \openout4 = `Master.vrb'.
@@ -2721,13 +2717,13 @@ Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [411
+ (./Master.vrb) [411
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [412
+
+(./Master.vrb) [412
 
 ]
 \openout4 = `Master.vrb'.
@@ -2737,13 +2733,13 @@ Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb)
-[414
+ (./Master.vrb) [414
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [415
+ (./Master.vrb)
+[415
 
 ]
 \openout4 = `Master.vrb'.
@@ -2758,13 +2754,13 @@ Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [418
+ (./Master.vrb) [418
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [419
+
+(./Master.vrb) [419
 
 ]
 \openout4 = `Master.vrb'.
@@ -2774,40 +2770,40 @@ Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb)
-[421
+ (./Master.vrb) [421
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [422
+ (./Master.vrb)
+[422
 
-] (./Master.vrb) [423
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [423
 
 ] (./Master.vrb) [424
 
-]
-\openout4 = `Master.vrb'.
-
-
-(./Master.vrb) [425
+] (./Master.vrb) [425
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [426
 
-] (./Master.vrb) [427
+(./Master.vrb) [426
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [427
+
+] (./Master.vrb) [428
 
 ] (./Master.vrb)
-[428
+[429
 
-] (./Master.vrb) [429
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [430
+] (./Master.vrb) [430
 
 ]
 \openout4 = `Master.vrb'.
@@ -2817,23 +2813,23 @@ Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [432
+ (./Master.vrb) [432
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [433
 
-] (./Master.vrb) [434
+(./Master.vrb) [433
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [434
+
+] (./Master.vrb) [435
 
 ] (./Master.vrb)
-[435
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [436
+[436
 
 ]
 \openout4 = `Master.vrb'.
@@ -2846,22 +2842,22 @@ Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
  (./Master.vrb) [438
 
 ]
-(./Master.vrb) [439
+\openout4 = `Master.vrb'.
 
-] (./Master.vrb) [440
+ (./Master.vrb) [439
+
+]
+(./Master.vrb) [440
 
 ] (./Master.vrb) [441
+
+] (./Master.vrb) [442
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[442
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [443
+[443
 
 ]
 \openout4 = `Master.vrb'.
@@ -2874,22 +2870,22 @@ Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
  (./Master.vrb) [445
 
 ]
-(./Master.vrb) [446
+\openout4 = `Master.vrb'.
 
-] (./Master.vrb) [447
+ (./Master.vrb) [446
+
+]
+(./Master.vrb) [447
 
 ] (./Master.vrb) [448
+
+] (./Master.vrb) [449
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[449
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [450
+[450
 
 ]
 \openout4 = `Master.vrb'.
@@ -2904,23 +2900,23 @@ Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
 ]
 \openout4 = `Master.vrb'.
 
+ (./Master.vrb) [453
 
-(./Master.vrb) [453
+]
+\openout4 = `Master.vrb'.
 
-] (./Master.vrb) [454
+
+(./Master.vrb) [454
 
 ] (./Master.vrb) [455
+
+] (./Master.vrb) [456
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[456
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [457
+[457
 
 ]
 \openout4 = `Master.vrb'.
@@ -2933,79 +2929,79 @@ Package pdftex.def Info: figure/LBL10d-1.pdf  used on input line 21.
  (./Master.vrb) [459
 
 ]
-(./Master.vrb) [460
+\openout4 = `Master.vrb'.
 
-] (./Master.vrb) [461
+ (./Master.vrb) [460
+
+]
+(./Master.vrb) [461
 
 ] (./Master.vrb) [462
 
+] (./Master.vrb) [463
+
 ] (./Master.vrb)
-[463
+[464
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [464
-
-] (./Master.vrb) [465
+ (./Master.vrb) [465
 
 ] (./Master.vrb) [466
 
-]
-(./Master.vrb) [467
+] (./Master.vrb) [467
 
-] (./Master.vrb) [468
+]
+(./Master.vrb) [468
+
+] (./Master.vrb) [469
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [469
+ (./Master.vrb) [470
 
 ] (./Master.vrb)
-[470
+[471
 
-] (./Master.vrb) [471
+] (./Master.vrb) [472
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<chapters/chapter13/figure/fig1.png, id=13186, 218.8175pt x 156.585pt>
+<chapters/chapter13/figure/fig1.png, id=13225, 218.8175pt x 156.585pt>
 File: chapters/chapter13/figure/fig1.png Graphic file (type png)
 <use chapters/chapter13/figure/fig1.png>
 Package pdftex.def Info: chapters/chapter13/figure/fig1.png  used on input line
  5.
 (pdftex.def)             Requested size: 256.0748pt x 183.2491pt.
-) [472
+) [473
 
  <./chapters/chapter13/figure/fig1.png>]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL13a-1.pdf, id=13215, 289.08pt x 289.08pt>
+<figure/LBL13a-1.pdf, id=13253, 289.08pt x 289.08pt>
 File: figure/LBL13a-1.pdf Graphic file (type pdf)
 <use figure/LBL13a-1.pdf>
 Package pdftex.def Info: figure/LBL13a-1.pdf  used on input line 25.
 (pdftex.def)             Requested size: 113.81102pt x 113.8082pt.
-) [473
+) [474
 
  <./figure/LBL13a-1.pdf>]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL13b-1.pdf, id=13249, 289.08pt x 289.08pt>
+<figure/LBL13b-1.pdf, id=13288, 289.08pt x 289.08pt>
 File: figure/LBL13b-1.pdf Graphic file (type pdf)
 <use figure/LBL13b-1.pdf>
 Package pdftex.def Info: figure/LBL13b-1.pdf  used on input line 24.
 (pdftex.def)             Requested size: 113.81102pt x 113.8082pt.
-) [474
+) [475
 
  <./figure/LBL13b-1.pdf>]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [475
-
-]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb) [476
@@ -3013,48 +3009,48 @@ Package pdftex.def Info: figure/LBL13b-1.pdf  used on input line 24.
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb)
-[477
+ (./Master.vrb) [477
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [478
+ (./Master.vrb)
+[478
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [479
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb
-<figure/LBL13d-1.pdf, id=13393, 289.08pt x 289.08pt>
+<figure/LBL13d-1.pdf, id=13432, 289.08pt x 289.08pt>
 File: figure/LBL13d-1.pdf Graphic file (type pdf)
 <use figure/LBL13d-1.pdf>
 Package pdftex.def Info: figure/LBL13d-1.pdf  used on input line 4.
 (pdftex.def)             Requested size: 199.16928pt x 199.16986pt.
-) [479
+) [480
 
  <./figure/LBL13d-1.pdf>]
 \openout4 = `Master.vrb'.
 
 
 (./Master.vrb
-<chapters/chapter13/figure/fig2.png, id=13427, 293.095pt x 172.645pt>
+<chapters/chapter13/figure/fig2.png, id=13465, 293.095pt x 172.645pt>
 File: chapters/chapter13/figure/fig2.png Graphic file (type png)
 <use chapters/chapter13/figure/fig2.png>
 Package pdftex.def Info: chapters/chapter13/figure/fig2.png  used on input line
  9.
 (pdftex.def)             Requested size: 142.26378pt x 83.79857pt.
-) [480
+) [481
 
  <./chapters/chapter13/figure/fig2.png>]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[481
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [482
+[482
 
 ]
 \openout4 = `Master.vrb'.
@@ -3069,13 +3065,13 @@ Package pdftex.def Info: chapters/chapter13/figure/fig2.png  used on input line
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [485
+ (./Master.vrb) [485
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [486
+
+(./Master.vrb) [486
 
 ]
 \openout4 = `Master.vrb'.
@@ -3085,22 +3081,22 @@ Package pdftex.def Info: chapters/chapter13/figure/fig2.png  used on input line
 ]
 \openout4 = `Master.vrb'.
 
+ (./Master.vrb) [488
+
+]
+\openout4 = `Master.vrb'.
+
  (./Master.vrb
-<chapters/chapter13/figure/fig3.png, id=13649, 436.63126pt x 381.425pt>
+<chapters/chapter13/figure/fig3.png, id=13688, 436.63126pt x 381.425pt>
 File: chapters/chapter13/figure/fig3.png Graphic file (type png)
 <use chapters/chapter13/figure/fig3.png>
 Package pdftex.def Info: chapters/chapter13/figure/fig3.png  used on input line
  18.
 (pdftex.def)             Requested size: 170.71652pt x 149.12762pt.
 )
-[488
+[489
 
  <./chapters/chapter13/figure/fig3.png>]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [489
-
-]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb) [490
@@ -3115,100 +3111,179 @@ Package pdftex.def Info: chapters/chapter13/figure/fig3.png  used on input line
 
  (./Master.vrb) [492
 
-] (./Master.vrb) [493
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [493
+
+] (./Master.vrb) [494
 
 ]
-(./Master.vrb) [494
-
-] (./Master.vrb) [495
+(./Master.vrb) [495
 
 ] (./Master.vrb) [496
 
+] (./Master.vrb) [497
+
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[497
-
-] (./Master.vrb) [498
+[498
 
 ] (./Master.vrb) [499
 
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [500
+] (./Master.vrb) [500
 
 ]
 \openout4 = `Master.vrb'.
 
-
-(./Master.vrb) [501
+ (./Master.vrb) [501
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [502
 
-] (./Master.vrb) [503
+(./Master.vrb) [502
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [503
+
+] (./Master.vrb) [504
 
 ] (./Master.vrb)
-[504
+[505
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [505
-
-] (./Master.vrb) [506
+ (./Master.vrb) [506
 
 ] (./Master.vrb) [507
 
-]
-\openout4 = `Master.vrb'.
-
-
-(./Master.vrb) [508
+] (./Master.vrb) [508
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [509
 
-] (./Master.vrb) [510
+(./Master.vrb) [509
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [510
+
+] (./Master.vrb) [511
 
 ] (./Master.vrb)
-[511
+[512
 
-] (./Master.vrb) [512
-
-]
-\openout4 = `Master.vrb'.
-
- (./Master.vrb) [513
-
-] (./Master.vrb) [514
-
-]
-(./Master.vrb) [515
-
-] (./Master.vrb) [516
+] (./Master.vrb) [513
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [517
+ (./Master.vrb) [514
+
+] (./Master.vrb) [515
+
+]
+(./Master.vrb) [516
+
+] (./Master.vrb) [517
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [518
 
 ]
 \openout4 = `Master.vrb'.
 
  (./Master.vrb)
-[518
+[519
 
 ]
 \openout4 = `Master.vrb'.
 
- (./Master.vrb) [519
+ (./Master.vrb) [520
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [521
+
+] (./Master.vrb) [522
+
+]
+(./Master.vrb) [523
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb
+<figure/LBL14a-1.pdf, id=14649, 289.08pt x 289.08pt>
+File: figure/LBL14a-1.pdf Graphic file (type pdf)
+<use figure/LBL14a-1.pdf>
+Package pdftex.def Info: figure/LBL14a-1.pdf  used on input line 10.
+(pdftex.def)             Requested size: 199.16928pt x 199.16986pt.
+) [524
+
+ <./figure/LBL14a-1.pdf>]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb
+<figure/LBL14b-1.pdf, id=14682, 289.08pt x 289.08pt>
+File: figure/LBL14b-1.pdf Graphic file (type pdf)
+<use figure/LBL14b-1.pdf>
+Package pdftex.def Info: figure/LBL14b-1.pdf  used on input line 10.
+(pdftex.def)             Requested size: 128.0374pt x 128.03368pt.
+) [525
+
+ <./figure/LBL14b-1.pdf>]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [526
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [527
+
+]
+\openout4 = `Master.vrb'.
+
+
+(./Master.vrb) [528
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [529
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [530
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb)
+[531
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [532
+
+]
+\openout4 = `Master.vrb'.
+
+ (./Master.vrb) [533
 
 ]
 \tf@nav=\write6
@@ -3220,49 +3295,52 @@ Package pdftex.def Info: chapters/chapter13/figure/fig3.png  used on input line
 \tf@snm=\write8
 \openout8 = `Master.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5561.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5561.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5575.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5575.
  (./Master.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5561.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5561.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5575.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5575.
 
 Package rerunfilecheck Info: File `Master.out' has not changed.
-(rerunfilecheck)             Checksum: 1F2BD7A7BC8A5251F4CC9E975FBACFB3;1546.
+(rerunfilecheck)             Checksum: 04F0F2DF17CE50E8CC905A1F2CB0D042;1397.
  ) 
 Here is how much of TeX's memory you used:
- 20617 strings out of 492646
- 369499 string characters out of 6129563
- 455564 words of memory out of 5000000
- 21953 multiletter control sequences out of 15000+600000
+ 20714 strings out of 492646
+ 371052 string characters out of 6129563
+ 456626 words of memory out of 5000000
+ 21993 multiletter control sequences out of 15000+600000
  20925 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,63p,844b,813s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.
-pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/tex
-live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on Master.pdf (519 pages, 1798860 bytes).
+pdfTeX warning (dest): name{Navigation534} has been referenced but does not e
+xist, replaced by a fixed one
+
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pf
+b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></
+usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/l
+ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi17.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/loc
+al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on Master.pdf (533 pages, 1841578 bytes).
 PDF statistics:
- 14833 PDF objects out of 15390 (max. 8388607)
- 14085 compressed objects within 141 object streams
- 1058 named destinations out of 1200 (max. 500000)
+ 15247 PDF objects out of 15390 (max. 8388607)
+ 14476 compressed objects within 145 object streams
+ 1085 named destinations out of 1200 (max. 500000)
  355 words of extra memory for PDF output out of 10000 (max. 10000000)
 

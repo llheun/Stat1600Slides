@@ -60,8 +60,9 @@ opts_chunk$set(
 % A general introduction to statistics with an emphasis on data analysis and graphical presentation. Extensive use will be made of the computer to prepare results. Topics may include: data collection, sampling and experimentation, measurement issues, descriptive statistics, statistical graphics, normal distribution, cross-classified data, correlation and association, formal statistical inferences, and resampling methods.
 
 
-
-%\tableofcontents
+{\tiny{
+\tableofcontents
+}}
 
 <<Ch1, child="chapters/chapter1/chapter1.Rnw",eval=TRUE>>=
 @

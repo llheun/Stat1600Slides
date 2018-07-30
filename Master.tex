@@ -94,8 +94,9 @@
 % A general introduction to statistics with an emphasis on data analysis and graphical presentation. Extensive use will be made of the computer to prepare results. Topics may include: data collection, sampling and experimentation, measurement issues, descriptive statistics, statistical graphics, normal distribution, cross-classified data, correlation and association, formal statistical inferences, and resampling methods.
 
 
-
-%\tableofcontents
+{\tiny{
+\tableofcontents
+}}
 
 
 %!Rnw root = ../../Master.Rnw
@@ -674,7 +675,7 @@ We summarize numerical data with all of the following EXCEPT:
 
 %!Rnw root = ../../Master.Rnw
 
-\section{STAT 1600 Ch 2.4.4 Box and Whisker Plot}
+% \section{STAT 1600 Ch 2.4.4 Box and Whisker Plot}
 
 \begin{frame}[fragile]{Statistics and Data Analysis}
 
@@ -1093,7 +1094,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 
 
 
-  740, 670, 490, 220, 400, 700, 700, 250, 500, 1200
+  490, 760, 350, 740, 650, 700, 910, 700, 280, 140
   
 \vspace{3mm}
 
@@ -1113,7 +1114,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 \item<4-> (2-bedroom appartment rental example)
 \item<5->
 \begin{equation*}
-\bar{X} = \frac{740 + 670 + \cdots + 1200}{10} = 587
+\bar{X} = \frac{490 + 760 + \cdots + 140}{10} = 572
 \end{equation*}
 \end{itemize}
 
@@ -1122,7 +1123,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 \begin{frame}[fragile]{Sample Mean is an Est. of Pop. Mean}
 
 \begin{itemize}
-\item<1-> That is, the average rent for 2-bedroom apartments in  Kalamazoo area is \$ 587 in our sample
+\item<1-> That is, the average rent for 2-bedroom apartments in  Kalamazoo area is \$ 572 in our sample
 \item<2-> This is not to be interpreted as the actual \textit{population average}  (i.e., the actual average rent of all 2-bedroom apartments in  the entire Kalamazoo area)
 \item<3-> It is subject to \textit{sampling error}
 \item<4-> It likely missed the true population mean \\ (denoted $\mu$), by $| \bar{X} - \mu |$,  the \textit{sampling error}.
@@ -1144,7 +1145,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 
 \vspace{3mm}
 
-220, 250, 400, 490, 500, 670, 700, 700, 740, 1200
+140, 280, 350, 490, 650, 700, 700, 740, 760, 910
 \item<2->
 \begin{equation*}
 0.5(n + 1) = 0.5 \times 11 = 5.5
@@ -1154,7 +1155,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 \item<4-> Hence, MED = average of 5th \& 6th ordered values
 \item<5->
 \begin{equation*}
-\tilde{x} = \frac{ 500 + 670 }{2} = 585
+\tilde{x} = \frac{ 650 + 700 }{2} = 675
 \end{equation*}
 \end{itemize}
 }}
@@ -1185,8 +1186,8 @@ What is the median MPG?
 \begin{itemize}
 \item<1-> Sample mean is sensitive to outliers
 \item<2-> Sample median is \textit{insensitive} to outliers
-\item<3-> In the Kalamazoo apartment rental data, what if the smallest value \$ 220 is replaced by \$100?
-\item<4-> The MED remains unchanged (\$ 585) but $\bar{X} = 575$, down by from the original data (\$ 587).
+\item<3-> In the Kalamazoo apartment rental data, what if the smallest value \$ 140 is replaced by \$100?
+\item<4-> The MED remains unchanged (\$ 675) but $\bar{X} = 568$, down by from the original data (\$ 572).
 \end{itemize}
 \end{frame}
 
@@ -1214,12 +1215,12 @@ We can see the median has not been affected by the outlier, whereas the  mean ha
 \item<2-> 10\% trimmed mean = mean of data with lowest 10\% values and  highest 10\% values excluded = mean of middle 80\% values
 \item<3-> in Kalamazoo apartment rental data, 10\% of n = 10 is 1 ($n \times 0.1 = 1$)
 
-250, 400, 490, 500, 670, 700, 700, 740
+280, 350, 490, 650, 700, 700, 740, 760
 % $500	$500	$525	$555	$635	$650	$670	$675	$750	$800
 \item<4-> Hence, 10\% trimmed mean, denoted $\bar{X}_{tr}$, is computed by
 \begin{eqnarray*}
-\bar{X}_{tr} &=& \frac{250+400+490+500+670+700+700+740}{8} \\
-     &=&556.25
+\bar{X}_{tr} &=& \frac{280+350+490+650+700+700+740+760}{8} \\
+     &=&583.75
 \end{eqnarray*}
 \end{itemize}
 }}
@@ -1304,7 +1305,7 @@ For estimates of central location, which of the following statements is  true?
 
 %!Rnw root = ../../Master.Rnw
 
-\section{STAT 1600 Ch 3.2 Estimates of Spread}
+% \section{STAT 1600 Ch 3.2 Estimates of Spread}
 
 \begin{frame}[fragile]{Statistics and Data Analysis}
 
@@ -1356,23 +1357,23 @@ Estimates of Spread
 
 {\footnotesize{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:48 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrr}
   \hline
  & Rent & Diff & Diff Sqd \\ 
   \hline
-1 & 740 & 153 & 23409 \\ 
-  2 & 670 & 83 & 6889 \\ 
-  3 & 490 & -97 & 9409 \\ 
-  4 & 220 & -367 & 134689 \\ 
-  5 & 400 & -187 & 34969 \\ 
-  6 & 700 & 113 & 12769 \\ 
-  7 & 700 & 113 & 12769 \\ 
-  8 & 250 & -337 & 113569 \\ 
-  9 & 500 & -87 & 7569 \\ 
-  10 & 1200 & 613 & 375769 \\ 
+1 & 490 & -82 & 6724 \\ 
+  2 & 760 & 188 & 35344 \\ 
+  3 & 350 & -222 & 49284 \\ 
+  4 & 740 & 168 & 28224 \\ 
+  5 & 650 & 78 & 6084 \\ 
+  6 & 700 & 128 & 16384 \\ 
+  7 & 910 & 338 & 114244 \\ 
+  8 & 700 & 128 & 16384 \\ 
+  9 & 280 & -292 & 85264 \\ 
+  10 & 140 & -432 & 186624 \\ 
    \hline
 \end{tabular}
 \end{table}
@@ -1384,14 +1385,14 @@ Estimates of Spread
 
 {\footnotesize{
 \begin{itemize}
-\item<1-> Step 1. Compute $\bar{x} = 587$
+\item<1-> Step 1. Compute $\bar{x} = 572$
 \item<2-> Step 2. Calculate Diff, i.e., how much an obs. `missed by' the average, (i.e., deviation).
 \item<3-> Step 3. Square the `missed by' differences.
 \item<4-> Step 4. Add all the squared `missed by' differences, i.e., SS
 \item<5-> Step 5. Take the square-root of $\frac{SS}{n - 1}$ to get SD
 
 \begin{equation*}
-SD = \sqrt{ \frac{\ensuremath{7.3181\times 10^{5}}}{ 10 - 1 }} = 285.2
+SD = \sqrt{ \frac{\ensuremath{5.4456\times 10^{5}}}{ 10 - 1 }} = 246.0
 \end{equation*}
 
 \end{itemize}
@@ -1480,9 +1481,9 @@ apartment rental example
 \end{center}
 
 \begin{itemize}
-\item<1-> Recall that the mean and SD are \$ $587 \pm 285.2$ \\ ($\pm$ means `give or take')
-\item<2-> Get a roommate and pay half the rent: \$ $293.5 \pm 142.6$ %$323  ± $52
-\item<3-> No roommate but has contribution of \$100 per month from parents: $293.5 \pm 285.2$    % $526 ± $104
+\item<1-> Recall that the mean and SD are \$ $572 \pm 246.0$ \\ ($\pm$ means `give or take')
+\item<2-> Get a roommate and pay half the rent: \$ $286 \pm 123.0$ %$323  ± $52
+\item<3-> No roommate but has contribution of \$100 per month from parents: $286 \pm 246.0$    % $526 ± $104
 \end{itemize}
 \end{frame}
 
@@ -3883,7 +3884,7 @@ $d_i = \texttt{Before} - \texttt{After}, i = 1, \cdots , n$.
 
 {\footnotesize{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4035,7 +4036,7 @@ A 95\% confidence interval for $\mu_{left} - \mu_{right}$ is calculated and the 
 \begin{frame}[fragile]{Head Injury Criterion (HIC) Example}
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrr}
@@ -4155,7 +4156,7 @@ Is there an association between HS GPA (high school GPA) and college  attrition?
 
 {\small{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4178,7 +4179,7 @@ If grades and attrition were independent, then the (Observed) frequency  table s
 
 {\small{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4223,7 +4224,7 @@ E_{ij} = \frac{\texttt{row total (i)} \times \texttt{col total (j)} }{\texttt{Gr
 O, Observed 
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrrr}
@@ -4247,7 +4248,7 @@ O, Observed
 E, Expected
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4278,7 +4279,7 @@ E_{22} &=& \frac{31 \times 17}{189} = 2.79
 In a study, investigators classified adults by obesity and hypertension:
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4451,7 +4452,7 @@ $df$ & $b$ \\ \hline
 O, Observed 
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrrr}
@@ -4475,7 +4476,7 @@ O, Observed
 E, Expected
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4507,7 +4508,7 @@ We already have our Observed and Expected values so we can compute our Chi-Squar
 O, Observed 
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrrr}
@@ -4531,7 +4532,7 @@ O, Observed
 E, Expected
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4757,7 +4758,7 @@ In the world bank 85 data (chapter 1), we would like to measure the linear  asso
 
 {\small{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrr}
@@ -4851,7 +4852,7 @@ In the world bank 85 data (chapter 1), we would like to measure the linear  asso
 
 {\footnotesize{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrr}
@@ -4886,7 +4887,7 @@ Libya & 7 & 45 \\
 Birth Rate:
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4926,7 +4927,7 @@ Zy &=& \frac{(Y_i - \bar{Y})}{SD_y}
 GNP:
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4964,7 +4965,7 @@ Now, calculate the correlation using standardized variable values:
 
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrr}
@@ -5013,7 +5014,7 @@ Now, calculate the correlation using standardized variable values:
 
 {\footnotesize{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Sun Jul 29 20:36:49 2018
+% Mon Jul 30 14:34:19 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrr}
@@ -5363,189 +5364,202 @@ that is, a predicted price of \$2,949.
 }}
 \end{frame}
 
-% \begin{frame}[fragile]{Oil-exporter Example}
-% 
-% {\footnotesize{
-% In the world bank 85 data (chapter 1), we would like to measure the linear  association between birth rate (y) and per capita gross national product  (x) for the four high-income oil exporters. The data:
-% }}
-% 
-% {\footnotesize{
-% <<label=LBL13e, results="asis", echo=FALSE>>=
-%   TB13C <- cbind(Y13C, X13C)
-%   colnames(TB13C) <- c('GNP', 'Birth rate')
-%   rownames(TB13C) <- c('Libya', 'Saudi Arabia', 'Kuwait', 'United Arab Emirates')
-%   xtable(TB13C, digits=0)
-% @ 
-% }}
-% 
-% \begin{itemize}
-% {\small{
-% \item The values of birth rate range from 30 to 45.
-% 
-% \item The values of GNP range from 7,170 to 19,270. This range is  contained in (6,000, 20,000) (the latter to be plotted).
-% \item How do we find the correlation coefficient for these two numeric variables?
-% }}
-% \end{itemize}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Oil-exporter Example: Correlation, step 1}
-% 
-% \begin{minipage}[ht]{6cm}
-% 
-% {\footnotesize{
-% Birth Rate:
-% 
-% <<label=LBL13f, results="asis", echo=FALSE>>=
-%   MN13Y <- mean(Y13C)
-%   DF13Y <- Y13C - MN13Y
-%   DFSQY <- DF13Y^2
-%   SD13Y <- sd(Y13C)
-%   Z13Y  <- (Y13C - MN13Y) / SD13Y
-%   TBL13D <- cbind(Y13C, DF13Y, DFSQY, Z13Y)
-%   colnames(TBL13D) <- c("Y", "Diff", "Diff_sq", "Zy")
-%   xtable(TBL13D, digits=2)
-% @
-% }}
-% \end{minipage}
-% \begin{minipage}[ht]{5cm}
-% 
-% {\scriptsize{
-% \begin{eqnarray*}
-% \bar{Y} &=& \frac{ \sum Y_i}{n} \\
-% Diff &=& Y_i - \bar{Y} \\
-% Diff_{sq} &=& \sum (Y_i - \bar{Y})^2 \\
-% SD_y &=& \sqrt{ \frac{ \sum ( Y_i - \bar{Y})^2}{n - 1}} \\
-% Zy &=& \frac{(Y_i - \bar{Y})}{SD_y}
-% \end{eqnarray*}
-% }}
-% \end{minipage}
-% 
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Oil-exporter Example: Correlation, step 2}
-% 
-% \begin{minipage}[ht]{6cm}
-% 
-% {\footnotesize{
-% GNP:
-% 
-% <<label=LBL13g, results="asis", echo=FALSE>>=
-%   MN13X <- mean(X13C)
-%   DF13X <- X13C - MN13X
-%   DFSQX <- DF13X^2
-%   SD13X <- sd(X13C)
-%   Z13X  <- (X13C - MN13X) / SD13X
-%   TBL13x <- cbind(X13C, DF13X, DFSQX, Z13X)
-%   colnames(TBL13x) <- c("X", "Diff", "Diff_sq", "Zx")
-%   xtable(TBL13x, digits=2)
-% @
-% }}
-% \end{minipage}
-% \begin{minipage}[ht]{5cm}
-% 
-% {\scriptsize{
-% \begin{eqnarray*}
-% \bar{X} &=& \frac{ \sum X_i}{n} \\
-% Diff &=& X_i - \bar{X} \\
-% Diff_{sq} &=& \sum (X_i - \bar{X})^2 \\
-% SD_x &=& \sqrt{ \frac{ \sum ( X_i - \bar{X})^2}{n - 1}} \\
-% Zx &=& \frac{(X_i - \bar{X})}{SD_x}
-% \end{eqnarray*}
-% }}
-% \end{minipage}
-% 
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Oil-exporter Example: Correlation, step 3}
-% 
-% Now, calculate the correlation using standardized variable values:
-% 
-% 
-% <<label=LBL13h, results="asis", echo=FALSE>>=
-%   tmp13a <- Z13X * Z13Y
-%   tmp13b <- sum(tmp13a)
-%   tmp13s <- sprintf("%.4f", tmp13b)
-%   TBL13c <- cbind(Z13X, Z13Y, tmp13a)
-%   colnames(TBL13c) <- c("Zx", "Zy", "Zx * Zy")
-%   r13a   <- tmp13b / (length(tmp13a) - 1)
-%   n13s   <- sprintf("%.0f", length(tmp13a))
-%   xtable(TBL13c, digits=2)
-% @
-% 
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Sample Correlation Coefficient}
-% 
-% {\footnotesize{
-% The two measurements are observed in n pairs:
-% $(x_1, y_1), (x_2, y_2), \cdots , (x_n, y_n)$. It is always recommended to plot these $n$  pairs in a scatterplot. The sample correlation (known as Pearson's  correlation coefficient), denoted by $r$ , can be computed by
-% }}
-% 
-% {\scriptsize{
-% \begin{eqnarray*}
-%   r &=& \frac{ \texttt{ Sum(products of standardized variables)}}{\texttt{one less number of pairs}} \\
-%   &=& \frac{ \sum \Big(\frac{(X - \bar{X})}{SD_x} \times \frac{(Y - \bar{Y})}{SD_y} \Big) }{n - 1} \\
-%   &=& \frac{ \sum (Z_x \times Z_y)}{n - 1}
-% \end{eqnarray*}
-% }}
-% 
-% \vspace{-6mm}
-% 
-% {\footnotesize{
-% where $\bar{X}$ and $SD_x$ are the sample mean and standard deviation for $x$  values, and $\bar{Y}$ and $SD_y$ are the sample mean and standard deviation for $y$ values.
-% }}
-% 
-% \end{frame}
-% 
-% \begin{frame}[fragile]{Oil-exporter Example: Correlation, step 3}
-% 
-% {\small{
-% Now, calculate the correlation using standardized variable values:
-% }}
-% 
-% {\footnotesize{
-% <<label=LBL13i, results="asis", echo=FALSE>>=
-%   xtable(TBL13c, digits=2)
-% @  
-% }}
-% 
-% \vspace{-6mm}
-% 
-% {\footnotesize{
-% \begin{eqnarray*}
-% sumZ &=& \sum Zx * Zy = tmp13b \\
-% r    &=& \frac{ tmp13b}{ (n13s - 1)} = r13a
-% \end{eqnarray*}
-% }}
-% 
-% {\small{
-% GNP and birth rate exhibit a strong negative (or downward) linear  relationship..
-% }}
-% \end{frame}
-% 
-% \begin{frame}[fragile]{iClicker Question 13.5}
-% 
-% Which of the following graphs has the strongest negative correlation?
-% 
-% \begin{minipage}[ht]{4cm}
-% 
-% \begin{enumerate}[A]
-% \item Car Weight
-% \item R/S
-% \item Ave.Temp.
-% \item Square Feet
-% \end{enumerate}
-% \end{minipage}
-% \begin{minipage}[ht]{6cm}
-% 
-% \begin{figure}[htbp]
-%    \centering
-%    \includegraphics[width=6cm]{chapters/chapter13/figure/fig3.png} % requires the graphicx package
-%    % \caption{example caption}
-%    % \label{fig:example}
-% \end{figure}
-% \end{minipage}
-% \end{frame}
+\begin{frame}[fragile]{Fitted-Line Plot}
+
+{\small{
+To get a fitted-line plot (LS line superimposed on the scatterplot):
+}}
+
+\begin{itemize}
+\item<1-> Produce a scatterplot.
+\item<2-> Calculate the predicted response values at the two extreme $X$ values in the range:
+
+{\footnotesize{
+\begin{eqnarray*}
+  PRED_{min} &=& \hat{a} + \hat{b} X_{min} \\
+  PRED_{max} &=& \hat{a} + \hat{b} X_{max}
+\end{eqnarray*}
+}}
+
+\vspace{-6mm}
+
+\item<3-> Mark these two points ($X_{min}, PRED_{min}$) and ($X_{max}, PRED_{max}$ ) on  the scatterplot and then connect them with a line segment.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Saturn Price Example, revisited}
+
+{\small{
+The fitted-line plot for using Least Squares solution is given:
+}}
+
+\vspace{-6mm}
+
+
+\includegraphics[width=7cm]{figure/LBL14a-1} 
+
+
+\end{frame}
+
+\begin{frame}[fragile]{Saturn Price Example, revisited}
+
+{\small{
+The fitted-line plot for using Least Squares solution is given:
+}}
+
+%\begin{minipage}[ht]{5cm}
+
+
+\includegraphics[width=4.5cm]{figure/LBL14b-1} 
+
+
+\vspace{-3mm}
+
+{\footnotesize{
+\begin{eqnarray*}
+  PRED_{forMaxX} &=& 8136 + (-0.0513) * 153260 = 279 \\
+  PRED_{forMinX} &=& 8136 + (-0.0513) * 9300 = 7660
+\end{eqnarray*}
+}}
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Fitted Values and Residuals
+
+\begin{itemize}
+\item Calculate Fitted Values and Residuals
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Calculate Fitted Values and Residuals}
+
+\begin{itemize}
+
+\item Recall that the fitted equation is
+{\footnotesize{
+\begin{equation*}
+Price = 8136 + (-0.0513) \times Miles 
+\end{equation*}
+}}
+
+\vspace{-3mm}
+
+\item For car \#6, the (Miles,Price) pair was (57000, 4600). The fitted value is
+
+{\footnotesize{
+\begin{equation*}
+\hat{y} = 8136 + (-0.0513) \times 57000 = 5213.61
+\end{equation*}
+}}
+
+\vspace{-3mm}
+
+\item The residual is then:
+
+{\footnotesize{
+\begin{equation*}
+residual = observed - fitted = 4600 - 5212.61 = -613.61 
+\end{equation*}
+}}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Confidence Interval of the Slope
+
+\begin{itemize}
+\item Calculate the Confidence Interval fo the Slope
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Confidence Interval of the Slope}
+
+\begin{itemize}
+\item Standard error of the slope:
+\begin{eqnarray*}
+SE &=& \sqrt{ \frac{ 1 - (\texttt{correlation})^2}{n - 2}} \times \frac{SD_y}{SD_x} \\
+   &=& \sqrt{ \frac{ (1 - r^2)}{r^2 (n - 2)}} \times \texttt{ slope}
+\end{eqnarray*}
+  
+where $r$ = correlation, $\hat{b}$ = slope, and $n$ = number of (x,y) pairs.  
+
+\item The margin of error 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Confidence Interval of the Slope}
+
+\begin{itemize}
+  \item The margin of error is $$ME = 1.96 \times SE$$
+  \item 95\% confidence interval for the slope:
+  \begin{equation*}
+    (\hat{b} \pm SE)
+  \end{equation*}
+  
+\item The slope is statistically \textbf{significant} if the interval \textbf{excludes} zero (0). The  slope is \textbf{insignificant} if the interval includes zero (0).
+  
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Saturn Price Example, revisited}
+
+{\small{
+\begin{itemize}
+\item Standard error of the slope:
+{\footnotesize{
+\begin{eqnarray*}
+SE &=& \sqrt{ \frac{ 1 - (-0.641)^2}{(-0.641)^2 (12 - 2)}} \times (-0.05127) \\
+   &=& \sqrt{ \frac{ (1 - 0.41088)}{0.41088 \times 10}} \times (-0.05127) = 0.0194
+\end{eqnarray*}
+}}
+\item The margin of error $$ ME = 1.96 \times 0.0194 = 0.0380 $$
+
+\item 95\% CI for the slope:
+\begin{equation*}
+(-0.05127) \pm 0.0380) \Rightarrow (-0.0893, -0.0133)
+\end{equation*}
+
+\item The CI excludes 0 and consequently, the linear relationship between mileage and selling price is significant.
+
+\end{itemize}
+}}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 14.2.1}
+
+The correlation and the slope of the LS equation from $n = 27$ pairs of  two numerical variables are -0.80 and -1.20. Which of the following  is the standard error of the slope?
+
+\begin{enumerate}[A]
+\item 0.18
+\item -0.18
+\item 0
+\item 18  
+\item -18
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 14.2.2}
+
+{\footnotesize{
+Data were collected for the average public school teacher pay (\$) and  spending (\$) on public schools per pupil in year 1985 for the Northeast  and North Central states. A 95\% confidence interval for the slope is  (2.148, 4.912). Which of the following statements is true?
+
+\begin{enumerate}[A]
+\item The interval excludes 0 and hence the LS equation  provides significant predicting power.
+\item The interval includes 0 and hence the LS equation does  not provide significant predicting power.
+\item The interval excludes 0 and hence the LS equation does  not provide significant predicting power.
+\item The interval includes 0 and hence the LS equation  provides significant predicting power.
+\item None of the previous is true.
+\end{enumerate}
+}}
+
+\end{frame}
 
 
 

@@ -1,6 +1,6 @@
 %!Rnw root = ../../Master.Rnw
 
-\section{STAT 1600 Ch 2.4.4 Box and Whisker Plot}
+% \section{STAT 1600 Ch 2.4.4 Box and Whisker Plot}
 
 \begin{frame}[fragile]{Statistics and Data Analysis}
 

@@ -1,40 +1,14 @@
-\frametitle{Calculate Predicted Values}
+\frametitle{iClicker Question 14.2.2}
 
 {\footnotesize{
-The predicted value of the response, PREDICTED Y or $\hat{Y}$, for a `new' $X$ value (within $X$ data range) can be calculated:
+Data were collected for the average public school teacher pay (\$) and  spending (\$) on public schools per pupil in year 1985 for the Northeast  and North Central states. A 95\% confidence interval for the slope is  (2.148, 4.912). Which of the following statements is true?
 
-{\footnotesize{
-\begin{equation*}
-\texttt{PREDICTED Y or } \hat{Y} = \hat{a} + \hat{b} \cdot X
-\end{equation*}
+\begin{enumerate}[A]
+\item The interval excludes 0 and hence the LS equation  provides significant predicting power.
+\item The interval includes 0 and hence the LS equation does  not provide significant predicting power.
+\item The interval excludes 0 and hence the LS equation does  not provide significant predicting power.
+\item The interval includes 0 and hence the LS equation  provides significant predicting power.
+\item None of the previous is true.
+\end{enumerate}
 }}
 
-\vspace{-5mm}
-
-For the Saturn Price example, the straight line model is:
-
-{\footnotesize{
-\begin{equation*}
-\texttt{PREDICTED Y } = 8136 + (-0.05127) \cdot X
-\end{equation*}
-}}
-
-\vspace{-6mm}
-
-\begin{itemize}
-\item This is valid for cars with driven miles contained in the $X$ data range.  \item Therefore, the predicted sales price for a car with $Miles = 100,000$ (this value is in range) can be calculated by
-
-\vspace{-4mm}
-
-{\footnotesize{
-\begin{equation*}
-\texttt{PRED Y } = 8136 + (-0.05127) \times 100,000 = 8136 - 5187 = 2949
-\end{equation*}
-}}
-
-\vspace{-4mm}
-
-that is, a predicted price of \$2,949.
-
-\end{itemize}
-}}
