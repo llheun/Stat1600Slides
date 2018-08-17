@@ -70,7 +70,7 @@
 
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
-\title{Stat 1600}
+\title{Discovery with Data \\ Stat 1600}
 % \subtitle{Overview and Descriptive Statistics}
 \author{Loren Heun}
 \institute{WMU}
@@ -1094,7 +1094,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 
 
 
-  490, 760, 350, 740, 650, 700, 910, 700, 280, 140
+  1200, 700, 350, 220, 880, 340, 140, 670, 700, 490
   
 \vspace{3mm}
 
@@ -1114,7 +1114,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 \item<4-> (2-bedroom appartment rental example)
 \item<5->
 \begin{equation*}
-\bar{X} = \frac{490 + 760 + \cdots + 140}{10} = 572
+\bar{X} = \frac{1200 + 700 + \cdots + 490}{10} = 569
 \end{equation*}
 \end{itemize}
 
@@ -1123,7 +1123,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 \begin{frame}[fragile]{Sample Mean is an Est. of Pop. Mean}
 
 \begin{itemize}
-\item<1-> That is, the average rent for 2-bedroom apartments in  Kalamazoo area is \$ 572 in our sample
+\item<1-> That is, the average rent for 2-bedroom apartments in  Kalamazoo area is \$ 569 in our sample
 \item<2-> This is not to be interpreted as the actual \textit{population average}  (i.e., the actual average rent of all 2-bedroom apartments in  the entire Kalamazoo area)
 \item<3-> It is subject to \textit{sampling error}
 \item<4-> It likely missed the true population mean \\ (denoted $\mu$), by $| \bar{X} - \mu |$,  the \textit{sampling error}.
@@ -1145,7 +1145,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 
 \vspace{3mm}
 
-140, 280, 350, 490, 650, 700, 700, 740, 760, 910
+140, 220, 340, 350, 490, 670, 700, 700, 880, 1200
 \item<2->
 \begin{equation*}
 0.5(n + 1) = 0.5 \times 11 = 5.5
@@ -1155,7 +1155,7 @@ Based on the following random sample of 2-bedroom apartments in Kalamazoo area
 \item<4-> Hence, MED = average of 5th \& 6th ordered values
 \item<5->
 \begin{equation*}
-\tilde{x} = \frac{ 650 + 700 }{2} = 675
+\tilde{x} = \frac{ 490 + 670 }{2} = 580
 \end{equation*}
 \end{itemize}
 }}
@@ -1187,7 +1187,7 @@ What is the median MPG?
 \item<1-> Sample mean is sensitive to outliers
 \item<2-> Sample median is \textit{insensitive} to outliers
 \item<3-> In the Kalamazoo apartment rental data, what if the smallest value \$ 140 is replaced by \$100?
-\item<4-> The MED remains unchanged (\$ 675) but $\bar{X} = 568$, down by from the original data (\$ 572).
+\item<4-> The MED remains unchanged (\$ 580) but $\bar{X} = 565$, down by from the original data (\$ 569).
 \end{itemize}
 \end{frame}
 
@@ -1215,12 +1215,12 @@ We can see the median has not been affected by the outlier, whereas the  mean ha
 \item<2-> 10\% trimmed mean = mean of data with lowest 10\% values and  highest 10\% values excluded = mean of middle 80\% values
 \item<3-> in Kalamazoo apartment rental data, 10\% of n = 10 is 1 ($n \times 0.1 = 1$)
 
-280, 350, 490, 650, 700, 700, 740, 760
+220, 340, 350, 490, 670, 700, 700, 880
 % $500	$500	$525	$555	$635	$650	$670	$675	$750	$800
 \item<4-> Hence, 10\% trimmed mean, denoted $\bar{X}_{tr}$, is computed by
 \begin{eqnarray*}
-\bar{X}_{tr} &=& \frac{280+350+490+650+700+700+740+760}{8} \\
-     &=&583.75
+\bar{X}_{tr} &=& \frac{220+340+350+490+670+700+700+880}{8} \\
+     &=&543.75
 \end{eqnarray*}
 \end{itemize}
 }}
@@ -1357,23 +1357,23 @@ Estimates of Spread
 
 {\footnotesize{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:48 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrr}
   \hline
  & Rent & Diff & Diff Sqd \\ 
   \hline
-1 & 490 & -82 & 6724 \\ 
-  2 & 760 & 188 & 35344 \\ 
-  3 & 350 & -222 & 49284 \\ 
-  4 & 740 & 168 & 28224 \\ 
-  5 & 650 & 78 & 6084 \\ 
-  6 & 700 & 128 & 16384 \\ 
-  7 & 910 & 338 & 114244 \\ 
-  8 & 700 & 128 & 16384 \\ 
-  9 & 280 & -292 & 85264 \\ 
-  10 & 140 & -432 & 186624 \\ 
+1 & 1200 & 631 & 398161 \\ 
+  2 & 700 & 131 & 17161 \\ 
+  3 & 350 & -219 & 47961 \\ 
+  4 & 220 & -349 & 121801 \\ 
+  5 & 880 & 311 & 96721 \\ 
+  6 & 340 & -229 & 52441 \\ 
+  7 & 140 & -429 & 184041 \\ 
+  8 & 670 & 101 & 10201 \\ 
+  9 & 700 & 131 & 17161 \\ 
+  10 & 490 & -79 & 6241 \\ 
    \hline
 \end{tabular}
 \end{table}
@@ -1385,14 +1385,14 @@ Estimates of Spread
 
 {\footnotesize{
 \begin{itemize}
-\item<1-> Step 1. Compute $\bar{x} = 572$
+\item<1-> Step 1. Compute $\bar{x} = 569$
 \item<2-> Step 2. Calculate Diff, i.e., how much an obs. `missed by' the average, (i.e., deviation).
 \item<3-> Step 3. Square the `missed by' differences.
 \item<4-> Step 4. Add all the squared `missed by' differences, i.e., SS
 \item<5-> Step 5. Take the square-root of $\frac{SS}{n - 1}$ to get SD
 
 \begin{equation*}
-SD = \sqrt{ \frac{\ensuremath{5.4456\times 10^{5}}}{ 10 - 1 }} = 246.0
+SD = \sqrt{ \frac{\ensuremath{9.5189\times 10^{5}}}{ 10 - 1 }} = 325.2
 \end{equation*}
 
 \end{itemize}
@@ -1481,9 +1481,9 @@ apartment rental example
 \end{center}
 
 \begin{itemize}
-\item<1-> Recall that the mean and SD are \$ $572 \pm 246.0$ \\ ($\pm$ means `give or take')
-\item<2-> Get a roommate and pay half the rent: \$ $286 \pm 123.0$ %$323  ± $52
-\item<3-> No roommate but has contribution of \$100 per month from parents: $286 \pm 246.0$    % $526 ± $104
+\item<1-> Recall that the mean and SD are \$ $569 \pm 325.2$ \\ ($\pm$ means `give or take')
+\item<2-> Get a roommate and pay half the rent: \$ $284.5 \pm 162.6$ %$323  ± $52
+\item<3-> No roommate but has contribution of \$100 per month from parents: $284.5 \pm 325.2$    % $526 ± $104
 \end{itemize}
 \end{frame}
 
@@ -2280,6 +2280,403 @@ The probability that a defective item is observed at a production line  is 0.02.
 \item {3,4}
 \item none of the previous
 \end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{The Binomial Distribution}
+
+Stat1600 \\
+Ch. 7 Part II The Binomial Distribution \\
+Ch. 7.3 Expected Value and SD
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+\begin{itemize}
+\item Mean and SD
+\item  Expected Value and SD of Binomial Random Variable
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Best Buy Example, revisited}
+
+{\small{
+Recall that, in the Best Buy Example, historical data shows that 20\% of buyers of smart watches purchase extended protection plans. $X$ extended protection plans were sold along with the 300 smart watches sold last quarter.  Then
+}}
+
+$$ X \sim binomial(n = 300, p = 0.20) $$
+
+{\small{
+The expected number of extended warranties sold last quarter is around
+}}
+
+\begin{table}
+\centering
+{\small{
+\begin{tabular}{@{} rcl @{}}
+Expected value & $\pm $ & SD \\
+60 & give or take & 7 
+\end{tabular}
+}}
+\end{table}
+
+\end{frame}
+
+\begin{frame}[fragile]{Expected Value and SD}
+
+If $ X \sim binomial(n, p) $, then 
+
+\begin{eqnarray*}
+\mu &=& \texttt{ Expected value or Average or Mean } \\
+&=& E[X] \\
+&=& \texttt{ sample size } \times \texttt{ prob. of success} \\
+&=& np \\
+\sigma_x &=& {\scriptsize{\sqrt{ \texttt{sample size} \times \texttt{prob. of success} \times \texttt{prob. of failure} }}} \\
+&=& \sqrt{npq} 
+\end{eqnarray*}
+
+\end{frame}
+
+\begin{frame}[fragile]{Expected Value and SD}
+
+\vspace{-1cm}
+
+\begin{center}{\tiny{Best Buy example}} \end{center}
+
+The number of protection plans sold last quarter
+
+$$X \sim binomial(n = 300, p = 0.20) $$
+
+\vspace{-1cm}
+
+\begin{eqnarray*}
+\mu &=& np = 300 \times 0.20 \\
+&=& 60 \\
+\sigma &=& \sqrt{npq} = \sqrt{300 \times 0.2 \times 0.8} \\
+&=& 7 
+\end{eqnarray*}
+
+Sometimes more (than 60), sometimes less. \\ By 7 (more or less), on average.
+  
+\end{frame}
+
+\begin{frame}[fragile]{Expected Value and SD}
+
+\vspace{-1cm}
+
+\begin{center}{\tiny{5-question quiz example}} \end{center}
+
+Recall that, by pure guessing, the number of correct answers 
+$$ X \sim binomial(n = 5, p = 0.20)$$
+
+If someone guesses all questions randomly then on average, he/she will get:
+
+\vspace{-1cm}
+
+\begin{eqnarray*}
+\mu &=& 5 \times .2 \\
+ &=& 1 \texttt{ give or take } \\
+ \sigma &=& \sqrt{5 \times 0.2 \times 0.8 } \\
+ &=& 0.9 \texttt{ correct answers}
+\end{eqnarray*}
+
+\end{frame}
+
+\begin{frame}[fragile]{Expected Value and SD}
+
+\vspace{-1cm}
+
+\begin{center}{\tiny{Gamers Retro Rental example}} \end{center}
+
+5\% of video games rented at Gamers Retro Rental incur a late rental fee.  If 700 video games were rented last month, the number of video games that will incur late rental fees will be around
+\underline{\phantom{xxxxxxxxxx}} give or take \underline{\phantom{xxxxxxxxxx}}
+
+\end{frame}
+
+\begin{frame}[fragile]{Expected Value and SD}
+
+\vspace{-1cm}
+
+\begin{center}{\tiny{Gamers Retro Rental example}} \end{center}
+
+5\% of video games rented at Gamers Retro Rental incur a late rental fee. If 700 video games were rented last month, the number of video games that will incur late rental fees will be around
+\underline{   35   } give or take \underline{\phantom{xxxxxxxxxx}}
+  
+$$ \mu = 700 \times 0.05 = 35 $$  
+
+\end{frame}
+
+\begin{frame}[fragile]{Expected Value and SD}
+
+\vspace{-1cm}
+
+\begin{center}{\tiny{Gamers Retro Rental example}} \end{center}
+
+5\% of video games rented at Gamers Retro Rental incur a late rental fee. If 700 video games were rented last month, the number of video games that will incur late rental fees will be around
+\underline{   35   } give or take \underline{   5.77   }
+  
+  
+$$ \mu = 700 \times 0.05 = 35 $$  
+$$ \sigma = \sqrt{700 \times 0.05 \times 0.95 } = 5.77$$
+
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 7.3.1}
+
+A pharmaceutical company claims that a new treatment is successful in reducing fever in more than 60\% of the cases. The treatment was tried on 40 randomly selected cases. What is the expected value of the number of cases successful in reducing fever?
+
+\begin{enumerate}[A]
+\item 16
+\item 24
+\item 4.9
+\item 9.6
+\item 3.1
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 7.3.2}
+
+A study was conducted concerning the use of gloves among the
+nurses with 15 years or more experience. The study showed that only
+1 of these nurses wear gloves during vascular access procedures. For 6
+a sample of $n = 36$ nurses with 15 years or more experience, the number of nurses wear gloves during vascular access procedures is expected to be
+
+\begin{enumerate}[A]
+\item 36
+\item 6
+\item 0
+\item 15
+\item $-1$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 7.3.3}
+
+A pharmaceutical company claims that a new treatment is successful in reducing fever in more than 60\% of the cases. The treatment was tried on 40 randomly selected cases. What is the standard deviation of the number of cases successful in reducing fever?
+
+\begin{enumerate}[A]
+\item 16
+\item 24
+\item 4.9
+\item 9.6
+\item 3.1
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Normal Approximation  
+
+\begin{itemize}
+\item Normal Approximation for Binomial Probabilities 
+\item When Can One Use Normal Approximation
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Binomial Probability Histogram}
+
+\begin{minipage}[ht]{3.5cm}
+
+
+\includegraphics[width=3.5cm]{figure/LBL7a-1} 
+
+
+\end{minipage}  % \hfill
+\begin{minipage}[ht]{3.5cm}
+
+
+\includegraphics[width=3.5cm]{figure/LBL7b-1} 
+
+
+\end{minipage}
+
+\begin{minipage}[ht]{3.5cm}
+
+
+\includegraphics[width=3.5cm]{figure/LBL7c-1} 
+
+
+\end{minipage}  % \hfill
+\begin{minipage}[ht]{4cm}
+
+{\scriptsize{
+Note: if probability of a success is 0.5, the shape is symmetric about n/2.
+}}
+\end{minipage}
+
+\end{frame}
+
+\begin{frame}[fragile]{Note that}
+
+\begin{itemize}
+\item The binomial distribution is symmetric when $p = 0.5$.
+Consequently, each rectangle in the probability histogram is centered at an integer with a width of 1. This is also true when $p \ne 0.5$.
+
+\item Hence, for integer $a, a = 0, \cdots , n$, 
+$$P[X = a] = P[a - 0.5 < X < a + 0.5]$$ = 
+area of rectangle centered at $a \approx$ area under normal curve between $a - 0.5$  and $a + 0.5$ where normal curve
+$ \approx N(\mu = np, \sigma = \sqrt{npq} )$. 
+
+\item So, we have (next slide):
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Bin. Prob. Histogram and Normal Curve }
+
+
+
+\begin{minipage}[ht]{4cm}
+
+{\scriptsize{
+
+$X \sim Binomial(n=30,p=0.4)$
+
+$np = 12, \sqrt{npq} = 2.68$
+
+Binomial Probability
+
+$ Y \sim Normal(\mu = 12, \sigma = 2.68)$ 
+
+actual probability
+
+approximate probability
+}}
+\end{minipage}
+\begin{minipage}[ht]{3.5cm}
+
+
+\includegraphics[width=3.5cm]{figure/LBL7e-1} 
+
+
+\end{minipage}
+
+\begin{minipage}[ht]{3.5cm}
+
+
+\includegraphics[width=3.5cm]{figure/LBL7f-1} 
+
+
+\end{minipage}
+\begin{minipage}[ht]{3.5cm}
+
+
+\includegraphics[width=3.5cm]{figure/LBL7g-1} 
+
+
+\end{minipage}
+
+\end{frame}
+
+\begin{frame}[fragile]{An Example on Using Normal Approx.}
+
+{\footnotesize{
+Suppose a student in an introductory Statistics course has not been attending class this semester but decides to take the exam anyway. If he randomly guesses on each of the 26 questions, then he has a 1 out of 5 chance of getting a correct answer, since it is a multiple choice exam with choices a, b, c, d, or e. How many questions should the student expect to get correct on this exam, give or take by how many questions?
+
+\begin{eqnarray*}
+X &=& \texttt{number of correct answers} \\
+  &=& binomial(n = 26, p = 0.2) \\
+\mu  &=& np = 26 \times 0.2 \\
+  &=& 5.2 \\
+\sigma &=& SD \\
+  &=& \sqrt{npq} = \sqrt{26 \times 0.2 \times 0.8} \\
+  &=& 2.04
+\end{eqnarray*}  
+}}
+
+\end{frame}
+
+\begin{frame}[fragile]{An Example on Using Normal Approx.}
+
+What is the probability that the student will score lower than a ``C'' (15 or fewer correct answers)?
+
+\begin{eqnarray*}
+P[X \le 15] &=& P[X < 15.5] \\
+  &=& P\Big[Z < \frac{15.5 - 5.2}{2.04} \Big] \\
+  &=& P[ Z < 5.05] \\
+  &=& 1  \texttt{ why? }
+\end{eqnarray*}
+
+\end{frame}
+
+\begin{frame}[fragile]{An Example on Using Normal Approx.}
+
+What is the probability that the student will get a  ``C'' or better (16 or more correct answers)?
+
+\begin{eqnarray*}
+P[X \ge 16] &=& P[X > 15.5] \\
+  &=& P\Big[Z > \frac{15.5 - 5.2}{2.04} \Big] \\
+  &=& 1 - P[ Z < 5.05] \\
+  &=& 0  \texttt{ why? }
+\end{eqnarray*}
+
+\end{frame}
+
+\begin{frame}[fragile]{An Example on Using Normal Approx.}
+
+What is the probability that the student will answer 8 or more questions correctly?
+
+\begin{minipage}[ht]{4cm}
+
+{\tiny{
+\begin{eqnarray*}
+P[X \ge 8] &=& P[X > 7.5] \\
+  &=& P\Big[Z > \frac{7.5 - 5.2}{2.04} \Big] \\
+  &=& 1 - P[ Z \le 1.13] \\
+  &=& 1 - 0.8708 \\
+  &=& 0.1292
+\end{eqnarray*}
+}}
+
+\end{minipage}
+\begin{minipage}[ht]{3.5cm}
+
+
+\includegraphics[width=3.5cm]{figure/LBL7h-1} 
+
+
+\end{minipage}
+\end{frame}
+
+\begin{frame}[fragile]{An Example}
+
+\begin{center}{\tiny{when normal approximation is inappropriate}} \end{center}
+
+An example when normal approximation is inappropriate binomial(20,0.1) which is
+right skewed
+
+\begin{figure}[ht]
+\centering
+
+
+\includegraphics[width=4.5cm]{figure/LBL7i-1} 
+
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{General Rule}
+
+\begin{center}{\tiny{when normal approximation is appropriate}} \end{center}
+
+\begin{eqnarray*}
+\texttt{average number of successes} &>& 5 \\
+np &>& 5 \\
+\texttt{average number of failures} &>& 5 \\
+nq &>& 5 
+\end{eqnarray*}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 7.3.4}
+
+A study was conducted concerning the use of gloves among the nurses with 15 years or more experience. The study showed that only 1 in 6 of these nurses wear gloves during vascular access procedures. For a sample of $n = 18$ nurses with 15 years or more experience, is normal approximation appropriate to approximate a binomial probability?
+
+\begin{enumerate}[A]
+\item No
+\item Yes
+\item Insufficient information to judge.
+\end{enumerate}
+
 \end{frame}
 
 
@@ -3884,7 +4281,7 @@ $d_i = \texttt{Before} - \texttt{After}, i = 1, \cdots , n$.
 
 {\footnotesize{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4036,7 +4433,7 @@ A 95\% confidence interval for $\mu_{left} - \mu_{right}$ is calculated and the 
 \begin{frame}[fragile]{Head Injury Criterion (HIC) Example}
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrr}
@@ -4156,7 +4553,7 @@ Is there an association between HS GPA (high school GPA) and college  attrition?
 
 {\small{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4179,7 +4576,7 @@ If grades and attrition were independent, then the (Observed) frequency  table s
 
 {\small{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4224,7 +4621,7 @@ E_{ij} = \frac{\texttt{row total (i)} \times \texttt{col total (j)} }{\texttt{Gr
 O, Observed 
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrrr}
@@ -4248,7 +4645,7 @@ O, Observed
 E, Expected
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4279,7 +4676,7 @@ E_{22} &=& \frac{31 \times 17}{189} = 2.79
 In a study, investigators classified adults by obesity and hypertension:
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4452,7 +4849,7 @@ $df$ & $b$ \\ \hline
 O, Observed 
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrrr}
@@ -4476,7 +4873,7 @@ O, Observed
 E, Expected
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4508,7 +4905,7 @@ We already have our Observed and Expected values so we can compute our Chi-Squar
 O, Observed 
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrrr}
@@ -4532,7 +4929,7 @@ O, Observed
 E, Expected
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4758,7 +5155,7 @@ In the world bank 85 data (chapter 1), we would like to measure the linear  asso
 
 {\small{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrr}
@@ -4852,7 +5249,7 @@ In the world bank 85 data (chapter 1), we would like to measure the linear  asso
 
 {\footnotesize{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrr}
@@ -4887,7 +5284,7 @@ Libya & 7 & 45 \\
 Birth Rate:
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4927,7 +5324,7 @@ Zy &=& \frac{(Y_i - \bar{Y})}{SD_y}
 GNP:
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -4965,7 +5362,7 @@ Now, calculate the correlation using standardized variable values:
 
 
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrr}
@@ -5014,7 +5411,7 @@ Now, calculate the correlation using standardized variable values:
 
 {\footnotesize{
 % latex table generated in R 3.5.1 by xtable 1.8-2 package
-% Mon Jul 30 14:34:19 2018
+% Fri Aug 17 13:58:49 2018
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrr}

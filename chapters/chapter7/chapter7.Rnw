@@ -217,3 +217,470 @@ The probability that a defective item is observed at a production line  is 0.02.
 \item none of the previous
 \end{enumerate}
 \end{frame}
+
+\begin{frame}[fragile]{The Binomial Distribution}
+
+Stat1600 \\
+Ch. 7 Part II The Binomial Distribution \\
+Ch. 7.3 Expected Value and SD
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+\begin{itemize}
+\item Mean and SD
+\item  Expected Value and SD of Binomial Random Variable
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Best Buy Example, revisited}
+
+{\small{
+Recall that, in the Best Buy Example, historical data shows that 20\% of buyers of smart watches purchase extended protection plans. $X$ extended protection plans were sold along with the 300 smart watches sold last quarter.  Then
+}}
+
+$$ X \sim binomial(n = 300, p = 0.20) $$
+
+{\small{
+The expected number of extended warranties sold last quarter is around
+}}
+
+\begin{table}
+\centering
+{\small{
+\begin{tabular}{@{} rcl @{}}
+Expected value & $\pm $ & SD \\
+60 & give or take & 7 
+\end{tabular}
+}}
+\end{table}
+
+\end{frame}
+
+\begin{frame}[fragile]{Expected Value and SD}
+
+If $ X \sim binomial(n, p) $, then 
+
+\begin{eqnarray*}
+\mu &=& \texttt{ Expected value or Average or Mean } \\
+&=& E[X] \\
+&=& \texttt{ sample size } \times \texttt{ prob. of success} \\
+&=& np \\
+\sigma_x &=& {\scriptsize{\sqrt{ \texttt{sample size} \times \texttt{prob. of success} \times \texttt{prob. of failure} }}} \\
+&=& \sqrt{npq} 
+\end{eqnarray*}
+
+\end{frame}
+
+\begin{frame}[fragile]{Expected Value and SD}
+
+\vspace{-1cm}
+
+\begin{center}{\tiny{Best Buy example}} \end{center}
+
+The number of protection plans sold last quarter
+
+$$X \sim binomial(n = 300, p = 0.20) $$
+
+\vspace{-1cm}
+
+\begin{eqnarray*}
+\mu &=& np = 300 \times 0.20 \\
+&=& 60 \\
+\sigma &=& \sqrt{npq} = \sqrt{300 \times 0.2 \times 0.8} \\
+&=& 7 
+\end{eqnarray*}
+
+Sometimes more (than 60), sometimes less. \\ By 7 (more or less), on average.
+  
+\end{frame}
+
+\begin{frame}[fragile]{Expected Value and SD}
+
+\vspace{-1cm}
+
+\begin{center}{\tiny{5-question quiz example}} \end{center}
+
+Recall that, by pure guessing, the number of correct answers 
+$$ X \sim binomial(n = 5, p = 0.20)$$
+
+If someone guesses all questions randomly then on average, he/she will get:
+
+\vspace{-1cm}
+
+\begin{eqnarray*}
+\mu &=& 5 \times .2 \\
+ &=& 1 \texttt{ give or take } \\
+ \sigma &=& \sqrt{5 \times 0.2 \times 0.8 } \\
+ &=& 0.9 \texttt{ correct answers}
+\end{eqnarray*}
+
+\end{frame}
+
+\begin{frame}[fragile]{Expected Value and SD}
+
+\vspace{-1cm}
+
+\begin{center}{\tiny{Gamers Retro Rental example}} \end{center}
+
+5\% of video games rented at Gamers Retro Rental incur a late rental fee.  If 700 video games were rented last month, the number of video games that will incur late rental fees will be around
+\underline{\phantom{xxxxxxxxxx}} give or take \underline{\phantom{xxxxxxxxxx}}
+
+\end{frame}
+
+\begin{frame}[fragile]{Expected Value and SD}
+
+\vspace{-1cm}
+
+\begin{center}{\tiny{Gamers Retro Rental example}} \end{center}
+
+5\% of video games rented at Gamers Retro Rental incur a late rental fee. If 700 video games were rented last month, the number of video games that will incur late rental fees will be around
+\underline{   35   } give or take \underline{\phantom{xxxxxxxxxx}}
+  
+$$ \mu = 700 \times 0.05 = 35 $$  
+
+\end{frame}
+
+\begin{frame}[fragile]{Expected Value and SD}
+
+\vspace{-1cm}
+
+\begin{center}{\tiny{Gamers Retro Rental example}} \end{center}
+
+5\% of video games rented at Gamers Retro Rental incur a late rental fee. If 700 video games were rented last month, the number of video games that will incur late rental fees will be around
+\underline{   35   } give or take \underline{   5.77   }
+  
+  
+$$ \mu = 700 \times 0.05 = 35 $$  
+$$ \sigma = \sqrt{700 \times 0.05 \times 0.95 } = 5.77$$
+
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 7.3.1}
+
+A pharmaceutical company claims that a new treatment is successful in reducing fever in more than 60\% of the cases. The treatment was tried on 40 randomly selected cases. What is the expected value of the number of cases successful in reducing fever?
+
+\begin{enumerate}[A]
+\item 16
+\item 24
+\item 4.9
+\item 9.6
+\item 3.1
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 7.3.2}
+
+A study was conducted concerning the use of gloves among the
+nurses with 15 years or more experience. The study showed that only
+1 of these nurses wear gloves during vascular access procedures. For 6
+a sample of $n = 36$ nurses with 15 years or more experience, the number of nurses wear gloves during vascular access procedures is expected to be
+
+\begin{enumerate}[A]
+\item 36
+\item 6
+\item 0
+\item 15
+\item $-1$
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 7.3.3}
+
+A pharmaceutical company claims that a new treatment is successful in reducing fever in more than 60\% of the cases. The treatment was tried on 40 randomly selected cases. What is the standard deviation of the number of cases successful in reducing fever?
+
+\begin{enumerate}[A]
+\item 16
+\item 24
+\item 4.9
+\item 9.6
+\item 3.1
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[fragile]{Outline}
+
+Normal Approximation  
+
+\begin{itemize}
+\item Normal Approximation for Binomial Probabilities 
+\item When Can One Use Normal Approximation
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Binomial Probability Histogram}
+
+\begin{minipage}[ht]{3.5cm}
+
+<<label=LBL7a, results="asis", echo=FALSE, out.width="3.5cm">>=
+  d7a <- rbinom(n=1000, size=15, prob=0.5 )
+  hist(d7a, freq=FALSE, main="Binomial(n=15,p=0.5)", xlab="x", ylab="Probability")
+  text(x=4,y=.18, "P(X=x)=")
+  text(x=4,y=.16, "barheight")
+  @
+
+\end{minipage}  % \hfill
+\begin{minipage}[ht]{3.5cm}
+
+<<label=LBL7b, results="asis", echo=FALSE, out.width="3.5cm">>=
+  d7b <- rbinom(n=1000, size=14, prob=0.5 )
+  hist(d7b, freq=FALSE, main="Binomial(n=14,p=0.5)", xlab="x", ylab="P[X = x]")
+@
+
+\end{minipage}
+
+\begin{minipage}[ht]{3.5cm}
+
+<<label=LBL7c, results="asis", echo=FALSE, out.width="3.5cm">>=
+  #   d7a <- rbinom(n=1000, size=15, prob=0.5 )
+  hist(d7a, freq=FALSE, main="Binomial(n=15,p=0.5)", xlab="x", ylab="P[X = x")
+  text(x=10.5,y=.18, "P(X=x)=")
+  text(x=10.5,y=.16, "barheight")
+  text(x=10.5,y=.14, "bar area")
+  rm(d7a, d7b)
+@
+
+\end{minipage}  % \hfill
+\begin{minipage}[ht]{4cm}
+
+{\scriptsize{
+Note: if probability of a success is 0.5, the shape is symmetric about n/2.
+}}
+\end{minipage}
+
+\end{frame}
+
+\begin{frame}[fragile]{Note that}
+
+\begin{itemize}
+\item The binomial distribution is symmetric when $p = 0.5$.
+Consequently, each rectangle in the probability histogram is centered at an integer with a width of 1. This is also true when $p \ne 0.5$.
+
+\item Hence, for integer $a, a = 0, \cdots , n$, 
+$$P[X = a] = P[a - 0.5 < X < a + 0.5]$$ = 
+area of rectangle centered at $a \approx$ area under normal curve between $a - 0.5$  and $a + 0.5$ where normal curve
+$ \approx N(\mu = np, \sigma = \sqrt{npq} )$. 
+
+\item So, we have (next slide):
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Bin. Prob. Histogram and Normal Curve }
+
+<<label=LBL7d, results="asis", echo=FALSE, out.width="3.5">>=
+  d7c <- rbinom(n=10000, size=30, prob=0.4 )
+@  
+
+\begin{minipage}[ht]{4cm}
+
+{\scriptsize{
+
+$X \sim Binomial(n=30,p=0.4)$
+
+$np = 12, \sqrt{npq} = 2.68$
+
+Binomial Probability
+
+$ Y \sim Normal(\mu = 12, \sigma = 2.68)$ 
+
+actual probability
+
+approximate probability
+}}
+\end{minipage}
+\begin{minipage}[ht]{3.5cm}
+
+<<label=LBL7e, results="asis", echo=FALSE, out.width="3.5cm">>=
+  hist(d7c, freq=FALSE, main="Binomial(n=30,p=0.4)", xlab="x", ylab="P[X = x]")
+  d7x <- seq(3,20,.1)
+  d7y <- dnorm(d7x, mean=12, sd=2.68 ) 
+  lines(d7x, d7y)
+  tmp1 <- c(d7x[d7x > 9.5 & d7x < 10.5])
+  tmp2 <- c(dnorm(tmp1, mean=12, sd=2.68))
+  tmp11 <- c(tmp1, 10.5, 9.5)
+  tmp22 <- c(tmp2, .0005, 0.0005)
+  polygon(tmp11, tmp22, col="red")
+      #    c(dnorm(c(d7x[d7x > 9 & d7x < 10], mean=12, sd=2.68), 0.11, 0.08))
+      #      , col="red")
+  text(x=5.6,y=.14, "actual prob.")
+  text(x=5.6,y=.13, "0.1152")
+  text(x=17,y=.14,  "P[X=10]") 
+  text(x=17,y=.13,  "0.1124")
+@ 
+
+\end{minipage}
+
+\begin{minipage}[ht]{3.5cm}
+
+<<label=LBL7f, results="asis", echo=FALSE, out.width="3.5cm">>=
+  hist(d7c, freq=FALSE, main="Binomial(n=30,p=0.4)", xlab="x", ylab="P[X = x]")
+  # d7x <- seq(3,20,.1)
+  # d7y <- dnorm(d7x, mean=12, sd=2.68 ) 
+  lines(d7x, d7y)
+  tmp1 <- c(d7x[ d7x < 10.5])     #  P[X <= 10]
+  tmp2 <- c(dnorm(tmp1, mean=12, sd=2.68))
+  tmp11 <- c(tmp1,  10.5, 3)
+  tmp22 <- c(tmp2, .0005, 0.0005)
+  polygon(tmp11, tmp22, col="red")
+  
+  text(x=5.6,y=.14, "actual prob.")
+  text(x=5.6,y=.13, "0.2915")
+  text(x=17,y=.14,  "P[X <= 10]") 
+  text(x=17,y=.13,  "0.2878")
+@ 
+
+\end{minipage}
+\begin{minipage}[ht]{3.5cm}
+
+<<label=LBL7g, results="asis", echo=FALSE, out.width="3.5cm">>=
+  hist(d7c, freq=FALSE, main="Binomial(n=30,p=0.4)", xlab="x", ylab="P[X = x]")
+  # d7x <- seq(3,20,.1)
+  # d7y <- dnorm(d7x, mean=12, sd=2.68 ) 
+  lines(d7x, d7y)
+  tmp1 <- c(d7x[d7x > 15.5 ])        ### P[X >= 16]
+  tmp2 <- c(dnorm(tmp1, mean=12, sd=2.68))
+  tmp11 <- c(tmp1, 20, 15.5)
+  tmp22 <- c(tmp2, .0005, 0.0005)
+  polygon(tmp11, tmp22, col="red")
+      #    c(dnorm(c(d7x[d7x > 9 & d7x < 10], mean=12, sd=2.68), 0.11, 0.08))
+      #      , col="red")
+  text(x=5.6,y=.14, "actual prob.")
+  text(x=5.6,y=.13, "0.0971")
+  text(x=17,y=.14,  "P[X >= 16]") 
+  text(x=17,y=.13,  "0.0891")
+  rm(d7c, d7x, d7y)
+@ 
+
+\end{minipage}
+
+\end{frame}
+
+\begin{frame}[fragile]{An Example on Using Normal Approx.}
+
+{\footnotesize{
+Suppose a student in an introductory Statistics course has not been attending class this semester but decides to take the exam anyway. If he randomly guesses on each of the 26 questions, then he has a 1 out of 5 chance of getting a correct answer, since it is a multiple choice exam with choices a, b, c, d, or e. How many questions should the student expect to get correct on this exam, give or take by how many questions?
+
+\begin{eqnarray*}
+X &=& \texttt{number of correct answers} \\
+  &=& binomial(n = 26, p = 0.2) \\
+\mu  &=& np = 26 \times 0.2 \\
+  &=& 5.2 \\
+\sigma &=& SD \\
+  &=& \sqrt{npq} = \sqrt{26 \times 0.2 \times 0.8} \\
+  &=& 2.04
+\end{eqnarray*}  
+}}
+
+\end{frame}
+
+\begin{frame}[fragile]{An Example on Using Normal Approx.}
+
+What is the probability that the student will score lower than a ``C'' (15 or fewer correct answers)?
+
+\begin{eqnarray*}
+P[X \le 15] &=& P[X < 15.5] \\
+  &=& P\Big[Z < \frac{15.5 - 5.2}{2.04} \Big] \\
+  &=& P[ Z < 5.05] \\
+  &=& 1  \texttt{ why? }
+\end{eqnarray*}
+
+\end{frame}
+
+\begin{frame}[fragile]{An Example on Using Normal Approx.}
+
+What is the probability that the student will get a  ``C'' or better (16 or more correct answers)?
+
+\begin{eqnarray*}
+P[X \ge 16] &=& P[X > 15.5] \\
+  &=& P\Big[Z > \frac{15.5 - 5.2}{2.04} \Big] \\
+  &=& 1 - P[ Z < 5.05] \\
+  &=& 0  \texttt{ why? }
+\end{eqnarray*}
+
+\end{frame}
+
+\begin{frame}[fragile]{An Example on Using Normal Approx.}
+
+What is the probability that the student will answer 8 or more questions correctly?
+
+\begin{minipage}[ht]{4cm}
+
+{\tiny{
+\begin{eqnarray*}
+P[X \ge 8] &=& P[X > 7.5] \\
+  &=& P\Big[Z > \frac{7.5 - 5.2}{2.04} \Big] \\
+  &=& 1 - P[ Z \le 1.13] \\
+  &=& 1 - 0.8708 \\
+  &=& 0.1292
+\end{eqnarray*}
+}}
+
+\end{minipage}
+\begin{minipage}[ht]{3.5cm}
+
+<<label=LBL7h, results="asis", echo=FALSE, out.width="3.5cm">>=
+  d7x <- rbinom(n=10000, size=26, prob=0.2 )
+  hist(d7x, freq=FALSE, main="Binomial(n=26,p=0.2)", xlab="x", ylab="P[X = x]")
+  d7x <- seq(-1,12,.1)
+  d7y <- dnorm(d7x, mean=5.2, sd=2.04 )
+  lines(d7x, d7y)
+  tmp1 <- c(d7x[d7x > 7.5 ])        ### P[X >= 16]
+  tmp2 <- c(dnorm(tmp1, mean=5.2, sd=2.04))
+  tmp11 <- c(tmp1, 12, 7.5)
+  tmp22 <- c(tmp2, .0008, 0.0008)
+  polygon(tmp11, tmp22, col="yellow")
+  text(10, .1, "7.5")
+  arrows(x0=10, y0=.09, x1=7.5, y1=0)
+  rm(d7x, d7y)
+@
+
+\end{minipage}
+\end{frame}
+
+\begin{frame}[fragile]{An Example}
+
+\begin{center}{\tiny{when normal approximation is inappropriate}} \end{center}
+
+An example when normal approximation is inappropriate binomial(20,0.1) which is
+right skewed
+
+\begin{figure}[ht]
+\centering
+
+<<label=LBL7i, results="asis", echo=FALSE, out.width="4.5cm">>=
+  
+  d7s <- rbinom(n=50, size=20, prob=0.1 )
+  hist(d7s, freq=FALSE, main="Binomial(n=20,p=0.1)", xlab="x", ylab="P[X = x]")
+  d7u <- seq(-2, 6, .1)
+  d7v <- dnorm(d7u, mean=2, sd=1.342 )
+  lines(d7u, d7v)
+@
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]{General Rule}
+
+\begin{center}{\tiny{when normal approximation is appropriate}} \end{center}
+
+\begin{eqnarray*}
+\texttt{average number of successes} &>& 5 \\
+np &>& 5 \\
+\texttt{average number of failures} &>& 5 \\
+nq &>& 5 
+\end{eqnarray*}
+\end{frame}
+
+\begin{frame}[fragile]{iClicker Question 7.3.4}
+
+A study was conducted concerning the use of gloves among the nurses with 15 years or more experience. The study showed that only 1 in 6 of these nurses wear gloves during vascular access procedures. For a sample of $n = 18$ nurses with 15 years or more experience, is normal approximation appropriate to approximate a binomial probability?
+
+\begin{enumerate}[A]
+\item No
+\item Yes
+\item Insufficient information to judge.
+\end{enumerate}
+
+\end{frame}

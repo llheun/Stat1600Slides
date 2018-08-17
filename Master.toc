@@ -6,13 +6,13 @@
 \beamer@sectionintoc {5}{STAT1600 Ch 5 Study Designs}{158}{0}{5}
 \beamer@sectionintoc {6}{STAT 1600 Ch. 6 The Normal Distribution}{184}{0}{6}
 \beamer@sectionintoc {7}{Stat1600 Ch 7 The Binomial Distribution}{197}{0}{7}
-\beamer@sectionintoc {8}{STAT1600 Ch. 8 Sampling Distribution of the Proportion}{223}{0}{8}
-\beamer@sectionintoc {9}{STAT 1600 Ch 9 Comparing Two Proportions, Part 1 Difference in Proportions}{265}{0}{9}
-\beamer@sectionintoc {10}{Stat1600 Ch 9.3.2 Comparing Two Proportions, Part 2 Risk Ratio}{301}{0}{10}
-\beamer@sectionintoc {11}{Stat1600 Ch 9.3.3 Comparing Two Proportions, Part 3 Odds Ratio}{320}{0}{11}
-\beamer@sectionintoc {12}{Stat 1600 Ch. 10 Sampling Distribution of the Mean}{342}{0}{12}
-\beamer@sectionintoc {13}{Stat 1600 Ch. 11 Comparing Two Means}{385}{0}{13}
-\beamer@sectionintoc {14}{Stat 1600 Ch. 11.2 Comparing Two Means -- Paired Data}{413}{0}{14}
-\beamer@sectionintoc {15}{Ch. 12 Testing Independence of Two Categorical Variables}{431}{0}{15}
-\beamer@sectionintoc {16}{STAT 1600 Ch. 13 Correlation}{458}{0}{16}
-\beamer@sectionintoc {17}{STAT 1600 Ch 14 Linear Regression}{490}{0}{17}
+\beamer@sectionintoc {8}{STAT1600 Ch. 8 Sampling Distribution of the Proportion}{246}{0}{8}
+\beamer@sectionintoc {9}{STAT 1600 Ch 9 Comparing Two Proportions, Part 1 Difference in Proportions}{288}{0}{9}
+\beamer@sectionintoc {10}{Stat1600 Ch 9.3.2 Comparing Two Proportions, Part 2 Risk Ratio}{324}{0}{10}
+\beamer@sectionintoc {11}{Stat1600 Ch 9.3.3 Comparing Two Proportions, Part 3 Odds Ratio}{343}{0}{11}
+\beamer@sectionintoc {12}{Stat 1600 Ch. 10 Sampling Distribution of the Mean}{365}{0}{12}
+\beamer@sectionintoc {13}{Stat 1600 Ch. 11 Comparing Two Means}{408}{0}{13}
+\beamer@sectionintoc {14}{Stat 1600 Ch. 11.2 Comparing Two Means -- Paired Data}{436}{0}{14}
+\beamer@sectionintoc {15}{Ch. 12 Testing Independence of Two Categorical Variables}{454}{0}{15}
+\beamer@sectionintoc {16}{STAT 1600 Ch. 13 Correlation}{481}{0}{16}
+\beamer@sectionintoc {17}{STAT 1600 Ch 14 Linear Regression}{513}{0}{17}
